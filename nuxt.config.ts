@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         ]
       },
     },
+    ssr: false,
     css: ["@/assets/css/styles.css"],
     nitro: {
         preset: 'netlify-edge'
