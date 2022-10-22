@@ -1,5 +1,5 @@
 <template>
-    <div class="border border-black">
+    <div>
         <h1>Welcome to the homepage</h1>
     </div>
 </template>
