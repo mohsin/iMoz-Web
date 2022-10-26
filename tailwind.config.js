@@ -18,6 +18,10 @@ module.exports = {
       colors: {
         'whitesmoke': 'whitesmoke',
         'blacksmoke': '#1D1E20'
+      },
+      animation: {
+        'reveal': 'revealAnim 3s',
+        'conceal': 'concealAnim 3s'
       }
     },
   },

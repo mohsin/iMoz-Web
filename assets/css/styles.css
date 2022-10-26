@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes revealAnim {
+    from {
+      clip-path: circle(1% at 376.5px 36px);
+      background-color: transparent;
+      opacity: 0;
+    }
+    to {
+      clip-path: circle(120% at 376.5px 36px);
+      background-color: #1D1E20;
+      opacity: 100;
+    }
+}
+
+@keyframes concealAnim {
+    from {
+      clip-path: circle(120% at 376.5px 36px);
+      background-color: #1D1E20;
+      opacity: 100;
+    }
+    to {
+      clip-path: circle(1% at 376.5px 36px);
+      background-color: whitesmoke;
+      opacity: 0;
+    }
+}
