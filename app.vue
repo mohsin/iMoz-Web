@@ -1,6 +1,6 @@
 <template>
   <Html :class="`${isDark ? 'dark' : ''}`">
-    <Body>
+    <Body class="bg-whitesmoke dark:bg-blacksmoke transition-bg ease-in-out duration-1000">
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>

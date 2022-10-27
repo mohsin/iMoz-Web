@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-whitesmoke dark:bg-blacksmoke transition-bg ease-in-out duration-1000 flex flex-col min-h-[98vh] w-full">
+  <div class="flex flex-col min-h-screen w-full">
     <header>
         <PageNavbar />
     </header>
@@ -8,5 +8,6 @@
         <slot />
       </div>
     </div>
+    <PageFooter />
   </div>
 </template>
