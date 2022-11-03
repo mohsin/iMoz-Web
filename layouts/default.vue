@@ -3,8 +3,8 @@
     <header>
         <PageNavbar />
     </header>
-    <div class="dark:text-white flex grow shrink-0 basis-auto">
-      <div class="pl-4 pr-4">
+    <div class="dark:text-white flex flex-col grow shrink-0 basis-auto items-center">
+      <div class="w-full lg:w-2/3 p-3 lg:px-6">
         <slot />
       </div>
     </div>

@@ -17,6 +17,14 @@ export default defineNuxtConfig({
     build: {
       postcss: {
         postcssOptions: require("./postcss.config.js"),
-      },
+      }
+    },
+    modules: [
+      '~/utils/gravatar.ts'
+    ],
+    runtimeConfig: {
+      public: {
+        emailId: ''
+      }
     },
 })
