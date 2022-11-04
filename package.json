@@ -12,7 +12,9 @@
     "autoprefixer": "^10.4.12",
     "nuxt": "3.0.0-rc.12",
     "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.1",
-    "vue-gravatar": "^1.4.1"
+    "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "md5": "^2.3.0"
   }
 }

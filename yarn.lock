@@ -2998,7 +2998,7 @@ make-dir@^3.1.0, make-dir@~3.1.0:
   dependencies:
     semver "^6.0.0"
 
-md5@^2.2.1:
+md5@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/md5/-/md5-2.3.0.tgz#c3da9a6aae3a30b46b7b0c349b87b110dc3bda4f"
   integrity sha512-T1GITYmFaKuO91vxyoQMFETst+O71VUPEU3ze5GNzDm0OWdP8v1ziTaAEPUr/3kLsY3Sftgz242A1SetQiDL7g==
@@ -4886,13 +4886,6 @@ vue-devtools-stub@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
-
-vue-gravatar@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/vue-gravatar/-/vue-gravatar-1.4.1.tgz#dffdc587903f9e7a0b952c7f5a28aee8937767c7"
-  integrity sha512-pwfHdXPQ7hdB0UoNGDgSun+Mrx0umk3PruLsiqf1lKTvmB5KwfYhxw/l9m1JhR4vuknGl+THc/+bq1UIiahTUQ==
-  dependencies:
-    md5 "^2.2.1"
 
 vue-router@^4.1.5:
   version "4.1.5"

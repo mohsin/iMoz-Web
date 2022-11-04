@@ -1,6 +1,6 @@
 <template>
     <article class="m-2 lg:m-6 p-2 lg:p-8">
-        <gravatar-img class="h-32 w-32 rounded-full" :email="email" /><br>
+        <PageHomeGravatar class="h-32 w-32 rounded-full" :email="email" /><br>
         <header class="mb-4">
             <h1 class="text-4xl">Hi 👋</h1>
         </header>
