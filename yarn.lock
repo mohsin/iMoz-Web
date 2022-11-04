@@ -3361,6 +3361,10 @@ nuxi@3.0.0-rc.12:
   optionalDependencies:
     fsevents "~2.3.2"
 
+"nuxt-gravatar@link:../../../../../projects/nuxt-gravatar":
+  version "0.0.0"
+  uid ""
+
 nuxt@3.0.0-rc.12:
   version "3.0.0-rc.12"
   resolved "https://registry.npmjs.org/nuxt/-/nuxt-3.0.0-rc.12.tgz"
