@@ -10,15 +10,12 @@ export default defineNuxtConfig({
         ]
       },
     },
-    css: ["@/assets/css/styles.css"],
     nitro: {
         preset: 'netlify-edge'
     },
-    build: {
-      postcss: {
-        postcssOptions: require("./postcss.config.js"),
-      }
-    },
+    modules: [
+      '@nuxtjs/tailwindcss'
+    ],
     runtimeConfig: {
       public: {
         emailId: ''
