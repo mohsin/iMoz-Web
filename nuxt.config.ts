@@ -1,4 +1,3 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
     app: {
       head: {
@@ -10,16 +9,11 @@ export default defineNuxtConfig({
         ]
       },
     },
-    css: ["@/assets/css/styles.css"],
     nitro: {
         preset: 'netlify-edge'
     },
-    build: {
-      postcss: {
-        postcssOptions: require("./postcss.config.js"),
-      }
-    },
     modules: [
+      '@nuxtjs/tailwindcss',
       'nuxt-gravatar'
     ],
     runtimeConfig: {
