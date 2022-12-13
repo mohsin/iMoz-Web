@@ -18,8 +18,17 @@ module.exports = {
       colors: {
         'whitesmoke': 'whitesmoke',
         'blacksmoke': '#1D1E20'
+      },
+      keyframes: {
+        fadeInAnimation: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        }
+      },
+      animation: {
+        'fadein': 'fadeInAnimation 2s ease',
       }
-    },
+    }
   },
   plugins: [],
 }

@@ -9,7 +9,5 @@
 </template>
 
 <script lang="ts" setup>
-import { usePersistedState } from './utils/app';
-
-const isDark = usePersistedState('is-dark', false);
+const { isDark } = useMode()
 </script>
