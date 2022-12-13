@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "nuxt": "^3.0.0",
-    "nuxt-gravatar": "^1.0.4",
+    "nuxt-gravatar": "^1.1.0",
     "@nuxtjs/tailwindcss": "^6.1.3"
   }
 }
