@@ -1,20 +1,14 @@
-# Nuxt 3 Minimal Starter
+# iMoz Personal Blog
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Source code for imoz.in, my personal blog.
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
 # pnpm
-pnpm install --shamefully-hoist
+pnpm install
 ```
 
 ## Development Server
@@ -22,7 +16,7 @@ pnpm install --shamefully-hoist
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Production
@@ -30,13 +24,11 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
-Locally preview production build:
+## License
 
-```bash
-npm run preview
-```
+The source code for this project is licensed under the GNUv2 public license. This is a copyleft license and you have the liberty to use the code for both personal and commercial use.
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+However, certain assets within the project are copyrighted. Kindly check the folder containing those assets for their respective licenses.
