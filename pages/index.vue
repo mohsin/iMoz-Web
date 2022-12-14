@@ -18,8 +18,15 @@ var shouldAnimateGravatar = useState('animate', () => false)
 const runtimeConfig = useRuntimeConfig()
 const email = runtimeConfig.emailId;
 
-watch(isDark, () => {
-    shouldAnimateGravatar.value = true;
-    setTimeout(() => { shouldAnimateGravatar.value = false }, 2000);
-});
+// Animate gravatar on color mode toggle
+const animateGravatar = () => {
+    if(shouldAnimateGravatar.value) {
+        shouldAnimateGravatar.value = false;
+       window.setTimeout(animateGravatar, 100);
+    } else {
+        shouldAnimateGravatar.value = true;
+        setTimeout(() => { shouldAnimateGravatar.value = false; console.log('animating complete') }, 2000);
+    }
+}
+watch(isDark, animateGravatar);
 </script>
