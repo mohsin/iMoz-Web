@@ -1,6 +1,6 @@
 <template>
     <article class="m-2 lg:m-6 p-2 lg:p-8">
-        <Gravatar :class="{ 'animate-fadein' : shouldAnimate }" class="h-32 w-32 rounded-full" :email="email" /><br>
+        <Gravatar :class="{ 'animate-fadein' : shouldAnimate }" class="h-32 w-32 rounded-full" :email="email" :size="512" /><br>
         <header class="mb-4">
             <h1  :class="{ 'animate-fadein' : shouldAnimate }" class="text-4xl">Hi <span class="hidden dark:inline">👋🏼</span><span class="inline dark:hidden">👋🏾</span></h1>
         </header>
