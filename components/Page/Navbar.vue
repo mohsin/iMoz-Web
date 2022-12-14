@@ -20,7 +20,7 @@ const { setDarkMode } = useMode()
                     </span>
                 </div>
                 <ul class="flex w-2/3 lg:w-1/5 px-2 justify-between dark:text-white">
-                    <li>About</li>
+                    <li><NuxtLink to="/about">About</NuxtLink></li>
                     <li>Code</li>
                     <li>Talks</li>
                 </ul>

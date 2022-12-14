@@ -4,8 +4,8 @@
         <header class="mb-4">
             <h1  :class="{ 'animate-fadein' : shouldAnimate }" class="text-4xl">Hi <span class="hidden dark:inline">👋🏼</span><span class="inline dark:hidden">👋🏾</span></h1>
         </header>
-        <div>
-            <p class="text-md text-slate-500 dark:text-whitesmoke opacity-70">I'm Mohsin, a freelance fullstack engineer based out of Bangalore, India who builds web, mobile, voice and watch apps.</p>
+        <div class="pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke opacity-70">
+            <ContentDoc id="index-content" />
         </div>
     </article>
 </template>
@@ -30,3 +30,12 @@ const animate = () => {
 }
 watch(isDark, animate);
 </script>
+
+<style>
+#index-content > p {
+    margin-top: 42px;
+}
+#index-content > p:last-of-type {
+    margin-bottom: 30px;
+}
+</style>
