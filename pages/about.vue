@@ -14,24 +14,24 @@ const truncate = (string: string) => {
       <Title>iMoz - About</Title>
     </Head>
     <section>
-      <div class="mt-4 pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke opacity-70">
+      <div class="mt-4 pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke">
         <div class="flex flex-col justify-center mx-3 sm:mx-0">
-          <h2 id="work" class="text-black text-3xl font-extrabold mt-6 w-full text-center sm:text-left">Work</h2>
-          <div @click="entry.isClosed = !entry.isClosed" v-for="entry in work" v-bind:key="entry.company" class="block p-6 mx-2 rounded-lg shadow-lg bg-white w-full mt-6">
+          <h2 id="work" class="text-black dark:text-white text-3xl font-extrabold mt-6 w-full text-center sm:text-left">Work</h2>
+          <div @click="entry.isClosed = !entry.isClosed" v-for="entry in work" v-bind:key="entry.company" class="block p-6 mx-2 rounded-lg shadow-lg bg-white dark:bg-slate-700 w-full mt-6">
             <div class="flex justify-between">
               <div class="text-left w-[95%]">
-                <h5 id="company" class="text-gray-900 text-xl leading-tight font-medium">
+                <h5 id="company" class="text-gray-900 dark:text-white text-xl leading-tight font-medium">
                   <span>{{ entry.position }} @ {{ entry.company }}</span>
                 </h5>
-                <span class="text-gray-600 text-sm leading-tight font-medium mt-2">{{ entry.duration }}</span>
-                <span class="text-gray-600 text-sm leading-tight font-medium mb-2"> ({{ entry.location }})</span>
+                <span class="text-gray-600 dark:text-slate-300 text-sm leading-tight font-medium mt-2">{{ entry.duration }}</span>
+                <span class="text-gray-600 dark:text-slate-300 text-sm leading-tight font-medium mb-2"> ({{ entry.location }})</span>
               </div>
-              <span v-if="entry.summary.length > MAX_SUMMARY_LENGTH" :class="entry.isClosed ? 'rotate-180' : 'mt-2'" class="h-full cursor-pointer">^</span>
+              <span v-show="entry.summary.length > MAX_SUMMARY_LENGTH" :class="entry.isClosed ? 'rotate-180' : 'mt-2'" class="h-full cursor-pointer">^</span>
             </div>
-            <p v-if="entry.isClosed" class="text-gray-900 text-base my-4">
+            <p v-if="entry.isClosed" class="text-gray-900  dark:text-slate-300 text-base my-4">
               {{ truncate(entry.summary) }}
             </p>
-            <p v-else class="text-gray-900 text-base my-4">
+            <p v-else class="text-gray-900 dark:text-slate-300 text-base my-4">
               {{ entry.summary }}
             </p>
           </div>

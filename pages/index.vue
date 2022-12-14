@@ -4,7 +4,7 @@
         <header class="mb-4">
             <h1  :class="{ 'animate-fadein' : shouldAnimate }" class="text-4xl">Hi <span class="hidden dark:inline">👋🏼</span><span class="inline dark:hidden">👋🏾</span></h1>
         </header>
-        <div class="pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke opacity-70">
+        <div class="pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke">
             <ContentDoc id="index-content" />
         </div>
     </article>
