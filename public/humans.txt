@@ -1,0 +1,20 @@
+PEOPLE
+
+This website was built by Saifur Rahman Mohsin.
+Fullstack Engineer, Tempestronics
+
+Github: mohsin
+Twitter: SaifurRahman
+LinkedIn: saifurrahmanmohsin
+_______________________________________________________________________________
+
+TECHNOLOGY
+
+Nuxt
+https://nuxt.com
+
+TailwindCSS
+https://tailwindcss.com
+
+Github
+https://github.com/
