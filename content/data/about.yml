@@ -1,3 +1,4 @@
+work:
 - company: Tempestronics
   position: Fullstack Engineer
   duration: Jul 2014 - Present · 8 yrs 6 mos
@@ -13,3 +14,14 @@
   duration: Feb 2017 - Jul 2017 · 6 months
   location: Bengaluru, Karnataka, India
   summary: "Given the design, I had built the entire product from scratch (Backend, Android App and DevOps to deploy it to a bare metal server). After launch the app gained ~50k users within 6 months with a rating of 4.8 on the play store. The client promised equity and gave me a position of interim CTO, where I took care of all the technical operations, marketing, management, and hiring through technical interviews including raising funds from the Idea2PoC Scheme, and Karnataka Startup Policy by pitching to a panel of VCs. However, in the end, he failed to keep up with his word of the promised equity so I left."
+education:
+- company: Saranathan College of Engineering
+  position: Bachelor of Engineering (Computer Science)
+  duration: 2010 - 2014 · 4 yrs
+  location: Trichy, Tamil Nadu, India
+  summary: "Finished my engineering at this place. Also indulged in some activities and societies ranging from public speaking, oration, computer club, web designing. I was also the head of two clubs in my college--the computer science club; CyberKatz and co-head of Paatshaala, the Hindi club from June 2012 to July 2013."
+- company: Campion Anglo-Indian Higher Secondary School
+  position: High School
+  duration: 1996 - 2010 · 14 yrs
+  location: Trichy, Tamil Nadu, India
+  summary: "Got a high quality English-medium education with an interesting set of teachers who helped shaped my ideas and worldview in my formative years. My school was famous for being the only one to promote non-academic i.e. extra-curricular activities at the time. I also indulged in gaming, dance, swimming (my school was one of the 2 institutes in the entire state at the time that had a pool inside an academic institute), football, skating, carrom, reading, listening to music, etc."
