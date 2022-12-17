@@ -1,5 +1,5 @@
 <script setup lang="ts">
-var projects = [
+var data = [
   {
     "title": "1: Blog Post",
     "type": "blog",
@@ -637,44 +637,59 @@ var projects = [
     "isThumb": false
   }
 ];
-</script>
 
-<script lang="ts">
-if (process.client) {
+// Add isLoaded so we can run resize on all the image elements.
+const projects = reactive(data.map((project: any) => (
+  (project.src) ? { ...project, isLoaded: false } : { ...project, isLoaded: true }
+)))
 
-  window.onload = resizeAllGridItems();
-  window.addEventListener("resize", resizeAllGridItems);
+function resizeGridItem(item: any) {
+  var grid = document.getElementsByClassName('grid')[0];
+  var rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
+  var rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
+  if (!item.querySelector('.content'))
+    return;
+  var rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
 
-  var allItems = document.getElementsByClassName("item");
-  for(var x=0;x<allItems.length;x++){
-    window.setTimeout(() => {
-      resizeInstance(allItems[x])
-    }, 3000);
-  }
-
-  function resizeGridItem(item){
-    var grid = document.getElementsByClassName("grid")[0];
-    var rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
-    var rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-    var rowSpan = Math.ceil((item.querySelector('.content').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
-      item.style.gridRowEnd = "span "+rowSpan;
-  }
-
-  function resizeAllGridItems(){
-    allItems = document.getElementsByClassName("item");
-    for(x=0;x<allItems.length;x++){
-      resizeGridItem(allItems[x]);
+  const currentGridRowEndSpan = parseInt(window.getComputedStyle(item).gridRowEnd.replace('span ', ''))
+  if (currentGridRowEndSpan != rowSpan) {
+    item.animate([
+      { 'gridRowEnd': 'span 0' },
+      { 'gridRowEnd': 'span ' + rowSpan }
+    ], {
+      duration: 1000,
+      easing: 'ease-out',
+    }).onfinish = function() {
+      item.style.gridRowEnd = 'span ' + rowSpan;
     }
   }
+}
 
-  function resizeInstance(instance){
-    var item = instance.elements[0];
-    resizeGridItem(item);
+function resizeAllGridItems() {
+  var allItems = document.getElementsByClassName('item');
+  for(var x=0; x<allItems.length; x++){
+      resizeGridItem(allItems[x]);
   }
+}
 
+function load(event: Event) {
+  const parent = event?.currentTarget?.parentNode?.parentNode
+  if (process.client) {
+    resizeGridItem(parent)
+  }
+}
+
+// Run once on window load, and once again after 1,3,7,10 seconds as fallback to ensure it loaded.
+if (process.client) {
+  window.onload = () => {
+    resizeAllGridItems()
+  }
+  window.setTimeout(resizeAllGridItems, 1000)
+  window.setTimeout(resizeAllGridItems, 3000)
+  window.setTimeout(resizeAllGridItems, 7000)
+  window.setTimeout(resizeAllGridItems, 10000)
 }
 </script>
-
 
 <template>
   <Head>
@@ -683,16 +698,16 @@ if (process.client) {
   <div class="mt-3 sm:mt-12">
     <h2 class="text-black dark:text-white text-3xl font-semibold my-2 sm:my-6 w-full text-center sm:text-left">Client Projects</h2>
 
-      <div class="grid">
-        <div v-for="node in projects" v-bind:key="node.title" :class="node.type" class="item">
+      <div @load="resizeAllGridItems" class="grid">
+        <div v-for="project in projects" v-bind:key="project.title" :class="project.type" class="item">
           <div class="content">
             <div class="title">
-              <h3>{{ node.title }}</h3>
+              <h3>{{ project.title }}</h3>
             </div>
-            <img v-if="node.isThumb" class="photothumb" :src="node.src" />
+            <img @load="load" v-if="project.isThumb" class="photothumb" :src="project.src" />
             <div class="desc">
-              <img v-if="node.src && !node.isThumb" :src="node.src">
-              <p>{{ node.text }}</p>
+              <img @load="load" v-if="project.src && !project.isThumb" :src="project.src">
+              <p>{{ project.text }}</p>
             </div>
           </div>
         </div>
