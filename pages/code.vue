@@ -810,14 +810,10 @@ if (process.client) {
     <h2 class="text-black dark:text-white text-3xl font-semibold my-2 sm:my-6 w-full text-center sm:text-left">Client Projects</h2>
 
       <div @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-[58px]">
-        <div :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="project.type" class="item bg-white">
+        <div :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="[{'dark:border dark:border-white': project.isProcessed }, project.type]" class="item bg-white dark:bg-slate-700">
           <div class="content">
-            <div :class="[
-              { 'bg-amber-500': project.type == 'blog' },
-              { 'bg-slate-500': project.type == 'project' },
-              { 'bg-red-500': project.type == 'photo' },
-              ]" class="p-5">
-              <h3 class="text-lg text-white uppercase">{{ project.title }}</h3>
+            <div class="p-5 bg-slate-700 dark:bg-white">
+              <h3 class="text-lg text-white dark:text-slate-700 uppercase">{{ project.title }}</h3>
             </div>
             <img @load="load" v-if="project.isThumb" loading="lazy" class="w-full" :src="project.src" />
             <div class="p-2.5 pb-1">
