@@ -812,16 +812,20 @@ if (process.client) {
   <div class="mt-3 sm:mt-12">
     <h2 class="text-black dark:text-white text-3xl font-semibold my-2 sm:my-6 w-full text-center sm:text-left">Client Projects</h2>
 
-      <div @load="resizeAllGridItems" class="grid">
-        <div :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="project.type" class="item">
+      <div @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-[58px]">
+        <div :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="project.type" class="item bg-white">
           <div class="content">
-            <div class="title">
-              <h3>{{ project.title }}</h3>
+            <div :class="[
+              { 'bg-amber-500': project.type == 'blog' },
+              { 'bg-slate-500': project.type == 'project' },
+              { 'bg-red-500': project.type == 'photo' },
+              ]" class="p-5">
+              <h3 class="text-lg text-white uppercase">{{ project.title }}</h3>
             </div>
-            <img @load="load" v-if="project.isThumb" loading="lazy" class="photothumb" :src="project.src" />
-            <div class="desc">
-              <img @load="load" v-if="project.src && !project.isThumb" :src="project.src">
-              <p>{{ project.text }}</p>
+            <img @load="load" v-if="project.isThumb" loading="lazy" class="w-full" :src="project.src" />
+            <div class="p-2.5 pb-1">
+              <img class="w-1/2 mt-0 mr-2.5 mb-2.5 ml-0 float-left" @load="load" v-if="project.src && !project.isThumb" :src="project.src">
+              <p class="pb-2.5">{{ project.text }}</p>
             </div>
           </div>
         </div>
@@ -829,56 +833,3 @@ if (process.client) {
 
   </div>
 </template>
-
-<style scoped>
-.grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-  grid-auto-rows: 58px;
-}
-
-.item {
-  background-color: #ffffff;
-}
-
-.photothumb {
-  width: 100%;
-}
-
-.title {
-  padding: 20px;
- }
-
-.title h3{
-  font-size: 1.2em;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.project .title{
-  background-color: #607D8B;
-}
-
-.blog .title{
-  background-color: #ff9800;
-}
-
-.photo .title{
-  background-color: #f44336;
-}
-
-.desc{
-  padding: 10px 10px 5px 10px;
-}
-
-.desc img{
-  width: 50%;
-  margin: 0 10px 10px 0;
-  float: left;
-}
-
-.desc p{
-  margin-bottom: 10px;
-}
-</style>
