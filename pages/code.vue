@@ -772,7 +772,7 @@ function resizeGridItem(item: any) {
       onStep: (value: number) => {
         item.style.gridRowEnd = 'span ' + Math.round(value)
       },
-      onComplete: (value: number) => {
+      onComplete: () => {
         item.style.gridRowEnd = 'span ' + rowSpan
       },
     });
@@ -780,6 +780,9 @@ function resizeGridItem(item: any) {
 }
 
 function resizeAllGridItems() {
+  if (!projects.every(project => project.isProcessed)) {
+    window.setTimeout(resizeAllGridItems, 2000)
+  }
   var allItems = document.getElementsByClassName('item');
   for(var x=0; x < allItems.length; x++){
       resizeGridItem(allItems[x]);
@@ -795,13 +798,7 @@ function load(event: Event) {
 
 // Run once on window load, and once again after 1,3,7,10 seconds as fallback to ensure it loaded.
 if (process.client) {
-  window.onload = () => {
-    resizeAllGridItems()
-  }
-  window.setTimeout(resizeAllGridItems, 1000)
-  window.setTimeout(resizeAllGridItems, 3000)
-  window.setTimeout(resizeAllGridItems, 7000)
-  window.setTimeout(resizeAllGridItems, 10000)
+  resizeAllGridItems()
 }
 </script>
 
