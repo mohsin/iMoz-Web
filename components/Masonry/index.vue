@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { PropType } from 'vue'
 import type { MasonryItem } from './types'
+import type { ConcreteComponent } from '@vue/runtime-core'
 
-const listComponent = resolveComponent('MasonryList')
+var listComponent = resolveComponent('MasonryList')
 const detailComponent = resolveComponent('MasonryDetail')
 var currentComponent = shallowRef(listComponent)
 
@@ -13,8 +14,16 @@ const props = defineProps({
   data: {
     type: Array as PropType<MasonryItem[]>,
     required: true
+  },
+  listComponent: {
+    type: Object as PropType<ConcreteComponent>
   }
 })
+
+if (props.listComponent) {
+  listComponent = props.listComponent;
+}
+
 var data: MasonryItem|MasonryItem[] = props.data
 var method: Function = () => {}
 
@@ -35,16 +44,7 @@ returnToList()
 </script>
 
 <template>
-  <transition
-      enter-active-class="duration-300 ease-out"
-      enter-from-class="transform opacity-0 scale-75"
-      enter-to-class="opacity-100 scale-100"
-      leave-active-class="duration-200 ease-in"
-      leave-from-class="opacity-100 scale-100"
-      leave-to-class="transform opacity-0 scale-75"
-      mode="out-in">
-      <keep-alive :include="['list']">
-        <component :id="props.id" :is="currentComponent" :data="data" :method="method" />
-      </keep-alive>
-  </transition>
+    <keep-alive :include="['list']">
+      <component @openDetail="switchToDetail" @returnToList="returnToList" :id="props.id" :is="currentComponent" :data="data" :method="method" />
+    </keep-alive>
 </template>

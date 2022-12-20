@@ -81,7 +81,6 @@ function load(event: Event) {
 if (process.client) {
   resizeAllGridItems()
 }
-
 </script>
 
 <template>
