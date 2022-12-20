@@ -3,6 +3,9 @@ import { PropType } from 'vue'
 import type { MasonryItem } from './types'
 
 const props = defineProps({
+  id: {
+    type: String
+  },
   data: {
     type: Array as PropType<MasonryItem[]>,
     required: true
@@ -12,6 +15,8 @@ const props = defineProps({
     required: true
   },
 })
+
+const uniqId = 'masonry-' + props.id
 const openDetailPage = props.method
 
 // Add isLoaded so we can run resize on all the image elements.
@@ -21,7 +26,7 @@ const projects = reactive(props.data.map((project: any) => (
 )))
 
 function resizeGridItem(item: any) {
-  var grid = document.getElementsByClassName('grid')[0];
+  var grid = document.getElementById(uniqId);
   const slug = item.id;
 
   var rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
@@ -59,7 +64,7 @@ function resizeAllGridItems() {
   if (!projects.every(project => project.isProcessed)) {
     window.setTimeout(resizeAllGridItems, 2000)
   }
-  var allItems = document.getElementsByClassName('item');
+  var allItems = document.getElementById(uniqId)?.getElementsByClassName('item');
   for(var x=0; x < allItems.length; x++){
       resizeGridItem(allItems[x]);
   }
@@ -80,7 +85,7 @@ if (process.client) {
 </script>
 
 <template>
-  <div @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-[58px]">
+  <div :id="uniqId" @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-[58px]">
     <div @click="openDetailPage(project)" :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="[{'dark:border dark:border-white': project.isProcessed }, project.type]" class="item bg-white dark:bg-slate-700">
       <div class="content">
         <div class="p-5 bg-slate-700 dark:bg-white">

@@ -7,6 +7,9 @@ const detailComponent = resolveComponent('MasonryDetail')
 var currentComponent = shallowRef(listComponent)
 
 const props = defineProps({
+  id: {
+    type: String
+  },
   data: {
     type: Array as PropType<MasonryItem[]>,
     required: true
@@ -41,7 +44,7 @@ returnToList()
       leave-to-class="transform opacity-0 scale-75"
       mode="out-in">
       <keep-alive :include="['list']">
-        <component :is="currentComponent" :data="data" :method="method" />
+        <component :id="props.id" :is="currentComponent" :data="data" :method="method" />
       </keep-alive>
   </transition>
 </template>
