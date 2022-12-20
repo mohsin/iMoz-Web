@@ -32,16 +32,14 @@ returnToList()
 </script>
 
 <template>
-  <transition name="component-fade" mode="out-in">
+  <transition
+      enter-active-class="duration-300 ease-out"
+      enter-from-class="transform opacity-0 scale-75"
+      enter-to-class="opacity-100 scale-100"
+      leave-active-class="duration-200 ease-in"
+      leave-from-class="opacity-100 scale-100"
+      leave-to-class="transform opacity-0 scale-75"
+      mode="out-in">
     <component :is="currentComponent" :data="data" :method="method" />
   </transition>
 </template>
-
-<style scoped>
-.component-fade-enter-active, .component-fade-leave-active {
-  transition: transform 1s;
-}
-.component-fade-enter, .component-fade-leave-to {
-  transform: scaleX(3);
-}
-</style>
