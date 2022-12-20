@@ -19,9 +19,9 @@ const returnToList = props.method
 <template>
   <div class="item bg-white dark:bg-slate-700">
     <div class="content">
-      <div class="p-5 bg-slate-700 dark:bg-white">
+      <div class="p-5 bg-slate-700 dark:bg-white dark:border">
         <h3 class="flex items-center justify-between text-lg text-white dark:text-slate-700 uppercase">
-          <a class="cursor-pointer text-white" @click="returnToList()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="24" width="24" fill="currentColor"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg></a>
+          <a class="cursor-pointer text-white dark:text-black" @click="returnToList()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="24" width="24" fill="currentColor"><path d="M24 40 8 24 24 8l2.1 2.1-12.4 12.4H40v3H13.7l12.4 12.4Z"/></svg></a>
           <span>{{ item.title }}</span>
           <span></span>
         </h3>

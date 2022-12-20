@@ -40,7 +40,7 @@ returnToList()
       leave-from-class="opacity-100 scale-100"
       leave-to-class="transform opacity-0 scale-75"
       mode="out-in">
-      <keep-alive>
+      <keep-alive :include="['list']">
         <component :is="currentComponent" :data="data" :method="method" />
       </keep-alive>
   </transition>
