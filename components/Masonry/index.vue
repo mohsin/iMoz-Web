@@ -1,20 +1,24 @@
 <script setup lang="ts">
 import { PropType } from 'vue'
 import type { MasonryItem } from './types'
-
-const listComponent = resolveComponent('MasonryList')
-const detailComponent = resolveComponent('MasonryDetail')
-var currentComponent = shallowRef(listComponent)
+import type { ConcreteComponent } from 'vue';
 
 const props = defineProps({
   id: {
     type: String
   },
   data: {
-    type: Array as PropType<MasonryItem[]>,
-    required: true
+    type: Array as PropType<MasonryItem[]>
+  },
+  listComponent: {
+    type: Object as PropType<ConcreteComponent>
   }
 })
+
+const listComponent = props.listComponent ?? resolveComponent('MasonryList')
+const detailComponent = resolveComponent('MasonryDetail')
+var currentComponent = shallowRef(listComponent)
+
 var data: MasonryItem|MasonryItem[] = props.data
 
 const returnToList = () => {
@@ -41,7 +45,7 @@ returnToList()
       leave-to-class="transform opacity-0 scale-75"
       mode="out-in">
       <keep-alive :include="['list']">
-        <component @onDetailClick="switchToDetail" @onReturnToList="returnToList" :id="props.id" :is="currentComponent" :data="data" />
+        <component :class="{'mt-12' : props.listComponent && currentComponent === detailComponent }" @onDetailClick="switchToDetail" @onReturnToList="returnToList" :id="props.id" :is="currentComponent" :data="data" />
       </keep-alive>
   </transition>
 </template>

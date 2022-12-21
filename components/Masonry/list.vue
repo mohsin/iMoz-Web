@@ -7,8 +7,7 @@ const props = defineProps({
     type: String
   },
   data: {
-    type: Array as PropType<MasonryItem[]>,
-    required: true
+    type: Array as PropType<MasonryItem[]>
   }
 })
 
