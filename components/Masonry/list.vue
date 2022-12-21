@@ -9,15 +9,10 @@ const props = defineProps({
   data: {
     type: Array as PropType<MasonryItem[]>,
     required: true
-  },
-  method: {
-    type: Function,
-    required: true
-  },
+  }
 })
 
 const uniqId = 'masonry-' + props.id
-const openDetailPage = props.method
 
 // Add isLoaded so we can run resize on all the image elements.
 // isProcessed is used to check if item has been resized.
@@ -90,7 +85,7 @@ if (process.client) {
 
 <template>
   <div :id="uniqId" @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-[58px]">
-    <div @click="openDetailPage(project)" :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="[{'dark:border dark:border-white': project.isProcessed }, project.type]" class="item bg-white dark:bg-slate-700">
+    <div @click="$emit('onDetailClick', project)" :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="[{'dark:border dark:border-white': project.isProcessed }, project.type]" class="item bg-white dark:bg-slate-700">
       <div class="content">
         <div class="p-5 bg-slate-700 dark:bg-white">
           <h3 class="text-lg text-white dark:text-slate-700 uppercase">{{ project.title }}</h3>

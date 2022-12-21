@@ -16,18 +16,15 @@ const props = defineProps({
   }
 })
 var data: MasonryItem|MasonryItem[] = props.data
-var method: Function = () => {}
 
 const returnToList = () => {
   currentComponent.value = listComponent
   data = props.data
-  method = switchToDetail
 }
 
 const switchToDetail = (item: MasonryItem) => {
   currentComponent.value = detailComponent
   data = item
-  method = returnToList
 }
 
 returnToList()
@@ -44,7 +41,7 @@ returnToList()
       leave-to-class="transform opacity-0 scale-75"
       mode="out-in">
       <keep-alive :include="['list']">
-        <component :id="props.id" :is="currentComponent" :data="data" :method="method" />
+        <component @onDetailClick="switchToDetail" @onReturnToList="returnToList" :id="props.id" :is="currentComponent" :data="data" />
       </keep-alive>
   </transition>
 </template>
