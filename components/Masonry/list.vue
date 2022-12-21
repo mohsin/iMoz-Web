@@ -61,6 +61,10 @@ function resizeGridItem(item: any) {
 }
 
 function resizeAllGridItems() {
+  if (!document.getElementById(uniqId)) {
+    window.setTimeout(resizeAllGridItems, 100)
+    return
+  }
   if (!projects.every(project => project.isProcessed)) {
     window.setTimeout(resizeAllGridItems, 2000)
   }
@@ -77,7 +81,7 @@ function load(event: Event) {
   }
 }
 
-// Run once on window load, and once again after 1,3,7,10 seconds as fallback to ensure it loaded.
+// Resize all grid items. This calls itself and runs until all elements are properly sized.
 if (process.client) {
   resizeAllGridItems()
 }
