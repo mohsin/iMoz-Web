@@ -91,7 +91,7 @@ if (process.client) {
         </div>
         <img @load="load" v-if="project.isThumb" loading="lazy" class="w-full" :src="project.src" />
         <div class="p-2.5 pb-1">
-          <img class="w-1/2 mt-0 mr-2.5 mb-2.5 ml-0 float-left" @load="load" v-if="project.src && !project.isThumb" :src="project.src">
+          <img class="w-1/2 mt-0 mr-2.5 mb-2.5 ml-0" @load="load" v-if="project.src && !project.isThumb" :src="project.src">
           <p class="pb-2.5">{{ project.text }}</p>
         </div>
       </div>
