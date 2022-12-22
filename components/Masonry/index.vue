@@ -19,6 +19,8 @@ const listComponent = props.listComponent ?? resolveComponent('MasonryList')
 const detailComponent = resolveComponent('MasonryDetail')
 var currentComponent = shallowRef(listComponent)
 
+var keepAliveInclude = listComponent.__name
+
 var data: MasonryItem|MasonryItem[] = props.data
 
 const returnToList = () => {
@@ -44,7 +46,7 @@ returnToList()
       leave-from-class="opacity-100 scale-100"
       leave-to-class="transform opacity-0 scale-75"
       mode="out-in">
-      <keep-alive :include="['list']">
+      <keep-alive :include="keepAliveInclude">
         <component :class="{'mt-12' : props.listComponent && currentComponent === detailComponent }" @onDetailClick="switchToDetail" @onReturnToList="returnToList" :id="props.id" :is="currentComponent" :data="data" />
       </keep-alive>
   </transition>
