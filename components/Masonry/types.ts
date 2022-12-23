@@ -3,5 +3,5 @@ export type MasonryItem = {
   src: string,
   isThumb: boolean,
   type: string,
-  text: string
+  description: string
 }
