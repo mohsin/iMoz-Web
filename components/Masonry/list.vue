@@ -63,8 +63,10 @@ function resizeAllGridItems() {
     window.setTimeout(resizeAllGridItems, 2000)
   }
   var allItems = document.getElementById(uniqId)?.getElementsByClassName('item');
-  for(var x=0; x < allItems.length; x++){
-      resizeGridItem(allItems[x]);
+  if (allItems) {
+    for(var x=0; x < allItems.length; x++){
+        resizeGridItem(allItems[x]);
+    }
   }
 }
 
@@ -83,7 +85,7 @@ if (process.client) {
 </script>
 
 <template>
-  <div :id="uniqId" @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-[58px]">
+  <div :id="uniqId" @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
     <div @click="$emit('onDetailClick', project)" :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="[{'dark:border dark:border-white': project.isProcessed }, project.type]" class="item bg-white dark:bg-slate-700">
       <div class="content flow-root">
         <div class="p-5 bg-slate-700 dark:bg-white">
