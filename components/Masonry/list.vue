@@ -85,13 +85,13 @@ if (process.client) {
 <template>
   <div :id="uniqId" @load="resizeAllGridItems" class="grid gap-2.5 grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-[58px]">
     <div @click="$emit('onDetailClick', project)" :id="project.slug" v-for="project in projects" v-bind:key="project.slug" :class="[{'dark:border dark:border-white': project.isProcessed }, project.type]" class="item bg-white dark:bg-slate-700">
-      <div class="content">
+      <div class="content flow-root">
         <div class="p-5 bg-slate-700 dark:bg-white">
           <h3 class="text-lg text-white dark:text-slate-700 uppercase">{{ project.title }}</h3>
         </div>
         <img @load="load" v-if="project.isThumb" loading="lazy" class="w-full" :src="project.src" />
         <div class="p-2.5 pb-1">
-          <img class="w-1/2 mt-0 mr-2.5 mb-2.5 ml-0" @load="load" v-if="project.src && !project.isThumb" :src="project.src">
+          <img class="w-1/2 mt-0 mr-2.5 mb-2.5 ml-0 float-left" @load="load" v-if="project.src && !project.isThumb" :src="project.src">
           <p class="pb-2.5">{{ project.text }}</p>
         </div>
       </div>
