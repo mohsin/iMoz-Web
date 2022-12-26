@@ -90,6 +90,7 @@ if (process.client) {
       <div class="content flow-root">
         <div class="p-5 bg-slate-700 dark:bg-white">
           <h3 class="text-lg text-white dark:text-slate-700 uppercase">{{ project.title }}</h3>
+          <span class="text-slate-100 dark:text-slate-900 opacity-70 text-xs">{{ project.duration }}</span>
         </div>
         <img @load="load" v-if="project.isThumb" loading="lazy" class="w-full" :src="project.src" />
         <div class="p-2.5 pb-1">
