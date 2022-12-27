@@ -14,9 +14,20 @@ export default defineNuxtConfig({
     },
     modules: [
       '@nuxtjs/tailwindcss',
+      '@nuxt/image-edge',
       '@nuxt/content',
       'nuxt-gravatar'
     ],
+    image: {
+      provider: 'netlify',
+      screens: {
+        xs: 639,
+        sm: 767,
+        md: 1023,
+        lg: 1279,
+        xl: 1535
+      },
+    },
     runtimeConfig: {
       public: {
         emailId: ''
