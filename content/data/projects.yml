@@ -1,1121 +1,511 @@
 client:
-- title: '1: Blog Post'
-  slug: 1-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '2: Photo'
-  slug: 2-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '3: Photo'
-  slug: 3-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '4: Project'
-  slug: 4-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '5: Project'
-  slug: 5-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '6: Blog Post'
-  slug: 6-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '7: Project'
-  slug: 7-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '8: Blog Post'
-  slug: 8-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '9: Photo'
-  slug: 9-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '10: Blog Post'
-  slug: 10-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '11: Photo'
-  slug: 11-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '12: Project'
-  slug: 12-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
+- title: SK Hollow Blocks
+  slug: sk-hollow-blocks
+  type: Client
+  duration: Sep 2014
+  languages: HTML,CSS,JavaScript
+  platforms: Web
+  frameworks: Custom CMS
+  tools: Notepad++
+  concepts: 
+  status: Expired
+  description: Build a beautiful website for my uncle for his business (called "SK Hollow Blocks") of selling construction supplies.
+  link: https://web.archive.org/web/20150611175451/http://skhollowblocks.com
+  added_on: 24/12/2022 2:45pm
+- title: MediScan
+  slug: mediscan
+  type: Client
+  duration: Dec 2014
+  languages: Java,PHP,mySQL,JavaScript,HTML,CSS
+  platforms: Android,Mobile,Web
+  frameworks: OctoberCMS,Laravel
+  tools: Android Studio,Atom
+  concepts: MVC,RESTful API,QR Code
+  status: Expired
+  description: It is a highly secure online repository to keep medical records. Medical records could be X-ray, MRI, CT scans, history of medicines prescribed, patient details or even medical instruments used in surgery and diagnosis. These are generalised as a "prop" which is associated with a prop ID. Regardless of what kind it is, a simple QR code can be used to identify these props using the ID. The code can even be stuck on the actual prop in the form of QR sticker. Depending on what prop is chosen, appropriate data is fetched and displayed correctly on the app. Using such a general pattern is useful as it helps determine what kind of action must be taken and what sort of data can be displayed. And since the database is globally accessible the doctor can access the data from anywhere in the world. Since all mobile phone, these days are equipped with a camera they can read these QR codes and get the details.
+  link: https://youtu.be/DDpPtJD8nJA
+  added_on: 24/12/2022 2:48pm
+- title: World of Urology
+  slug: wou
+  type: Client
+  duration: Dec 2014
+  languages: PHP,mySQL,HTML,JavaScript
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Atom
+  concepts: MVC
+  status: Expired
+  description: Built a clean, multi-lingual, and simple-to-use web app for a group of doctors who specialize in urology. However, I abandoned the project as the client was too unresponsive.
+  link: http://worldofurology.net
+  added_on: 24/12/2022 2:55pm
+- title: TheHouseMonk Android App
+  slug: thm
+  type: Client
+  duration: Apr 2015
+  languages: Java,sqlite
+  platforms: Android,Mobile
+  frameworks: RxAndroid
+  tools: Atom,Dagger
+  concepts: functional programming,Reactive FRP,Dependency Injection
+  status: Archived
+  description: An Android app that was to be internally used by a Bangalore-based real estate startup. The day I moved to Bangalore, I had already set up a meet with the founder of “The House Monk” (known as Cozee Homes now) who found me through Quora. Fortunately, I had the skills that they were looking for in an Android developer—a programmer working with reactive extensions for Android (RxAndroid).
+  link: https://youtu.be/kH2qIaEqQaQ
+  added_on: 24/12/2022 3:07pm
+- title: Actor Jega’s Official Website
+  slug: actor-jega
+  type: Client
+  duration: May 2015
+  languages: PHP,mySQL,HTML,JavaScript,CSS
+  platforms: Web
+  frameworks: OctoberCMS,Laravel
+  tools: Sublime Text 3
+  concepts: MVC,CMS
+  status: Archived
+  description: Build a stunning website for an upcoming kollywood actor named Jega who made the movies Gnana Kirukkan and R23 Criminals Diary.
+  link: https://web.archive.org/web/20161008140213/http://actorjega.com/
+  added_on: 24/12/2022 3:27pm
+- title: Sky Properties
+  slug: sky-properties
+  type: Client
+  duration: Aug 2015
+  languages: PHP,mySQL,HTML,JavaScript,CSS
+  platforms: Web
+  frameworks: OctoberCMS,Laravel
+  tools: Sublime Text 3
+  concepts: MVC,CMS
+  status: Archived
+  description: I built the entire frontend and backend for Sky Properties Team for their business. It has some really nice user management features with a permissions architecture, a web analytics dashboard, editable sections and many more features.
+  link: https://web.archive.org/web/20170406182011/http://skyproperties.in/ (Site), https://youtu.be/fwWcU-hUyWc (Video)
+  added_on: 24/12/2022 3:41pm
+- title: Highway Delite Web and Android Apps
+  slug: highway-delite
+  type: Client
+  duration: Oct 2015 - Nov 2015
+  languages: PHP,mySQL,HTML,JavaScript,Java,sqlite,CSS
+  platforms: Web,Mobile,Google Maps
+  frameworks: OctoberCMS,Laravel,RxAndroid
+  tools: Sublime Text 3
+  concepts: MVC,RESTful API,CMS,Dependency Injection,functional programming,Reactive FRP
+  status: Live
+  description: "explore highways like never before\n\nI built the frontend (front website) and backend (visible to logged in users) and also exposed a REST-based API so that the Android app can communicate with this DB. Some features include user management section, permission architecture, short URL management section, a custom map feature by which the authorized users can easily manage the establishments from map itself.\n\nhighway delite wants to be your one point app for your road trip / highway journey/ bike rides / weekend getaway/ tour and travel through roads on Indian highways.\nI built the entire app for a client."
+  link: https://highwaydelite.com (Website), https://play.google.com/store/apps/details?id=com.highwaydelite.highwaydelite (Play Store)
+  added_on: 24/12/2022 3:45pm
+- title: Cakes on Wheels
+  slug: cow-web
+  type: Client
+  duration: Feb 2017
+  languages: PHP,mySQL,HTML,JavaScript,CSS
+  platforms: Web
+  frameworks: OctoberCMS,Laravel
+  tools: Sublime Text 3
+  concepts: MVC,Payment Gateway
+  status: Archived
+  description: 'Built a custom eCommerce platform for a company named CakesOnWheels that''s a business trademark of eMandate Management Services located in Bangalore. The web app enables users to purchase a wide variety of cakes as well as addons such as roses, chocolate boxes, etc. I built a powerful backend that allows the client to add and manage the cakes and addons on his own. Sms and payment gateway integration was done as well.'
+  link: https://cakesonwheels.net
+  added_on: 24/12/2022 4:14pm
+- title: Yahavi Android App
+  slug: yahavi
+  type: Client
+  duration: March 9 2017 - April 2017
+  languages: Java
+  platforms: Mobile,Android
+  frameworks: RxAndroid
+  tools: Sublime Text 3
+  concepts: Dependency Injection,Reactive FRP,RESTful API
+  status: Archived
+  description: 'Built the native Android app as per the designs provided by the Indiez team. This project got stalled after a few milestones due to some financial constraints from the client''s end. All payments were delayed and their excuse was that this was a "legacy client".'
+  link: https://www.yahavi.com
+  added_on: 24/12/2022 4:22pm
+- title: FinanceNow Android App
+  slug: financenow
+  type: Client
+  duration: Jun 2017
+  languages: Java
+  platforms: Mobile,Android
+  frameworks: RxAndroid
+  tools: Sublime Text 3,Android Studio
+  concepts: Reactive FRP,Dependency Injection,functional programming
+  status: Live
+  description: A finance management app that lets you input your financial data to get information about your financial health which includes your months to survive, insurance required and many more cool features.
+  link: https://www.producthunt.com/products/financenow (Product Hunt), https://www.9apps.com/android-apps/FinanceNow-Journey-towards-financial-liberty (9apps)
+  added_on: 24/12/2022 4:26pm
+- title: ApplyNow Android App
+  slug: applynow
+  type: Client
+  duration: Jun 2017
+  languages: Java,XML
+  platforms: Mobile,Android
+  frameworks: RxAndroid
+  tools: Android Studio
+  concepts: Dependency Injection,functional programming,Reactive FRP,RESTful API,Data Modelling
+  status: Archived
+  description: A dynamic form management app that lets you to quickly apply to various services.
+  link: https://www.youtube.com/watch?v=Om2YwbOWL9o
+  added_on: 24/12/2022 4:31pm
+- title: Swades Web App
+  slug: swades
+  type: Client
+  duration: Jul 2017
+  languages: HTML,CSS,PHP,mySQL,JavaScript
+  platforms: Web
+  frameworks: OctoberCMS,Laravel
+  tools: Sublime Text 3,Material Design Lite
+  concepts: MVC,Material Design
+  status: Archived
+  description: 'Worked on a web app that apparently was the scholarship program to a platform called UpGrad run by Ronnie Screwvala. Got the project through a group called Indiez and left it due to delayed payments. The group also gave a reduced payment to what they agreed to make even though I made the milestone perfectly, delivered on time, and the client gave a full rating for the work. Their excuse was that "I wasn''t communicating often" even though I replied to each of their questions immediately. So I left and dropped the project. This is the same group whom I did the Yahavi project with (see timeline) and they failed to make timely payments then too. The link contains the partial version I developed with placeholders.'
+  link: http://web.archive.org/web/20170808072740/https://swades-staging.herokuapp.com
+  added_on: 24/12/2022 4:41pm
+- title: BlueHorn Web App
+  slug: bluehorn
+  type: Client
+  duration: Aug 2017
+  languages: PHP,mySQL,HTML,JavaScript
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3,Invision App
+  concepts: MVC,CMS,In-site Editing
+  status: Live
+  description: "Designed a prototype, got a sign off from client, and then developed a powerful and stunning website for Blue Horn Inc. to showcase their company and gallery.\n"
+  link: http://invis.io/2BD0ER1RY (Design Prototype), http://bluehorn.co.in (Website)
+  added_on: 24/12/2022 4:43pm
+- title: TellUs Android and Web Apps
+  slug: tellus
+  type: Client
+  duration: Sep 2017 - Mar 2018
+  languages: PHP,mySQL,HTML,JavaScript,Java
+  platforms: Mobile,Web,Android
+  frameworks: OctoberCMS,Laravel,RxAndroid
+  tools: Sublime Text 3,Retrofit
+  concepts: functional programming,Reactive FRP,Dependency Injection,RESTful API
+  status: Live
+  description: "Built both the Android And Web app from the ground up. Wrote a RESTful API in the web application for the Android app to consume. The app basically allows restaurants to take feedback from their customers and gives analytics and insights into the restaurant's performance. The app is localized so that local restaurants can easily use it.\n\nBuilt a robust web backend app with multi-user hierarchy so restaurant owners, sales executive, outlet managers, etc. can log in and manage their restaurant feedbacks and view statistics and insights on how they're performing and what their customers think about them. Wrote a pragmatic RESTful API so that I could integrate the Android app (which was also built by me) to this as well."
+  link: http://tellusapp.in
+  added_on: 24/12/2022 5:01pm
+- title: Attrition & Retention Predictor for X0PA AI
+  slug: xopa
+  type: Client
+  duration: Sep 2017
+  languages: JavaScript,HTML,CSS,PHP
+  platforms: Web
+  frameworks: React
+  tools: Sublime Text 3
+  concepts: Components,Data Analysis
+  status: Live
+  description: 'X0PA AI is a Singapore-based data analytics startup which contacted me after their team couldn''t solve a problem for over a week. A colleague from my alma mater recommended me and when I got the task, I solved it for them in under 2 hours. They then asked for a demo for parallel processing of R scripts for their attrition and retention predictor and then later asked to build ReactJS components to improve the same. I was offered a full-time remote employee role but didn''t take it due to disagreements with the contract agreement.'
+  link: https://x0pa.com (Website), 
+  added_on: 24/12/2022 5:09pm
+- title: Floyd Inc. Web App
+  slug: floyd
+  type: Client
+  duration: Nov 2017
+  languages: PHP,mySQL,HTML,JavaScript,CSS
+  platforms: Web
+  frameworks: OctoberCMS,Laravel
+  tools: Sublime Text 3,Invision App
+  concepts: MVC,CMS,In-site Editing
+  status: Live
+  description: 'Developed a powerful, stunning and easy to use website for Floyd Inc., based on the same design as an earlier client project as it''s related to that client and they wanted it that way.'
+  link: http://floydinc.in
+  added_on: 24/12/2022 5:10pm
+- title: TripTantra Web and Mobile Apps
+  slug: triptantra
+  type: Client
+  src: /images/triptantra.png
+  duration: Jul 2018 - Aug 2018
+  languages: PHP,mySQL,HTML,JavaScript,CSS,Kotlin,XML
+  platforms: Web,Mobile,Android
+  frameworks: Laravel,RxAndroid
+  tools: Sublime Text 3
+  concepts: MVC,RESTful API
+  status: 
+  description: "Building an Android app for an established travel booking company. Details will be disclosed post-project completion if bragging/publicity rights are retained by me.\n\nIncremental work over an existing travel app by an established travel booking organization. The work will encompass API creation over their existing platform and link it with the Android app project which is to be built by me."
+  link: https://web.archive.org/web/20190623095434/http://triptantra.com/
+  added_on: 24/12/2022 5:17pm
 opensource:
-- title: '13: Blog Post'
-  slug: 13-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '14: Photo'
-  slug: 14-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '15: Photo'
-  slug: 15-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '16: Project'
-  slug: 16-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '17: Project'
-  slug: 17-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '18: Blog Post'
-  slug: 18-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '19: Project'
-  slug: 19-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
-- title: '20: Blog Post'
-  slug: 20-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '21: Photo'
-  slug: 21-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '22: Photo'
-  slug: 22-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '23: Project'
-  slug: 23-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '24: Project'
-  slug: 24-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '25: Blog Post'
-  slug: 25-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '26: Project'
-  slug: 26-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '27: Project'
-  slug: 27-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '28: Blog Post'
-  slug: 28-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '29: Photo'
-  slug: 29-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '30: Blog Post'
-  slug: 30-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '31: Photo'
-  slug: 31-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '32: Blog Post'
-  slug: 32-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '33: Photo'
-  slug: 33-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '34: Blog Post'
-  slug: 34-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '35: Photo'
-  slug: 35-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '36: Project'
-  slug: 36-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
-- title: '37: Blog Post'
-  slug: 37-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '38: Photo'
-  slug: 38-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '39: Photo'
-  slug: 39-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '40: Project'
-  slug: 40-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '41: Project'
-  slug: 41-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '42: Blog Post'
-  slug: 42-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '43: Project'
-  slug: 43-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '44: Blog Post'
-  slug: 44-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '45: Photo'
-  slug: 45-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '46: Blog Post'
-  slug: 46-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '47: Photo'
-  slug: 47-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '48: Project'
-  slug: 48-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
-- title: '49: Blog Post'
-  slug: 49-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '50: Photo'
-  slug: 50-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '51: Photo'
-  slug: 51-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '52: Project'
-  slug: 52-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '53: Project'
-  slug: 53-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '54: Blog Post'
-  slug: 54-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '55: Project'
-  slug: 55-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '56: Blog Post'
-  slug: 56-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '57: Photo'
-  slug: 57-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '58: Blog Post'
-  slug: 58-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '59: Photo'
-  slug: 59-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '60: Project'
-  slug: 60-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '61: Blog Post'
-  slug: 61-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '62: Project'
-  slug: 62-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '63: Blog Post'
-  slug: 63-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '64: Photo'
-  slug: 64-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '65: Blog Post'
-  slug: 65-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '66: Photo'
-  slug: 66-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '67: Project'
-  slug: 67-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
-- title: '68: Blog Post'
-  slug: 68-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '69: Photo'
-  slug: 69-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '70: Photo'
-  slug: 70-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '71: Project'
-  slug: 71-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '72: Project'
-  slug: 72-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '73: Blog Post'
-  slug: 73-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '74: Project'
-  slug: 74-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '75: Project'
-  slug: 75-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
-- title: '76: Blog Post'
-  slug: 76-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '77: Photo'
-  slug: 77-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '78: Photo'
-  slug: 78-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '79: Project'
-  slug: 79-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '80: Project'
-  slug: 80-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
-- title: '81: Blog Post'
-  slug: 81-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibhLorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis
-    consectetur, vitae lacinia enim auctor. Aenean vitae fermentum odio. Lorem ipsum
-    dolor sit amet, consectetur adipiscing elit. Sed dictum non orci ut dignissim.
-    Fusce fermentum felis aliquam, mattis nibh
-- title: '82: Project'
-  slug: 82-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog5.jpg
-  isThumb: false
-- title: '83: Blog Post'
-  slug: 83-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '84: Photo'
-  slug: 84-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '85: Blog Post'
-  slug: 85-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '86: Photo'
-  slug: 86-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '87: Project'
-  slug: 87-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
-- title: '88: Blog Post'
-  slug: 88-blog-post
-  type: blog
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-- title: '89: Photo'
-  slug: 89-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '90: Photo'
-  slug: 90-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '91: Project'
-  slug: 91-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '92: Blog Post'
-  slug: 92-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Semper ut risus. '
-- title: '93: Photo'
-  slug: 93-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '94: Blog Post'
-  slug: 94-blog-post
-  type: blog
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit. Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis
-    nibh ut, faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus
-    neque. Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida
-    orci, in lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu,
-    eleifend ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus.
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. '
-- title: '95: Photo'
-  slug: 95-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog9.jpg
-  isThumb: true
-- title: '96: Project'
-  slug: 96-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam,
-  src: https://assets.codepen.io/881020/dog10.jpg
-  isThumb: false
-- title: '97: Photo'
-  slug: 97-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel .
-  src: https://assets.codepen.io/881020/dog1.jpg
-  isThumb: true
-- title: '98: Photo'
-  slug: 98-photo
-  type: photo
-  text: Lorem ipsum dolor sit amet, conse
-  src: https://assets.codepen.io/881020/dog2.jpg
-  isThumb: true
-- title: '99: Project'
-  slug: 99-project
-  type: project
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla
-    laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aenean
-    vitae fermentum odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Sed dictum non orci ut dignissim. Fusce fermentum felis aliquam, mattis nibh ut,
-    faucibus leo. Sed lectus libero, volutpat at eros quis, venenatis tempus neque.
-    Nulla vel faucibus orci, nec convallis ligula. Quisque maximus gravida orci, in
-    lacinia mauris pretium nec. Sed et enim bibendum, fermentum tellus eu, eleifend
-    ex. Aliquam lectus magna, sollicitudin vitae placerat ac, semper ut risus. Nunc
-    vestibulum lacus et nulla volutpat auctor.
-  src: https://assets.codepen.io/881020/dog3.jpg
-  isThumb: false
-- title: '100: Project'
-  slug: 100-project
-  type: project
-  text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis
-    fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim
-    auctor. Aenean vitae fermentum odio. Lorem, nec convallis ligula. Quisque maximus '
-  src: https://assets.codepen.io/881020/dog4.jpg
-  isThumb: false
+- title: Php Boilerplate
+  slug: php-boilerplate
+  type: Open Source
+  duration: Sep 2013 - Jun 2014
+  languages: PHP
+  platforms: Web
+  frameworks: Custom CMS
+  tools: Notepad++
+  concepts: OOPS
+  status: Archived
+  description: 'This was a simple to use framework which I build inspired from Mathias Bynens'' html5-boilerplate. It''s minimal with a simple configuration file and tried to abstract several of the PHP methods and plugins so that it worked independent of the server the project was deployed in. Also, there was a quick install similar to Workpress'' famous 5-minute install and the frontend was initially load with the html5-boilerplate project from where developers can build their own theme. I successfully built some projects using this and realized that a project called Laravel had already solved this is an elegant way, and switched to that.'
+  link: https://github.com/SaifurRahmanMohsin/php-boilerplate
+  added_on: 24/12/2022 5:35pm
+- title: Readium Theme
+  slug: readium-theme
+  type: Open Source
+  duration: Feb 2015 - Mar 2015
+  languages: HTML,CSS,JavaScript
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: Theming
+  status: Live
+  description: Readium Theme for OctoberCMS
+  link: https://github.com/SaifurRahmanMohsin/Readium-Theme
+  added_on: 24/12/2022 5:37pm
+- title: Collapse Plugin
+  slug: collapse-plugin
+  type: Open Source
+  duration: Mar 2015
+  languages: PHP,HTML,JavaScript
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Bootstrap
+  concepts: Plugin
+  status: Archived
+  description: Collapse plugin for OctoberCMS
+  link: https://github.com/SaifurRahmanMohsin/Collapse-Plugin (Source code), 
+  added_on: 24/12/2022 7:13pm
+- title: Identity Theme
+  slug: identity-theme
+  type: Open Source
+  duration: Feb 2016 - May 2016
+  languages: HTML,CSS
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: Theming
+  status: Live
+  description: Port of Identity theme from HTML5 UP for OctoberCMS
+  link: https://github.com/SaifurRahmanMohsin/Identity-Theme (Source), https://octobercms.com/theme/mohsin-identity (Live)
+  added_on: 24/12/2022 7:16pm
+- title: Mobile User Plugin
+  slug: mobile-user-plugin
+  type: Open Source
+  duration: Nov 2016
+  languages: PHP
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: RESTful API,Plugin
+  status: Live
+  description: Mobile Front-end user management for October CMS.
+  link: https://github.com/SaifurRahmanMohsin/mobileuser-plugin (Source), https://octobercms.com/plugin/mohsin-user (Live)
+  added_on: 24/12/2022 7:24pm
+- title: Badge Plugin
+  slug: badge-plugin
+  type: Open Source
+  duration: Dec 2016
+  languages: PHP,HTML
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: RESTful API,Plugin
+  status: Live
+  description: Badge plugin for OctoberCMS
+  link: https://github.com/SaifurRahmanMohsin/badge-plugin (Source), https://octobercms.com/plugin/mohsin-badge (OctoberCMS)
+  added_on: 24/12/2022 7:26pm
+- title: REST Plugin
+  slug: rest-plugin
+  type: Open Source
+  duration: Aug 2016 - Dec 2016
+  languages: PHP,HTML
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: RESTful API,Plugin
+  status: Live
+  description: Plugin to generate RESTful controllers on OctoberCMS.
+  link: https://github.com/SaifurRahmanMohsin/rest-plugin (Source), https://octobercms.com/plugin/mohsin-rest (Plugin)
+  added_on: 24/12/2022 7:29pm
+- title: Dropdown Widget
+  slug: dropdown-widget
+  type: Open Source
+  duration: Jan 2017
+  languages: HTML,PHP
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: Widget
+  status: Live
+  description: You can make filters using the filter option in OctoberCMS. But this does not include a dropdown filter. I needed this functionality and so made this widget to help achieve this.
+  link: https://github.com/SaifurRahmanMohsin/Dropdown-Widget (Source)
+  added_on: 24/12/2022 7:32pm
+- title: Mobile Plugin
+  slug: mobile-plugin
+  type: Open Source
+  duration: Nov 2016 - Jan 2017
+  languages: PHP,HTML
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: Plugin
+  status: Live
+  description: This plugin enables you to manage mobile applications. You can add your iOS, Android and other store app listing into the backend. It also lets you monitor individual app installs by adding some code on the client-side (see video or documentation).
+  link: https://github.com/SaifurRahmanMohsin/mobile-plugin (Source), https://www.youtube.com/embed/VJOH1x967ag (Demo), https://octobercms.com/plugin/mohsin-mobile (OctoberCMS)
+  added_on: 24/12/2022 7:34pm
+- title: Magnific Gallery
+  slug: magnific-gallery
+  type: Open Source
+  duration: Jan 2015 - Feb 2017
+  languages: PHP
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: Plugin
+  status: Live
+  description: Gallery plugin for October CMS based on Magnific Popup plugin.
+  link: https://github.com/SaifurRahmanMohsin/magnificgallery-plugin (Source), https://octobercms.com/plugin/mohsin-magnificgallery (Plugin)
+  added_on: 24/12/2022 7:41pm
+- title: Social Plugin
+  slug: social-plugin
+  type: Open Source
+  duration: Apr 2015 - Mar 2017
+  languages: PHP,HTML
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: Plugin
+  status: Live
+  description: This plugin extends the RainLab.User plugin to add social provider-based logins to your web app.
+  link: https://github.com/SaifurRahmanMohsin/social-plugin (Source), https://octobercms.com/plugin/mohsin-social (Plugin)
+  added_on: 24/12/2022 7:44pm
+- title: Carousel Plugin
+  slug: carousel plugin
+  type: Open Source
+  duration: Apr 2015 - Mar 2018
+  languages: PHP,HTML
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Bootstrap
+  concepts: Plugin
+  status: Live
+  description: OctoberCMS Plugin for Twitter Bootstrap Carousels
+  link: https://github.com/SaifurRahmanMohsin/Carousel-Plugin (Source), https://octobercms.com/plugin/mohsin-carousel (Plugin)
+  added_on: 24/12/2022 9:56pm
+- title: Txt Plugin
+  slug: txt-plugin
+  type: Open Source
+  duration: Apr 2015 - Mar 2018
+  languages: PHP,HTML
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Sublime Text 3
+  concepts: Plugin
+  status: Live
+  description: "The world has humans and robots. Humans build things (including robots) and they deserve credit for doing so when they do. Robots, on the other hand, do what they are built to do, and sometimes you want to exclude certain behaviors. This plugin helps you to do both of these with ease.\n\nAs the title says, it allows you to generate humans.txt and robots.txt for your web app. This plugin has had over 6329 documented installs."
+  link: https://github.com/SaifurRahmanMohsin/txt-plugin (Source), https://octobercms.com/plugin/mohsin-txt (Plugin)
+  added_on: 24/12/2022 9:59pm
+- title: Expense Tracker for Google Home
+  slug: expense-tracker
+  type: Open Source
+  duration: Jun 2018
+  languages: PHP,HTML
+  platforms: Web,Voice
+  frameworks: Dialog Flow
+  tools: Sublime Text 3
+  concepts: RESTful API
+  status: Live
+  description: Track Expenses using Google Actions.
+  link: https://www.youtube.com/watch?v=oqunD20LKCo (Demo), https://github.com/mohsin/Expense-Tracker (Source)
+  added_on: 25/12/2022 12:20am
+others:
+- title: Hash Decryptor
+  slug: hash-decryptor
+  type: Others
+  duration: Apr 2013
+  languages: PHP,mySQL,HTML,Java
+  platforms: Desktop
+  frameworks: 
+  tools: Notepad++
+  concepts: RMI
+  status: Archived
+  description: An RMI based Java program that can find the original plain text code of a given hash string by retrieving the values from a mySQL DB.
+  link: 
+  added_on: 24/12/2022 1:20pm
+- title: Car Pooling App using Sencha Framework
+  slug: car-pooling-app
+  type: Others
+  duration: Jan 2012
+  languages: PHP
+  platforms: Web
+  frameworks: Sencha Touch
+  tools: Notepad++
+  concepts: MVC
+  status: Archived
+  description: A web-based mobile-friendly version of Uber made in a time long before we even came to know of Uber.
+  link: 
+  added_on: 24/12/2022 1:40pm
+- title: Hiveyo
+  slug: hiveyo
+  type: Others
+  duration: May 2013
+  languages: PHP,mySQL,HTML,JavaScript
+  platforms: Web
+  frameworks: Custom CMS
+  tools: Notepad++
+  concepts: 
+  status: Expired
+  description: I worked on the development of their web application on a freelance basis. It is a contact manager and I built this on top of the PHP-boilerplate project which I had made.
+  link: http://web.archive.org/web/20140517105707/http://hiveyo.com
+  added_on: 24/12/2022 2:21pm
+- title: Nyquist
+  slug: nyquist
+  type: Others
+  duration: Jan 2014
+  languages: Java,mySQL
+  platforms: Desktop
+  frameworks: Java Swing
+  tools: Notepad++
+  concepts: 
+  status: Archived
+  description: "Nyquist (or) MKB Music box (named after the initials of the team members) is a media organiser which can identify music using the audio signature like Shazam does and organises it into folders based on the user preference. The project was originally built for Softkriti, an IIT-K software contest and Shazam being a closed-source software, I had to build the technology from scratch. Internally, it used something called fast fourier transform to calculate the audio signature and store a hash of it inside a database. We had to do this on several songs and we added ID3 tags for the song as well. Later using the client app, a folder containing songs is selected the system automatically figures out which song is it by calculating and comparing this signature with the database. The software worked perfectly and was super fast since we ran the global DB locally but we did not win the contest and came in 3rd (apparently). The winners were both IIT-K students for some sample projects of some platforms which were popular back then. The project was dropped since.\n"
+  link: 
+  added_on: 24/12/2022 2:25pm
+- title: Portable Data Protection System
+  slug: pdps
+  type: Others
+  duration: Apr 2014
+  languages: C#
+  platforms: Desktop,Windows
+  frameworks: .NET
+  tools: Visual Studio
+  concepts: MVC,JIT
+  status: Archived
+  description: "Portable Data Protection System (PDPS) is a new concept of security systems that help to protect computers from malware attacks. Unlike conventional anti – virus systems that scan entire systems periodically against its malware signature database and cause the systems to slow down and hang up (due to over usage of processor cycles), this system uses just- in-time detection to prevent malware attacks right whenever a new process or thread begins. It uses ACLs instead of a database of malware definition files like most AVs do to ensure only the processes that the user wants to run are allowed to run. Everything else is considered as malware. The end product was put into a read-only pen drive which runs the autorun script requesting user whether they would like to enable PDPS protection. Since it's read-only, it's not possible for the system itself to get infected making this a versatile solution to fight malware.\n\nDeveloped a portable, robust yet powerful real-time anti-virus system which prevented malware before they got processor execution cycles, thereby preventing the execution of malicious code it may contain. The system was programmed to hook into the operating system's loader code and ensure that all requests (system calls) are filtered thro' it, very much like a firewall--it even prompted the user whether to allow execution of any given program leading to a more refined control over what was allowed to run in the device. Since most malware tend to get into the system in the background attached to a legitimate file or trigger due to a user action the system could alert the user to make the right decisions. A moderately intelligent user would be able to judge that said process was never initiated by the user and so all malware infections would be intercepted and suppressed. This system does not require any definition files nor updates and could even by run on thin clients making it very less resource-hungry (unlike most conventional AVs out there in the market) and at the same time enforce strong security to the user's system.\n\nMy team wrote this program as an autorun program to a pen drive which came with a read-only switch. Therefore, the system itself was protected from being infected and was allowed to do it's good work. A more commercial permanently written portable pen drive kind of anti-virus too can be developed based on this concept. The project was developed as an application level program (using C#.NET form-based application) rather than as a kernel level driver (which would be more stronger as it even prevented bootkits) and was successfully presented as a final year project.\n\nI later submitted the underlying concept as a paper which got approved and published in a journal in Special Issue-1, October 2014 with ISSN 2321-9653."
+  link: https://www.ijraset.com/fileserve.php?FID=1003
+  added_on: 24/12/2022 2:30pm
+- title: 'Roderick''s Blog'
+  slug: roderick-blog
+  type: Others
+  duration: Feb 2015
+  languages: HTML,JavaScript,CSS
+  platforms: Web
+  frameworks: OctoberCMS
+  tools: Atom
+  concepts: CMS
+  status: Archived
+  description: Built a beautiful blog for a good friend of mine.
+  link: http://roderick.in
+  added_on: 24/12/2022 2:58pm
+- title: Help Chennai Android App
+  slug: help-chennai
+  type: Others
+  duration: Nov 2015
+  languages: Java
+  platforms: Mobile,Android
+  frameworks: 
+  tools: Sublime Text 3
+  concepts: 
+  status: Archived
+  description: "Considering the lack of internet and network in Chennai, I believe this app has little role to play so I’ve put basic information lists in case those in...\nI built this app in a very short time just out of self-interest. No advertisements or money involved."
+  link: https://play.google.com/store/apps/details?id=com.tempestronics.helpchennai
+  added_on: 24/12/2022 4:02pm
+- title: TapeMit Website
+  slug: tapemit-web
+  type: Others
+  duration: Aug 2016
+  languages: PHP,mySQL,HTML,JavaScript,CSS
+  platforms: Web
+  frameworks: Custom CMS
+  tools: Sublime Text 3
+  concepts: MVC
+  status: Archived
+  description: Mentored a junior friend and collaborated to build a website for the Department of Production Technology and Mechanical Engineering at MIT, Chennai.
+  link: http://tapemit.com
+  added_on: 24/12/2022 4:12pm
