@@ -9,9 +9,6 @@ export default defineNuxtConfig({
         ]
       },
     },
-    nitro: {
-        preset: 'netlify-edge'
-    },
     modules: [
       '@nuxtjs/tailwindcss',
       '@nuxt/image-edge',
