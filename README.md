@@ -19,6 +19,12 @@ Start the development server on http://localhost:3000
 pnpm run dev
 ```
 
+Alternatively, it can be built and run using:
+```zsh
+pnpm generate
+pnpx http-server .output/public
+```
+
 ## Production
 
 Build the application for production:

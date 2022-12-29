@@ -210,7 +210,7 @@ client:
 - title: TripTantra Web and Mobile Apps
   slug: triptantra
   type: Client
-  src: /images/triptantra.png
+  src: /images/triptantra.webp
   duration: Jul 2018 - Aug 2018
   languages: PHP,mySQL,HTML,JavaScript,CSS,Kotlin,XML
   platforms: Web,Mobile,Android
