@@ -92,9 +92,9 @@ if (process.client) {
           <h3 class="text-lg text-white dark:text-slate-700 uppercase">{{ project.title }}</h3>
           <span class="text-slate-100 dark:text-slate-900 opacity-70 text-xs">{{ project.duration }}</span>
         </div>
-        <nuxt-img format="webp" @load="load" v-if="project.isThumb" loading="lazy" sizes="xs:512 sm:100" class="w-full" :src="project.src" />
+        <nuxt-img format="webp" @load="load" v-if="project.isThumb" loading="lazy" sizes="xs:512 sm:100" width="512" height="512" class="w-full" :src="project.src" />
         <div class="p-2.5 pb-1">
-          <nuxt-img format="webp" class="w-full sm:w-[100px] py-1 px-8 sm:p-0 mt-2 mr-2.5 ml-0 float-none sm:float-left" @load="load" v-if="project.src && !project.isThumb" sizes="xs:512 sm:100" :src="project.src" />
+          <nuxt-img format="webp" class="w-full sm:w-[100px] py-1 px-8 sm:p-0 mt-2 mr-2.5 ml-0 float-none sm:float-left" width="512" height="512" @load="load" v-if="project.src && !project.isThumb" sizes="xs:512 sm:100" :src="project.src" />
           <p class="pb-2.5">{{ project.description }}</p>
         </div>
       </div>
