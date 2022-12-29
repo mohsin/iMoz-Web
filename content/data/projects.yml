@@ -1,4 +1,60 @@
 client:
+- title: ViewRetreats Web App
+  slug: viewretreats
+  type: Client
+  src: /images/vr.webp
+  duration: Dec 2020 - Dec 2022
+  languages: PHP,mySQL,HTML,JavaScript,CSS
+  platforms: Web
+  frameworks: OctoberCMS,Laravel
+  tools: Sublime Text 3
+  concepts: MVC,RESTful API
+  status: Live
+  description: "Built several components and features for ViewRetreats such as ZohoCRM integration so that they can manage their data, checkout, Expedia integration and several other modules."
+  link: https://www.viewretreats.com
+  added_on: 29/12/2022 4:00pm
+- title: Designer Thamu’s Portfolio
+  slug: thamu
+  type: Client
+  src: /images/thamu.webp
+  duration: Aug 2022 - Dec 2022
+  languages: javascript, nodejs, vuejs
+  platforms: Web, Mobile Web
+  frameworks: Nuxt 3, Vue
+  tools: VSCode
+  concepts: Components, QR Codes, UPI
+  status: Live
+  description: "Developed a portfolio website using the shared designs for mobile, tablet and desktop screen sizes on Figma. Used that to build a pixel-perfect, Nuxt.js based client-side rendered (CSR) web application that deploys to Netlify from a headless git-backed CMS. So content can be added/updated using an administrative section without having a dedicated hosting for the app, making it very versatile to manage a portfolio without the additional overhead of having to purchase hosting that has a recurring annual charge. Developed a portfolio website using the shared designs for mobile, tablet and desktop screen sizes on Figma. Used that to build a pixel-perfect, Nuxt.js based client-side rendered (CSR) web application that deploys to Netlify from a headless git-backed CMS. So content can be added/updated using an administrative section without having a dedicated hosting for the app, making it very versatile to manage a portfolio without the additional overhead of having to purchase hosting that has a recurring annual charge. Additionally, added a Planner page with a dynamically generated QR code so people could purchase the planner."
+  link: https://thamu.in
+  added_on: 29/12/2022 11:40pm
+- title: Foodieverse Android App
+  slug: foodieverse
+  type: Client
+  src: /images/foodieverse.webp
+  duration: Aug 2022 - Oct 2022
+  languages: kotlin
+  platforms: Android, Mobile
+  frameworks: Jetpack Compose, MLKit, Camera 2, Colocation
+  tools: Android Studio
+  concepts: Dependency Injection,RESTful API, QR Codes
+  status: Live
+  description: "Built incremental features to the Foodiverse Android app, specifically a QR scanner that enables quick tagging of food items for their AirKitchens app."
+  link: https://www.foodieverseindia.com
+  added_on: 29/12/2022 11:30pm
+- title: APIWiz Web App
+  slug: apiwiz
+  type: Client
+  src: /images/apiwiz.webp
+  duration: Mar 2022 - Jul 2022
+  languages: javascript, vuejs
+  platforms: Web
+  frameworks: Vue
+  tools: VSCode
+  concepts: Components
+  status: Live
+  description: "Built the API catalog module for Itorix web app that enables their customers to create APIs and also run them directly using a runner."
+  link: https://apiwiz.io
+  added_on: 29/12/2022 11:53pm
 - title: TripTantra Web and Mobile Apps
   slug: triptantra
   type: Client
@@ -9,13 +65,14 @@ client:
   frameworks: Laravel,RxAndroid
   tools: Sublime Text 3
   concepts: MVC,RESTful API
-  status: 
+  status: Expired
   description: "Building an Android app for an established travel booking company. Details will be disclosed post-project completion if bragging/publicity rights are retained by me.\n\nIncremental work over an existing travel app by an established travel booking organization. The work will encompass API creation over their existing platform and link it with the Android app project which is to be built by me."
   link: https://web.archive.org/web/20190623095434/http://triptantra.com/
   added_on: 24/12/2022 5:17pm
 - title: TellUs Android and Web Apps
   slug: tellus
   type: Client
+  src: /images/tellus.webp
   duration: Sep 2017 - Mar 2018
   languages: PHP,mySQL,HTML,JavaScript,Java
   platforms: Mobile,Web,Android
@@ -25,10 +82,12 @@ client:
   status: Live
   description: "Built both the Android And Web app from the ground up. Wrote a RESTful API in the web application for the Android app to consume. The app basically allows restaurants to take feedback from their customers and gives analytics and insights into the restaurant's performance. The app is localized so that local restaurants can easily use it.\n\nBuilt a robust web backend app with multi-user hierarchy so restaurant owners, sales executive, outlet managers, etc. can log in and manage their restaurant feedbacks and view statistics and insights on how they're performing and what their customers think about them. Wrote a pragmatic RESTful API so that I could integrate the Android app (which was also built by me) to this as well."
   link: http://tellusapp.in
+  google: dev.tellusapp@gmail.com
   added_on: 24/12/2022 5:01pm
 - title: Floyd Inc. Web App
   slug: floyd
   type: Client
+  src: /images/floyd.webp
   duration: Nov 2017
   languages: PHP,mySQL,HTML,JavaScript,CSS
   platforms: Web
@@ -42,6 +101,7 @@ client:
 - title: Attrition & Retention Predictor for X0PA AI
   slug: xopa
   type: Client
+  src: /images/x0pa.webp
   duration: Sep 2017
   languages: JavaScript,HTML,CSS,PHP
   platforms: Web
@@ -55,6 +115,7 @@ client:
 - title: BlueHorn Web App
   slug: bluehorn
   type: Client
+  src: /images/bluehorn.webp
   duration: Aug 2017
   languages: PHP,mySQL,HTML,JavaScript
   platforms: Web
@@ -68,6 +129,7 @@ client:
 - title: Swades Web App
   slug: swades
   type: Client
+  src: /images/uos.webp
   duration: Jul 2017
   languages: HTML,CSS,PHP,mySQL,JavaScript
   platforms: Web
@@ -77,6 +139,7 @@ client:
   status: Archived
   description: 'Worked on a web app that apparently was the scholarship program to a platform called UpGrad run by Ronnie Screwvala. Got the project through a group called Indiez and left it due to delayed payments. The group also gave a reduced payment to what they agreed to make even though I made the milestone perfectly, delivered on time, and the client gave a full rating for the work. Their excuse was that "I wasn''t communicating often" even though I replied to each of their questions immediately. So I left and dropped the project. This is the same group whom I did the Yahavi project with (see timeline) and they failed to make timely payments then too. The link contains the partial version I developed with placeholders.'
   link: http://web.archive.org/web/20170808072740/https://swades-staging.herokuapp.com
+  google: dev.swades@gmail.com
   added_on: 24/12/2022 4:41pm
 - title: ApplyNow Android App
   slug: applynow
@@ -94,6 +157,7 @@ client:
 - title: FinanceNow Android App
   slug: financenow
   type: Client
+  src: /images/financenow.webp
   duration: Jun 2017
   languages: Java
   platforms: Mobile,Android
@@ -107,6 +171,7 @@ client:
 - title: Yahavi Android App
   slug: yahavi
   type: Client
+  src: /images/yahavi.webp
   duration: March 9 2017 - April 2017
   languages: Java
   platforms: Mobile,Android
@@ -116,6 +181,7 @@ client:
   status: Archived
   description: 'Built the native Android app as per the designs provided by the Indiez team. This project got stalled after a few milestones due to some financial constraints from the client''s end. All payments were delayed and their excuse was that this was a "legacy client".'
   link: https://www.yahavi.com
+  google: dev.yahavi@gmail.com
   added_on: 24/12/2022 4:22pm
 - title: Cakes on Wheels
   slug: cow-web
@@ -133,6 +199,7 @@ client:
 - title: Highway Delite Web and Android Apps
   slug: highway-delite
   type: Client
+  src: /images/hd.webp
   duration: Oct 2015 - Nov 2015
   languages: PHP,mySQL,HTML,JavaScript,Java,sqlite,CSS
   platforms: Web,Mobile,Google Maps
@@ -140,12 +207,13 @@ client:
   tools: Sublime Text 3
   concepts: MVC,RESTful API,CMS,Dependency Injection,functional programming,Reactive FRP
   status: Live
-  description: "explore highways like never before\n\nI built the frontend (front website) and backend (visible to logged in users) and also exposed a REST-based API so that the Android app can communicate with this DB. Some features include user management section, permission architecture, short URL management section, a custom map feature by which the authorized users can easily manage the establishments from map itself.\n\nhighway delite wants to be your one point app for your road trip / highway journey/ bike rides / weekend getaway/ tour and travel through roads on Indian highways.\nI built the entire app for a client."
+  description: "\"explore highways like never before\".\n\nI built the frontend (front website) and backend (visible to logged in users) and also exposed a REST-based API so that the Android app can communicate with this DB. Some features include user management section, permission architecture, short URL management section, a custom map feature by which the authorized users can easily manage the establishments from map itself.\n\nhighway delite wants to be your one point app for your road trip / highway journey/ bike rides / weekend getaway/ tour and travel through roads on Indian highways.\nI built the entire app for a client."
   link: https://highwaydelite.com (Website), https://play.google.com/store/apps/details?id=com.highwaydelite.highwaydelite (Play Store)
   added_on: 24/12/2022 3:45pm
 - title: Sky Properties
   slug: sky-properties
   type: Client
+  src: /images/sky-properties.webp
   duration: Aug 2015
   languages: PHP,mySQL,HTML,JavaScript,CSS
   platforms: Web
@@ -172,6 +240,7 @@ client:
 - title: TheHouseMonk Android App
   slug: thm
   type: Client
+  src: /images/thm.webp
   duration: Apr 2015
   languages: Java,sqlite
   platforms: Android,Mobile
@@ -185,6 +254,7 @@ client:
 - title: World of Urology
   slug: wou
   type: Client
+  src: /images/wou.webp
   duration: Dec 2014
   languages: PHP,mySQL,HTML,JavaScript
   platforms: Web
@@ -198,6 +268,7 @@ client:
 - title: MediScan
   slug: mediscan
   type: Client
+  src: /images/mediscan.webp
   duration: Dec 2014
   languages: Java,PHP,mySQL,JavaScript,HTML,CSS
   platforms: Android,Mobile,Web
@@ -211,6 +282,7 @@ client:
 - title: SK Hollow Blocks
   slug: sk-hollow-blocks
   type: Client
+  src: /images/sk-hollow-blocks.webp
   duration: Sep 2014
   languages: HTML,CSS,JavaScript
   platforms: Web
@@ -219,8 +291,22 @@ client:
   concepts: 
   status: Expired
   description: Build a beautiful website for my uncle for his business (called "SK Hollow Blocks") of selling construction supplies.
-  link: https://web.archive.org/web/20150611175451/http://skhollowblocks.com
+  link: https://web.archive.org/web/20150611175451/http://skhollowblocks.com, https://goo.gl/maps/bic7VAfpJeQpC2ub7 (Google Maps)
   added_on: 24/12/2022 2:45pm
+- title: Hiveyo
+  slug: hiveyo
+  type: Others
+  src: /images/hiveyo.webp
+  duration: May 2013
+  languages: PHP,mySQL,HTML,JavaScript
+  platforms: Web
+  frameworks: Custom CMS
+  tools: Notepad++
+  concepts: 
+  status: Expired
+  description: I worked on the development of their web application on a freelance basis. It is a contact manager and I built this on top of the PHP-boilerplate project which I had made.
+  link: http://web.archive.org/web/20140517105707/http://hiveyo.com
+  added_on: 24/12/2022 2:21pm
 opensource:
 - title: Expense Tracker for Google Home
   slug: expense-tracker
@@ -470,19 +556,6 @@ others:
   description: "Nyquist (or) MKB Music box (named after the initials of the team members) is a media organiser which can identify music using the audio signature like Shazam does and organises it into folders based on the user preference. The project was originally built for Softkriti, an IIT-K software contest and Shazam being a closed-source software, I had to build the technology from scratch. Internally, it used something called fast fourier transform to calculate the audio signature and store a hash of it inside a database. We had to do this on several songs and we added ID3 tags for the song as well. Later using the client app, a folder containing songs is selected the system automatically figures out which song is it by calculating and comparing this signature with the database. The software worked perfectly and was super fast since we ran the global DB locally but we did not win the contest and came in 3rd (apparently). The winners were both IIT-K students for some sample projects of some platforms which were popular back then. The project was dropped since.\n"
   link: 
   added_on: 24/12/2022 2:25pm
-- title: Hiveyo
-  slug: hiveyo
-  type: Others
-  duration: May 2013
-  languages: PHP,mySQL,HTML,JavaScript
-  platforms: Web
-  frameworks: Custom CMS
-  tools: Notepad++
-  concepts: 
-  status: Expired
-  description: I worked on the development of their web application on a freelance basis. It is a contact manager and I built this on top of the PHP-boilerplate project which I had made.
-  link: http://web.archive.org/web/20140517105707/http://hiveyo.com
-  added_on: 24/12/2022 2:21pm
 - title: Hash Decryptor
   slug: hash-decryptor
   type: Others
