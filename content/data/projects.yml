@@ -55,6 +55,20 @@ client:
   description: "Built the API catalog module for Itorix web app that enables their customers to create APIs and also run them directly using a runner."
   link: https://apiwiz.io
   added_on: 29/12/2022 11:53pm
+- title: uPar Golf App
+  slug: upar
+  type: Client
+  src: /images/upar.webp
+  duration: Oct 2019 - Aug 2020
+  languages: Android,Kotlin
+  platforms: Mobile,Android
+  frameworks: RxAndroid
+  tools: Sublime Text 3
+  concepts: Bluetooth
+  status: Live
+  description: "Made a fun app that gamifies golf to a contest between people. The app has 3 modes: Band mode which allows players to choose the target band, and a call the shot/virtuoso mode where they can set their own target or the app suggests a target respectively that’s more suitable for professional golfers."
+  link: https://www.teetimeventures.com (Website)
+  added_on: 30/12/2022 4:01pm
 - title: TripTantra Web and Mobile Apps
   slug: triptantra
   type: Client
@@ -186,6 +200,7 @@ client:
 - title: Cakes on Wheels
   slug: cow-web
   type: Client
+  src: /images/cow.webp
   duration: Feb 2017
   languages: PHP,mySQL,HTML,JavaScript,CSS
   platforms: Web
@@ -194,7 +209,8 @@ client:
   concepts: MVC,Payment Gateway
   status: Archived
   description: 'Built a custom eCommerce platform for a company named CakesOnWheels that''s a business trademark of eMandate Management Services located in Bangalore. The web app enables users to purchase a wide variety of cakes as well as addons such as roses, chocolate boxes, etc. I built a powerful backend that allows the client to add and manage the cakes and addons on his own. Sms and payment gateway integration was done as well.'
-  link: https://cakesonwheels.net
+  link: https://cakesonwheels.net, https://web.archive.org/web/20180110120734/https://cakesonwheels.net/ (Archive)
+  google: dev.cakesonwheels@gmail.com
   added_on: 24/12/2022 4:14pm
 - title: Highway Delite Web and Android Apps
   slug: highway-delite
