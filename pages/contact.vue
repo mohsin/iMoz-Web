@@ -3,6 +3,7 @@ import { useForm } from 'vee-validate'
 import * as yup from 'yup'
 
 const isSubmitted = ref(false)
+const contactForm = ref(null)
 
 const schema = yup.object({
   email: yup.string().email().required(),
@@ -17,20 +18,30 @@ const { useFieldModel, errors } = useForm({
 
 const [name, referer, email, message] = useFieldModel(['name', 'referer', 'email', 'message'])
 
-const onSubmit = () => {
+const hasErrors = computed(() => Object.keys(errors.value).length !== 0)
+const onSubmit = (event) => {
+  event.preventDefault()
+  const contactForm = event.target;
+
   isSubmitted.value = true
-  if(Object.keys(errors.value).length !== 0) {
+  if(hasErrors.value) {
     return
   }
 
-  const form = [
-    { 'name': name.value },
-    ...(referer.value ? [{ 'referer': referer.value }] : []),
-    { 'email': email.value },
-    { 'message': message.value }
-  ]
-  document.forms['contact'].submit()
-  console.log(form)
+  fetch('/', {
+    body: new FormData(event.target),
+    method: 'POST',
+  }).then(() => {
+    contactForm.reset()
+  }).catch((error) => {
+    console.log(`Failed: ${error}`)
+  }).finally(() => setTimeout(() => {
+    name.value = referer.value = email.value = message.value = ''
+    isSubmitted.value = false
+  }, 5000))
+}
+if (process.client) {
+  document.querySelector('form')?.addEventListener('submit', onSubmit)
 }
 </script>
 
@@ -39,7 +50,8 @@ const onSubmit = () => {
       <Title>iMoz - Contact</Title>
     </Head>
     <section class="flex justify-center my-4">
-      <form netlify name="contact" method="POST" class="w-full max-w-lg">
+      <form netlify ref="contactForm" name="contact" method="POST" class="w-full max-w-lg" enctype="multipart/form-data">
+        <input type="hidden" name="form-name" value="contact" />
         <div class="py-1 sm:py-4 mb-8 text-center leading-none">
           <h1 class="text-2xl my-1 sm:my-4">Have a requirement? Get in touch!</h1>
           <span class="text-sm leading-2">(Due to the volume of requests, I'm only considering projects that have a solid PRD<sup class="text-red-700">*</sup> with a budget of $3000 and above or pays at-least $50/hour).</span>
@@ -87,15 +99,18 @@ const onSubmit = () => {
           </div>
         </div>
         <div class="sm:flex justify-center sm:justify-between items-center mb-2 sm:mb-6">
-          <input class="w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-200 m-0  focus:text-gray-700 focus:bg-white focus:border-gray-700 focus:outline-none" type="file" />
+          <input name="file" class="w-full px-2 py-1 text-sm font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-200 m-0  focus:text-gray-700 focus:bg-white focus:border-gray-700 focus:outline-none" type="file" />
           <div class="py-3 sm:py-0 w-full sm:w-1/3 text-center sm:text-end">
-            <button @click="onSubmit" class="bg-gray-700 text-white py-1.5 px-4" type="button">
+            <button class="bg-gray-700 text-white py-1.5 px-4" type="submit">
               Submit
             </button>
           </div>
         </div>
         <p class="text-gray-600 text-xs italic mt-4">
           <sup class="text-red-700">*</sup> Projects with proper UI designs (preferably on Figma) and detailed descriptions. Sample briefs are <a href="https://tinyurl.com/prdsamples" target="_new" class="text-black border-b border-black">at this link</a>. Kindly attach it to this form or include a link in the message.
+        </p>
+        <p v-if="isSubmitted && !hasErrors" class="mt-8 text-center text-base text-red-700">
+          The form has been submitted.
         </p>
       </form>
     </section>
