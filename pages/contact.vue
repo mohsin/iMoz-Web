@@ -50,8 +50,9 @@ if (process.client) {
       <Title>iMoz - Contact</Title>
     </Head>
     <section class="flex justify-center my-4">
-      <form netlify ref="contactForm" name="contact" method="POST" class="w-full max-w-lg" enctype="multipart/form-data">
+      <form netlify ref="contactForm" name="contact" method="POST" class="w-full max-w-lg" enctype="multipart/form-data" netlify-honeypot="extra-field">
         <input type="hidden" name="form-name" value="contact" />
+        <input class="hidden" name="extra-field" />
         <div class="py-1 sm:py-4 mb-8 text-center leading-none">
           <h1 class="text-2xl my-1 sm:my-4">Have a requirement? Get in touch!</h1>
           <span class="text-sm leading-2">(Due to the volume of requests, I'm only considering projects that have a solid PRD<sup class="text-red-700">*</sup> with a budget of $3000 and above or pays at-least $50/hour).</span>
