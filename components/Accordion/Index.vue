@@ -26,7 +26,7 @@ const truncate = (string: string) => {
 </script>
 
 <template>
-  <div @click="entry.isClosed = !entry.isClosed" v-for="entry in data" v-bind:key="entry.company" class="block p-6 mx-2 rounded-lg shadow-lg bg-white dark:bg-slate-700 w-full mt-6">
+  <div @click="entry.isClosed = !entry.isClosed" v-for="entry in data" v-bind:key="entry.company" class="block p-6 mx-2 shadow-lg bg-white dark:bg-slate-700 w-full mt-6">
     <div class="flex justify-between">
       <div class="text-left w-[95%]">
         <h5 id="company" class="text-gray-900 dark:text-white text-xl leading-tight font-medium">
