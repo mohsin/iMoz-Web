@@ -22,7 +22,8 @@ export default defineNuxtConfig({
       '@nuxtjs/tailwindcss',
       '@nuxt/image-edge',
       '@nuxt/content',
-      'nuxt-gravatar'
+      'nuxt-gravatar',
+      'nuxt-icon'
     ],
     image: {
       provider: 'netlify',

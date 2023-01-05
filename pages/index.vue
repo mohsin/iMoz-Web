@@ -1,10 +1,10 @@
 <template>
-    <article class="m-2 lg:m-6 p-2 lg:p-8">
+    <article class="m-2 lg:m-3 p-2 lg:p-8">
         <Gravatar :class="{ 'animate-fadein' : shouldAnimate }" class="h-32 w-32 rounded-full" :email="email" :size="512" /><br>
         <header class="mb-4">
-            <h1  :class="{ 'animate-fadein' : shouldAnimate }" class="text-4xl">Hi <span class="hidden dark:inline">👋🏻</span><span class="inline dark:hidden">👋🏽</span></h1>
+            <h1 :class="{ 'animate-fadein' : shouldAnimate }" class="text-4xl">Hi <span class="hidden dark:inline">👋🏻</span><span class="inline dark:hidden">👋🏽</span></h1>
         </header>
-        <div class="pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke">
+        <div class="pt-0 text-justify text-lg text-black dark:text-whitesmoke">
             <ContentDoc id="index-content" />
         </div>
     </article>
