@@ -18,6 +18,11 @@ export default defineNuxtConfig({
         ]
       },
     },
+    nitro: {
+      prerender: {
+        routes: ['/sitemap.xml']
+      }
+    },
     modules: [
       '@nuxtjs/tailwindcss',
       '@nuxt/image-edge',

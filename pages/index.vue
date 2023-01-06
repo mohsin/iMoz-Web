@@ -39,3 +39,7 @@ watch(isDark, animate);
     margin-bottom: 30px;
 }
 </style>
+
+<script lang="ts">
+export {} // Fix for Vetur check: Cannot redeclare blocked scoped variable.
+</script>
