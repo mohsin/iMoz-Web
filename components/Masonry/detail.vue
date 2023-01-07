@@ -24,7 +24,7 @@ const item = props.data
       <template #not-found>
         <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.src" />
         <div class="p-2.5 pb-1">
-          <img class="w-1/2 mt-0 mr-2.5 mb-2.5 ml-0 float-left" v-if="item.src && !item.isThumb" :src="item.src">
+          <img class="w-1/2 sm:w-1/3 sm:px-12 mt-0 mr-2.5 mb-2.5 ml-0 float-left" v-if="item.src && !item.isThumb" :src="item.src">
           <p class="pb-2.5">{{ item.description }}</p>
         </div>
       </template>
