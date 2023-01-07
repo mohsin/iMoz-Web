@@ -16,6 +16,7 @@
     "nuxt-icon": "^0.1.8",
     "sitemap": "^7.1.1",
     "vee-validate": "^4.7.3",
+    "vue-gtag-next": "^1.14.0",
     "yup": "^0.32.11"
   }
 }

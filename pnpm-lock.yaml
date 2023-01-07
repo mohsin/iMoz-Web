@@ -9,6 +9,7 @@ specifiers:
   nuxt-icon: ^0.1.8
   sitemap: ^7.1.1
   vee-validate: ^4.7.3
+  vue-gtag-next: ^1.14.0
   yup: ^0.32.11
 
 dependencies:
@@ -20,6 +21,7 @@ dependencies:
   nuxt-icon: 0.1.8_rollup@2.79.1+vue@3.2.45
   sitemap: 7.1.1
   vee-validate: 4.7.3_vue@3.2.45
+  vue-gtag-next: 1.14.0_vue@3.2.45
   yup: 0.32.11
 
 packages:
@@ -6772,6 +6774,14 @@ packages:
 
   /vue-devtools-stub/0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
+    dev: false
+
+  /vue-gtag-next/1.14.0_vue@3.2.45:
+    resolution: {integrity: sha512-iJl+cOG2GU5NuxqzSSIpt03WVOvZqyKB9TOy7d55KiuvRklcnb2nlqxW5B/a3/sbIt7fla+XEkRyMCcoz0zAHw==}
+    peerDependencies:
+      vue: ^3.0.0-rc.11
+    dependencies:
+      vue: 3.2.45
     dev: false
 
   /vue-router/4.1.6_vue@3.2.45:

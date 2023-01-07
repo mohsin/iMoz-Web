@@ -42,7 +42,8 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
       public: {
-        emailId: ''
+        emailId: '',
+        gtagAnalyticsId: ''
       }
     }
 })
