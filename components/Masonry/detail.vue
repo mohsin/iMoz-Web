@@ -2,6 +2,7 @@
 import { PropType } from 'vue'
 import type { MasonryItem } from './types'
 
+const { getRandomColor } = useColor()
 const props = defineProps({
   data: {
     type: Object as PropType<MasonryItem>,
@@ -20,14 +21,17 @@ const item = props.data
         <span></span>
       </h3>
     </div>
-    <ContentDoc class="p-3" :path="'/data/projects/' + item.slug">
-      <template #not-found>
-        <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.src" />
-        <div class="p-2.5 pb-1">
-          <img class="w-1/2 sm:w-1/3 sm:px-12 mt-0 mr-2.5 mb-2.5 ml-0 float-left" v-if="item.src && !item.isThumb" :src="item.src">
-          <p class="pb-2.5">{{ item.description }}</p>
-        </div>
-      </template>
-    </ContentDoc>
+    <div>
+      <div class="px-4 py-2"><span class="px-2 py-1" :class="['dark:text-[' + getRandomColor(false) + ']','text-[' + getRandomColor(true) + ']']">Test<br></span></div>
+      <ContentDoc class="p-3" :path="'/data/projects/' + item.slug">
+        <template #not-found>
+          <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.src" />
+          <div class="p-2.5 pb-1">
+            <img class="w-1/2 sm:w-1/3 sm:px-12 mt-0 mr-2.5 mb-2.5 ml-0 float-left" v-if="item.src && !item.isThumb" :src="item.src">
+            <p class="pb-2.5">{{ item.description }}</p>
+          </div>
+        </template>
+      </ContentDoc>
+    </div>
   </div>
 </template>

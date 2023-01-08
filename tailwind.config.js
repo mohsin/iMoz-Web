@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import { useColor } from './composables/useColor'
+
+const safelistedColors = [...useColor().light, ...useColor().dark].map(c => 'text-[' + c + ']')
+
 module.exports = {
   darkMode: 'class',
   content: [
@@ -13,6 +17,7 @@ module.exports = {
     "./*.{vue,js,ts}",
     "./nuxt.config.{js,ts}",
   ],
+  safelist: safelistedColors,
   theme: {
     extend: {
       colors: {
