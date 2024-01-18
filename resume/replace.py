@@ -45,19 +45,19 @@ def entry_volunteering(organization, role, duration, location, details):
              r"\end{tightemize}" + "\n" \
              r"\sectionsep"
 
-def entry_education(institution, degree, duration, location, activities, description=None):
+def entry_education(institution, degree, duration, location, activities, summary=None):
     if isinstance(degree, list):
         degree_info = fr"\descript{{| {degree[0]}}}" + "\n" + \
                       "\n".join(fr"\descript{{{item}}}" for item in degree[1:])
     else:
         degree_info = fr"\descript{{| {degree}}}"
 
-    if isinstance(description, list):
-        description_info = "\n".join(r"\item {}".format(item) for item in description)
-    elif(description == None):
-        description_info = ""
+    if isinstance(summary, list):
+        summary_info = "\n".join(r"\item {}".format(item) for item in summary)
+    elif(summary == None):
+        summary_info = ""
     else:
-        description_info = fr"\item{{| {description}}}"
+        summary_info = fr"\item{{| {summary}}}"
 
     return (
         r"\sectionsep" + "\n" \
@@ -66,7 +66,7 @@ def entry_education(institution, degree, duration, location, activities, descrip
         fr"\location{{{duration} | {location}}}" + "\n" +
         r"\begin{tightemize}" + "\n" +
         fr"\item Activities and societies: {', '.join(activities)}." + "\n" +
-        (fr"{description_info}" + "\n" if description_info else "") +
+        (fr"{summary_info}" + "\n" if summary_info else "") +
         r"\end{tightemize}" + "\n" +
         r"\sectionsep")
 
