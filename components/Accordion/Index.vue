@@ -41,7 +41,7 @@ const truncate = (string: string) => {
     <div class="flex justify-between">
       <div class="text-left w-[95%]">
         <h5 id="company" class="text-gray-900 dark:text-white text-xl leading-tight font-medium">
-          <span>{{ entry.position || (Array.isArray(entry.degree) ? entry.degree[0] : entry.degree) }} @ {{ entry.company || entry.institution }}</span>
+          <span>{{ entry.position || (Array.isArray(entry.degree) ? entry.degree[entry.degree.length - 1] : entry.degree) }} @ {{ entry.company || entry.institution }}</span>
         </h5>
         <span class="text-gray-600 dark:text-slate-300 text-sm leading-tight font-medium mt-2">{{ entry.duration }}</span>
         <span class="text-gray-600 dark:text-slate-300 text-sm leading-tight font-medium mb-2"> ({{ entry.location }})</span>
