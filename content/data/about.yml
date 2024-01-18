@@ -1,27 +1,154 @@
+personal:
+  firstname: Saifur Rahman
+  lastname: Mohsin
+  designation: Full Stack Engineer
+  website: imoz.in
+  github: mohsin
+  linkedin: saifurrahmanmohsin
+  email: mohsin92@me.com
+  phone: "+918072807780"
+
+education:
+  - institution: Anna University
+    degree:
+      - Saranathan College of Engineering (Affliated)
+      - Bachelor of Engineering - Computer Science
+    duration: 2010 - 2014
+    location: Trichy, India
+    activities:
+      - public speaking
+      - oration
+      - computer club
+      - web designing
+    description:
+      - Headed CyberKatz, the Computer Science club from June 2011 to July 2013 and co-headed, Paatshaala, the Hindi club from June 2012 to July 2013.
+
+  - institution: Campion Anglo-Indian Higher Secondary School
+    degree: High School
+    duration: 1996 - 2010
+    location: Trichy, India
+    activities:
+      - Swimming
+      - Football
+      - Skating
+      - Reading
+
 work:
 - company: Tempestronics
-  position: Fullstack Engineer
-  duration: Jul 2014 - Present · 8 years 6 months
-  location: India (Remote)
+  position: Full Stack Engineer
+  duration: Jul 2014 - Present
+  location: Bengaluru, India
   summary: "What started as a side business during my university days turned into my company when I had it registered at the end of my college. Originally, I was building final year projects for fellow classmates for a small fee. That worked out great as it was lesser than other centers charged and I explained everything well. So after college, I had my business registered, and started app development for entrepreneurs and startups under the banner 'Tempestronics' which in latin roughly translates to “the study of time”, hence the logo is a bunch of gears—which is what watches and clocks are engineered with). I've been representing myself as a business ever since and billing under this company despite being a freelancer for all practical purposes."
+  summary_in_resume:
+    - As the founder of Tempestronics, I specialized in full-stack web and mobile app development.
+    - Managed end-to-end processes, handling proposals, negotiations, contracts, and invoicing.
+    - Operated independently, translating client needs into technical solutions, delivering high-quality applications.
 - company: Indiez
-  position: Independent Fullstack Developer
-  duration: Feb 2017 - Jul 2017 · 6 months
-  location: Bengaluru, Karnataka, India (Remote)
-  summary: "I was a part of the Indiez community as an independent full-stack developer and build projects for some of their clients on the Android and Laravel platforms."
+  position: Independent Fullstack Developer (Contractual)
+  duration: Feb 2017 - Jul 2017
+  location: Bengaluru, India (Remote)
+  summary: "I was part of the Indiez community as an independent full-stack developer and built projects for some of their clients on the Android and Laravel platforms."
 - company: highway delite
-  position: Chief Technology Officer
-  duration: Feb 2017 - Jul 2017 · 6 months
-  location: Bengaluru, Karnataka, India
+  position: Chief Technology Officer (Contractual)
+  duration: Feb 2016 - Apr 2016
+  location: Bengaluru, India
   summary: "Given the design, I had built the entire product from scratch (Backend, Android App and DevOps to deploy it to a bare metal server). After launch the app gained ~50k users within 6 months with a rating of 4.8 on the play store. The client promised equity and gave me a position of interim CTO, where I took care of all the technical operations, marketing, management, and hiring through technical interviews including raising funds from the Idea2PoC Scheme, and Karnataka Startup Policy by pitching to a panel of VCs. However, in the end, he failed to keep up with his word of the promised equity so I left."
-education:
-- company: Saranathan College of Engineering
-  position: Bachelor of Engineering (Computer Science)
-  duration: 2010 - 2014 · 4 years
-  location: Trichy, Tamil Nadu, India
-  summary: "Finished my engineering at this place. Also indulged in some activities and societies ranging from public speaking, oration, computer club, web designing. I was also the head of two clubs in my college--the computer science club; CyberKatz and co-head of Paatshaala, the Hindi club from June 2012 to July 2013."
-- company: Campion Anglo-Indian Higher Secondary School
-  position: High School
-  duration: 1996 - 2010 · 14 years
-  location: Trichy, Tamil Nadu, India
-  summary: "Got a high quality English-medium education with an interesting set of teachers who helped shaped my ideas and worldview in my formative years. My school was famous for being the only one to promote non-academic i.e. extra-curricular activities at the time. I also indulged in gaming, dance, swimming (my school was one of the 2 institutes in the entire state at the time that had a pool inside an academic institute), football, skating, carrom, reading, listening to music, etc."
+  summary_in_resume:
+    - Managed technical operations, marketing, management, and hiring through technical interviews.
+    - Raised funds from the Idea2PoC Scheme and Karnataka Startup Policy by pitching to a panel of VCs.
+
+volunteering:
+  - organization: U\&I Trust
+    role: Teaching Volunteer
+    duration: Aug 2019 - Mar 2023
+    location: Bengaluru, India
+    details:
+      - Volunteered to teach English, life skills, and soft skills to underprivileged children.
+      - Conducted online teaching over Zoom during the pandemic.
+
+skills:
+  - Programming:
+      Proficient:
+        - Kotlin
+        - PHP
+        - JavaScript
+        - HTML
+        - CSS
+        - Java
+      Familiar:
+        - Python
+        - Swift
+        - LaTeX
+        - C
+        - C++
+  - Libraries/Frameworks:
+    - jQuery
+    - Node.js
+    - Laravel
+    - Vue
+  - Tools/Platforms:
+    - Git
+    - VSCode
+    - Webpack
+    - WordPress
+    - Docker
+  - Platforms:
+    - Android
+    - iOS
+    - Web
+    - Alexa
+    - Google Home
+
+languages:
+  - language: English
+    proficiency: Fluent
+  - language: Urdu
+    proficiency: Spoken proficiency - Native
+  - language: Hindi
+    proficiency: Advanced Proficiency
+  - language: Tamil
+    proficiency: Spoken proficiency
+
+hobbies:
+  - Karaoke
+  - Swimming
+  - Skating
+  - Reading
+
+publications:
+  - title: Evasive Security Using ACLs on Threads
+    date: Oct 1, 2014
+    journal: International Journal for Research in Applied Science \& Engineering Technology
+    impact_factor: 3.995
+    details:
+      - Conceptualized a better, real-time anti-virus system preventing malware.
+      - The paper was published in [Issue - 1 of the journal dated October 2014](https://www.ijraset.com/fileserve.php?FID=1003).
+
+honors:
+  - title: Delegate at Google India's Web Community Leaders Summit
+    date: Nov 2019
+    issued_by: Google
+    details: Invited and attended as one of the delegates at Google India’s Web Community Leaders Summit.
+
+  - title: Speaker at Google's DevFest 2019, Bangalore
+    date: Nov 2019
+    issued_by: Google
+    details: Gave a talk on "Build a voice app under 10 mins for Google Home" at [Google's DevFest](https://www.instagram.com/p/B2tDvt1AdDB).
+
+  - title: Speaker at Amazon's AWS Community Day 2019, Bengaluru
+    date: Jul 2019
+    issued_by: AWS User Group Bengaluru (AWSUGBLR)
+    details:
+      - Gave a talk on "Building voice-driven apps for Alexa" at Amazon's AWS Community Day conference.
+      - Featured in [AWS User Group Bengaluru's Blog](https://www.awsugblr.in/blog/2019-07-21-saifur-rahman-mohsin).
+
+  - title: Winner of Maps Master Challenge
+    date: Mar 2016
+    issued_by: Google Inc.
+    details: Won the Maps Master title, the Pegman trophy, and a Samsung Galaxy S2 tablet for the Google Maps Master Challenge.
+
+  - title: Conducted Tech Workshops
+    date: Sep 2014 - May 2019
+    details:
+      - Conducted Android App Development Workshop for 250+ students at [Konganadu Engineering College](https://www.instagram.com/p/BKs6YgMABa1).
+      - Delivered workshops on web and mobile development for students at [B.M.S. College of Engineering](B.M.S. College of Engineering), Hasanath College, and more.

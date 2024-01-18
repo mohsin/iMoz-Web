@@ -1,0 +1,39 @@
+name: Compile Resume
+on:
+  push:
+    branches:
+      - main
+      - feat-resume
+
+jobs:
+  build_resume:
+    name: Build Resume
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout Repository
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+
+      # Generate the resume
+      - name: Generate resume
+        if: github.event_name == 'push'
+        run: |
+          python resume/replace.py
+
+      # Build the resume
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: resume
+          latexmk_use_xelatex: true
+
+      # Commit and push all changed files.
+      - name: Commit updated resume
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          mv -f resume/main.pdf public/resume.pdf
+          git add public/resume.pdf
+          git commit -m "${{ github.event.head_commit.message }} (Resume Updated)"
+          git push
