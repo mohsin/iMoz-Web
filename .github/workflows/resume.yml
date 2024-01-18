@@ -4,6 +4,9 @@ on:
     branches:
       - main
       - feat-resume
+    paths:
+      - content/data/**
+      - resume/**
 
 jobs:
   build_resume:
