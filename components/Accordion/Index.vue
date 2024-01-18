@@ -46,7 +46,7 @@ const truncate = (string: string) => {
         <span class="text-gray-600 dark:text-slate-300 text-sm leading-tight font-medium mt-2">{{ entry.duration }}</span>
         <span class="text-gray-600 dark:text-slate-300 text-sm leading-tight font-medium mb-2"> ({{ entry.location }})</span>
       </div>
-      <span v-show="entry.summary && entry.summary.length > MAX_SUMMARY_LENGTH" :class="entry.isClosed ? 'rotate-180' : 'mt-2'" class="h-full cursor-pointer">^</span>
+      <span v-show="entry.summary && entry.summary.length > MAX_SUMMARY_LENGTH || Array.isArray(entry.summary) && entry.summary.join('').length > MAX_SUMMARY_LENGTH " :class="entry.isClosed ? 'rotate-180' : 'mt-2'" class="h-full cursor-pointer">^</span>
     </div>
     <div v-if="entry.isClosed" class="text-gray-900 dark:text-slate-300 text-base my-4">
       <div v-if="Array.isArray(entry.summary)">
@@ -61,7 +61,7 @@ const truncate = (string: string) => {
     <div v-else class="text-gray-900 dark:text-slate-300 text-base my-4">
       <div v-if="Array.isArray(entry.summary)">
         <ul v-for="summary in entry.summary" v-bind:key="summary">
-          <li>{{ summary ? truncate(summary) : '' }}</li>
+          <li>{{ summary || '' }}</li>
         </ul>
       </div>
       <div v-else>
