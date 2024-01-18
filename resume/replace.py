@@ -45,7 +45,16 @@ def entry_volunteering(organization, role, duration, location, details):
              r"\end{tightemize}" + "\n" \
              r"\sectionsep"
 
-def entry_education(institution, degree, duration, location, activities, summary=None):
+def entry_education(education_data):
+    # Extract relevant information
+    institution = education_data['institution']
+    degree = education_data.get('degree', '')
+    duration = education_data.get('duration', '')
+    location = education_data.get('location', '')
+    activities = education_data.get('activities', [])
+    summary_key = 'summary_on_resume' if 'summary_on_resume' in education_data else 'summary'
+    summary = convert_links_to_latex(education_data.get(summary_key, ''))
+
     if isinstance(degree, list):
         degree_info = fr"\descript{{| {degree[0]}}}" + "\n" + \
                       "\n".join(fr"\descript{{{item}}}" for item in degree[1:])
@@ -202,7 +211,7 @@ def entry_honors(title, date, details, issued_by=None):
 def replace_placeholders(template, data, type = 'personal'):
     if isinstance(data, list):
         if (type == 'education'):
-          sub_template = "\n\n".join(entry_education(**value) for value in data)
+          sub_template = "\n\n".join(entry_education(value) for value in data)
         elif(type == 'experience'):
           sub_template = "\n\n".join(entry_experience(**value) for value in data)
         elif(type == 'volunteering'):
