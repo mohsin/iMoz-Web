@@ -58,6 +58,27 @@ client:
   description: "Built the API catalog module for Itorix web app that enables their customers to create APIs and also run them directly using a runner."
   link: https://apiwiz.io
   added_on: 29/12/2022 11:53pm
+- title: AldeaTech Android and Web Apps
+  slug: justai-aldeatech
+  type: Client
+  src: /images/aldea.webp
+  designation: Full Stack Engineer
+  duration: Aug 2019 - April 2021
+  location: Bengaluru, India (Remote)
+  languages: PHP,mySQL,HTML,JavaScript,CSS,Kotlin
+  platforms: Web, Android
+  frameworks: October CMS, Android Studio
+  tools: VSCode
+  concepts: MVC
+  status: Archived
+  description: Made an app that allows farmers to plan and improve productivity in agriculture leading to higher crop yields. It provides meteorological information and advise from experts through different stages of crop development to achieve this. The app is powered by a powerful backend and REST API as well. The entire web and android app was made by me from scratch.
+  description_resume:
+    - Developed an app [enabling farmers](https://youtu.be/6IRjzmnUkpc) to plan and improve productivity in agriculture, leading to higher crop yields.
+    - The app provides meteorological information and advice from experts through different stages of crop development.
+    - Powered by a robust backend and REST API, the web and android app were coded from the ground-up.
+  link: https://play.google.com/store/apps/details?id=ni.org.aglobal.tech
+  added_on: 19/01/2024 04:50pm
+  show_on_resume: true
 - title: uPar Golf App
   slug: upar
   type: Client
