@@ -3,16 +3,19 @@ client:
   slug: viewretreats
   type: Client
   src: /images/vr.webp
-  duration: Dec 2020 - Dec 2022
+  duration: Nov 2020 - Aug 2023
+  location: Bengaluru, India (Remote)
   languages: PHP,mySQL,HTML,JavaScript,CSS
   platforms: Web
   frameworks: OctoberCMS,Laravel
   tools: Sublime Text 3
   concepts: MVC,RESTful API
   status: Live
-  description: "Built several components and features for ViewRetreats such as ZohoCRM integration so that they can manage their data, checkout, Expedia integration and several other modules."
+  description: "Built several backend components and features, including ZohoCRM integration for data management, checkout integration, Expedia integration, a gifting module, and various other modules."
+  website: viewretreats.com
   link: https://www.viewretreats.com
   added_on: 29/12/2022 4:00pm
+  show_on_resume: true
 - title: Designer Thamu’s Portfolio
   slug: thamu
   type: Client
@@ -216,7 +219,9 @@ client:
   slug: highway-delite
   type: Client
   src: /images/hd.webp
-  duration: Oct 2015 - Nov 2015
+  duration: Oct 2015 - Jul 2016
+  designation: Software Developer
+  location: Bengaluru, India (Remote)
   languages: PHP,mySQL,HTML,JavaScript,Java,sqlite,CSS
   platforms: Web,Mobile,Google Maps
   frameworks: OctoberCMS,Laravel,RxAndroid
@@ -224,8 +229,13 @@ client:
   concepts: MVC,RESTful API,CMS,Dependency Injection,functional programming,Reactive FRP
   status: Live
   description: "\"explore highways like never before\".\n\nI built the frontend (front website) and backend (visible to logged in users) and also exposed a REST-based API so that the Android app can communicate with this DB. Some features include user management section, permission architecture, short URL management section, a custom map feature by which the authorized users can easily manage the establishments from map itself.\n\nhighway delite wants to be your one point app for your road trip / highway journey/ bike rides / weekend getaway/ tour and travel through roads on Indian highways.\nI built the entire app for a client."
+  description_resume:
+    - Led the development of a client project from the ground up, handling backend, Android, and web front-ends single-handedly.
+    - The app gained around 1000 monthly active users within a year, reaching 50k+ users in 6 months with an average Play Store rating of 4.7 out of 5.
+    - In July 2016, due to a breach of contract, I filed a copyright request, leading Google to take down the app. I later released it when the client settled and purchased the app’s IP entirely.
   link: https://highwaydelite.com (Website), https://play.google.com/store/apps/details?id=com.highwaydelite.highwaydelite (Play Store)
   added_on: 24/12/2022 3:45pm
+  show_on_resume: true
 - title: Sky Properties
   slug: sky-properties
   type: Client
