@@ -90,7 +90,8 @@ def entry_skills(skills_data):
         if isinstance(subcategories, dict):
             for subcategory, items in subcategories.items():
                 result += fr"\location{{{subcategory}:}}" + "\n"
-                result += r" \textbullet{} ".join(items) + r" \\" + "\n" + r"\sectionsep" + "\n"
+                items_latex = [r'\LaTeX' if 'latex' in item.lower() else item for item in items]
+                result += r" \textbullet{} ".join(items_latex) + r" \\" + "\n" + r"\sectionsep" + "\n"
         elif isinstance(subcategories, list):
             result += r" \textbullet{} ".join(subcategories) + r" \\" + "\n"
 
