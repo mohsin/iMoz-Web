@@ -19,10 +19,11 @@ const { setDarkMode } = useMode()
                         </svg>
                     </span>
                 </div>
-                <ul class="flex w-2/3 lg:w-1/5 px-2 justify-between dark:text-white">
+                <ul class="flex lg:w-1/3 px-2 justify-between dark:text-white">
                     <li><NuxtLink to="/about">About</NuxtLink></li>
                     <li><NuxtLink to="/code">Code</NuxtLink></li>
                     <li><NuxtLink to="/contact">Contact</NuxtLink></li>
+                    <li><NuxtLink class="border border-black dark:border-white p-2" to="/resume.pdf" target="_new">Resume</NuxtLink></li>
                     <!-- <li>Talks</li> -->
                 </ul>
             </div>
