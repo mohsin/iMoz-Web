@@ -15,6 +15,22 @@ client:
   website: struct.ai
   link: https://www.struct.ai
   added_on: 26/01/2024 4:00pm
+- title: DFact Web App
+  slug: teksekur-dfact
+  type: Client
+  src: /images/dfact.webp
+  duration: Jan 2023 - Apr 2023
+  location: Bengaluru, India (Remote)
+  languages: JavaScript,HTML,SCSS
+  platforms: Web
+  frameworks: Vue,PrimeVue,Pinia
+  tools: VSCode
+  concepts: MVC,Composition
+  status: Live
+  description: "Coded web apps for TekSecur that helps their customers with DevSecOps. The product enables users to do one-click deployment of apps, improve pipeline performance and cost-optimize performance."
+  website: teksecur.com
+  link: https://www.teksecur.com/dfact
+  added_on: 26/01/2024 4:30pm
 - title: ViewRetreats Web App
   slug: viewretreats
   type: Client
