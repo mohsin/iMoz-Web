@@ -20,10 +20,10 @@ const { setDarkMode } = useMode()
                     </span>
                 </div>
                 <ul class="flex lg:w-1/3 px-2 justify-between dark:text-white">
-                    <li><NuxtLink to="/about">About</NuxtLink></li>
-                    <li><NuxtLink to="/projects">Projects</NuxtLink></li>
-                    <li><NuxtLink to="/contact">Contact</NuxtLink></li>
-                    <li><NuxtLink class="border border-black dark:border-white p-2" to="/resume.pdf" target="_new">Resume</NuxtLink></li>
+                    <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/about">About</NuxtLink></li>
+                    <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/projects">Projects</NuxtLink></li>
+                    <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/contact">Contact</NuxtLink></li>
+                    <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black border border-black dark:border-white" to="/resume.pdf" target="_new">Resume</NuxtLink></li>
                     <!-- <li>Talks</li> -->
                 </ul>
             </div>
