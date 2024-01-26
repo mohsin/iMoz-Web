@@ -8,7 +8,7 @@
         <div class="flex items-end">
             <div class="text-xs">
                 <span class="px-1">&copy;</span>
-                <span>2022&nbsp;</span>
+                <span>{{ new Date().getFullYear() }}&nbsp;</span>
                 <span class="border-b border-slate-500"><NuxtLink to="/">Saifur Rahman Mohsin</NuxtLink></span>
             </div>
             <br>
