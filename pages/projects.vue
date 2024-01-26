@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const projectListing = resolveComponent('PageCode')
+const projectListing = resolveComponent('PageProjects')
 </script>
 
 <template>
   <Head>
-    <Title>iMoz - Code</Title>
+    <Title>iMoz - Projects</Title>
   </Head>
   <Masonry :listComponent="projectListing" />
 </template>
