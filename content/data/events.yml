@@ -1,0 +1,48 @@
+- title: Faculty Development Programme
+  slug: sce-faculty-programme
+  image: /images/events/sce-faculty-programme.webp
+  designation: speaker
+  type: Workshop
+  date:
+    - 05 Jan 2024
+    - 06 Jan 2024
+  location:
+    - Saranathan College of Engineering, Trichy
+  status: future
+  description: "Six days training programme for faculty members from CSE, IT, CSBS, AI/ML and AI & DS departments from Anna University, constituent colleges, regional offices, government colleges & all engineering colleges affiliated to Anna University at Saranathan College of Engineering, Trichy."
+  link:
+    - site: Registration Link
+      url: https://forms.gle/E3BKLFTK23fh1y5GA
+  added_on: 31/01/2024 6:00pm
+- title: Google's Web Community Leaders Summit
+  slug: google-web-leaders-summit-1
+  image: /images/events/google-web-leaders.webp
+  designation: leader
+  type: Summit
+  date:
+    - 16 Nov 2019
+    - 17 Nov 2019
+  location:
+    - Google's RMZ Infinity Office, Bengaluru
+    - Conrad Hotel, Bengaluru
+  status: past
+  description: "I was invited and attended as one of the delegates at Google India's Web Community Leaders Summit held on the 16th and 17th of November, 2019 at Google's RMZ infinity Office, Bangalore followed by a networking dinner at Conrad Hotel."
+  link:
+    - site: Twitter
+      url: https://twitter.com/SaifurMohsin/status/1195643048371163136
+  added_on: 31/01/2024 6:00pm
+- title: Google's DevFest 2019
+  slug: devfest-blr-2019
+  image: /images/events/devfest-2019.webp
+  designation: speaker
+  type: Conference
+  date: 21 Sep 2019
+  location:
+    - Google's RMZ Infinity Office, Bengaluru
+    - Conrad Hotel, Bengaluru
+  status: past
+  description: "Gave a talk on 'Build a voice app under 10 mins for Google Home' at Google's DevFest."
+  link:
+    - site: Website
+      url: https://devfest-bglr-19.firebaseapp.com/day1
+  added_on: 31/01/2024 6:00pm
