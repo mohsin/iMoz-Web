@@ -43,11 +43,7 @@ const ucfirst = (string: string) => {
 <template>
   <div v-for="entry in data" :key="entry.slug" class="block py-8 p-6 text-white">
     <div class="flex">
-      <div class="flex-1 mx-6 -skew-x-12 self-center">
-        <div class="max-w-3xl mx-auto my-0 dark:bg-white bg-transparent p-2">
-          <img :src="entry.image" />
-        </div>
-      </div>
+      <div class="flex-1 mx-6 -skew-x-12 bg-contain bg-no-repeat bg-center -skew-x-12" :style="{ 'background-image': 'url(' + entry.image + ')' }"></div>
       <div :class="[{'text-black dark:text-white' : !upcoming}]" class="flex flex-col flex-1 mx-6 self-center text-left">
         <h1 class="text-2xl">{{ ucfirst(entry.designation) }} @ {{ entry.title }}</h1>
         <span class="text-sm">{{ duration(entry.date) }}</span>
