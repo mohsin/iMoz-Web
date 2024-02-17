@@ -8,7 +8,7 @@ var pastEvents = events.body.filter(it => it.status == 'past')
     <Head>
       <Title>iMoz - Events</Title>
     </Head>
-    <section>
+    <section v-if="upcomingEvents.length > 0">
       <div class="mt-4 pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke">
         <div class="flex flex-col justify-center mx-3 sm:mx-0">
           <h2 id="upcoming-events" class="text-black dark:text-white text-3xl font-extrabold mt-6 w-full text-center sm:text-left">Upcoming Events</h2>
@@ -18,7 +18,7 @@ var pastEvents = events.body.filter(it => it.status == 'past')
         </div>
       </div>
     </section>
-    <section>
+    <section v-if="pastEvents.length > 0">
       <div class="mt-4 pt-0 sm:pt-4 text-justify text-lg text-black dark:text-whitesmoke">
         <div class="flex flex-col justify-center mx-3 sm:mx-0">
           <h2 id="past-events" class="text-black dark:text-white text-3xl font-extrabold mt-6 w-full text-center sm:text-left">Past Events</h2>

@@ -8,11 +8,11 @@
     - 06 Jan 2024
   location:
     - Saranathan College of Engineering, Trichy
-  status: future
+  status: past
   description: "Six days training programme for faculty members from CSE, IT, CSBS, AI/ML and AI & DS departments from Anna University, constituent colleges, regional offices, government colleges & all engineering colleges affiliated to Anna University at Saranathan College of Engineering, Trichy."
   link:
-    - site: Registration Link
-      url: https://forms.gle/E3BKLFTK23fh1y5GA
+    - site: Certificate
+      url: /events/sce-faculty-programme/certificate.pdf
   added_on: 31/01/2024 6:00pm
 - title: Google's Web Community Leaders Summit
   slug: google-web-leaders-summit-1
