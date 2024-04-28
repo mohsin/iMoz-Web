@@ -22,7 +22,6 @@ const item = props.data
       </h3>
     </div>
     <div>
-      <div class="px-4 py-2"><span class="px-2 py-1" :class="['dark:text-[' + getRandomColor(false) + ']','text-[' + getRandomColor(true) + ']']">Test<br></span></div>
       <ContentDoc class="p-3" :path="'/data/projects/' + item.slug">
         <template #not-found>
           <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.src" />
