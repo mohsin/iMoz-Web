@@ -5,7 +5,8 @@
     "dev": "nuxi dev",
     "generate": "nuxi generate",
     "preview": "nuxi preview",
-    "postinstall": "nuxi prepare"
+    "postinstall": "nuxi prepare",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nuxt/content": "^2.2.2",
@@ -18,5 +19,8 @@
     "vee-validate": "^4.7.3",
     "vue-gtag-next": "^1.14.0",
     "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6"
   }
 }
