@@ -1,4 +1,19 @@
 client:
+- title: MultiVision Agency Website
+  slug: multivision-agency
+  type: Client
+  src: /images/multivision.webp
+  duration: Sep 2025
+  location: Bengaluru, India (Remote)
+  languages: JavaScript,HTML,CSS,Vue
+  platforms: Web
+  frameworks: Nuxt.js,Vue 3
+  tools: VSCode
+  concepts: Dark Theme,Dynamic Components,Responsive Design
+  status: Live
+  description: "Developed a professional marketing agency website for MultiVision Agency using the Nuxt framework. It is mostly a single page website (SPA) with various sections except for a client testimonials showcase page and there is also a dark mode toggle."
+  website: mvagency.in
+  added_on: 07/09/2025 2:30pm
 - title: LegalCook Web App
   slug: legalcook-web
   type: Client
@@ -196,7 +211,7 @@ client:
   concepts: Components,Data Analysis
   status: Live
   description: 'X0PA AI is a Singapore-based data analytics startup which contacted me after their team couldn''t solve a problem for over a week. A colleague from my alma mater recommended me and when I got the task, I solved it for them in under 2 hours. They then asked for a demo for parallel processing of R scripts for their attrition and retention predictor and then later asked to build ReactJS components to improve the same. I was offered a full-time remote employee role but didn''t take it due to disagreements with the contract agreement.'
-  link: https://x0pa.com (Website), 
+  link: https://x0pa.com (Website),
   added_on: 24/12/2022 5:09pm
 - title: BlueHorn Web App
   slug: bluehorn
@@ -383,7 +398,7 @@ client:
   platforms: Web
   frameworks: Custom CMS
   tools: Notepad++
-  concepts: 
+  concepts:
   status: Expired
   description: Build a beautiful website for my uncle for his business (called "SK Hollow Blocks") of selling construction supplies.
   link: https://web.archive.org/web/20150611175451/http://skhollowblocks.com, https://goo.gl/maps/bic7VAfpJeQpC2ub7 (Google Maps)
@@ -397,7 +412,7 @@ client:
   platforms: Web
   frameworks: Custom CMS
   tools: Notepad++
-  concepts: 
+  concepts:
   status: Expired
   description: I worked on the development of their web application on a freelance basis. It is a contact manager and I built this on top of the PHP-boilerplate project which I had made.
   link: http://web.archive.org/web/20140517105707/http://hiveyo.com
@@ -570,7 +585,7 @@ opensource:
   concepts: Plugin
   status: Archived
   description: Collapse plugin for OctoberCMS
-  link: https://github.com/SaifurRahmanMohsin/Collapse-Plugin (Source code), 
+  link: https://github.com/SaifurRahmanMohsin/Collapse-Plugin (Source code),
   added_on: 24/12/2022 7:13pm
 - title: Php Boilerplate
   slug: php-boilerplate
@@ -605,9 +620,9 @@ others:
   duration: Nov 2015
   languages: Java
   platforms: Mobile,Android
-  frameworks: 
+  frameworks:
   tools: Sublime Text 3
-  concepts: 
+  concepts:
   status: Archived
   description: "Considering the lack of internet and network in Chennai, I believe this app has little role to play so I’ve put basic information lists in case those in...\nI built this app in a very short time just out of self-interest. No advertisements or money involved."
   link: https://play.google.com/store/apps/details?id=com.tempestronics.helpchennai
@@ -646,10 +661,10 @@ others:
   platforms: Desktop
   frameworks: Java Swing
   tools: Notepad++
-  concepts: 
+  concepts:
   status: Archived
   description: "Nyquist (or) MKB Music box (named after the initials of the team members) is a media organiser which can identify music using the audio signature like Shazam does and organises it into folders based on the user preference. The project was originally built for Softkriti, an IIT-K software contest and Shazam being a closed-source software, I had to build the technology from scratch. Internally, it used something called fast fourier transform to calculate the audio signature and store a hash of it inside a database. We had to do this on several songs and we added ID3 tags for the song as well. Later using the client app, a folder containing songs is selected the system automatically figures out which song is it by calculating and comparing this signature with the database. The software worked perfectly and was super fast since we ran the global DB locally but we did not win the contest and came in 3rd (apparently). The winners were both IIT-K students for some sample projects of some platforms which were popular back then. The project was dropped since.\n"
-  link: 
+  link:
   added_on: 24/12/2022 2:25pm
 - title: Hash Decryptor
   slug: hash-decryptor
@@ -657,12 +672,12 @@ others:
   duration: Apr 2013
   languages: PHP,mySQL,HTML,Java
   platforms: Desktop
-  frameworks: 
+  frameworks:
   tools: Notepad++
   concepts: RMI
   status: Archived
   description: An RMI based Java program that can find the original plain text code of a given hash string by retrieving the values from a mySQL DB.
-  link: 
+  link:
   added_on: 24/12/2022 1:20pm
 - title: Car Pooling App using Sencha Framework
   slug: car-pooling-app
@@ -675,5 +690,5 @@ others:
   concepts: MVC
   status: Archived
   description: A web-based mobile-friendly version of Uber made in a time long before we even came to know of Uber.
-  link: 
+  link:
   added_on: 24/12/2022 1:40pm
