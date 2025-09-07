@@ -4,7 +4,7 @@ client:
   type: Client
   src: /images/multivision.webp
   duration: Sep 2025
-  location: Bengaluru, India (Remote)
+  location: Bengaluru, India
   languages: JavaScript,HTML,CSS,Vue
   platforms: Web
   frameworks: Nuxt.js,Vue 3
@@ -13,7 +13,22 @@ client:
   status: Live
   description: "Developed a professional marketing agency website for MultiVision Agency using the Nuxt framework. It is mostly a single page website (SPA) with various sections except for a client testimonials showcase page and there is also a dark mode toggle."
   website: mvagency.in
-  added_on: 07/09/2025 2:30pm
+  added_on: 07/09/2025 1:30pm
+- title: Golfer's Edge Booking Website
+  slug: golfers-edge
+  type: Client
+  src: /images/golfersedge.webp
+  duration: Mar 2024 - Sep 2025
+  location: Bengaluru, India
+  languages: PHP,HTML,CSS,JavaScript,SQL
+  platforms: Web
+  frameworks: OctoberCMS,Laravel
+  tools: VSCode,Terraform
+  concepts: Booking Management,Payment Gateway,Google Calendar Integration,Analytics,AWS Infrastructure
+  status: Live
+  description: "Built a comprehensive online booking system for Golfer's Edge indoor golf offering. It includes slot booking with Google Calendar sync, Razorpay payment processing, cancellation policy, and admin dashboard. Deployed on AWS infrastructure using Terraform for scalability and monitoring."
+  website: uparbooking.com
+  added_on: 07/09/2025 2:00pm
 - title: LegalCook Web App
   slug: legalcook-web
   type: Client
