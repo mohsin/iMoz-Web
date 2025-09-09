@@ -15,7 +15,7 @@ export default defineNuxtConfig({
           { name: 'description', content: 'Saifur Rahman Mohsin\'s Portfolio' },
           { name: 'msapplication-TileColor', content: '#ffffff' },
           { name: 'theme-color', content: '#ffffff' },
-          { name: 'google-adsense-account' content: 'ca-pub-5137799284836201' }
+          { name: 'google-adsense-account', content: 'ca-pub-5137799284836201' }
         ]
       },
     },
