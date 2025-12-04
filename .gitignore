@@ -9,3 +9,8 @@ node_modules
 .env
 dist
 .vscode
+
+# Google Calendar sync files
+google-sync-log.json
+google-service-account.json
+*-service-account.json

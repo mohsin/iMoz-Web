@@ -1,0 +1,55 @@
+name: Sync iCal to Google Calendar
+
+on:
+  schedule:
+    # Runs every 12 hours
+    - cron: '0 */12 * * *'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  sync:
+    name: Sync iCal to Google Calendar
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run iCal to Google Calendar sync
+        env:
+          # Google Calendar API credentials (Service Account)
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+          GOOGLE_PROJECT_ID: ${{ secrets.GOOGLE_PROJECT_ID }}
+
+          # Multiple calendar URLs - add as many as needed
+          CALENDAR_PERSONAL_URL: ${{ secrets.CALENDAR_PERSONAL_URL }}
+          CALENDAR_WORK_URL: ${{ secrets.CALENDAR_WORK_URL }}
+          CALENDAR_HEALTH_URL: ${{ secrets.CALENDAR_HEALTH_URL }}
+          CALENDAR_TRAVEL_URL: ${{ secrets.CALENDAR_TRAVEL_URL }}
+          CALENDAR_EVENTS_URL: ${{ secrets.CALENDAR_EVENTS_URL }}
+
+          # Personal email configuration
+          PERSONAL_GMAIL: ${{ secrets.PERSONAL_GMAIL }}
+        run: node scripts/sync-ical-google-calendar.js
+
+      - name: Commit updated sync log (if any)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: sync iCal events to Google Calendar [skip ci]"
+          git push || true

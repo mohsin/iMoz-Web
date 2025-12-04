@@ -19,6 +19,16 @@ const { useFieldModel, errors } = useForm({
 const [name, referer, email, message] = useFieldModel(['name', 'referer', 'email', 'message'])
 
 const hasErrors = computed(() => Object.keys(errors.value).length !== 0)
+
+// Add Calendly script
+useHead({
+  script: [
+    {
+      src: 'https://assets.calendly.com/assets/external/widget.js',
+      async: true
+    }
+  ]
+})
 const onSubmit = (event) => {
   event.preventDefault()
   const contactForm = event.target;
@@ -40,23 +50,68 @@ const onSubmit = (event) => {
     isSubmitted.value = false
   }, 5000))
 }
+
+// Calendly integration
+const openCalendly = (event) => {
+  event.preventDefault()
+  if (process.client && window.Calendly) {
+    window.Calendly.initPopupWidget({
+      url: 'https://calendly.com/saifurmohsin'
+    })
+  }
+}
+
 if (process.client) {
   document.querySelector('form')?.addEventListener('submit', onSubmit)
+
+  // Initialize Calendly badge widget with site-matching colors
+  window.addEventListener('load', () => {
+    if (window.Calendly) {
+      window.Calendly.initBadgeWidget({
+        url: 'https://calendly.com/saifurmohsin',
+        text: 'Schedule a call with me',
+        color: '#374151', // gray-700 to match your buttons
+        textColor: '#ffffff',
+        branding: true
+      })
+    }
+  })
 }
 </script>
 
 <template>
     <Head>
       <Title>iMoz - Contact</Title>
+      <Link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
     </Head>
     <section class="flex justify-center my-4">
       <form netlify ref="contactForm" name="contact" method="POST" class="w-full max-w-lg" enctype="multipart/form-data" netlify-honeypot="extra-field">
         <input type="hidden" name="form-name" value="contact" />
         <input class="hidden" name="extra-field" />
-        <div class="py-1 sm:py-4 mb-8 text-center leading-none">
+        <div class="py-1 sm:py-4 mb-2 text-center leading-none">
           <h1 class="text-2xl my-1 sm:my-4">Have a requirement? Get in touch!</h1>
-          <span class="text-sm leading-2">(Due to the volume of requests, I'm only considering projects that have a solid PRD<sup class="text-red-700 dark:text-blue-300">*</sup> with a budget of $3000 and above or pays at-least $50/hour).</span>
+          <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-6 p-4 bg-gray-100 dark:bg-slate-800 rounded-lg">
+            <div class="text-center sm:text-left">
+              <p class="text-gray-700 dark:text-white text-sm mb-2">Prefer a call?</p>
+              <p class="text-xs text-gray-600 dark:text-gray-300">Schedule a quick consultation to discuss your project</p>
+            </div>
+            <button
+              type="button"
+              id="calendly-book-call"
+              class="bg-gray-700 dark:bg-slate-300 text-white dark:text-gray-700 py-2 px-6 rounded hover:bg-gray-800 dark:hover:bg-slate-200 transition-colors duration-200 whitespace-nowrap"
+              @click="openCalendly"
+            >
+              📅 Book a Call
+            </button>
+          </div>
         </div>
+
+        <div class="flex items-center mb-8">
+          <div class="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
+          <span class="px-4 text-gray-500 dark:text-gray-400 text-sm">or send a message</span>
+          <div class="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
+        </div>
+
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 dark:text-white text-xs font-bold mb-2" for="name">
