@@ -4,6 +4,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { DateTime } = require('luxon');
 
 class ICalToGoogleCalendarSync {
   constructor() {
@@ -255,7 +256,8 @@ class ICalToGoogleCalendarSync {
               currentEvent.dtstart_date = this.parseDate(value);
               currentEvent.allDay = true;
             } else {
-              currentEvent.dtstart = this.parseDateTime(value);
+              const timezone = this.extractTimezone(params);
+              currentEvent.dtstart = this.parseDateTime(value, timezone);
               currentEvent.allDay = false;
             }
             break;
@@ -263,7 +265,8 @@ class ICalToGoogleCalendarSync {
             if (params.some(p => p.includes('DATE'))) {
               currentEvent.dtend_date = this.parseDate(value);
             } else {
-              currentEvent.dtend = this.parseDateTime(value);
+              const timezone = this.extractTimezone(params);
+              currentEvent.dtend = this.parseDateTime(value, timezone);
             }
             break;
           case 'UID':
@@ -291,6 +294,11 @@ class ICalToGoogleCalendarSync {
       .replace(/\\\\/g, '\\');
   }
 
+  extractTimezone(params) {
+    const tzidParam = params.find(param => param.startsWith('TZID='));
+    return tzidParam ? tzidParam.replace('TZID=', '') : null;
+  }
+
   parseDate(dateStr) {
     try {
       if (dateStr.match(/^\d{8}$/)) {
@@ -308,30 +316,46 @@ class ICalToGoogleCalendarSync {
     }
   }
 
-  parseDateTime(dateTimeStr) {
+  parseDateTime(dateTimeStr, timezone = null) {
     try {
+      // Handle iCal format: YYYYMMDDTHHMMSS or YYYYMMDDTHHMMSSZ
       if (dateTimeStr.match(/^\d{8}T\d{6}Z?$/)) {
-        const year = dateTimeStr.slice(0, 4);
-        const month = dateTimeStr.slice(4, 6);
-        const day = dateTimeStr.slice(6, 8);
-        const hour = dateTimeStr.slice(9, 11);
-        const minute = dateTimeStr.slice(11, 13);
-        const second = dateTimeStr.slice(13, 15);
-
         // Check if it already has 'Z' suffix (UTC)
         if (dateTimeStr.endsWith('Z')) {
-          return new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}Z`);
+          const dt = DateTime.fromFormat(dateTimeStr, "yyyyMMdd'T'HHmmss'Z'", { zone: 'utc' });
+          return dt.isValid ? dt.toJSDate() : null;
         } else {
-          // iCal datetime without 'Z' is in local timezone (Asia/Kolkata)
-          // We need to parse it as local time, not convert it
-          const localDate = new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}`);
-          return localDate;
+          // Parse with timezone if specified
+          if (timezone) {
+            console.log(`🕐 Parsing ${dateTimeStr} as timezone: ${timezone}`);
+
+            // Luxon will handle the timezone conversion automatically (including DST)
+            const dt = DateTime.fromFormat(dateTimeStr, "yyyyMMdd'T'HHmmss", { zone: timezone });
+
+            if (!dt.isValid) {
+              console.warn(`⚠️  Invalid timezone or format: ${dateTimeStr} in ${timezone}`, dt.invalidReason);
+              // Fallback: try parsing without timezone
+              const fallbackDt = DateTime.fromFormat(dateTimeStr, "yyyyMMdd'T'HHmmss");
+              return fallbackDt.isValid ? fallbackDt.toJSDate() : null;
+            }
+
+            // Convert to UTC and return as JavaScript Date
+            const utcDt = dt.toUTC();
+            console.log(`   ✅ Converted ${dateTimeStr} (${timezone}) → ${utcDt.toISO()}`);
+            return utcDt.toJSDate();
+          } else {
+            // No timezone specified, treat as local system time
+            const dt = DateTime.fromFormat(dateTimeStr, "yyyyMMdd'T'HHmmss");
+            return dt.isValid ? dt.toJSDate() : null;
+          }
         }
       }
 
-      return new Date(dateTimeStr);
+      // Fallback for other datetime formats
+      const dt = DateTime.fromISO(dateTimeStr);
+      return dt.isValid ? dt.toJSDate() : new Date(dateTimeStr);
     } catch (error) {
-      console.warn(`⚠️  Could not parse datetime: ${dateTimeStr}`);
+      console.warn(`⚠️  Could not parse datetime: ${dateTimeStr}, timezone: ${timezone}`, error.message);
       return null;
     }
   }
