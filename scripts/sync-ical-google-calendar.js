@@ -278,12 +278,29 @@ class ICalToGoogleCalendarSync {
           case 'STATUS':
             currentEvent.status = value;
             break;
+          case 'RRULE':
+            currentEvent.rrule = value;
+            break;
+          case 'EXDATE':
+            if (!currentEvent.exdates) currentEvent.exdates = [];
+            const exTimezone = this.extractTimezone(params);
+            currentEvent.exdates.push(this.parseDateTime(value, exTimezone));
+            break;
+          case 'RECURRENCE-ID':
+            const recTimezone = this.extractTimezone(params);
+            currentEvent.recurrenceId = this.parseDateTime(value, recTimezone);
+            break;
         }
       }
     }
 
     console.log(`📋 Parsed ${events.length} events from ${calendarName}`);
-    return events;
+
+    // Expand recurring events
+    const expandedEvents = this.expandRecurringEvents(events);
+    console.log(`🔄 After expanding recurring events: ${expandedEvents.length} events`);
+
+    return expandedEvents;
   }
 
   unescapeICalValue(value) {
@@ -297,6 +314,203 @@ class ICalToGoogleCalendarSync {
   extractTimezone(params) {
     const tzidParam = params.find(param => param.startsWith('TZID='));
     return tzidParam ? tzidParam.replace('TZID=', '') : null;
+  }
+
+  expandRecurringEvents(events) {
+    const expandedEvents = [];
+    const now = new Date();
+    const threeMonthsFromNow = new Date(now.getTime() + 90 * 24 * 60 * 60 * 1000); // 3 months
+    const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+
+    // First, collect all override events (events with RECURRENCE-ID)
+    const overrides = new Map(); // Key: baseUID + recurrenceId, Value: override event
+    const recurringEvents = [];
+    const regularEvents = [];
+
+    for (const event of events) {
+      if (event.recurrenceId && event.recurrenceId instanceof Date) {
+        // This is an override event
+        const overrideKey = `${event.uid}_${event.recurrenceId.getTime()}`;
+        overrides.set(overrideKey, event);
+        console.log(`🔄 Found override for ${event.summary} on ${event.recurrenceId.toLocaleDateString()}`);
+      } else if (event.rrule && !event.recurrenceId) {
+        // This is a base recurring event (not an override)
+        recurringEvents.push(event);
+      } else {
+        regularEvents.push(event);
+      }
+    }
+
+    // Add all non-recurring events
+    expandedEvents.push(...regularEvents);
+
+    // Process recurring events
+    for (const event of recurringEvents) {
+      // Parse RRULE
+      const rruleParams = this.parseRRule(event.rrule);
+      if (!rruleParams) {
+        console.warn(`⚠️  Could not parse RRULE: ${event.rrule}`);
+        expandedEvents.push(event);
+        continue;
+      }
+
+      // Build excluded dates from RECURRENCE-ID overrides for this event
+      const overrideExcludeDates = [];
+      for (const [overrideKey, override] of overrides) {
+        if (override.uid === event.uid && override.recurrenceId) {
+          overrideExcludeDates.push(override.recurrenceId);
+        }
+      }
+
+      // Generate recurring instances with override exclusions
+      const instances = this.generateRecurringInstances(event, rruleParams, thirtyDaysAgo, threeMonthsFromNow, overrideExcludeDates);
+
+      // Apply overrides to the instances
+      const finalInstances = instances.map(instance => {
+        if (!instance.dtstart) return instance;
+        const overrideKey = `${event.uid}_${instance.dtstart.getTime()}`;
+        const override = overrides.get(overrideKey);
+
+        if (override) {
+          console.log(`🔄 Applying override to ${instance.summary} on ${instance.dtstart.toLocaleDateString()}`);
+          // Use the override event but keep the generated UID for consistency
+          return {
+            ...override,
+            uid: instance.uid, // Keep the generated UID for the instance
+            originalUID: event.uid,
+            isRecurringInstance: true,
+            isOverridden: true
+          };
+        }
+
+        return instance;
+      });
+
+      expandedEvents.push(...finalInstances);
+    }
+
+    // Add any standalone override events that didn't match a recurring instance
+    for (const [overrideKey, override] of overrides) {
+      if (!expandedEvents.some(event =>
+        event.originalUID === override.uid &&
+        event.dtstart?.getTime() === override.recurrenceId?.getTime()
+      )) {
+        console.log(`🔄 Adding standalone override: ${override.summary} on ${override.recurrenceId?.toLocaleDateString()}`);
+        expandedEvents.push({
+          ...override,
+          isRecurringInstance: true,
+          isOverridden: true,
+          originalUID: override.uid
+        });
+      }
+    }
+
+    return expandedEvents;
+  }
+
+  parseRRule(rruleStr) {
+    const params = {};
+    const parts = rruleStr.split(';');
+
+    for (const part of parts) {
+      const [key, value] = part.split('=');
+      if (key && value) {
+        params[key.toUpperCase()] = value;
+      }
+    }
+
+    return params;
+  }
+
+  generateRecurringInstances(baseEvent, rruleParams, startRange, endRange, overrideExcludeDates = []) {
+    const instances = [];
+
+    if (!baseEvent.dtstart) {
+      return [baseEvent]; // Can't generate instances without start date
+    }
+
+    const freq = rruleParams.FREQ;
+    const byDay = rruleParams.BYDAY;
+    const until = rruleParams.UNTIL ? this.parseDateTime(rruleParams.UNTIL, null) : endRange;
+
+    if (freq !== 'WEEKLY') {
+      // Only handle weekly recurrence for now
+      return [baseEvent];
+    }
+
+    if (!byDay) {
+      return [baseEvent];
+    }
+
+    // Parse BYDAY (e.g., "SU,MO,TU,WE,TH,SA")
+    const dayMap = {
+      'SU': 0, 'MO': 1, 'TU': 2, 'WE': 3, 'TH': 4, 'FR': 5, 'SA': 6
+    };
+
+    const recurDays = byDay.split(',').map(day => dayMap[day]).filter(day => day !== undefined);
+
+    if (recurDays.length === 0) {
+      return [baseEvent];
+    }
+
+    // Generate instances
+    let currentDate = new Date(startRange);
+    const baseStart = new Date(baseEvent.dtstart);
+    const baseEnd = baseEvent.dtend ? new Date(baseEvent.dtend) : null;
+    const duration = baseEnd ? baseEnd.getTime() - baseStart.getTime() : 60 * 60 * 1000; // Default 1 hour
+
+    // Get excluded dates
+    const excludedDates = new Set();
+    if (baseEvent.exdates) {
+      baseEvent.exdates.forEach(exdate => {
+        if (exdate) {
+          excludedDates.add(exdate.toDateString());
+        }
+      });
+    }
+
+    // Add RECURRENCE-ID override dates to exclusions
+    overrideExcludeDates.forEach(overrideDate => {
+      if (overrideDate) {
+        excludedDates.add(overrideDate.toDateString());
+        console.log(`🚫 Excluding recurring instance on ${overrideDate.toLocaleDateString()} (has override)`);
+      }
+    });
+
+    while (currentDate <= until && currentDate <= endRange) {
+      const dayOfWeek = currentDate.getDay();
+
+      if (recurDays.includes(dayOfWeek)) {
+        // Create instance for this day
+        const instanceStart = new Date(currentDate);
+        instanceStart.setHours(baseStart.getHours());
+        instanceStart.setMinutes(baseStart.getMinutes());
+        instanceStart.setSeconds(baseStart.getSeconds());
+
+        const instanceEnd = new Date(instanceStart.getTime() + duration);
+
+        // Check if this instance is excluded
+        const instanceDateStr = instanceStart.toDateString();
+        if (!excludedDates.has(instanceDateStr)) {
+          const instance = {
+            ...baseEvent,
+            dtstart: instanceStart,
+            dtend: instanceEnd,
+            uid: `${baseEvent.uid}-${instanceStart.toISOString().split('T')[0]}`, // Unique UID for each instance
+            isRecurringInstance: true,
+            originalUID: baseEvent.uid
+          };
+
+          instances.push(instance);
+        }
+      }
+
+      // Move to next day
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+
+    console.log(`🔄 Generated ${instances.length} instances for recurring event: ${baseEvent.summary}`);
+    return instances;
   }
 
   parseDate(dateStr) {
@@ -710,11 +924,38 @@ class ICalToGoogleCalendarSync {
           const newEvents = relevantEvents.filter(event => !existingSyncedUIDs.has(event.uid));
           console.log(`🆕 New events to sync: ${newEvents.length}`);
 
-          // Check for deleted events (exist in Google Calendar but not in iCal)
+          // Smart deletion logic for recurring events
           const currentICalUIDs = new Set(relevantEvents.map(event => event.uid).filter(uid => uid));
+          const currentBaseUIDs = new Set(relevantEvents.map(event => event.originalUID || event.uid).filter(uid => uid));
+
           const eventsToDelete = existingGoogleEvents.filter(googleEvent => {
             const iCalUID = googleEvent.extendedProperties?.private?.iCalUID;
-            return iCalUID && !currentICalUIDs.has(iCalUID);
+            if (!iCalUID) return false;
+
+            // Direct match - keep if UID exists in current events
+            if (currentICalUIDs.has(iCalUID)) return false;
+
+            // For recurring event instances (have date suffix), check if base event still exists
+            if (iCalUID.includes('-') && iCalUID.match(/\d{4}-\d{2}-\d{2}$/)) {
+              const baseUID = iCalUID.substring(0, iCalUID.lastIndexOf('-'));
+
+              // Keep if base recurring event still exists
+              if (currentBaseUIDs.has(baseUID)) {
+                // But check if this specific instance should still exist
+                // If the base event exists but this instance doesn't, it means the RRULE changed
+                const instanceExists = relevantEvents.some(event =>
+                  (event.originalUID === baseUID || event.uid === baseUID) &&
+                  event.uid === iCalUID
+                );
+                return !instanceExists;
+              }
+
+              // Base event doesn't exist anymore - delete this instance
+              return true;
+            }
+
+            // Regular event - delete if not found in current events
+            return true;
           });
 
           console.log(`🗑️  Events to delete (removed from iCal): ${eventsToDelete.length}`);
@@ -864,6 +1105,11 @@ class ICalToGoogleCalendarSync {
   }
 }
 
-// Run the sync
-const sync = new ICalToGoogleCalendarSync();
-sync.syncEvents();
+// Export the class for debugging
+module.exports = ICalToGoogleCalendarSync;
+
+// Run the sync if this file is executed directly
+if (require.main === module) {
+  const sync = new ICalToGoogleCalendarSync();
+  sync.syncEvents();
+}
