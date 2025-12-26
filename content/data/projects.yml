@@ -14,6 +14,21 @@ client:
   description: "Built a modern DJ portfolio website featuring a sophisticated LangGraph-powered AI assistant with advanced conversational capabilities. Developed custom LangGraph workflows for intent detection, event filtering, and FAQ system integration. Implemented comprehensive TinaCMS admin interface allowing Jonas to manage all content without technical knowledge - events (with venue details, dates, guestlist settings), photo/video galleries, social media links, FAQ knowledge base, venue information, and site configuration. Created intelligent search with natural language processing for event queries, multi-model AI fallbacks with quota management, and conversation context awareness. The AI assistant handles complex queries like date parsing, venue filtering, guestlist requests, and music genre questions with markdown support and secure prompt injection protection. The entire website content is admin-manageable through TinaCMS's user-friendly interface."
   website: jonasmonteiro.com
   added_on: 26/12/2025 9:00pm
+- title: Barossa Australia Tourism Platform
+  slug: barossa-australia
+  type: Client
+  src: /images/barossa.webp
+  duration: Nov 2024 - Dec 2025
+  location: Australia (Remote)
+  languages: PHP,JavaScript,SQL
+  platforms: AWS Cloud,WordPress
+  frameworks: WordPress,Terraform,Elementor
+  tools: AWS CLI,Terraform,VSCode
+  concepts: ATDW Integration,Tourism Data Management,Infrastructure as Code,Auto Scaling,Plugin Development,API Integration
+  status: Live
+  description: "Developed comprehensive ATDW (Australian Tourism Data Warehouse) integration plugin for Barossa Valley tourism platform. Built custom WordPress plugin with advanced features including automated tourism listing synchronization, category mapping system, change tracking, URL structure management, and CSV export functionality. Implemented intelligent search capabilities with organization name filtering and admin interface enhancements. Created scalable AWS infrastructure with Auto Scaling Groups, spot instances, EFS shared storage, and intelligent PHP-FPM optimization. Developed ASG management tools, backup automation, and cron-based synchronization systems for seamless tourism data management."
+  website: barossa.com
+  added_on: 26/12/2025 9:30pm
 - title: MultiVision Agency Website
   slug: multivision-agency
   type: Client
