@@ -15,6 +15,22 @@ client:
   description: "Built a modern DJ portfolio website featuring a sophisticated LangGraph-powered AI assistant with advanced conversational capabilities. Developed custom LangGraph workflows for intent detection, event filtering, and FAQ system integration. Implemented comprehensive TinaCMS admin interface allowing Jonas to manage all content without technical knowledge - events (with venue details, dates, guestlist settings), photo/video galleries, social media links, FAQ knowledge base, venue information, and site configuration. Created intelligent search with natural language processing for event queries, multi-model AI fallbacks with quota management, and conversation context awareness. The AI assistant handles complex queries like date parsing, venue filtering, guestlist requests, and music genre questions with markdown support and secure prompt injection protection. The entire website content is admin-manageable through TinaCMS's user-friendly interface."
   website: jonasmonteiro.com
   added_on: 26/12/2025 9:00pm
+- title: Astravise GCC Compass Form
+  slug: astravise-gcc-compass
+  type: Client
+  src: /images/astravise.webp
+  duration: Oct 2025 - Nov 2025
+  location: Remote
+  languages: PHP,JavaScript,CSS,HTML
+  platforms: WordPress
+  frameworks: WordPress
+  tools: MySQL,VSCode,Git
+  concepts: TypeForm-style Interface,Interactive Forms,Custom WordPress Plugin,Database Management,Email Automation,Progressive Form UI
+  status: Live
+  summary: "Interactive TypeForm-style assessment tool for Global Capability Centers (GCC) advisory services with intelligent result calculation and automated email workflows."
+  description: "Developed a comprehensive GCC Compass assessment platform for Astravise Services, replacing their QuillForms dependency with a custom TypeForm-style interactive form solution. Built a sophisticated custom WordPress plugin featuring multi-step progressive questionnaire covering company industry, size, involvement levels, operational supervision requirements, core functions, GCC location preferences, and timeline expectations. Implemented intelligent result calculation algorithms with dual-fit logic supporting 5 different result templates based on company profile analysis. Created robust database architecture with comprehensive submission tracking including user data, IP logging, submission status management, and admin notes functionality. Developed automated email notification system with customizable templates for instant client communication. The form features responsive design optimized for both desktop and mobile, smooth animations, progressive disclosure, and intuitive navigation with manual progression controls. Includes advanced form validation, answer persistence, and comprehensive admin dashboard for submission management and analytics."
+  website: astraviseservices.com
+  added_on: 26/12/2025 11:30pm
 - title: Barossa Australia Tourism Platform
   slug: barossa-australia
   type: Client
