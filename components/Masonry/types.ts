@@ -5,5 +5,6 @@ export type MasonryItem = {
   duration: string,
   isThumb: boolean,
   type: string,
+  summary?: string,
   description: string
 }

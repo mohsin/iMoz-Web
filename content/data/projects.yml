@@ -11,6 +11,7 @@ client:
   tools: VSCode,Bun,Netlify
   concepts: LangGraph Workflows,AI Assistant,Static Site Generation,Event Management,CMS Integration,Serverless Functions
   status: Live
+  summary: "Professional DJ portfolio website with AI assistant for event discovery, venue information, and music queries. Features photo galleries and comprehensive event management."
   description: "Built a modern DJ portfolio website featuring a sophisticated LangGraph-powered AI assistant with advanced conversational capabilities. Developed custom LangGraph workflows for intent detection, event filtering, and FAQ system integration. Implemented comprehensive TinaCMS admin interface allowing Jonas to manage all content without technical knowledge - events (with venue details, dates, guestlist settings), photo/video galleries, social media links, FAQ knowledge base, venue information, and site configuration. Created intelligent search with natural language processing for event queries, multi-model AI fallbacks with quota management, and conversation context awareness. The AI assistant handles complex queries like date parsing, venue filtering, guestlist requests, and music genre questions with markdown support and secure prompt injection protection. The entire website content is admin-manageable through TinaCMS's user-friendly interface."
   website: jonasmonteiro.com
   added_on: 26/12/2025 9:00pm
@@ -26,6 +27,7 @@ client:
   tools: AWS CLI,Terraform,VSCode
   concepts: ATDW Integration,Tourism Data Management,Infrastructure as Code,Auto Scaling,Plugin Development,API Integration
   status: Live
+  summary: "Tourism platform for Barossa Valley featuring automatic synchronization with Australia's national tourism database and comprehensive business directory."
   description: "Developed comprehensive ATDW (Australian Tourism Data Warehouse) integration plugin for Barossa Valley tourism platform. Built custom WordPress plugin with advanced features including automated tourism listing synchronization, category mapping system, change tracking, URL structure management, and CSV export functionality. Implemented intelligent search capabilities with organization name filtering and admin interface enhancements. Created scalable AWS infrastructure with Auto Scaling Groups, spot instances, EFS shared storage, and intelligent PHP-FPM optimization. Developed ASG management tools, backup automation, and cron-based synchronization systems for seamless tourism data management."
   website: barossa.com
   added_on: 26/12/2025 9:30pm
@@ -41,6 +43,7 @@ client:
   tools: VSCode
   concepts: Dark Theme,Dynamic Components,Responsive Design
   status: Live
+  summary: "Marketing agency website featuring modern single-page design, dark mode interface, and client testimonials showcase."
   description: "Developed a professional marketing agency website for MultiVision Agency using the Nuxt framework. It is mostly a single page website (SPA) with various sections except for a client testimonials showcase page and there is also a dark mode toggle."
   website: mvagency.in
   added_on: 07/09/2025 1:30pm
@@ -56,6 +59,7 @@ client:
   tools: VSCode,Terraform
   concepts: Booking Management,Payment Gateway,Google Calendar Integration,Analytics,AWS Infrastructure
   status: Live
+  summary: "Online booking platform for indoor golf facility with time slot reservations, payment processing, and automated calendar integration."
   description: "Built a comprehensive online booking system for Golfer's Edge indoor golf offering. It includes slot booking with Google Calendar sync, Razorpay payment processing, cancellation policy, and admin dashboard. Deployed on AWS infrastructure using Terraform for scalability and monitoring."
   website: uparbooking.com
   added_on: 07/09/2025 2:00pm
@@ -71,6 +75,7 @@ client:
   tools: VSCode
   concepts: MVC,Analytics
   status: Live
+  summary: "Progressive law startup website with content management dashboard and analytics for legal service providers in Bangalore."
   description: "Created a beautiful website for LegalCook, a progressive law startup based out of Bangalore. The web app also has a web admin panel and dashboard so analytics can be viewed and changes can be made as well by editors."
   website: legalcook.com
   link: https://legalcook.com
@@ -87,6 +92,7 @@ client:
   tools: VSCode
   concepts: MVC,RESTful API
   status: Live
+  summary: "AI-powered workplace communication platform with advanced search capabilities, global command palette, and enhanced collaboration features."
   description: "Developed a few components and features for their chat platform such as the global command palette, search, filtering, sorting, web app containerization, etc."
   website: struct.ai
   link: https://www.struct.ai
@@ -103,6 +109,7 @@ client:
   tools: VSCode
   concepts: MVC,Composition
   status: Live
+  summary: "DevSecOps platform enabling one-click application deployment, performance optimization, and cost management for enterprise development teams."
   description: "Coded web apps for TekSecur that helps their customers with DevSecOps. The product enables users to do one-click deployment of apps, improve pipeline performance and cost-optimize performance."
   website: teksecur.com
   link: https://www.teksecur.com/dfact
@@ -119,6 +126,7 @@ client:
   tools: Sublime Text 3
   concepts: MVC,RESTful API
   status: Live
+  summary: "Travel booking platform for wellness retreats with integrated CRM, booking management, and gifting system for retreat experiences."
   description: "Built several backend components and features, including ZohoCRM integration for data management, checkout integration, Expedia integration, a gifting module, and various other modules."
   website: viewretreats.com
   link: https://www.viewretreats.com
@@ -135,6 +143,7 @@ client:
   tools: VSCode
   concepts: Components, QR Codes, UPI
   status: Live
+  summary: "Designer portfolio website with content management, QR code-enabled planner purchasing, and responsive design across all devices."
   description: "Developed a portfolio website using the shared designs for mobile, tablet and desktop screen sizes on Figma. Used that to build a pixel-perfect, Nuxt.js based client-side rendered (CSR) web application that deploys to Netlify from a headless git-backed CMS. So content can be added/updated using an administrative section without having a dedicated hosting for the app, making it very versatile to manage a portfolio without the additional overhead of having to purchase hosting that has a recurring annual charge. Developed a portfolio website using the shared designs for mobile, tablet and desktop screen sizes on Figma. Used that to build a pixel-perfect, Nuxt.js based client-side rendered (CSR) web application that deploys to Netlify from a headless git-backed CMS. So content can be added/updated using an administrative section without having a dedicated hosting for the app, making it very versatile to manage a portfolio without the additional overhead of having to purchase hosting that has a recurring annual charge. Additionally, added a Planner page with a dynamically generated QR code so people could purchase the planner."
   link: https://thamu.in
   added_on: 29/12/2022 11:40pm
@@ -149,6 +158,7 @@ client:
   tools: Android Studio
   concepts: Dependency Injection,RESTful API, QR Codes
   status: Live
+  summary: "Food discovery Android app with QR code scanning for quick item tagging and kitchen inventory management."
   description: "Built incremental features to the Foodiverse Android app, specifically a QR scanner that enables quick tagging of food items for their AirKitchens app."
   link: https://www.foodieverseindia.com
   added_on: 29/12/2022 11:30pm
@@ -163,6 +173,7 @@ client:
   tools: VSCode
   concepts: Components
   status: Live
+  summary: "API management platform with catalog system for creating, organizing, and testing APIs through integrated runner interface."
   description: "Built the API catalog module for Itorix web app that enables their customers to create APIs and also run them directly using a runner."
   link: https://apiwiz.io
   added_on: 29/12/2022 11:53pm
@@ -179,6 +190,7 @@ client:
   tools: VSCode
   concepts: MVC
   status: Archived
+  summary: "Agriculture productivity platform providing farmers with expert advice, meteorological data, and crop planning tools across web and mobile."
   description: Made an app that allows farmers to plan and improve productivity in agriculture leading to higher crop yields. It provides meteorological information and advise from experts through different stages of crop development to achieve this. The app is powered by a powerful backend and REST API as well. The entire web and android app was made by me from scratch.
   description_resume:
     - Developed an app [enabling farmers](https://youtu.be/6IRjzmnUkpc) to plan and improve productivity in agriculture, leading to higher crop yields.
@@ -198,7 +210,8 @@ client:
   tools: Sublime Text 3
   concepts: Bluetooth
   status: Live
-  description: "Made a fun app that gamifies golf to a contest between people. The app has 3 modes: Band mode which allows players to choose the target band, and a call the shot/virtuoso mode where they can set their own target or the app suggests a target respectively that’s more suitable for professional golfers."
+  summary: "Gamified golf competition app with multiple play modes, target selection, and shot-calling features for competitive players."
+  description: "Made a fun app that gamifies golf to a contest between people. The app has 3 modes: Band mode which allows players to choose the target band, and a call the shot/virtuoso mode where they can set their own target or the app suggests a target respectively that's more suitable for professional golfers."
   link: https://www.teetimeventures.com (Website)
   added_on: 30/12/2022 4:01pm
 - title: TripTantra Web and Mobile Apps
@@ -212,6 +225,7 @@ client:
   tools: Sublime Text 3
   concepts: MVC,RESTful API
   status: Expired
+  summary: "Travel booking platform with Android app and API integration for comprehensive trip planning and reservation management."
   description: "Building an Android app for an established travel booking company. Details will be disclosed post-project completion if bragging/publicity rights are retained by me.\n\nIncremental work over an existing travel app by an established travel booking organization. The work will encompass API creation over their existing platform and link it with the Android app project which is to be built by me."
   link: https://web.archive.org/web/20190623095434/http://triptantra.com/
   added_on: 24/12/2022 5:17pm
@@ -226,6 +240,7 @@ client:
   tools: Sublime Text 3,Retrofit
   concepts: functional programming,Reactive FRP,Dependency Injection,RESTful API
   status: Live
+  summary: "Restaurant feedback management platform with customer review collection, analytics dashboard, and performance insights for hospitality businesses."
   description: "Built both the Android And Web app from the ground up. Wrote a RESTful API in the web application for the Android app to consume. The app basically allows restaurants to take feedback from their customers and gives analytics and insights into the restaurant's performance. The app is localized so that local restaurants can easily use it.\n\nBuilt a robust web backend app with multi-user hierarchy so restaurant owners, sales executive, outlet managers, etc. can log in and manage their restaurant feedbacks and view statistics and insights on how they're performing and what their customers think about them. Wrote a pragmatic RESTful API so that I could integrate the Android app (which was also built by me) to this as well."
   link: http://tellusapp.in
   google: dev.tellusapp@gmail.com
@@ -297,6 +312,7 @@ client:
   tools: Android Studio
   concepts: Dependency Injection,functional programming,Reactive FRP,RESTful API,Data Modelling
   status: Archived
+  summary: "Dynamic form management app enabling quick application submissions to various services with automated processing."
   description: A dynamic form management app that lets you to quickly apply to various services.
   link: https://www.youtube.com/watch?v=Om2YwbOWL9o
   added_on: 24/12/2022 4:31pm
@@ -311,6 +327,7 @@ client:
   tools: Sublime Text 3,Android Studio
   concepts: Reactive FRP,Dependency Injection,functional programming
   status: Live
+  summary: "Personal finance management app providing financial health insights, survival calculations, and insurance recommendations."
   description: A finance management app that lets you input your financial data to get information about your financial health which includes your months to survive, insurance required and many more cool features.
   link: https://www.producthunt.com/products/financenow (Product Hunt), https://www.9apps.com/android-apps/FinanceNow-Journey-towards-financial-liberty (9apps)
   added_on: 24/12/2022 4:26pm
@@ -340,6 +357,7 @@ client:
   tools: Sublime Text 3
   concepts: MVC,Payment Gateway
   status: Archived
+  summary: "Custom eCommerce platform for cake ordering with addon management, SMS notifications, and integrated payment processing."
   description: 'Built a custom eCommerce platform for a company named CakesOnWheels that''s a business trademark of eMandate Management Services located in Bangalore. The web app enables users to purchase a wide variety of cakes as well as addons such as roses, chocolate boxes, etc. I built a powerful backend that allows the client to add and manage the cakes and addons on his own. Sms and payment gateway integration was done as well.'
   link: https://cakesonwheels.net, https://web.archive.org/web/20180110120734/https://cakesonwheels.net/ (Archive)
   google: dev.cakesonwheels@gmail.com
@@ -357,6 +375,7 @@ client:
   tools: Sublime Text 3
   concepts: MVC,RESTful API,CMS,Dependency Injection,functional programming,Reactive FRP
   status: Live
+  summary: "Highway travel discovery platform for road trip planning and highway establishment exploration, serving 50K+ users with 4.7 rating."
   description: "\"explore highways like never before\".\n\nI built the frontend (front website) and backend (visible to logged in users) and also exposed a REST-based API so that the Android app can communicate with this DB. Some features include user management section, permission architecture, short URL management section, a custom map feature by which the authorized users can easily manage the establishments from map itself.\n\nhighway delite wants to be your one point app for your road trip / highway journey/ bike rides / weekend getaway/ tour and travel through roads on Indian highways.\nI built the entire app for a client."
   description_resume:
     - Led the development of a client project from the ground up, handling backend, Android, and web front-ends single-handedly.

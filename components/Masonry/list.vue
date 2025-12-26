@@ -230,7 +230,7 @@ watch(() => props.data, (newData) => {
             sizes="xs:512 sm:100"
             :src="project.src"
           />
-          <p class="pb-2.5">{{ project.description }}</p>
+          <p class="pb-2.5">{{ project.summary || project.description }}</p>
         </div>
       </div>
     </div>
