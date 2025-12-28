@@ -161,6 +161,25 @@ onUnmounted(() => {
   }
 })
 
+// Add onActivated hook to handle keep-alive re-activation
+onActivated(async () => {
+  // Reset grid state when component is re-activated from keep-alive
+  projects.forEach(project => {
+    project.isProcessed = false
+  })
+  initialLoaded.value = false
+
+  // Wait for next tick to ensure DOM is ready
+  await nextTick()
+
+  // Recalculate grid layout
+  await resizeAllGridItems()
+
+  if (props.progressive) {
+    showProjectsSequentially()
+  }
+})
+
 // Watch for data changes and recreate the projects array
 watch(() => props.data, (newData) => {
   if (newData) {
