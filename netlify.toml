@@ -1,0 +1,3 @@
+[build]
+  command = "nuxi generate && find dist -name 'LICENSE' -delete"
+  publish = "dist"
