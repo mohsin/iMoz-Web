@@ -79,13 +79,20 @@ client:
   languages: PHP,HTML,CSS,JavaScript,SQL
   platforms: Web
   frameworks: OctoberCMS,Laravel
-  tools: VSCode,Terraform
-  concepts: Booking Management,Payment Gateway,Google Calendar Integration,Analytics,AWS Infrastructure
+  tools: VSCode,Terraform,Razorpay API,Google Calendar API
+  concepts: Booking Management,Payment Gateway,Google Calendar Integration,Admin Dashboard,AWS Infrastructure,Coupon System
   status: Live
   summary: "Online booking platform for indoor golf facility with time slot reservations, payment processing, and automated calendar integration."
   description: "Built a comprehensive online booking system for Golfer's Edge indoor golf offering. It includes slot booking with Google Calendar sync, Razorpay payment processing, cancellation policy, and admin dashboard. Deployed on AWS infrastructure using Terraform for scalability and monitoring."
+  description_resume:
+    - Built advanced booking wizard with time slot management, player count optimization, and integration with Google Calendar for real-time synchronization.
+    - Implemented Razorpay payment processing with coupon/discount system, invoice generation, and confirmation emails for seamless transactions.
+    - Developed admin dashboard with multi-dimensional reporting including revenue trends, booking analytics, and user-sourced bookings.
+    - Engineered responsive mobile-first design handling half-hour slot intervals and supporting pending booking management workflows.
+    - Architected AWS infrastructure with Terraform for automated scaling, deployed GST-aware invoicing, and built booking source tracking system.
   website: uparbooking.com
   added_on: 07/09/2025 2:00pm
+  show_on_resume: true
 - title: LegalCook Web App
   slug: legalcook-web
   type: Client
@@ -221,7 +228,7 @@ client:
     - Powered by a robust backend and REST API, the web and android app were coded from the ground-up.
   link: https://play.google.com/store/apps/details?id=ni.org.aglobal.tech
   added_on: 19/01/2024 04:50pm
-  show_on_resume: true
+  show_on_resume: false
 - title: uPar Golf App
   slug: upar
   type: Client
