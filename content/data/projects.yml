@@ -35,18 +35,25 @@ client:
   slug: barossa-australia
   type: Client
   src: /images/barossa.webp
-  duration: Nov 2024 - Dec 2025
+  duration: Oct 2024 - Apr 2026
   location: Australia (Remote)
   languages: PHP,JavaScript,SQL
   platforms: AWS Cloud,WordPress
   frameworks: WordPress,Terraform,Elementor
-  tools: AWS CLI,Terraform,VSCode
-  concepts: ATDW Integration,Tourism Data Management,Infrastructure as Code,Auto Scaling,Plugin Development,API Integration
+  tools: AWS CLI,Terraform,VSCode,Git
+  concepts: ATDW Integration,Tourism Data Management,Infrastructure as Code,Plugin Development,Database Migration,Cron Job Management
   status: Live
-  summary: "Tourism platform for Barossa Valley featuring automatic synchronization with Australia's national tourism database and comprehensive business directory."
-  description: "Developed comprehensive ATDW (Australian Tourism Data Warehouse) integration plugin for Barossa Valley tourism platform. Built custom WordPress plugin with advanced features including automated tourism listing synchronization, category mapping system, change tracking, URL structure management, and CSV export functionality. Implemented intelligent search capabilities with organization name filtering and admin interface enhancements. Created scalable AWS infrastructure with Auto Scaling Groups, spot instances, EFS shared storage, and intelligent PHP-FPM optimization. Developed ASG management tools, backup automation, and cron-based synchronization systems for seamless tourism data management."
+  summary: "Comprehensive tourism platform for Barossa Valley with automated ATDW synchronization, integrated LearnDash LMS, and advanced property discovery features."
+  description: "Engineered complete ATDW tourism API integration with daily synchronization, complex field mappings, and automated change tracking. Migrated existing LearnDash system to consolidate with main platform, enabling certification management and course delivery. Built advanced filtering and pagination systems handling date ranges, category sorting, and URL structure normalization. Architected scalable AWS infrastructure using Terraform with Auto Scaling, spot instances, and optimized PHP-FPM configuration. Developed automated backup systems, intelligent cron scheduling, and complete CI/CD deployment pipelines."
+  description_resume:
+    - Built ATDW tourism API integration with daily sync, complex field mappings, and automated change tracking for 1000+ listings.
+    - Migrated LearnDash LMS system consolidating wine education portal with main site, preserving user accounts and course content.
+    - Engineered advanced filtering, pagination, and URL normalization across multiple tourism data sources.
+    - Designed AWS infrastructure with Auto Scaling, spot instances, and Terraform-based infrastructure as code.
+    - Implemented automated backup and cron scheduling systems with complete CI/CD pipelines.
   website: barossa.com
   added_on: 26/12/2025 9:30pm
+  show_on_resume: true
 - title: MultiVision Agency Website
   slug: multivision-agency
   type: Client
@@ -147,7 +154,7 @@ client:
   website: viewretreats.com
   link: https://www.viewretreats.com
   added_on: 29/12/2022 4:00pm
-  show_on_resume: true
+  show_on_resume: false
 - title: Designer Thamu’s Portfolio
   slug: thamu
   type: Client
