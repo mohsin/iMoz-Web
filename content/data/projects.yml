@@ -421,7 +421,6 @@ client:
   link: https://highwaydelite.com (Website), https://play.google.com/store/apps/details?id=com.highwaydelite.highwaydelite (Play Store)
   added_on: 24/12/2022 3:45pm
   show_on_resume: false
-  show_on_resume: true
 - title: Sky Properties
   slug: sky-properties
   type: Client
