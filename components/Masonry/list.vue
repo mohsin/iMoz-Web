@@ -214,7 +214,7 @@ watch(() => props.data, (newData) => {
       v-for="project in projects"
       v-bind:key="project.slug"
       :class="[
-        {'dark:border dark:border-white': project.isProcessed },
+        {'border dark:border-slate-600': project.isProcessed },
         project.type,
         'transition-all duration-500 ease-out',
         {
@@ -225,9 +225,9 @@ watch(() => props.data, (newData) => {
       class="item bg-white dark:bg-slate-700"
     >
       <div class="content flow-root">
-        <div class="p-5 bg-slate-700 dark:bg-white">
-          <h3 class="text-lg text-white dark:text-slate-700 uppercase">{{ project.title }}</h3>
-          <span class="text-slate-100 dark:text-slate-900 opacity-70 text-xs">{{ project.duration }}</span>
+        <div class="p-5 bg-slate-700 dark:bg-slate-600">
+          <h3 class="text-lg text-white dark:text-white uppercase">{{ project.title }}</h3>
+          <span class="text-slate-100 dark:text-slate-300 opacity-70 text-xs">{{ project.duration }}</span>
         </div>
         <nuxt-img
           format="webp"
@@ -249,7 +249,7 @@ watch(() => props.data, (newData) => {
             sizes="xs:512 sm:100"
             :src="project.src"
           />
-          <p class="pb-2.5">{{ project.summary || project.description }}</p>
+          <p class="pb-2.5 text-gray-900 dark:text-slate-300">{{ project.summary || project.description }}</p>
         </div>
       </div>
     </div>
