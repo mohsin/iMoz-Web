@@ -73,35 +73,44 @@ volunteering:
 skills:
   - Programming:
       Proficient:
-        - Kotlin
+        - JavaScript/TypeScript
         - PHP
-        - JavaScript
         - HTML
-        - CSS
-        - Java
+        - CSS/Sass/SCSS
+        - Java/Kotlin
       Familiar:
+        - SQL
         - Python
-        - Swift
-        - LaTeX
-        - C
-        - C++
+        - .NET
   - Libraries/Frameworks:
-    - jQuery
-    - Node.js
+    - Vue 3
+    - Nuxt 4
+    - React
+    - NextJS
     - Laravel
-    - Vue
-  - Tools/Platforms:
-    - Git
-    - VSCode
-    - Webpack
+    - OctoberCMS
     - WordPress
+    - TinaCMS
+    - LangGraph
+    - Jetpack Compose
+    - RxAndroid
+    - PrimeVue
+    - Elementor
+    - Terraform
+  - Tools:
+    - VSCode
+    - Git
     - Docker
+    - AWS
+    - MySQL
+    - Netlify
+    - Android Studio
+    - Bun
   - Platforms:
-    - Android
-    - iOS
-    - Web
-    - Alexa
-    - Google Home
+    - Web (Frontend/Backend)
+    - Mobile (Android/iOS)
+    - Chatbots (AI/ML)
+    - Desktop
 
 languages:
   - language: English
