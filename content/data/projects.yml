@@ -83,7 +83,7 @@ client:
   slug: golfers-edge
   type: Client
   src: /images/golfersedge.webp
-  duration: Mar 2024 - Sep 2025
+  duration: Sep 2024 - Apr 2026
   location: Bengaluru, India
   languages: PHP,HTML,CSS,JavaScript,SQL
   platforms: Web
@@ -91,9 +91,9 @@ client:
   tools: VSCode,Terraform,Razorpay API,Google Calendar API
   concepts: Booking Management,Payment Gateway,Google Calendar Integration,Admin Dashboard,AWS Infrastructure,Coupon System
   status: Live
-  summary: "Online booking platform for indoor golf facility with time slot reservations, payment processing, and automated calendar integration."
+  summary: "Comprehensive online booking platform for Golfer's Edge indoor golf facility featuring real-time Google Calendar synchronization, Razorpay payment integration with coupon system, multi-dimensional admin analytics dashboard, and optimized mobile-first booking experience."
   order_on_resume: 2
-  description: "Built a comprehensive online booking system for Golfer's Edge indoor golf offering. It includes slot booking with Google Calendar sync, Razorpay payment processing, cancellation policy, and admin dashboard. Deployed on AWS infrastructure using Terraform for scalability and monitoring."
+  description: "Built a full-stack online booking system for Golfer's Edge indoor golf offering with end-to-end functionality. Engineered a sophisticated booking wizard supporting 30-minute time slot management, player count optimization, and real-time Google Calendar synchronization to prevent double-bookings. Implemented Razorpay payment processing with advanced coupon/discount system, GST-aware invoicing (18% rate handling), and automated confirmation/cancellation emails. Developed a comprehensive admin dashboard featuring multiple reporting widgets including revenue overview with trend analysis, bookings by user sourcing, today's bookings overview, and historical booking trends for business intelligence. Built club management system with working hours configuration, Google Calendar linking, and role-based access control for club managers. Architected AWS infrastructure using Terraform with EC2, RDS MariaDB, S3 storage, multi-zone VPC setup, CloudWatch monitoring, and automated backup systems. Implemented CI/CD pipeline with GitHub Actions for continuous deployment and booking source tracking for customer acquisition analytics."
   description_resume:
     - Built advanced booking wizard with time slot management, player count optimization, and integration with Google Calendar for real-time synchronization.
     - Implemented Razorpay payment processing with coupon/discount system, invoice generation, and confirmation emails for seamless transactions.
