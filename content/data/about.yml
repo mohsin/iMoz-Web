@@ -51,6 +51,7 @@ work:
   duration: Feb 2017 - Jul 2017
   location: Bengaluru, India (Remote)
   summary: "I was part of the Indiez community as an independent full-stack developer and built projects for some of their clients on the Android and Laravel platforms."
+  show_on_resume: false
 - company: highway delite
   position: Chief Technology Officer (Contractual)
   duration: Feb 2016 - Apr 2016

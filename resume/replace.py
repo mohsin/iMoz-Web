@@ -214,7 +214,7 @@ def replace_placeholders(template, data, type = 'personal'):
         if (type == 'education'):
           sub_template = "\n\n".join(entry_education(value) for value in data)
         elif(type == 'experience'):
-          sub_template = "\n\n".join(entry_experience(**value) for value in data)
+          sub_template = "\n\n".join(entry_experience(**value) for value in data if value.get('show_on_resume', True))
         elif(type == 'volunteering'):
           sub_template = "\n\n".join(entry_volunteering(**value) for value in data)
         elif(type == 'skills'):
