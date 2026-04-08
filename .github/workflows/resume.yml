@@ -23,12 +23,33 @@ jobs:
         run: |
           python resume/replace.py
 
+      # Cache texlive Docker image
+      - name: Cache texlive Docker image
+        uses: actions/cache@v3
+        with:
+          path: /tmp/docker-cache
+          key: texlive-latest
+
+      # Load cached Docker image
+      - name: Load cached Docker image
+        run: |
+          if [ -f /tmp/docker-cache/texlive.tar ]; then
+            docker load -i /tmp/docker-cache/texlive.tar
+          fi
+
       # Build the resume
       - uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
           working_directory: resume
           latexmk_use_xelatex: true
+
+      # Save Docker image to cache
+      - name: Save Docker image to cache
+        if: always()
+        run: |
+          mkdir -p /tmp/docker-cache
+          docker save ghcr.io/xu-cheng/texlive-full:latest -o /tmp/docker-cache/texlive.tar
 
       # Commit and push all changed files.
       - name: Commit updated resume
