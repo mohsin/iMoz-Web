@@ -10,6 +10,18 @@ const props = defineProps({
   }
 })
 const item = props.data
+
+const parseTags = (str?: string): string[] => {
+  if (!str) return []
+  return str.split(',').map(s => s.trim()).filter(s => s.length > 0)
+}
+
+const badgeGroups = [
+  { label: 'Languages', value: item.languages, bgColor: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200' },
+  { label: 'Frameworks', value: item.frameworks, bgColor: 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200' },
+  { label: 'Tools', value: item.tools, bgColor: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200' },
+  { label: 'Platforms', value: item.platforms, bgColor: 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200' }
+]
 </script>
 
 <template>
@@ -21,6 +33,7 @@ const item = props.data
         <span></span>
       </h3>
     </div>
+
     <div>
       <ContentDoc class="p-3" :path="'/data/projects/' + item.slug">
         <template #not-found>
@@ -31,6 +44,18 @@ const item = props.data
           </div>
         </template>
       </ContentDoc>
+    </div>
+
+    <!-- Tech Stack Badges -->
+    <div v-if="badgeGroups.some(g => parseTags(g.value).length > 0)" class="px-3 pt-3 pb-3 border-t border-slate-100 dark:border-slate-600">
+      <div v-for="group in badgeGroups" :key="group.label" v-show="parseTags(group.value).length > 0" class="flex flex-wrap items-center gap-y-2 mb-2">
+        <span class="text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400 mr-2 font-medium">{{ group.label }}</span>
+        <div class="flex flex-wrap gap-1">
+          <span v-for="tag in parseTags(group.value)" :key="tag" :class="group.bgColor" class="inline-block text-xs font-medium px-2 py-0.5 rounded-full">
+            {{ tag }}
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
