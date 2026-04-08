@@ -175,24 +175,24 @@ Last Updated on \today
 } \\[5pt]
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
+\vspace{-10pt}
 
 \RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{14pt}{14pt}\selectfont #3}
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
+\vspace{-10pt}
 
 \RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{10pt}{14pt}\selectfont #4}
 
 \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
+\vspace{-10pt}
 }
 
 % Section separators
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{5pt}{5pt}
+\titlespacing{\section}{0pt}{3pt}{3pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{5pt}}
+\newcommand{\sectionsep}{\vspace{3pt}}
 
 % Headings command
 \titleformat{\section}{\color{title}
@@ -232,6 +232,6 @@ Last Updated on \today
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}[label=\ding{212}]\itemsep1pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\begin{itemize}[label=\ding{212}]\itemsep0pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
