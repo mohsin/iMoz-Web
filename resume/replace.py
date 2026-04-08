@@ -233,11 +233,21 @@ def replace_placeholders(template, data, type = 'personal'):
     if(type == 'projects'):
         projects_outputs = ""
         first_project_flag = True
+        # Collect all projects from all categories
+        all_projects = []
         for _, projects_list in data.items():
-            for project in projects_list:
-                formatted_project_output, first_project_flag = entry_project(project, first_project_flag)
-                if formatted_project_output:
-                    projects_outputs += formatted_project_output + "\n"
+            all_projects.extend(projects_list)
+
+        # Filter for projects that should appear on resume and sort by order_on_resume
+        resume_projects = [p for p in all_projects if p.get('show_on_resume', False)]
+        resume_projects.sort(key=lambda p: p.get('order_on_resume', float('inf')))
+
+        # Generate LaTeX for sorted projects
+        for project in resume_projects:
+            formatted_project_output, first_project_flag = entry_project(project, first_project_flag)
+            if formatted_project_output:
+                projects_outputs += formatted_project_output + "\n"
+
         template = template.replace(f'% {type.title()} goes here', str(projects_outputs))
         return template
 
