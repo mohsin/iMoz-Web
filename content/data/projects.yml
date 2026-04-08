@@ -13,8 +13,15 @@ client:
   status: Live
   summary: "Professional DJ portfolio website with AI assistant for event discovery, venue information, and music queries. Features photo galleries and comprehensive event management."
   description: "Built a modern DJ portfolio website featuring a sophisticated LangGraph-powered AI assistant with advanced conversational capabilities. Developed custom LangGraph workflows for intent detection, event filtering, and FAQ system integration. Implemented comprehensive TinaCMS admin interface allowing Jonas to manage all content without technical knowledge - events (with venue details, dates, guestlist settings), photo/video galleries, social media links, FAQ knowledge base, venue information, and site configuration. Created intelligent search with natural language processing for event queries, multi-model AI fallbacks with quota management, and conversation context awareness. The AI assistant handles complex queries like date parsing, venue filtering, guestlist requests, and music genre questions with markdown support and secure prompt injection protection. The entire website content is admin-manageable through TinaCMS's user-friendly interface."
+  description_resume:
+    - Engineered LangGraph-powered AI assistant with multi-turn conversation handling, intent detection, and context-aware event discovery using Google Gemini.
+    - Implemented custom workflows for intelligent event filtering, venue search, guestlist management, and FAQ knowledge base integration with fallback responses.
+    - Built comprehensive TinaCMS admin interface enabling non-technical content management for 80+ events, galleries, FAQ, venues, and site configuration.
+    - Developed natural language event search with timezone-aware date parsing, venue filtering by city/locality, and multi-model AI quota management.
+    - Created secure AI-powered chatbot with prompt injection protection, markdown support, and conversation context persistence for seamless user interactions.
   website: jonasmonteiro.com
   added_on: 26/12/2025 9:00pm
+  show_on_resume: true
 - title: Astravise GCC Compass Form
   slug: astravise-gcc-compass
   type: Client
@@ -413,6 +420,7 @@ client:
     - In July 2016, due to a breach of contract, I filed a copyright request, leading Google to take down the app. I later released it when the client settled and purchased the app’s IP entirely.
   link: https://highwaydelite.com (Website), https://play.google.com/store/apps/details?id=com.highwaydelite.highwaydelite (Play Store)
   added_on: 24/12/2022 3:45pm
+  show_on_resume: false
   show_on_resume: true
 - title: Sky Properties
   slug: sky-properties
