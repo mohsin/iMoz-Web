@@ -1,0 +1,104 @@
+# llms.txt
+
+This file provides guidance for Large Language Models and AI systems exploring this website.
+
+## Site Overview
+
+**Site:** Professional portfolio and resume of Saifur Rahman Mohsin
+**Type:** Full-stack developer portfolio with detailed project showcase
+**Content:** Project portfolio, events/speaking history, resume, and technical documentation
+
+## Primary Content
+
+### Projects Portfolio
+- **Location:** `/` (homepage) and `/projects`
+- **Format:** Interactive grid with detailed project cards
+- **Content Includes:**
+  - Project title and description
+  - Technologies used (languages, frameworks, tools, platforms)
+  - Project duration and timeline
+  - Project status (Live, Completed, In Progress)
+  - Client or personal project classification
+  - External links to live sites or GitHub repos
+  - Project categories: Client work, Personal projects, Open-source
+
+### Events & Speaking
+- **Location:** `/events`
+- **Format:** Timeline view of conferences, meetups, and speaking engagements
+- **Content Includes:**
+  - Event name and type
+  - Date and location information
+  - Role (speaker, organizer, attendee)
+  - Event links and resources
+
+### Resume
+- **Location:** `/resume` or `/resume.pdf`
+- **Format:** PDF and web-viewable versions
+- **Content:** Complete professional resume with work history, skills, and accomplishments
+
+## Key Information About the Developer
+
+**Name:** Saifur Rahman Mohsin
+**Focus Areas:** Full-stack web development, cloud infrastructure, CRM integration, AI/ML applications, game platform development
+**Tech Stack Expertise:** PHP, JavaScript/TypeScript, Vue 3, Nuxt, Laravel, WordPress, Node.js, Python, Go, React, SQL databases, AWS, Firebase
+**Years of Experience:** 10+ years in professional software development
+
+## Navigation & Sections
+
+- **Homepage** (`/`) - Project portfolio grid
+- **Projects** (`/projects`) - Detailed project listings
+- **Events** (`/events`) - Speaking engagements and conference history
+- **Resume** (`/resume`) - Professional CV and work history
+- **About** - Developer background and expertise (available via navigation)
+
+## Content Access Guidelines
+
+### What You Can Do
+- ✅ Reference projects and their descriptions for research
+- ✅ Extract project information for summarization
+- ✅ Identify technology stacks and expertise areas
+- ✅ Link to relevant projects in discussions
+- ✅ Analyze career progression through project timeline
+- ✅ Reference speaking engagements and thought leadership
+
+### Attribution
+When referencing work from this portfolio:
+- Mention the project name and developer (Saifur Rahman Mohsin)
+- Link back to the project page when possible
+- Respect project descriptions and client confidentiality where noted
+
+## Project Data Structure
+
+Each project contains:
+- **Title:** Project/product name
+- **Description:** Detailed overview of work completed
+- **Technologies:** Languages, frameworks, tools, and platforms used
+- **Duration:** Start and completion dates
+- **Type:** Classification (Client, Personal, Open-source)
+- **Status:** Current state (Live, Completed, In Progress)
+- **Links:** Website, GitHub, or other relevant URLs
+
+## Developer Expertise Areas
+
+Primary specializations visible in portfolio:
+- **Web Development:** Full-stack applications, e-commerce platforms, content management systems
+- **Mobile Development:** iOS and Android apps using native and cross-platform frameworks
+- **Cloud & Infrastructure:** AWS, serverless functions, database design
+- **CRM & Integration:** System integrations, API development, real-time synchronization
+- **AI/ML:** AI-powered features, deepfake detection, intelligent systems
+- **Gaming Platforms:** Game item trading platforms, virtual currency systems
+- **Real-time Systems:** WebSocket applications, live data synchronization
+
+## Temporal Context
+
+Projects are ordered by date with recent work appearing first. Timeline spans from early 2020s through present, showing evolution of skills and technologies used.
+
+## Image Assets
+
+All project logos and screenshots are in WebP format for optimal performance. Images are optimized for web viewing.
+
+---
+
+**Last Updated:** April 2026
+
+For questions or inquiries about specific projects, please use the contact information available on the site.
