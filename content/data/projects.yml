@@ -103,6 +103,37 @@ client:
   website: uparbooking.com
   added_on: 07/09/2025 2:00pm
   show_on_resume: true
+- title: GenUI - Deepfake Detection Platform
+  slug: genui-deepfake
+  type: Client
+  src: /images/datambit.webp
+  duration: Jul 2024 - Dec 2024
+  location: Remote
+  languages: Python,JavaScript,TypeScript,Kotlin
+  platforms: Web,Mobile,Cloud
+  frameworks: Flask,Kubernetes,Next.js
+  tools: GCS,RabbitMQ,PostgreSQL,Terraform,Docker,HubSpot API
+  concepts: Microservices,Deepfake Detection,Video Analysis,Horizontal Autoscaling,Vertical Pod Autoscaling,ML Model Integration
+  status: Active
+  summary: "Enterprise-grade deepfake detection platform with microservices architecture, processing video, audio, and image files to detect authenticity using AI models."
+  description: "Engineered comprehensive deepfake detection platform with scalable microservices architecture deployed on Kubernetes and GCP. Built Flask-based microservices for authentication, file upload, report generation, and HubSpot CRM-integrated ticketing system. Implemented advanced ML model integration for video, audio, and image analysis detecting deepfakes with confidence scoring. Built Next.js frontend with file dropzone interface for multimedia uploads and report visualization supporting JSON, CSV, XLS, and XLSX export formats. Architected asynchronous processing pipeline using RabbitMQ with job queuing and progress estimation. Implemented Google Cloud Storage integration for file management and PostgreSQL for persistent data storage. Configured Kubernetes deployments with horizontal and vertical autoscaling for handling variable workloads. Deployed using Terraform Infrastructure as Code with complete CI/CD pipelines."
+  added_on: 09/04/2026 12:00pm
+- title: EzrsGold & EzrsAccounts Web Apps
+  slug: zapitup-ezrs
+  company: zapitup-ltd
+  type: Client
+  src: /images/ezrsgold.webp
+  duration: Jan 30, 2024 - Apr 9, 2025
+  location: Remote
+  languages: PHP,JavaScript,SQL
+  platforms: Web
+  frameworks: WordPress,Laravel
+  tools: MySQL,Composer,PHP
+  concepts: WooCommerce Integration,CRM Synchronization,REST API Development,WordPress Plugin Development,Multi-Store Architecture,Order Management,Database Schema Design,Basic Authentication,Real-Time Data Sync
+  status: Completed
+  summary: "RuneScape gold and account trading platform with WooCommerce-based e-commerce, real-time CRM synchronization, and multi-store architecture supporting OSRS/RS3 product sales (Sellable/Buyable/Swapable order types) with API-driven inventory and order management."
+  description: "Built comprehensive WooCommerce CRM integration system for EzrsGold's RuneScape gaming platform handling both OSRS/RS3 virtual currency trading and EZRSAccounts hand-trained account marketplace. Developed two custom WordPress plugins enabling real-time synchronization between WooCommerce storefronts and Bitcat CRM backend system. Engineered order synchronization supporting three product types (Sellable gold/accounts, Buyable player-to-platform, Swapable account trades) with automatic processing on order creation and updates. Implemented REST API endpoint for remote order status control with basic authentication, including status mapping, order note management with author tracking, and CRM-driven inventory updates. Created admin interface with CRM credentials configuration, order sync toggles, and manual synchronization triggers. Architected multi-store management system supporting distinct storefronts for EzrsGold (gold trading) and EZRSAccounts (account sales) with store renaming, creation functionality, and ID-based order linkage preservation across store migrations. Built complex database schema for multi-store coordination, account tracking, and order references across both platforms."
+  added_on: 09/04/2026 12:00pm
 - title: LegalCook Web App
   slug: legalcook-web
   type: Client
@@ -217,6 +248,35 @@ client:
   description: "Built the API catalog module for Itorix web app that enables their customers to create APIs and also run them directly using a runner."
   link: https://apiwiz.io
   added_on: 29/12/2022 11:53pm
+- title: All Rounders LMS
+  slug: allrounders-lms
+  type: Client
+  src: /images/allrounders.webp
+  duration: Jan 2021 - Mar 2022
+  location: Remote
+  languages: PHP,JavaScript,HTML,CSS,SQL
+  platforms: Web
+  frameworks: Laravel,Bootstrap
+  tools: MySQL,Laravel Artisan,Composer
+  status: Inactive
+  summary: "Learning Management System for skill development with courses, certificates, and degree programs."
+  description: "Built comprehensive LMS platform enabling online learning with world-class instructors. Implemented multi-course curriculum management with certificate and degree tracking. Created student dashboard with progress tracking, course enrollment, and certificate generation. Developed instructor panel for course creation, content management, and student performance analytics. Integrated secure authentication, payment processing, and email notifications. Features responsive design with Laravel backend handling all business logic and database operations."
+  added_on: 09/04/2026 12:00pm
+- title: Accentra App
+  slug: accentra
+  type: Client
+  src: /images/accentra.webp
+  duration: Feb 2021 - Jun 2021
+  location: Remote
+  languages: Swift,Kotlin,Java
+  platforms: iOS,Android
+  frameworks: SwiftUI,Firebase
+  tools: Xcode,Android Studio,Firebase
+  concepts: Cross-platform Development,Authentication
+  status: Active
+  summary: "Enterprise container management mobile application for iOS and Android providing real-time synchronization and secure access control."
+  description: "Developed enterprise-grade container management application for both iOS and Android platforms. Built iOS application using SwiftUI with custom drawer navigation, splash screens, and biometric authentication. Implemented Android application with Kotlin and Java."
+  added_on: 09/04/2026 12:00pm
 - title: AldeaTech Android and Web Apps
   slug: justai-aldeatech
   type: Client
@@ -227,11 +287,11 @@ client:
   languages: PHP,mySQL,HTML,JavaScript,CSS,Kotlin
   platforms: Web, Android
   frameworks: October CMS, Android Studio
-  tools: VSCode
-  concepts: MVC
-  status: Archived
-  summary: "Agriculture productivity platform providing farmers with expert advice, meteorological data, and crop planning tools across web and mobile."
-  description: Made an app that allows farmers to plan and improve productivity in agriculture leading to higher crop yields. It provides meteorological information and advise from experts through different stages of crop development to achieve this. The app is powered by a powerful backend and REST API as well. The entire web and android app was made by me from scratch.
+  tools: VSCode,Composer,Docker
+  concepts: MVC,Mobile Development,Weather Integration,User Authentication,Notifications,Location Services,Agricultural Data
+  status: Completed
+  summary: "Agriculture productivity platform providing farmers with weather data, farming manuals, expert advice, meteorological data, crop planning tools and Q&A system for farmers across web and mobile."
+  description: Developed comprehensive agriculture platform supporting farmers with expert knowledge and real-time weather data. Built OctoberCMS/Laravel backend with multiple specialized plugins including weather integration via aWhere API, farming manuals, questions & answers system, favorites management, user management and built language support (app was primarily Spanish as it was intended for Colombian coffee farmers). Engineered mobile app (Rowan) using Ionic and Angular for iOS and Android with offline capabilities and Firebase Cloud Messaging for push notifications. Implemented user authentication, location-based services, and OAuth2 integration. Integrated aWhere weather API for real-time meteorological data including precipitation, temperature, and crop-specific recommendations. Created comprehensive plugin architecture for modular feature development and easy maintenance.
   description_resume:
     - Developed an app [enabling farmers](https://youtu.be/6IRjzmnUkpc) to plan and improve productivity in agriculture, leading to higher crop yields.
     - The app provides meteorological information and advice from experts through different stages of crop development.
@@ -254,6 +314,21 @@ client:
   description: "Made a fun app that gamifies golf to a contest between people. The app has 3 modes: Band mode which allows players to choose the target band, and a call the shot/virtuoso mode where they can set their own target or the app suggests a target respectively that's more suitable for professional golfers."
   link: https://www.teetimeventures.com (Website)
   added_on: 30/12/2022 4:01pm
+- title: FoodLans Delivery App
+  slug: jpdell-foodlans-delivery
+  type: Client
+  src: /images/jpdell.webp
+  duration: Sep 2020 - Nov 2020
+  location: Remote
+  languages: JavaScript,TypeScript
+  platforms: iOS,Android
+  frameworks: Ionic,Cordova,Angular
+  tools: Firebase,Google Maps API,Geolocation Services
+  concepts: Food Delivery,Real-time Tracking,Role-based Authentication,Payment Integration,Location Services
+  status: Archived
+  summary: "Food delivery mobile application for iOS and Android enabling customers and delivery personnel to place and fulfill food orders with real-time tracking."
+  description: "Developed comprehensive food delivery platform using Ionic and Angular for cross-platform iOS and Android compatibility. Built dual mobile apps serving customers and delivery partners with role-based authentication and authorization. Implemented real-time location tracking using geolocation APIs and Google Maps integration for order tracking and delivery navigation. Created Firebase backend for user management, order processing, and data persistence. Developed payment gateway integration for seamless transaction processing. Implemented push notifications for order status updates and delivery alerts. Built in-app rating system and customer feedback mechanisms for quality assurance."
+  added_on: 09/04/2026 12:00pm
 - title: TripTantra Web and Mobile Apps
   slug: triptantra
   type: Client
