@@ -597,6 +597,21 @@ client:
   link: http://web.archive.org/web/20140517105707/http://hiveyo.com
   added_on: 24/12/2022 2:21pm
 opensource:
+- title: iMoz Website
+  slug: imoz-website
+  type: Open Source
+  src: /images/imoz.webp
+  duration: Oct 2022 - Present
+  languages: JavaScript,Vue,CSS
+  platforms: Web
+  frameworks: Nuxt 3,Vue 3,Tailwind CSS
+  tools: Nuxt Content,VSCode,Bun
+  concepts: Portfolio,Static Site Generation,Dark Mode,Open Source
+  status: Live
+  summary: "Open-source personal portfolio and project showcase built with Nuxt 3 and Vue 3, featuring dark mode, project filtering, event timeline, and resume generation."
+  description: "Built and continuously maintain this open-source portfolio website to showcase projects, speaking engagements, and professional history. Developed with Nuxt 3 and Vue 3 using Tailwind CSS for styling, @nuxt/content for markdown-driven project data, and nuxt-icon for iconography. Features a masonry project grid with filtering, a custom events timeline, dark/light mode toggle, and a resume page. Deployed as a static site for fast global delivery."
+  link: https://github.com/mohsin/iMoz-Web (Source), https://imoz.in (Live)
+  added_on: 28/04/2026 12:00pm
 - title: Expense Tracker for Google Home
   slug: expense-tracker
   type: Open Source
