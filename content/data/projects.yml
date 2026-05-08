@@ -14,6 +14,7 @@ client:
   summary: "Modern DJ portfolio website featuring AI-powered event discovery assistant with sophisticated LangGraph workflows, TinaCMS-managed event database of 80+ events, interactive photo and video galleries, and real-time guestlist management system."
   order_on_resume: 3
   description: "Built a modern, production-ready DJ portfolio website showcasing Jonas Monteiro's career with cutting-edge AI capabilities. Engineered a sophisticated LangGraph-powered AI assistant enabling multi-turn conversational interactions for event discovery, venue queries, and music genre filtering. Implemented custom LangGraph workflows for intelligent intent detection, automatic event filtering by date/location/genre, and integrated FAQ knowledge base with secure prompt injection protection. Developed comprehensive TinaCMS admin interface allowing Jonas to manage all content without technical knowledge - 80+ events with dates/venues/guestlist settings, photo galleries, video aftermovies, news articles, social media links, FAQ knowledge base, venue information, and site configuration. Created intelligent natural language search with timezone-aware date parsing (understanding \"new years\", \"this Friday\", \"weekend\"), multi-venue locality filtering, and city-based searches with alternate spelling support. Built multi-model AI fallback system with quota management and conversation context persistence for seamless user interactions. Implemented static site generation with Nuxt 4 for blazing-fast performance, optimized image delivery with WebP conversion, and deployed on Netlify for global CDN, serverless functions, and zero-downtime deployments. Integrated automated recurring event processing with GitHub Actions and comprehensive test suite for reliable event data."
+  description_on_linkedin: "Developed a cutting-edge portfolio website for electronic DJ Jonas Monteiro featuring an AI-powered conversational assistant for smart event discovery. The site showcases his career with an interactive 80+ event database, automated guestlist management, photo and video galleries, and a content management system allowing Jonas to manage all site content independently without technical knowledge. The AI assistant understands natural language queries about event dates, venues, and music genres with timezone-aware parsing."
   description_resume:
     - Engineered LangGraph-powered AI assistant with multi-turn conversation handling, intent detection, and context-aware event discovery using Google Gemini.
     - Implemented custom workflows for intelligent event filtering, venue search, guestlist management, and FAQ knowledge base integration with fallback responses.
@@ -37,6 +38,7 @@ client:
   status: Live
   summary: "Interactive TypeForm-style assessment tool for Global Capability Centers (GCC) advisory services with intelligent result calculation and automated email workflows."
   description: "Developed a comprehensive GCC Compass assessment platform for Astravise Services, replacing their QuillForms dependency with a custom TypeForm-style interactive form solution. Built a sophisticated custom WordPress plugin featuring multi-step progressive questionnaire covering company industry, size, involvement levels, operational supervision requirements, core functions, GCC location preferences, and timeline expectations. Implemented intelligent result calculation algorithms with dual-fit logic supporting 5 different result templates based on company profile analysis. Created robust database architecture with comprehensive submission tracking including user data, IP logging, submission status management, and admin notes functionality. Developed automated email notification system with customizable templates for instant client communication. The form features responsive design optimized for both desktop and mobile, smooth animations, progressive disclosure, and intuitive navigation with manual progression controls. Includes advanced form validation, answer persistence, and comprehensive admin dashboard for submission management and analytics."
+  description_on_linkedin: "Built an interactive assessment platform for Astravise Services' Global Capability Centers advisory services. The web-based form replaces traditional questionnaires with an intuitive step-by-step interface covering company profiles, operational requirements, and GCC location preferences. Features intelligent result calculation algorithms that generate customized recommendations from 5 different templates. Includes comprehensive admin dashboard for submission tracking, user analytics, and response management."
   website: astraviseservices.com
   added_on: 26/12/2025 11:30pm
 - title: Barossa Australia Tourism Platform
@@ -60,6 +62,7 @@ client:
     - Engineered advanced filtering, pagination, and URL normalization across multiple tourism data sources.
     - Designed AWS infrastructure with Auto Scaling, spot instances, and Terraform-based infrastructure as code.
     - Implemented automated backup and cron scheduling systems with complete CI/CD pipelines.
+  description_on_linkedin: "Developed the digital hub for Barossa Valley, one of Australia's oldest and most prestigious wine regions with over 150 wineries and 80 cellar doors. The platform connects travelers with accommodations, wine experiences, and regional attractions. Integrated with Australia's Tourism Data Warehouse (ATDW) for daily synchronization of property listings with real-time availability and change tracking. Built advanced filtering system allowing visitors to discover accommodations by wine type, food experiences, tour availability, and dates. Migrated LearnDash learning management system enabling wine certification programs and expert education. Deployed on AWS with auto-scaling to handle seasonal tourism fluctuations and integrated booking management for Barossa Australia tourism operators."
   website: barossa.com
   added_on: 26/12/2025 9:30pm
   show_on_resume: true
@@ -77,6 +80,7 @@ client:
   status: Live
   summary: "Marketing agency website featuring modern single-page design, dark mode interface, and client testimonials showcase."
   description: "Developed a professional marketing agency website for MultiVision Agency using the Nuxt framework. It is mostly a single page website (SPA) with various sections except for a client testimonials showcase page and there is also a dark mode toggle."
+  description_on_linkedin: "Developed a contemporary website for MultiVision, a digital marketing agency. The site features a clean single-page layout with client testimonial showcase, services overview, and team introduction. Includes a dark mode toggle allowing visitors to browse content in their preferred theme, alongside responsive design optimized for all devices."
   website: mvagency.in
   added_on: 07/09/2025 1:30pm
 - title: Golfer's Edge Booking Website
@@ -100,6 +104,7 @@ client:
     - Developed admin dashboard with multi-dimensional reporting including revenue trends, booking analytics, and user-sourced bookings.
     - Engineered responsive mobile-first design handling half-hour slot intervals and supporting pending booking management workflows.
     - Architected AWS infrastructure with Terraform for automated scaling, deployed GST-aware invoicing, and built booking source tracking system.
+  description_on_linkedin: "Developed a comprehensive online booking and management platform for Golfer's Edge, a premium virtual golf simulator facility with locations in Bengaluru and Chennai. Built advanced booking system with time-slot management, player optimization, and real-time Google Calendar synchronization to prevent double-bookings. Golfers can access 150,000+ golf courses worldwide (including St. Andrews, Augusta National, and Pebble Beach) with HD virtual simulator technology providing real-time swing analysis including club data, swing metrics, ball flight data, and ultra-slow motion video capture at impact. Implemented Razorpay payment processing with advanced coupon/discount system, GST-aware invoicing, and confirmation emails. Developed comprehensive admin dashboard with revenue analysis, booking trends, and user-sourced booking tracking. Features include coaching packages for kids and adults, multi-facility management, and partial refund policies. Architected on AWS with Terraform infrastructure-as-code, auto-scaling, and CI/CD pipelines."
   website: uparbooking.com
   added_on: 07/09/2025 2:00pm
   show_on_resume: true
@@ -117,6 +122,7 @@ client:
   status: Active
   summary: "Enterprise-grade deepfake detection platform with microservices architecture, processing video, audio, and image files to detect authenticity using AI models."
   description: "Engineered comprehensive deepfake detection platform with scalable microservices architecture deployed on Kubernetes and GCP. Built Flask-based microservices for authentication, file upload, report generation, and HubSpot CRM-integrated ticketing system. Implemented advanced ML model integration for video, audio, and image analysis detecting deepfakes with confidence scoring. Built Next.js frontend with file dropzone interface for multimedia uploads and report visualization supporting JSON, CSV, XLS, and XLSX export formats. Architected asynchronous processing pipeline using RabbitMQ with job queuing and progress estimation. Implemented Google Cloud Storage integration for file management and PostgreSQL for persistent data storage. Configured Kubernetes deployments with horizontal and vertical autoscaling for handling variable workloads. Deployed using Terraform Infrastructure as Code with complete CI/CD pipelines."
+  description_on_linkedin: "Developed an advanced deepfake detection platform for enterprises to verify media authenticity across videos, images, and audio files. The platform analyzes multimedia using state-of-the-art AI models that detect synthetic content by examining visual inconsistencies, structural artifacts, synthetic motion patterns, face inconsistencies, audio signals, metadata, and file structure. Users upload files through an intuitive web interface receiving confidence-scored analysis results. Features robust report generation supporting multiple export formats (JSON, CSV, Excel), real-time detection capabilities, integration with HubSpot CRM for ticketing and case management, and scalable microservices architecture using Kubernetes autoscaling to handle variable enterprise workloads. Built with Next.js frontend, Python/Flask backend, PostgreSQL database, Docker containerization, and RabbitMQ for asynchronous processing with Google Cloud Storage for secure file management."
   added_on: 09/04/2026 12:00pm
 - title: EzrsGold & EzrsAccounts Web Apps
   slug: zapitup-ezrs
@@ -133,6 +139,7 @@ client:
   status: Completed
   summary: "RuneScape gold and account trading platform with WooCommerce-based e-commerce, real-time CRM synchronization, and multi-store architecture supporting OSRS/RS3 product sales (Sellable/Buyable/Swapable order types) with API-driven inventory and order management."
   description: "Built comprehensive WooCommerce CRM integration system for EzrsGold's RuneScape gaming platform handling both OSRS/RS3 virtual currency trading and EZRSAccounts hand-trained account marketplace. Developed two custom WordPress plugins enabling real-time synchronization between WooCommerce storefronts and Bitcat CRM backend system. Engineered order synchronization supporting three product types (Sellable gold/accounts, Buyable player-to-platform, Swapable account trades) with automatic processing on order creation and updates. Implemented REST API endpoint for remote order status control with basic authentication, including status mapping, order note management with author tracking, and CRM-driven inventory updates. Created admin interface with CRM credentials configuration, order sync toggles, and manual synchronization triggers. Architected multi-store management system supporting distinct storefronts for EzrsGold (gold trading) and EZRSAccounts (account sales) with store renaming, creation functionality, and ID-based order linkage preservation across store migrations. Built complex database schema for multi-store coordination, account tracking, and order references across both platforms."
+  description_on_linkedin: "Built a comprehensive trading platform for OSRS and RuneScape 3 virtual currency and hand-trained accounts with advanced security features. The platform features dual storefronts (EzrsGold for gold trading, EZRSAccounts for account sales) with integrated WooCommerce shopping, Razorpay payment processing, and real-time synchronization with Bitcat CRM backend. Supports three trading types: direct sales, player-to-platform buyback, and account swaps. Implemented secure escrow system holding funds until both parties confirm successful transfers, eliminating payment fraud risks, 24/7 customer support for dispute resolution, and SSL encryption for payment details. Includes admin dashboard for order management, inventory tracking, natural trading pattern monitoring, and store configuration."
   added_on: 09/04/2026 12:00pm
 - title: LegalCook Web App
   slug: legalcook-web
@@ -148,6 +155,7 @@ client:
   status: Live
   summary: "Progressive law startup website with content management dashboard and analytics for legal service providers in Bangalore."
   description: "Created a beautiful website for LegalCook, a progressive law startup based out of Bangalore. The web app also has a web admin panel and dashboard so analytics can be viewed and changes can be made as well by editors."
+  description_on_linkedin: "Created a professional website for LegalCook, a legal services startup based in Bangalore. The site features an intuitive content management system allowing non-technical staff to manage service information and updates independently. Includes an analytics dashboard providing insights into visitor behavior, inquiry sources, and service interest trends to help optimize their marketing strategy."
   website: legalcook.com
   link: https://legalcook.com
   added_on: 26/01/2024 4:45pm
@@ -165,6 +173,7 @@ client:
   status: Live
   summary: "AI-powered workplace communication platform with advanced search capabilities, global command palette, and enhanced collaboration features."
   description: "Developed a few components and features for their chat platform such as the global command palette, search, filtering, sorting, web app containerization, etc."
+  description_on_linkedin: "Contributed to Struct, a knowledge-rich AI-powered chat platform designed for open source communities. Built key productivity features including a global command palette for quick access to platform functions and AI assistants, advanced search capabilities for finding messages and files, thread-first conversation organization for keeping community knowledge structured, and containerization optimizations. Struct's AI bot can ingest codebases, documentation, and blogs to provide contextually accurate responses, with customizable feeds enabling users to follow projects, teams, or tasks uniquely suited to their workflow."
   website: struct.ai
   link: https://www.struct.ai
   added_on: 26/01/2024 4:00pm
@@ -182,6 +191,7 @@ client:
   status: Live
   summary: "DevSecOps platform enabling one-click application deployment, performance optimization, and cost management for enterprise development teams."
   description: "Coded web apps for TekSecur that helps their customers with DevSecOps. The product enables users to do one-click deployment of apps, improve pipeline performance and cost-optimize performance."
+  description_on_linkedin: "Developed components for TekSecur's DFact platform, a DevSecOps solution helping development teams accelerate deployments and reduce costs. The platform enables one-click deployment of containerized applications, provides performance metrics and optimization recommendations for CI/CD pipelines, and analyzes infrastructure costs to identify savings opportunities."
   website: teksecur.com
   link: https://www.teksecur.com/dfact
   added_on: 26/01/2024 4:30pm
@@ -199,6 +209,7 @@ client:
   status: Live
   summary: "Travel booking platform for wellness retreats with integrated CRM, booking management, and gifting system for retreat experiences."
   description: "Built several backend components and features, including ZohoCRM integration for data management, checkout integration, Expedia integration, a gifting module, and various other modules."
+  description_on_linkedin: "Developed backend systems for ViewRetreats, a Melbourne-based wellness retreat booking platform specializing in curated spa and wellness holidays across Australia, New Zealand, and Asia. Built integration with ZohoCRM for customer relationship management, checkout and payment processing for bookings, Expedia connectivity for expanded inventory reach, and a gifting module enabling users to purchase retreat experiences as gifts. Features include comprehensive booking management with multi-property support, advanced retreat filtering by experience type, user account management, and email notification systems for booking confirmations and updates."
   website: viewretreats.com
   link: https://www.viewretreats.com
   added_on: 29/12/2022 4:00pm
@@ -216,6 +227,7 @@ client:
   status: Live
   summary: "Designer portfolio website with content management, QR code-enabled planner purchasing, and responsive design across all devices."
   description: "Developed a portfolio website using the shared designs for mobile, tablet and desktop screen sizes on Figma. Used that to build a pixel-perfect, Nuxt.js based client-side rendered (CSR) web application that deploys to Netlify from a headless git-backed CMS. So content can be added/updated using an administrative section without having a dedicated hosting for the app, making it very versatile to manage a portfolio without the additional overhead of having to purchase hosting that has a recurring annual charge. Developed a portfolio website using the shared designs for mobile, tablet and desktop screen sizes on Figma. Used that to build a pixel-perfect, Nuxt.js based client-side rendered (CSR) web application that deploys to Netlify from a headless git-backed CMS. So content can be added/updated using an administrative section without having a dedicated hosting for the app, making it very versatile to manage a portfolio without the additional overhead of having to purchase hosting that has a recurring annual charge. Additionally, added a Planner page with a dynamically generated QR code so people could purchase the planner."
+  description_on_linkedin: "Built a beautiful portfolio website for Designer Thamu showcasing her creative work across all devices. Features a pixel-perfect responsive design, content management system allowing Thamu to update portfolio pieces independently, interactive photo gallery, and an integrated planner shop with dynamic QR code generation for easy purchasing and sharing."
   link: https://thamu.in
   added_on: 29/12/2022 11:40pm
 - title: Foodieverse Android App
@@ -230,7 +242,8 @@ client:
   concepts: Dependency Injection,RESTful API, QR Codes
   status: Live
   summary: "Food discovery Android app with QR code scanning for quick item tagging and kitchen inventory management."
-  description: "Built incremental features to the Foodiverse Android app, specifically a QR scanner that enables quick tagging of food items for their AirKitchens app."
+  description: "Built incremental features to the Foodieverse Android app, specifically a QR scanner that enables quick tagging of food items for their AirKitchens app."
+  description_on_linkedin: "Developed features for Foodieverse's mobile app helping users discover and organize food items. Implemented QR code scanner enabling quick tagging of ingredients for the AirKitchens inventory system, supporting kitchen staff in tracking available items and streamlining meal planning workflows."
   link: https://www.foodieverseindia.com
   added_on: 29/12/2022 11:30pm
 - title: APIWiz Web App
@@ -246,6 +259,7 @@ client:
   status: Live
   summary: "API management platform with catalog system for creating, organizing, and testing APIs through integrated runner interface."
   description: "Built the API catalog module for Itorix web app that enables their customers to create APIs and also run them directly using a runner."
+  description_on_linkedin: "Built the API catalog module for Itorix's APIWiz, a vendor-agnostic, low-code API lifecycle management platform trusted by regulated enterprises. APIWiz enables organizations to manage API programs at scale—from design through build, test, deploy, and monitor—supporting thousands of APIs across multiple gateways and service meshes. Implemented a comprehensive API catalog for browsing and documenting APIs, an integrated API runner for testing endpoints directly in the browser, version management, and discovery tools enabling seamless API integration across enterprise infrastructure."
   link: https://apiwiz.io
   added_on: 29/12/2022 11:53pm
 - title: All Rounders LMS
@@ -261,6 +275,7 @@ client:
   status: Inactive
   summary: "Learning Management System for skill development with courses, certificates, and degree programs."
   description: "Built comprehensive LMS platform enabling online learning with world-class instructors. Implemented multi-course curriculum management with certificate and degree tracking. Created student dashboard with progress tracking, course enrollment, and certificate generation. Developed instructor panel for course creation, content management, and student performance analytics. Integrated secure authentication, payment processing, and email notifications. Features responsive design with Laravel backend handling all business logic and database operations."
+  description_on_linkedin: "Built a comprehensive learning management platform enabling online skill development. Features include course curriculum management with multiple instructors, student progress tracking, certificate and degree program completion tracking, secure student enrollment with payment processing, instructor dashboards for course content management and student performance analytics, and automated email notifications for course updates."
   added_on: 09/04/2026 12:00pm
 - title: Accentra App
   slug: accentra
@@ -276,6 +291,7 @@ client:
   status: Active
   summary: "Enterprise container management mobile application for iOS and Android providing real-time synchronization and secure access control."
   description: "Developed enterprise-grade container management application for both iOS and Android platforms. Built iOS application using SwiftUI with custom drawer navigation, splash screens, and biometric authentication. Implemented Android application with Kotlin and Java."
+  description_on_linkedin: "Developed iOS and Android enterprise applications for container management. The iOS app features SwiftUI interface with custom navigation, biometric authentication for security, and real-time data synchronization. The Android app, built with Kotlin and Java, provides equivalent functionality with native Material Design optimizations, enabling enterprise teams to manage containerized workloads from mobile devices."
   added_on: 09/04/2026 12:00pm
 - title: AldeaTech Android and Web Apps
   slug: justai-aldeatech
@@ -292,6 +308,7 @@ client:
   status: Completed
   summary: "Agriculture productivity platform providing farmers with weather data, farming manuals, expert advice, meteorological data, crop planning tools and Q&A system for farmers across web and mobile."
   description: Developed comprehensive agriculture platform supporting farmers with expert knowledge and real-time weather data. Built OctoberCMS/Laravel backend with multiple specialized plugins including weather integration via aWhere API, farming manuals, questions & answers system, favorites management, user management and built language support (app was primarily Spanish as it was intended for Colombian coffee farmers). Engineered mobile app (Rowan) using Ionic and Angular for iOS and Android with offline capabilities and Firebase Cloud Messaging for push notifications. Implemented user authentication, location-based services, and OAuth2 integration. Integrated aWhere weather API for real-time meteorological data including precipitation, temperature, and crop-specific recommendations. Created comprehensive plugin architecture for modular feature development and easy maintenance.
+  description_on_linkedin: "Developed a comprehensive agriculture productivity platform supporting smallholder farmers in Colombia with expert knowledge and real-time meteorological data. Built web and mobile apps (available in Spanish) providing personalized technical advice on Good Agricultural Practices based on soil analysis, weather forecasts, farming manuals for different crops, crop planning tools, and logistics support. The platform collects field data linked to individual farmer IDs, enabling data-informed decision making. Features location-based services, offline capability for areas with limited connectivity, Sunday weather forecasts with climate-based activity recommendations, WhatsApp integration for day-to-day communication, and push notifications for time-sensitive agricultural updates."
   description_resume:
     - Developed an app [enabling farmers](https://youtu.be/6IRjzmnUkpc) to plan and improve productivity in agriculture, leading to higher crop yields.
     - The app provides meteorological information and advice from experts through different stages of crop development.
@@ -312,7 +329,8 @@ client:
   status: Live
   summary: "Gamified golf competition app with multiple play modes, target selection, and shot-calling features for competitive players."
   description: "Made a fun app that gamifies golf to a contest between people. The app has 3 modes: Band mode which allows players to choose the target band, and a call the shot/virtuoso mode where they can set their own target or the app suggests a target respectively that's more suitable for professional golfers."
-  link: https://www.teetimeventures.com (Website)
+  description_on_linkedin: "Developed Golfer's Edge, a virtual golf simulator and booking platform operating HD simulator facilities across India. The platform enables golfers to compete with real-time swing analysis including club data, swing metrics, ball flight analysis, and ultra-slow motion video capture at impact. Golfers can play over 150,000+ courses worldwide including St. Andrews, Augusta National, and Pebble Beach, with features including three competitive play modes (Band mode for target-based challenges, Call the Shot for player selection, and Virtuoso mode with AI suggestions), coaching packages for kids and adults, and comprehensive booking management with partial refund policies."
+  link: https://www.uparbooking.com (Website)
   added_on: 30/12/2022 4:01pm
 - title: FoodLans Delivery App
   slug: jpdell-foodlans-delivery
@@ -328,6 +346,7 @@ client:
   status: Archived
   summary: "Food delivery mobile application for iOS and Android enabling customers and delivery personnel to place and fulfill food orders with real-time tracking."
   description: "Developed comprehensive food delivery platform using Ionic and Angular for cross-platform iOS and Android compatibility. Built dual mobile apps serving customers and delivery partners with role-based authentication and authorization. Implemented real-time location tracking using geolocation APIs and Google Maps integration for order tracking and delivery navigation. Created Firebase backend for user management, order processing, and data persistence. Developed payment gateway integration for seamless transaction processing. Implemented push notifications for order status updates and delivery alerts. Built in-app rating system and customer feedback mechanisms for quality assurance."
+  description_on_linkedin: "Built a comprehensive food delivery platform using Ionic and Angular for iOS and Android. The app supports dual role-based interfaces: customers can browse restaurants, place orders, and track deliveries in real-time; delivery personnel receive orders and navigate to customers using integrated Google Maps. Features include secure payment processing, push notifications for order updates, and customer rating system."
   added_on: 09/04/2026 12:00pm
 - title: TripTantra Web and Mobile Apps
   slug: triptantra
@@ -342,6 +361,7 @@ client:
   status: Expired
   summary: "Travel booking platform with Android app and API integration for comprehensive trip planning and reservation management."
   description: "Building an Android app for an established travel booking company. Details will be disclosed post-project completion if bragging/publicity rights are retained by me.\n\nIncremental work over an existing travel app by an established travel booking organization. The work will encompass API creation over their existing platform and link it with the Android app project which is to be built by me."
+  description_on_linkedin: "Developed API layer and Android application for established travel booking company. Built RESTful API enabling Android app to access booking engine, destination information, and reservation management. The mobile app allows travelers to search, compare, and book trips seamlessly on-the-go."
   link: https://web.archive.org/web/20190623095434/http://triptantra.com/
   added_on: 24/12/2022 5:17pm
 - title: TellUs Android and Web Apps
@@ -357,6 +377,7 @@ client:
   status: Live
   summary: "Restaurant feedback management platform with customer review collection, analytics dashboard, and performance insights for hospitality businesses."
   description: "Built both the Android And Web app from the ground up. Wrote a RESTful API in the web application for the Android app to consume. The app basically allows restaurants to take feedback from their customers and gives analytics and insights into the restaurant's performance. The app is localized so that local restaurants can easily use it.\n\nBuilt a robust web backend app with multi-user hierarchy so restaurant owners, sales executive, outlet managers, etc. can log in and manage their restaurant feedbacks and view statistics and insights on how they're performing and what their customers think about them. Wrote a pragmatic RESTful API so that I could integrate the Android app (which was also built by me) to this as well."
+  description_on_linkedin: "Built a feedback management platform helping restaurants improve service quality. Customers provide feedback through a localized mobile or web interface; restaurant owners and staff access an analytics dashboard tracking feedback trends, customer satisfaction scores, and performance metrics across multiple outlets. Features multi-user role hierarchy for restaurant chains."
   link: http://tellusapp.in
   google: dev.tellusapp@gmail.com
   added_on: 24/12/2022 5:01pm
@@ -372,6 +393,7 @@ client:
   concepts: MVC,CMS,In-site Editing
   status: Live
   description: 'Developed a powerful, stunning and easy to use website for Floyd Inc., based on the same design as an earlier client project as it''s related to that client and they wanted it that way.'
+  description_on_linkedin: "Developed a professional website for Floyd Inc. featuring company information, service offerings, and client portfolio. The site includes in-site editing capabilities allowing content managers to update information without requiring developer assistance."
   link: http://floydinc.in
   added_on: 24/12/2022 5:10pm
 - title: Attrition & Retention Predictor for X0PA AI
@@ -386,6 +408,7 @@ client:
   concepts: Components,Data Analysis
   status: Live
   description: 'X0PA AI is a Singapore-based data analytics startup which contacted me after their team couldn''t solve a problem for over a week. A colleague from my alma mater recommended me and when I got the task, I solved it for them in under 2 hours. They then asked for a demo for parallel processing of R scripts for their attrition and retention predictor and then later asked to build ReactJS components to improve the same. I was offered a full-time remote employee role but didn''t take it due to disagreements with the contract agreement.'
+  description_on_linkedin: "Developed React components for X0PA AI's predictive analytics platform, which predicts employee attrition with up to 95% accuracy and job performance with 72% accuracy. Built interactive data analysis interfaces displaying employee risk scores, historical trends, and retention recommendations that help companies reduce voluntary turnover by up to 25%. Components integrate with R-based statistical models, enabling data scientists to visualize complex analyses in accessible dashboards. The platform identifies key patterns from a database of 250+ million profiles and tailors insights to local employment laws and workplace norms."
   link: https://x0pa.com (Website),
   added_on: 24/12/2022 5:09pm
 - title: BlueHorn Web App
@@ -400,6 +423,7 @@ client:
   concepts: MVC,CMS,In-site Editing
   status: Live
   description: "Designed a prototype, got a sign off from client, and then developed a powerful and stunning website for Blue Horn Inc. to showcase their company and gallery.\n"
+  description_on_linkedin: "Created a professional website for Blue Horn Inc. featuring company information, service portfolio, and visual gallery. Designed from prototypes through implementation to deliver a stunning, user-friendly site representing the company's brand and capabilities."
   link: http://invis.io/2BD0ER1RY (Design Prototype), http://bluehorn.co.in (Website)
   added_on: 24/12/2022 4:43pm
 - title: Swades Web App
@@ -414,6 +438,7 @@ client:
   concepts: MVC,Material Design
   status: Archived
   description: 'Worked on a web app that apparently was the scholarship program to a platform called UpGrad run by Ronnie Screwvala. Got the project through a group called Indiez and left it due to delayed payments. The group also gave a reduced payment to what they agreed to make even though I made the milestone perfectly, delivered on time, and the client gave a full rating for the work. Their excuse was that "I wasn''t communicating often" even though I replied to each of their questions immediately. So I left and dropped the project. This is the same group whom I did the Yahavi project with (see timeline) and they failed to make timely payments then too. The link contains the partial version I developed with placeholders.'
+  description_on_linkedin: "Developed a platform for UpGrad's scholarship program connecting students with educational opportunities. Built course catalog, student application management, scholarship eligibility tracking, and admin dashboard for program coordinators."
   link: http://web.archive.org/web/20170808072740/https://swades-staging.herokuapp.com
   google: dev.swades@gmail.com
   added_on: 24/12/2022 4:41pm
@@ -429,6 +454,7 @@ client:
   status: Archived
   summary: "Dynamic form management app enabling quick application submissions to various services with automated processing."
   description: A dynamic form management app that lets you to quickly apply to various services.
+  description_on_linkedin: "Created a mobile app streamlining service applications through dynamic forms. Users complete application workflows and submit to various services from a single app interface. Handles form validation, data persistence, and submission tracking."
   link: https://www.youtube.com/watch?v=Om2YwbOWL9o
   added_on: 24/12/2022 4:31pm
 - title: FinanceNow Android App
@@ -444,6 +470,7 @@ client:
   status: Live
   summary: "Personal finance management app providing financial health insights, survival calculations, and insurance recommendations."
   description: A finance management app that lets you input your financial data to get information about your financial health which includes your months to survive, insurance required and many more cool features.
+  description_on_linkedin: "Developed a personal finance management app helping users understand their financial health. Users input income, expenses, savings, and insurance data; the app calculates key metrics including months of survival (runway), insurance coverage gaps, investment recommendations, and financial wellness score."
   link: https://www.producthunt.com/products/financenow (Product Hunt), https://www.9apps.com/android-apps/FinanceNow-Journey-towards-financial-liberty (9apps)
   added_on: 24/12/2022 4:26pm
 - title: Yahavi Android App
@@ -458,6 +485,7 @@ client:
   concepts: Dependency Injection,Reactive FRP,RESTful API
   status: Archived
   description: 'Built the native Android app as per the designs provided by the Indiez team. This project got stalled after a few milestones due to some financial constraints from the client''s end. All payments were delayed and their excuse was that this was a "legacy client".'
+  description_on_linkedin: "Built native Android application following provided designs with support for multiple languages and localized content. Implemented using reactive programming patterns for responsive, efficient user interactions."
   link: https://www.yahavi.com
   google: dev.yahavi@gmail.com
   added_on: 24/12/2022 4:22pm
@@ -474,6 +502,7 @@ client:
   status: Archived
   summary: "Custom eCommerce platform for cake ordering with addon management, SMS notifications, and integrated payment processing."
   description: 'Built a custom eCommerce platform for a company named CakesOnWheels that''s a business trademark of eMandate Management Services located in Bangalore. The web app enables users to purchase a wide variety of cakes as well as addons such as roses, chocolate boxes, etc. I built a powerful backend that allows the client to add and manage the cakes and addons on his own. Sms and payment gateway integration was done as well.'
+  description_on_linkedin: "Built an eCommerce platform for CakesOnWheels enabling customers to browse cake options, customize with add-ons (flowers, chocolates, etc.), and checkout securely. Includes SMS notifications for order confirmation and delivery tracking, admin interface for managing inventory and orders, and integrated payment gateway processing."
   link: https://cakesonwheels.net, https://web.archive.org/web/20180110120734/https://cakesonwheels.net/ (Archive)
   google: dev.cakesonwheels@gmail.com
   added_on: 24/12/2022 4:14pm
@@ -496,6 +525,7 @@ client:
     - Led the development of a client project from the ground up, handling backend, Android, and web front-ends single-handedly.
     - The app gained around 1000 monthly active users within a year, reaching 50k+ users in 6 months with an average Play Store rating of 4.7 out of 5.
     - In July 2016, due to a breach of contract, I filed a copyright request, leading Google to take down the app. I later released it when the client settled and purchased the app’s IP entirely.
+  description_on_linkedin: "Developed a multi-featured highway travel platform transforming road trips across India. The platform helps users plan routes, discover highway establishments (restaurants, hotels, fuel stations), manage highway services including FASTag purchases/recharge, vehicle insurance, EV charging points, and emergency support. Features include interactive GPS navigation, real-time traffic updates, offline maps, restaurant and accommodation discovery with user reviews, vehicle document management (RC, insurance info), and emergency roadside assistance. The Android app, available on Google Play with 4.7-star rating from 50,000+ active users, has become the go-to companion for Indian highway travelers. Web platform complements mobile app with comprehensive trip planning and booking capabilities."
   link: https://highwaydelite.com (Website), https://play.google.com/store/apps/details?id=com.highwaydelite.highwaydelite (Play Store)
   added_on: 24/12/2022 3:45pm
   show_on_resume: false
@@ -511,6 +541,7 @@ client:
   concepts: MVC,CMS,DevOps
   status: Archived
   description: I built the entire frontend and backend for Sky Properties Team for their business. It has some really nice user management features with a permissions architecture, a web analytics dashboard, editable sections and many more features.
+  description_on_linkedin: "Built a real estate platform enabling property agents to list properties and manage client relationships. Features include advanced property search with filters, agent management tools, analytics dashboard showing inquiries and conversion metrics, and client relationship tracking."
   link: https://web.archive.org/web/20170406182011/http://skyproperties.in/ (Site), https://youtu.be/fwWcU-hUyWc (Video)
   added_on: 24/12/2022 3:41pm
 - title: Actor Jega’s Official Website
@@ -524,6 +555,7 @@ client:
   concepts: MVC,CMS
   status: Archived
   description: Build a stunning website for an upcoming kollywood actor named Jega who made the movies Gnana Kirukkan and R23 Criminals Diary.
+  description_on_linkedin: "Created an official website for actor Jega (Gnana Kirukkan, R23 Criminals Diary) featuring complete filmography, photo galleries, news section, and fan engagement features. Built with in-site editing allowing content updates without technical assistance."
   link: https://web.archive.org/web/20161008140213/http://actorjega.com/
   added_on: 24/12/2022 3:27pm
 - title: TheHouseMonk Android App
@@ -538,6 +570,7 @@ client:
   concepts: functional programming,Reactive FRP,Dependency Injection
   status: Archived
   description: An Android app that was to be internally used by a Bangalore-based real estate startup. The day I moved to Bangalore, I had already set up a meet with the founder of “The House Monk” (known as Cozee Homes now) who found me through Quora. Fortunately, I had the skills that they were looking for in an Android developer—a programmer working with reactive extensions for Android (RxAndroid).
+  description_on_linkedin: “Developed a native Android app for Bangalore-based real estate startup serving property agents and brokers. Features include property inventory management with photo galleries, client communication tools, appointment scheduling, and deal tracking.”
   link: https://youtu.be/kH2qIaEqQaQ
   added_on: 24/12/2022 3:07pm
 - title: World of Urology
@@ -552,6 +585,7 @@ client:
   concepts: MVC
   status: Expired
   description: Built a clean, multi-lingual, and simple-to-use web app for a group of doctors who specialize in urology. However, I abandoned the project as the client was too unresponsive.
+  description_on_linkedin: "Built a professional network for urologists featuring multi-language support, specialist directory, case study sharing, and continuing education resources. Designed as an accessible platform for specialists globally."
   link: http://worldofurology.net
   added_on: 24/12/2022 2:55pm
 - title: MediScan
@@ -566,6 +600,7 @@ client:
   concepts: MVC,RESTful API,QR Code
   status: Expired
   description: It is a highly secure online repository to keep medical records. Medical records could be X-ray, MRI, CT scans, history of medicines prescribed, patient details or even medical instruments used in surgery and diagnosis. These are generalised as a "prop" which is associated with a prop ID. Regardless of what kind it is, a simple QR code can be used to identify these props using the ID. The code can even be stuck on the actual prop in the form of QR sticker. Depending on what prop is chosen, appropriate data is fetched and displayed correctly on the app. Using such a general pattern is useful as it helps determine what kind of action must be taken and what sort of data can be displayed. And since the database is globally accessible the doctor can access the data from anywhere in the world. Since all mobile phone, these days are equipped with a camera they can read these QR codes and get the details.
+  description_on_linkedin: "Developed a secure cloud-based medical records storage system enabling patients to securely maintain X-rays, MRI scans, CT reports, and medication history. Healthcare providers use QR codes to quickly access patient records from mobile devices. Supports attachment of medical documents and device identifiers."
   link: https://youtu.be/DDpPtJD8nJA
   added_on: 24/12/2022 2:48pm
 - title: SK Hollow Blocks
@@ -580,6 +615,7 @@ client:
   concepts:
   status: Expired
   description: Build a beautiful website for my uncle for his business (called "SK Hollow Blocks") of selling construction supplies.
+  description_on_linkedin: "Created a professional website for SK Hollow Blocks, a construction materials supplier. Features include product catalog, pricing information, supplier details, contact information, and location on Google Maps for customer convenience."
   link: https://web.archive.org/web/20150611175451/http://skhollowblocks.com, https://goo.gl/maps/bic7VAfpJeQpC2ub7 (Google Maps)
   added_on: 24/12/2022 2:45pm
 - title: Hiveyo
@@ -594,6 +630,7 @@ client:
   concepts:
   status: Expired
   description: I worked on the development of their web application on a freelance basis. It is a contact manager and I built this on top of the PHP-boilerplate project which I had made.
+  description_on_linkedin: "Developed a contact management application enabling users to organize contacts, track interactions, and manage relationships. Built on custom PHP framework with intuitive interface and data security features."
   link: http://web.archive.org/web/20140517105707/http://hiveyo.com
   added_on: 24/12/2022 2:21pm
 opensource:
@@ -610,6 +647,7 @@ opensource:
   status: Live
   summary: "Open-source personal portfolio and project showcase built with Nuxt 3 and Vue 3, featuring dark mode, project filtering, event timeline, and resume generation."
   description: "Built and continuously maintain this open-source portfolio website to showcase projects, speaking engagements, and professional history. Developed with Nuxt 3 and Vue 3 using Tailwind CSS for styling, @nuxt/content for markdown-driven project data, and nuxt-icon for iconography. Features a masonry project grid with filtering, a custom events timeline, dark/light mode toggle, and a resume page. Deployed as a static site for fast global delivery."
+  description_on_linkedin: "Maintain an open-source portfolio website showcasing projects and professional history. Built with modern frameworks (Nuxt 3, Vue 3) and Tailwind CSS, featuring a responsive masonry project grid with filtering, dark/light mode toggle, dynamic events timeline, and downloadable resume. Source code available on GitHub for the community."
   link: https://github.com/mohsin/iMoz-Web (Source), https://imoz.in (Live)
   added_on: 28/04/2026 12:00pm
 - title: Expense Tracker for Google Home
@@ -623,6 +661,7 @@ opensource:
   concepts: RESTful API
   status: Live
   description: Track Expenses using Google Actions.
+  description_on_linkedin: "Created a voice assistant skill enabling users to track expenses through Google Home using conversational voice commands. Say phrases like \"Track 50 dollars for lunch\" and the assistant logs the expense. Features include spending category management, expense history, and natural language understanding."
   link: https://www.youtube.com/watch?v=oqunD20LKCo (Demo), https://github.com/mohsin/Expense-Tracker (Source)
   added_on: 25/12/2022 12:20am
 - title: Carousel Plugin
@@ -636,6 +675,7 @@ opensource:
   concepts: Plugin
   status: Live
   description: OctoberCMS Plugin for Twitter Bootstrap Carousels
+  description_on_linkedin: "OctoberCMS plugin providing carousel/slider functionality for websites. Built on Twitter Bootstrap with extensive customization options. 6000+ documented installs."
   link: https://github.com/SaifurRahmanMohsin/Carousel-Plugin (Source), https://octobercms.com/plugin/mohsin-carousel (Plugin)
   added_on: 24/12/2022 9:56pm
 - title: Txt Plugin
@@ -649,6 +689,7 @@ opensource:
   concepts: Plugin
   status: Live
   description: "The world has humans and robots. Humans build things (including robots) and they deserve credit for doing so when they do. Robots, on the other hand, do what they are built to do, and sometimes you want to exclude certain behaviors. This plugin helps you to do both of these with ease.\n\nAs the title says, it allows you to generate humans.txt and robots.txt for your web app. This plugin has had over 6329 documented installs."
+  description_on_linkedin: "OctoberCMS plugin for generating humans.txt and robots.txt files automatically. Helps give credit to humans and manage bot access rules for websites. 6300+ documented installs."
   link: https://github.com/SaifurRahmanMohsin/txt-plugin (Source), https://octobercms.com/plugin/mohsin-txt (Plugin)
   added_on: 24/12/2022 9:59pm
 - title: Social Plugin
@@ -662,6 +703,7 @@ opensource:
   concepts: Plugin
   status: Live
   description: This plugin extends the RainLab.User plugin to add social provider-based logins to your web app.
+  description_on_linkedin: "OctoberCMS plugin extending user management with social provider-based authentication (Google, Facebook, GitHub, etc.). Enables users to sign up and log in using existing social accounts."
   link: https://github.com/SaifurRahmanMohsin/social-plugin (Source), https://octobercms.com/plugin/mohsin-social (Plugin)
   added_on: 24/12/2022 7:44pm
 - title: Magnific Gallery
@@ -675,6 +717,7 @@ opensource:
   concepts: Plugin
   status: Live
   description: Gallery plugin for October CMS based on Magnific Popup plugin.
+  description_on_linkedin: "OctoberCMS plugin providing image gallery functionality using Magnific Popup library with light-box effects and advanced customization options. Enables seamless image browsing experience on websites."
   link: https://github.com/SaifurRahmanMohsin/magnificgallery-plugin (Source), https://octobercms.com/plugin/mohsin-magnificgallery (Plugin)
   added_on: 24/12/2022 7:41pm
 - title: Dropdown Widget
@@ -688,6 +731,7 @@ opensource:
   concepts: Widget
   status: Live
   description: You can make filters using the filter option in OctoberCMS. But this does not include a dropdown filter. I needed this functionality and so made this widget to help achieve this.
+  description_on_linkedin: "OctoberCMS widget enabling dropdown filtering functionality for content management systems. Extends OctoberCMS filtering capabilities with intuitive dropdown interfaces for advanced content discovery."
   link: https://github.com/SaifurRahmanMohsin/Dropdown-Widget (Source)
   added_on: 24/12/2022 7:32pm
 - title: Mobile Plugin
@@ -701,6 +745,7 @@ opensource:
   concepts: Plugin
   status: Live
   description: This plugin enables you to manage mobile applications. You can add your iOS, Android and other store app listing into the backend. It also lets you monitor individual app installs by adding some code on the client-side (see video or documentation).
+  description_on_linkedin: "OctoberCMS plugin for managing mobile app listings across iOS, Android, and other platforms. Features app store management, install tracking, and client-side monitoring capabilities for mobile app portfolios."
   link: https://github.com/SaifurRahmanMohsin/mobile-plugin (Source), https://www.youtube.com/embed/VJOH1x967ag (Demo), https://octobercms.com/plugin/mohsin-mobile (OctoberCMS)
   added_on: 24/12/2022 7:34pm
 - title: Badge Plugin
@@ -714,6 +759,7 @@ opensource:
   concepts: RESTful API,Plugin
   status: Live
   description: Badge plugin for OctoberCMS
+  description_on_linkedin: "OctoberCMS plugin providing badge and label functionality for website content. Enables visual tagging and categorization of content with customizable badge styles and colors."
   link: https://github.com/SaifurRahmanMohsin/badge-plugin (Source), https://octobercms.com/plugin/mohsin-badge (OctoberCMS)
   added_on: 24/12/2022 7:26pm
 - title: REST Plugin
@@ -727,6 +773,7 @@ opensource:
   concepts: RESTful API,Plugin
   status: Live
   description: Plugin to generate RESTful controllers on OctoberCMS.
+  description_on_linkedin: "OctoberCMS plugin for generating RESTful API controllers automatically. Reduces boilerplate code when building API endpoints for third-party integrations and enables rapid API development."
   link: https://github.com/SaifurRahmanMohsin/rest-plugin (Source), https://octobercms.com/plugin/mohsin-rest (Plugin)
   added_on: 24/12/2022 7:29pm
 - title: Mobile User Plugin
@@ -740,6 +787,7 @@ opensource:
   concepts: RESTful API,Plugin
   status: Live
   description: Mobile Front-end user management for October CMS.
+  description_on_linkedin: "OctoberCMS plugin providing user management functionality for mobile front-end applications. Enables authentication, user profiles, and role-based access control for mobile apps built with OctoberCMS."
   link: https://github.com/SaifurRahmanMohsin/mobileuser-plugin (Source), https://octobercms.com/plugin/mohsin-user (Live)
   added_on: 24/12/2022 7:24pm
 - title: Identity Theme
@@ -753,6 +801,7 @@ opensource:
   concepts: Theming
   status: Live
   description: Port of Identity theme from HTML5 UP for OctoberCMS
+  description_on_linkedin: "OctoberCMS theme based on HTML5 UP's Identity template with responsive design and modern aesthetic. Provides clean, professional foundation for building OctoberCMS websites."
   link: https://github.com/SaifurRahmanMohsin/Identity-Theme (Source), https://octobercms.com/theme/mohsin-identity (Live)
   added_on: 24/12/2022 7:16pm
 - title: Readium Theme
@@ -766,6 +815,7 @@ opensource:
   concepts: Theming
   status: Live
   description: Readium Theme for OctoberCMS
+  description_on_linkedin: "OctoberCMS theme providing clean, readable layout optimized for content-focused websites. Features elegant typography and responsive design for excellent reading experience."
   link: https://github.com/SaifurRahmanMohsin/Readium-Theme
   added_on: 24/12/2022 5:37pm
 - title: Collapse Plugin
@@ -779,6 +829,7 @@ opensource:
   concepts: Plugin
   status: Archived
   description: Collapse plugin for OctoberCMS
+  description_on_linkedin: "OctoberCMS plugin providing collapsible content and accordion functionality. Enables interactive content organization with expandable/collapsible sections using Bootstrap."
   link: https://github.com/SaifurRahmanMohsin/Collapse-Plugin (Source code),
   added_on: 24/12/2022 7:13pm
 - title: Php Boilerplate
@@ -792,6 +843,7 @@ opensource:
   concepts: OOPS
   status: Archived
   description: 'This was a simple to use framework which I build inspired from Mathias Bynens'' html5-boilerplate. It''s minimal with a simple configuration file and tried to abstract several of the PHP methods and plugins so that it worked independent of the server the project was deployed in. Also, there was a quick install similar to Workpress'' famous 5-minute install and the frontend was initially load with the html5-boilerplate project from where developers can build their own theme. I successfully built some projects using this and realized that a project called Laravel had already solved this is an elegant way, and switched to that.'
+  description_on_linkedin: "Created a PHP framework providing starter template for web applications with minimal setup. Features included configuration management, OOP abstractions, and HTML5 Boilerplate integration. Served as a learning project before transitioning to Laravel framework."
   link: https://github.com/SaifurRahmanMohsin/php-boilerplate
   added_on: 24/12/2022 5:35pm
 others:
@@ -806,6 +858,7 @@ others:
   concepts: MVC
   status: Archived
   description: Mentored a junior friend and collaborated to build a website for the Department of Production Technology and Mechanical Engineering at MIT, Chennai.
+  description_on_linkedin: "Developed website for Department of Production Technology and Mechanical Engineering at MIT, Chennai. Features include department information, faculty directory, course catalog, news section, and event management. Served as a mentoring opportunity for junior developers."
   link: http://tapemit.com
   added_on: 24/12/2022 4:12pm
 - title: Help Chennai Android App
@@ -819,6 +872,7 @@ others:
   concepts:
   status: Archived
   description: "Considering the lack of internet and network in Chennai, I believe this app has little role to play so I’ve put basic information lists in case those in...\nI built this app in a very short time just out of self-interest. No advertisements or money involved."
+  description_on_linkedin: "Built a mobile app helping Chennai residents find emergency services, hospitals, police stations, and important resources. Designed for offline usability considering connectivity challenges. Includes maps, phone numbers, and location information for quick access during emergencies."
   link: https://play.google.com/store/apps/details?id=com.tempestronics.helpchennai
   added_on: 24/12/2022 4:02pm
 - title: 'Roderick''s Blog'
@@ -832,6 +886,7 @@ others:
   concepts: CMS
   status: Archived
   description: Built a beautiful blog for a good friend of mine.
+  description_on_linkedin: "Built a professional blog for content publishing featuring clean design optimized for reading, easy content management, category organization, and responsive layout across all devices."
   link: http://roderick.in
   added_on: 24/12/2022 2:58pm
 - title: Portable Data Protection System
@@ -845,6 +900,7 @@ others:
   concepts: MVC,JIT
   status: Archived
   description: "Portable Data Protection System (PDPS) is a new concept of security systems that help to protect computers from malware attacks. Unlike conventional anti – virus systems that scan entire systems periodically against its malware signature database and cause the systems to slow down and hang up (due to over usage of processor cycles), this system uses just- in-time detection to prevent malware attacks right whenever a new process or thread begins. It uses ACLs instead of a database of malware definition files like most AVs do to ensure only the processes that the user wants to run are allowed to run. Everything else is considered as malware. The end product was put into a read-only pen drive which runs the autorun script requesting user whether they would like to enable PDPS protection. Since it's read-only, it's not possible for the system itself to get infected making this a versatile solution to fight malware.\n\nDeveloped a portable, robust yet powerful real-time anti-virus system which prevented malware before they got processor execution cycles, thereby preventing the execution of malicious code it may contain. The system was programmed to hook into the operating system's loader code and ensure that all requests (system calls) are filtered thro' it, very much like a firewall--it even prompted the user whether to allow execution of any given program leading to a more refined control over what was allowed to run in the device. Since most malware tend to get into the system in the background attached to a legitimate file or trigger due to a user action the system could alert the user to make the right decisions. A moderately intelligent user would be able to judge that said process was never initiated by the user and so all malware infections would be intercepted and suppressed. This system does not require any definition files nor updates and could even by run on thin clients making it very less resource-hungry (unlike most conventional AVs out there in the market) and at the same time enforce strong security to the user's system.\n\nMy team wrote this program as an autorun program to a pen drive which came with a read-only switch. Therefore, the system itself was protected from being infected and was allowed to do it's good work. A more commercial permanently written portable pen drive kind of anti-virus too can be developed based on this concept. The project was developed as an application level program (using C#.NET form-based application) rather than as a kernel level driver (which would be more stronger as it even prevented bootkits) and was successfully presented as a final year project.\n\nI later submitted the underlying concept as a paper which got approved and published in a journal in Special Issue-1, October 2014 with ISSN 2321-9653."
+  description_on_linkedin: "Developed an innovative antivirus approach that prevents malware execution before it gets processor access, unlike traditional signature-based antivirus software. Uses access control lists (ACLs) to allow only trusted processes, blocking everything else. Includes just-in-time detection and a portable pen drive distribution model for on-demand protection. Research published in peer-reviewed journal."
   link: https://www.ijraset.com/fileserve.php?FID=1003
   added_on: 24/12/2022 2:30pm
 - title: Nyquist
@@ -858,6 +914,7 @@ others:
   concepts:
   status: Archived
   description: "Nyquist (or) MKB Music box (named after the initials of the team members) is a media organiser which can identify music using the audio signature like Shazam does and organises it into folders based on the user preference. The project was originally built for Softkriti, an IIT-K software contest and Shazam being a closed-source software, I had to build the technology from scratch. Internally, it used something called fast fourier transform to calculate the audio signature and store a hash of it inside a database. We had to do this on several songs and we added ID3 tags for the song as well. Later using the client app, a folder containing songs is selected the system automatically figures out which song is it by calculating and comparing this signature with the database. The software worked perfectly and was super fast since we ran the global DB locally but we did not win the contest and came in 3rd (apparently). The winners were both IIT-K students for some sample projects of some platforms which were popular back then. The project was dropped since.\n"
+  description_on_linkedin: "Developed a music organizing application that identifies songs using acoustic fingerprinting—a condensed digital summary generated from audio signals to create a virtual map of peaks and anchor points based on frequency, intensity, and time. Users select a music folder and the app automatically identifies each song using audio signal processing, queries the MusicBrainz database for metadata, adds ID3 tags, and organizes files with correct information. Built custom audio fingerprinting algorithms without relying on external APIs, implementing sub-Nyquist sampling principles to process audio efficiently below the Nyquist frequency threshold."
   link:
   added_on: 24/12/2022 2:25pm
 - title: Hash Decryptor
@@ -871,6 +928,7 @@ others:
   concepts: RMI
   status: Archived
   description: An RMI based Java program that can find the original plain text code of a given hash string by retrieving the values from a mySQL DB.
+  description_on_linkedin: "Created a utility application that recovers original plaintext from hash values by searching a distributed database. Uses Java RMI for distributed processing and MySQL database for hash-value mappings."
   link:
   added_on: 24/12/2022 1:20pm
 - title: Car Pooling App using Sencha Framework
@@ -884,5 +942,6 @@ others:
   concepts: MVC,Database Design
   status: Archived
   description: A web-based mobile-friendly version of Uber made in a time long before we even came to know of Uber.
+  description_on_linkedin: "Developed an early-stage web-based carpooling platform enabling users to find ride-shares. Built with Sencha Touch for mobile responsiveness, featuring route matching, driver/passenger communication, and trip management."
   link:
   added_on: 24/12/2022 1:40pm
