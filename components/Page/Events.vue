@@ -44,17 +44,17 @@ const ucfirst = (string: string) => {
 <template>
   <div class="relative mb-20">
     <!-- Timeline line -->
-    <div class="absolute left-0 sm:left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-slate-600 transform sm:-translate-x-1/2"></div>
+    <div class="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-slate-600 transform -translate-x-1/2"></div>
 
     <!-- Events -->
     <div class="space-y-8 sm:space-y-12 mt-12">
-      <div v-for="(entry, index) in data" :key="entry.slug" class="relative">
+      <div v-for="(entry, index) in data" :key="entry.slug" class="relative pt-8 sm:pt-0">
         <!-- Timeline dot -->
-        <div class="absolute left-0 sm:left-1/2 top-6 w-3 h-3 bg-blue-600 dark:bg-blue-500 rounded-full transform -translate-x-1 sm:-translate-x-1.5 border-4 border-white dark:border-slate-900"></div>
+        <div class="absolute left-1/2 top-0 sm:top-6 w-3 h-3 bg-blue-600 dark:bg-blue-500 rounded-full transform -translate-x-1.5 border-4 border-white dark:border-slate-900"></div>
 
         <!-- Event card -->
         <div :class="[
-          'ml-6 sm:ml-0 relative bg-white dark:bg-slate-700 rounded-lg shadow-lg text-gray-900 dark:text-slate-300',
+          'sm:ml-0 relative bg-white dark:bg-slate-700 rounded-lg shadow-lg text-gray-900 dark:text-slate-300',
           index % 2 === 0 ? 'sm:mr-auto sm:w-1/2' : 'sm:ml-auto sm:w-1/2'
         ]">
 
