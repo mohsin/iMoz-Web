@@ -48,7 +48,7 @@ client:
   languages: PHP,JavaScript,SQL
   platforms: AWS Cloud,WordPress
   frameworks: WordPress,Terraform,Elementor
-  tools: AWS CLI,Terraform,VSCode,Git
+  tools: AWS CLI,Terraform,VSCode,Git,Message Queue
   concepts: ATDW Integration,Tourism Data Management,Infrastructure as Code,Plugin Development,Database Migration,Cron Job Management
   status: Live
   summary: "Comprehensive tourism platform for Barossa Valley with automated ATDW synchronization, integrated LearnDash LMS, and advanced property discovery features."
@@ -86,9 +86,9 @@ client:
   duration: Sep 2024 - Apr 2026
   location: Bengaluru, India
   languages: PHP,HTML,CSS,JavaScript,SQL
-  platforms: Web
+  platforms: Web,AWS Cloud
   frameworks: OctoberCMS,Laravel
-  tools: VSCode,Terraform,Razorpay API,Google Calendar API
+  tools: VSCode,Terraform,AWS Auto Scaling,Razorpay API,Google Calendar API
   concepts: Booking Management,Payment Gateway,Google Calendar Integration,Admin Dashboard,AWS Infrastructure,Coupon System
   status: Live
   summary: "Comprehensive online booking platform for Golfer's Edge indoor golf facility featuring real-time Google Calendar synchronization, Razorpay payment integration with coupon system, multi-dimensional admin analytics dashboard, and optimized mobile-first booking experience."
@@ -129,7 +129,7 @@ client:
   platforms: Web
   frameworks: WordPress,Laravel
   tools: MySQL,Composer,PHP
-  concepts: WooCommerce Integration,CRM Synchronization,REST API Development,WordPress Plugin Development,Multi-Store Architecture,Order Management,Database Schema Design,Basic Authentication,Real-Time Data Sync
+  concepts: WooCommerce Integration,CRM Synchronization,REST API Development,WordPress Plugin Development,Multi-Store Architecture,Order Management,Database Schema Design,Basic Authentication,Real-Time Data Sync,Virtual Currency,Cryptocurrency
   status: Completed
   summary: "RuneScape gold and account trading platform with WooCommerce-based e-commerce, real-time CRM synchronization, and multi-store architecture supporting OSRS/RS3 product sales (Sellable/Buyable/Swapable order types) with API-driven inventory and order management."
   description: "Built comprehensive WooCommerce CRM integration system for EzrsGold's RuneScape gaming platform handling both OSRS/RS3 virtual currency trading and EZRSAccounts hand-trained account marketplace. Developed two custom WordPress plugins enabling real-time synchronization between WooCommerce storefronts and Bitcat CRM backend system. Engineered order synchronization supporting three product types (Sellable gold/accounts, Buyable player-to-platform, Swapable account trades) with automatic processing on order creation and updates. Implemented REST API endpoint for remote order status control with basic authentication, including status mapping, order note management with author tracking, and CRM-driven inventory updates. Created admin interface with CRM credentials configuration, order sync toggles, and manual synchronization triggers. Architected multi-store management system supporting distinct storefronts for EzrsGold (gold trading) and EZRSAccounts (account sales) with store renaming, creation functionality, and ID-based order linkage preservation across store migrations. Built complex database schema for multi-store coordination, account tracking, and order references across both platforms."
@@ -396,7 +396,7 @@ client:
   languages: PHP,mySQL,HTML,JavaScript
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3,Invision App
+  tools: Sublime Text 3,Git,Invision App
   concepts: MVC,CMS,In-site Editing
   status: Live
   description: "Designed a prototype, got a sign off from client, and then developed a powerful and stunning website for Blue Horn Inc. to showcase their company and gallery.\n"
@@ -487,8 +487,8 @@ client:
   languages: PHP,mySQL,HTML,JavaScript,Java,sqlite,CSS
   platforms: Web,Mobile,Google Maps
   frameworks: OctoberCMS,Laravel,RxAndroid
-  tools: Sublime Text 3
-  concepts: MVC,RESTful API,CMS,Dependency Injection,functional programming,Reactive FRP
+  tools: Sublime Text 3,Git
+  concepts: MVC,RESTful API,CMS,Dependency Injection,functional programming,Reactive FRP,DevOps
   status: Live
   summary: "Highway travel discovery platform for road trip planning and highway establishment exploration, serving 50K+ users with 4.7 rating."
   description: "\"explore highways like never before\".\n\nI built the frontend (front website) and backend (visible to logged in users) and also exposed a REST-based API so that the Android app can communicate with this DB. Some features include user management section, permission architecture, short URL management section, a custom map feature by which the authorized users can easily manage the establishments from map itself.\n\nhighway delite wants to be your one point app for your road trip / highway journey/ bike rides / weekend getaway/ tour and travel through roads on Indian highways.\nI built the entire app for a client."
@@ -508,7 +508,7 @@ client:
   platforms: Web
   frameworks: OctoberCMS,Laravel
   tools: Sublime Text 3
-  concepts: MVC,CMS
+  concepts: MVC,CMS,DevOps
   status: Archived
   description: I built the entire frontend and backend for Sky Properties Team for their business. It has some really nice user management features with a permissions architecture, a web analytics dashboard, editable sections and many more features.
   link: https://web.archive.org/web/20170406182011/http://skyproperties.in/ (Site), https://youtu.be/fwWcU-hUyWc (Video)
@@ -632,7 +632,7 @@ opensource:
   languages: PHP,HTML
   platforms: Web
   frameworks: OctoberCMS
-  tools: Bootstrap
+  tools: Bootstrap,Git
   concepts: Plugin
   status: Live
   description: OctoberCMS Plugin for Twitter Bootstrap Carousels
@@ -645,7 +645,7 @@ opensource:
   languages: PHP,HTML
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
   description: "The world has humans and robots. Humans build things (including robots) and they deserve credit for doing so when they do. Robots, on the other hand, do what they are built to do, and sometimes you want to exclude certain behaviors. This plugin helps you to do both of these with ease.\n\nAs the title says, it allows you to generate humans.txt and robots.txt for your web app. This plugin has had over 6329 documented installs."
@@ -658,7 +658,7 @@ opensource:
   languages: PHP,HTML
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
   description: This plugin extends the RainLab.User plugin to add social provider-based logins to your web app.
@@ -671,7 +671,7 @@ opensource:
   languages: PHP
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
   description: Gallery plugin for October CMS based on Magnific Popup plugin.
@@ -684,7 +684,7 @@ opensource:
   languages: HTML,PHP
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: Widget
   status: Live
   description: You can make filters using the filter option in OctoberCMS. But this does not include a dropdown filter. I needed this functionality and so made this widget to help achieve this.
@@ -697,7 +697,7 @@ opensource:
   languages: PHP,HTML
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
   description: This plugin enables you to manage mobile applications. You can add your iOS, Android and other store app listing into the backend. It also lets you monitor individual app installs by adding some code on the client-side (see video or documentation).
@@ -710,7 +710,7 @@ opensource:
   languages: PHP,HTML
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: RESTful API,Plugin
   status: Live
   description: Badge plugin for OctoberCMS
@@ -723,7 +723,7 @@ opensource:
   languages: PHP,HTML
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: RESTful API,Plugin
   status: Live
   description: Plugin to generate RESTful controllers on OctoberCMS.
@@ -736,7 +736,7 @@ opensource:
   languages: PHP
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: RESTful API,Plugin
   status: Live
   description: Mobile Front-end user management for October CMS.
@@ -749,7 +749,7 @@ opensource:
   languages: HTML,CSS
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: Theming
   status: Live
   description: Port of Identity theme from HTML5 UP for OctoberCMS
@@ -762,7 +762,7 @@ opensource:
   languages: HTML,CSS,JavaScript
   platforms: Web
   frameworks: OctoberCMS
-  tools: Sublime Text 3
+  tools: Sublime Text 3,Git
   concepts: Theming
   status: Live
   description: Readium Theme for OctoberCMS
@@ -775,7 +775,7 @@ opensource:
   languages: PHP,HTML,JavaScript
   platforms: Web
   frameworks: OctoberCMS
-  tools: Bootstrap
+  tools: Bootstrap,Git
   concepts: Plugin
   status: Archived
   description: Collapse plugin for OctoberCMS
@@ -877,11 +877,11 @@ others:
   slug: car-pooling-app
   type: Others
   duration: Jan 2012
-  languages: PHP
+  languages: PHP,MySQL
   platforms: Web
   frameworks: Sencha Touch
   tools: Notepad++
-  concepts: MVC
+  concepts: MVC,Database Design
   status: Archived
   description: A web-based mobile-friendly version of Uber made in a time long before we even came to know of Uber.
   link:
