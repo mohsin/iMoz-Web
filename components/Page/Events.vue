@@ -104,7 +104,7 @@ const ucfirst = (string: string) => {
         <!-- Date on opposite side of timeline (centered on content area) -->
         <div :class="[
           'hidden sm:flex sm:flex-col sm:items-center sm:justify-center sm:absolute sm:text-center sm:w-20',
-          index % 2 === 0 ? 'sm:left-[62.5%] sm:-translate-x-1/2' : 'sm:right-[62.5%] sm:translate-x-1/2'
+          index % 2 === 0 ? 'sm:left-[75%] sm:-translate-x-1/2' : 'sm:right-[75%] sm:translate-x-1/2'
         ]" style="top: calc(12rem + 3rem); transform: translateY(-50%)">
           <span class="text-xs font-semibold text-gray-600 dark:text-slate-400 whitespace-nowrap">{{ duration(entry.date) }}</span>
           <span class="text-xs font-medium px-2 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 mt-1">
