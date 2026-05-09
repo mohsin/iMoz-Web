@@ -11,7 +11,8 @@ type EventItem = {
     location: string | string[],
     status: string,
     description: string,
-    link: string | string[]
+    link: string | string[],
+    photos?: string[]
 }
 
 const props = defineProps({
@@ -48,14 +49,14 @@ const ucfirst = (string: string) => {
 
     <!-- Events -->
     <div class="space-y-8 sm:space-y-12 mt-12">
-      <div v-for="(entry, index) in data" :key="entry.slug" class="relative pt-8 sm:pt-0">
+      <div v-for="(entry, index) in data" :key="entry.slug" class="relative pt-8 sm:pt-0 flex flex-col sm:grid sm:grid-cols-2">
         <!-- Timeline dot -->
         <div class="absolute left-1/2 top-0 sm:top-6 w-3 h-3 bg-blue-600 dark:bg-blue-500 rounded-full transform -translate-x-1.5 border-4 border-white dark:border-slate-900"></div>
 
-        <!-- Event card -->
+        <!-- Event card (mobile: first; desktop: col 1 for even, col 2 for odd) -->
         <div :class="[
-          'sm:ml-0 relative bg-white dark:bg-slate-700 rounded-lg shadow-lg text-gray-900 dark:text-slate-300',
-          index % 2 === 0 ? 'sm:mr-auto sm:w-1/2' : 'sm:ml-auto sm:w-1/2'
+          'relative bg-white dark:bg-slate-700 rounded-lg shadow-lg text-gray-900 dark:text-slate-300 sm:row-start-1',
+          index % 2 === 0 ? 'sm:col-start-1' : 'sm:col-start-2'
         ]">
 
           <!-- Image header (full bleed) -->
@@ -101,16 +102,30 @@ const ucfirst = (string: string) => {
           </div>
         </div>
 
-        <!-- Date on opposite side of timeline (centered on content area) -->
+        <!-- Opposite side column: date/type label + carousel (desktop only) -->
         <div :class="[
-          'hidden sm:flex sm:flex-col sm:items-center sm:justify-center sm:absolute sm:text-center sm:w-20',
-          index % 2 === 0 ? 'sm:left-[75%] sm:-translate-x-1/2' : 'sm:right-[75%] sm:translate-x-1/2'
-        ]" style="top: calc(12rem + 3rem); transform: translateY(-50%)">
+          'hidden sm:flex sm:flex-col sm:items-center sm:justify-center sm:row-start-1',
+          index % 2 === 0 ? 'sm:col-start-2' : 'sm:col-start-1'
+        ]">
           <span class="text-xs font-semibold text-gray-600 dark:text-slate-400 whitespace-nowrap">{{ duration(entry.date) }}</span>
           <span class="text-xs font-medium px-2 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 mt-1">
             {{ entry.type }}
           </span>
+          <EventPhotoCarousel
+            v-if="entry.photos?.length"
+            :photos="entry.photos"
+            :title="entry.title"
+            class="mt-3 w-full"
+          />
         </div>
+
+        <!-- Mobile-only carousel (below card) -->
+        <EventPhotoCarousel
+          v-if="entry.photos?.length"
+          :photos="entry.photos"
+          :title="entry.title"
+          class="sm:hidden mt-3"
+        />
       </div>
     </div>
   </div>
