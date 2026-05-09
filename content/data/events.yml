@@ -60,4 +60,49 @@
       url: /events/kasc-android-workshop/invite.jpg
     - site: Brochure
       url: /events/kasc-android-workshop/brochure.pdf
+  photos:
+    - /events/kasc-android-workshop/photo-poster.webp
+    - /events/kasc-android-workshop/photo-1.webp
+    - /events/kasc-android-workshop/photo-2.webp
+    - /events/kasc-android-workshop/photo-3.webp
+    - /events/kasc-android-workshop/photo-4.webp
+    - /events/kasc-android-workshop/photo-5.webp
   added_on: 21/02/2024 12:55pm
+- title: AWS Community Day Bengaluru 2019
+  slug: aws-community-day-2019
+  designation: speaker
+  type: Conference
+  date: 27 Jul 2019
+  location: Conrad Bengaluru
+  status: past
+  description: "Gave a talk on 'Building voice-driven apps for Alexa' at AWS Community Day Bengaluru 2019, organised by the AWS User Group Bengaluru (AWSUGBLR). The session covered building voice-driven Alexa skills and the role of AWS services in powering them."
+  added_on: 09/05/2026 12:00pm
+- title: Android Workshop for SNEHA at CSTEP
+  slug: cstep-sneha-workshop
+  image: ""
+  designation: speaker
+  type: Workshop
+  date:
+    - 09 May 2019
+    - 10 May 2019
+  location: Centre for Study of Science, Technology and Policy (CSTEP), Bengaluru
+  status: past
+  description: "Conducted a two-day professional Android development workshop for the SNEHA team at CSTEP (Centre for Study of Science, Technology and Policy), Bengaluru. The workshop focused on implementing offline capabilities in the SNEHA mobile application, covering architectural approaches, API integration, data design patterns, and best practices for building offline-first Android apps."
+  added_on: 09/05/2026 12:00pm
+- title: Web Development Talk at Webrockstar
+  slug: webrockstar-web-talk
+  image: /images/events/webrockstar-web-talk.webp
+  designation: speaker
+  type: Meetup
+  date: 2015
+  location: Webrockstar, India
+  status: past
+  description: "Gave a talk on web development at a Webrockstar meetup. The session was held in an intimate setting with fellow developers and covered modern web development techniques and frameworks."
+  photos:
+    - /events/webrockstar-web-talk/photo-1.webp
+    - /events/webrockstar-web-talk/photo-2.webp
+    - /events/webrockstar-web-talk/photo-3.webp
+    - /events/webrockstar-web-talk/photo-4.webp
+    - /events/webrockstar-web-talk/photo-5.webp
+    - /events/webrockstar-web-talk/photo-6.webp
+  added_on: 09/05/2026 12:00pm
