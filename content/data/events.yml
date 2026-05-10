@@ -46,28 +46,6 @@
     - site: Website
       url: https://devfest-bglr-19.firebaseapp.com/day1
   added_on: 31/01/2024 6:00pm
-- title: Android Development Workshop
-  slug: kasc-android-workshop
-  image: /events/kasc-android-workshop/invite.jpg
-  designation: speaker
-  type: Workshop
-  date: 26 Sep 2014
-  location: Kongunadu Arts and Science College, Coimbatore
-  status: past
-  description: "Conducted a national level workshop on \"Android Application Development\" at Kongunadu Arts and Science College, Coimbatore. Over 250 attendees participated from neighbouring colleges in Madurai, Kerala, Trichy and Chennai including students, staff and research scholars."
-  link:
-    - site: Invite
-      url: /events/kasc-android-workshop/invite.jpg
-    - site: Brochure
-      url: /events/kasc-android-workshop/brochure.pdf
-  photos:
-    - /events/kasc-android-workshop/photo-poster.webp
-    - /events/kasc-android-workshop/photo-1.webp
-    - /events/kasc-android-workshop/photo-2.webp
-    - /events/kasc-android-workshop/photo-3.webp
-    - /events/kasc-android-workshop/photo-4.webp
-    - /events/kasc-android-workshop/photo-5.webp
-  added_on: 21/02/2024 12:55pm
 - title: AWS Community Day Bengaluru 2019
   slug: aws-community-day-2019
   designation: speaker
@@ -106,3 +84,25 @@
     - /events/webrockstar-web-talk/photo-5.webp
     - /events/webrockstar-web-talk/photo-6.webp
   added_on: 09/05/2026 12:00pm
+- title: Android Development Workshop
+  slug: kasc-android-workshop
+  image: /events/kasc-android-workshop/invite.jpg
+  designation: speaker
+  type: Workshop
+  date: 26 Sep 2014
+  location: Kongunadu Arts and Science College, Coimbatore
+  status: past
+  description: "Conducted a national level workshop on \"Android Application Development\" at Kongunadu Arts and Science College, Coimbatore. Over 250 attendees participated from neighbouring colleges in Madurai, Kerala, Trichy and Chennai including students, staff and research scholars."
+  link:
+    - site: Invite
+      url: /events/kasc-android-workshop/invite.jpg
+    - site: Brochure
+      url: /events/kasc-android-workshop/brochure.pdf
+  photos:
+    - /events/kasc-android-workshop/photo-poster.webp
+    - /events/kasc-android-workshop/photo-1.webp
+    - /events/kasc-android-workshop/photo-2.webp
+    - /events/kasc-android-workshop/photo-3.webp
+    - /events/kasc-android-workshop/photo-4.webp
+    - /events/kasc-android-workshop/photo-5.webp
+  added_on: 21/02/2024 12:55pm
