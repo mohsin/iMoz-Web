@@ -55,6 +55,13 @@
   location: Conrad Bengaluru
   status: past
   description: "Gave a talk on 'Building voice-driven apps for Alexa' at AWS Community Day Bengaluru 2019, organised by the AWS User Group Bengaluru (AWSUGBLR). The session covered building voice-driven Alexa skills and the role of AWS services in powering them."
+  link:
+    - site: Website
+      url: https://communityday.awsugblr.in/#speakers
+    - site: Blog
+      url: https://www.awsugblr.in/blog/2019-08-05-aws-community-day-bengaluru-2019-track-1/
+    - site: Slides
+      url: /events/aws-community-day-2019/slides.pptx
   photos:
     - /events/aws-community-day-2019/photo-1.webp
     - /events/aws-community-day-2019/photo-2.webp
