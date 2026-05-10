@@ -54,6 +54,12 @@ Collect all valid URLs for the `link` field.
 
 Read every image in the source folder visually (use the Read tool). For each, decide:
 
+> **HEIC files**: the Read tool cannot handle HEIC — convert each one to a temp JPEG first, then read:
+> ```bash
+> sips -s format jpeg -Z 1200 "<file.HEIC>" --out /tmp/preview.jpg
+> ```
+> Read `/tmp/preview.jpg`, then move on to the next. Overwrite the same temp path each time.
+
 **Include if:**
 - You are visible and clearly the subject (on stage, presenting, receiving award)
 - It shows event atmosphere (crowd, venue, stage) that adds context
@@ -96,13 +102,16 @@ Copy to `public/events/<slug>/` if they should be linked.
 
 ## Step 6 — Insert into events.yml
 
-Events are ordered **reverse chronologically** (latest first). Find the correct position by comparing dates with existing entries, then insert using the Edit tool.
+First check whether an entry for this event already exists in `events.yml` (match by slug or title). If it does, **update the existing entry** rather than inserting a new one — patch only the fields that are missing or incorrect (e.g. add photos, fix dates, improve description, add links).
+
+If no entry exists, insert a new one. Events are ordered **reverse chronologically** (latest first). Find the correct position by comparing dates with existing entries, then insert using the Edit tool.
 
 Rules:
 - Omit `image:` entirely if there is no hero image (do NOT write `image: ""`)
 - Omit `link:` entirely if there are no links
 - Omit `photos:` entirely if there are no carousel photos
 - Set `added_on:` to today's date and current approximate time
+- For PDF links, use a `#page=N` fragment to jump directly to the relevant page (e.g. `url: /events/<slug>/doc.pdf#page=5`). All modern browsers and PDF viewers support this.
 
 ## Step 7 — Report and commit message
 
@@ -111,12 +120,12 @@ Output:
 2. A suggested git commit message with bullet points, e.g.:
 
 ```
-chore(events): add photos and links for <Event Name> <Year>
+chore(events): Added photos and links for <Event Name> <Year>
 
-* Add hero image from official speaker card graphic
-* Add N carousel photos converted to WebP
-* Export Keynote slides to PPTX
-* Link to official event website and AWSUGBLR blog recap
+* Added hero image from official speaker card graphic
+* Added N carousel photos converted to WebP
+* Exported Keynote slides to PPTX
+* Linked to official event website and recap blog post
 ```
 
 Do not run `git commit` — only suggest the message.
