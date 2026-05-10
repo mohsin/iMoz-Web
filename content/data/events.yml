@@ -4,15 +4,20 @@
   designation: speaker
   type: Workshop
   date:
-    - 05 Jan 2024
-    - 06 Jan 2024
+    - 05 Feb 2024
+    - 06 Feb 2024
   location:
     - Saranathan College of Engineering, Trichy
   status: past
-  description: "Six days training programme for faculty members from CSE, IT, CSBS, AI/ML and AI & DS departments from Anna University, constituent colleges, regional offices, government colleges & all engineering colleges affiliated to Anna University at Saranathan College of Engineering, Trichy."
+  description: "Spoke across two sessions at a six-day Faculty Development Programme on CCS332 – App Development, organised by Saranathan College of Engineering and sponsored by Anna University's Centre for Faculty & Professional Development. Delivered sessions on Native App Development Frameworks & Tools (Day 1) and Building an Android App using Java & Kotlin (Day 2), for faculty from CSE, IT, CSBS, AI/ML and AI & DS departments across Anna University affiliated colleges."
   link:
     - site: Certificate
       url: /events/sce-faculty-programme/certificate.pdf
+    - site: Programme
+      url: https://saranathan.ac.in/IQAC/AQAR2024/C5_3_2.pdf#page=103
+  photos:
+    - /events/sce-faculty-programme/photo-1.webp
+    - /events/sce-faculty-programme/photo-2.webp
   added_on: 31/01/2024 6:00pm
 - title: Google's Web Community Leaders Summit
   slug: google-web-leaders-summit-1
