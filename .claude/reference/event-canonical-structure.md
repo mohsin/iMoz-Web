@@ -20,7 +20,8 @@ Events/
         ├── Materials/               # Workshop code, demo projects, zip files, reference repos
         ├── Assets/                  # Slide-making assets: diagrams, logos, speaker cards, .psd files,
         │                            # reference images used in building the presentation
-        ├── Documents/               # Certificates, brochures, invite PDFs, contracts, confirmation emails
+        ├── Documents/               # Certificates, brochures, invite PDFs, contracts
+        │   └── Emails/              # Email threads (.eml) — primary metadata source for event-import
         └── notes.md                 # (optional) personal notes
 ```
 
@@ -37,7 +38,8 @@ Events/
 | `.key`, `.pptx`, `.ppt` | `Slides/` |
 | `.pdf` with "CFP", "Call for", "Sessionize", "Proposal" in name | `CFP/` |
 | `.pdf` (certificate, brochure, invite, contract) | `Documents/` |
-| `.eml`, `.txt` (emails, notes) | `Documents/` |
+| `.eml` (email threads) | `Documents/Emails/` |
+| `.txt` (notes) | `Documents/` |
 | Event photos (`.jpg`, `.heic`, `.png` of people/venue) | `Photos/all/` |
 | Slide-making assets (diagrams, reference images, `.psd`, logos) | `Assets/` |
 | Speaker cards / event branding graphics | `Assets/` |

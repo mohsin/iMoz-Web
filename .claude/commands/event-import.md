@@ -27,6 +27,11 @@ find "$ARGUMENTS" -not -name ".*" -not -name "._*" \
 
 Also read any text files present (README, changes.md, notes, etc.) for event context.
 
+> **`.eml` email files**: These are a rich source of event metadata — dates, venue, workshop format, curriculum, and organiser details are often in email threads. Check both the source folder root and `Documents/Emails/` (the canonical location after reorganization). Read them as plain text with the Read tool. If an `.eml` is too large to read (contains base64-encoded PDF attachments), extract key text with:
+> ```bash
+> strings "<file.eml>" | grep -A5 -B5 "date\|venue\|workshop\|topic"
+> ```
+
 ## Step 2 — Identify event metadata
 
 From the folder name, file contents, slide decks, and documents, determine:
@@ -59,6 +64,15 @@ Read every image in the source folder visually (use the Read tool). For each, de
 > sips -s format jpeg -Z 1200 "<file.HEIC>" --out /tmp/preview.jpg
 > ```
 > Read `/tmp/preview.jpg`, then move on to the next. Overwrite the same temp path each time.
+
+> **Rotated photos**: Phone cameras often save portrait selfies or sideways shots with incorrect orientation. If a photo appears rotated in the preview, fix it with `sips` before converting:
+> ```bash
+> sips -r 90 "<file>" --out /tmp/preview_rotated.jpg   # 90° clockwise
+> sips -r 270 "<file>" --out /tmp/preview_rotated.jpg  # 90° counter-clockwise
+> sips -r 180 "<file>" --out /tmp/preview_rotated.jpg  # upside-down
+> ```
+> Note: `sips -r N` rotates **clockwise** by N degrees.
+> **Always re-read the rotated preview** to confirm the orientation is correct before doing the final WebP conversion. If a rotation was needed during preview, apply the same `sips -r` step to a temp file, then pass that temp file to `convert-photos.sh`.
 
 **Include if:**
 - You are visible and clearly the subject (on stage, presenting, receiving award)

@@ -22,7 +22,8 @@ Assign each file and subdirectory to a canonical destination:
 - `.key`, `.pptx`, `.ppt` files → `Slides/`
 - PDFs with "CFP", "Call for", "Sessionize", or "Proposal" in name → `CFP/`
 - PDFs (certificate, brochure, invite, contract) → `Documents/`
-- `.eml`, `.txt` emails/notes → `Documents/`
+- `.eml` email files → `Documents/Emails/` (preserved as metadata source for event-import)
+- `.txt` notes → `Documents/`
 - Slide-making assets, diagrams, `.psd`, logos, speaker cards → `Assets/`
 - Demo projects, code repos, `.zip` files → `Materials/`
 - PDFs belonging to a **different year's event** → flag, don't move automatically
