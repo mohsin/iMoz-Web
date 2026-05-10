@@ -37,14 +37,22 @@
   designation: speaker
   type: Conference
   date: 21 Sep 2019
-  location:
-    - Google's RMZ Infinity Office, Bengaluru
-    - Conrad Hotel, Bengaluru
+  location: Infosys, Electronic City, Bengaluru
   status: past
-  description: "Gave a talk on 'Build a voice app under 10 mins for Google Home' at Google's DevFest."
+  description: "Gave a live-demo talk at Google's DevFest Bangalore 2019 (Day 1) on building a voice-driven app for Google Home using Google Actions. The session traced the evolution of user interfaces from CLI to GUI to VUI, then walked the audience through going from zero to a working voice experience — live — in under 10 minutes."
   link:
     - site: Website
       url: https://devfest-bglr-19.firebaseapp.com/day1
+    - site: Speakers
+      url: https://devfest-bglr-19.firebaseapp.com/speakers/
+    - site: Slides
+      url: /events/devfest-blr-2019/slides.pptx
+  photos:
+    - /events/devfest-blr-2019/photo-1.webp
+    - /events/devfest-blr-2019/photo-2.webp
+    - /events/devfest-blr-2019/photo-3.webp
+    - /events/devfest-blr-2019/photo-4.webp
+    - /events/devfest-blr-2019/photo-5.webp
   added_on: 31/01/2024 6:00pm
 - title: AWS Community Day Bengaluru 2019
   slug: aws-community-day-2019
