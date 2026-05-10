@@ -642,12 +642,12 @@ opensource:
   languages: JavaScript,Vue,CSS
   platforms: Web
   frameworks: Nuxt 3,Vue 3,Tailwind CSS
-  tools: Nuxt Content,VSCode,Bun
-  concepts: Portfolio,Static Site Generation,Dark Mode,Open Source
+  tools: Nuxt Content,VSCode,Bun,Claude Code
+  concepts: Portfolio,Static Site Generation,Dark Mode,Open Source,Claude Skills,AI-Assisted Workflows
   status: Live
-  summary: "Open-source personal portfolio and project showcase built with Nuxt 3 and Vue 3, featuring dark mode, project filtering, event timeline, and resume generation."
-  description: "Built and continuously maintain this open-source portfolio website to showcase projects, speaking engagements, and professional history. Developed with Nuxt 3 and Vue 3 using Tailwind CSS for styling, @nuxt/content for markdown-driven project data, and nuxt-icon for iconography. Features a masonry project grid with filtering, a custom events timeline, dark/light mode toggle, and a resume page. Deployed as a static site for fast global delivery."
-  description_on_linkedin: "Maintain an open-source portfolio website showcasing projects and professional history. Built with modern frameworks (Nuxt 3, Vue 3) and Tailwind CSS, featuring a responsive masonry project grid with filtering, dark/light mode toggle, dynamic events timeline, and downloadable resume. Source code available on GitHub for the community."
+  summary: "Open-source personal portfolio and project showcase built with Nuxt 3 and Vue 3, featuring dark mode, project filtering, event timeline, resume generation, and Claude Code skills for AI-assisted content workflows."
+  description: "Built and continuously maintain this open-source portfolio website to showcase projects, speaking engagements, and professional history. Developed with Nuxt 3 and Vue 3 using Tailwind CSS for styling, @nuxt/content for markdown-driven project data, and nuxt-icon for iconography. Features a masonry project grid with filtering, a custom events timeline, dark/light mode toggle, and a resume page. Deployed as a static site for fast global delivery. Includes custom Claude Code skills for AI-assisted content workflows — automating event imports (photo curation and WebP conversion, Keynote export, web research, and YAML insertion) and event folder reorganization to a canonical structure."
+  description_on_linkedin: "Maintain an open-source portfolio website showcasing projects and professional history. Built with modern frameworks (Nuxt 3, Vue 3) and Tailwind CSS, featuring a responsive masonry project grid with filtering, dark/light mode toggle, dynamic events timeline, and downloadable resume. Includes custom Claude Code skills that automate content workflows — importing speaking events from local archives with AI-assisted photo curation, WebP conversion, web research, and YAML data entry. Source code available on GitHub for the community."
   link: https://github.com/mohsin/iMoz-Web (Source), https://imoz.in (Live)
   added_on: 28/04/2026 12:00pm
 - title: Expense Tracker for Google Home
