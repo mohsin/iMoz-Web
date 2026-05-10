@@ -87,7 +87,7 @@ onMounted(() => {
         <button
           @click="loadRemainingContent"
           :disabled="isLoadingMore"
-          class="bg-blue-600 hover:bg-blue-700 disabled:opacity-50 text-white px-6 py-3 rounded-lg transition-colors"
+          class="bg-gray-700 dark:bg-slate-300 text-white dark:text-gray-700 text-sm py-2 px-6 hover:bg-gray-800 dark:hover:bg-slate-200 disabled:opacity-50 transition-colors duration-200"
         >
           <span v-if="!isLoadingMore">Load More Projects</span>
           <span v-else class="flex items-center justify-center gap-2">
