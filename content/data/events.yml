@@ -26,10 +26,18 @@
     - Google's RMZ Infinity Office, Bengaluru
     - Conrad Hotel, Bengaluru
   status: past
-  description: "I was invited and attended as one of the delegates at Google India's Web Community Leaders Summit held on the 16th and 17th of November, 2019 at Google's RMZ infinity Office, Bangalore followed by a networking dinner at Conrad Hotel."
+  description: "Invited as a delegate to Google's India Web Community Leaders Summit 2019, a two-day closed gathering of web community leads, Google Developer Experts, and ecosystem influencers from across India. Sessions covered Chrome's 2020 roadmap by Paul Kinlan, Lighthouse CI, Progressive Web Apps, and the state of the web platform, with the overarching theme of growing impactful technical communities across the country. Day 2 wrapped up with a networking dinner and karaoke evening at the Conrad Bengaluru."
   link:
     - site: Twitter
-      url: https://twitter.com/SaifurMohsin/status/1195643048371163136
+      url: https://x.com/hashtag/iwcls
+    - site: Recap
+      url: https://amanintech.medium.com/indian-web-community-leaders-summit-2019-highlights-cff6130da401
+  photos:
+    - /events/google-web-leaders-summit-1/photo-1.webp
+    - /events/google-web-leaders-summit-1/photo-2.webp
+    - /events/google-web-leaders-summit-1/photo-3.webp
+    - /events/google-web-leaders-summit-1/photo-4.webp
+    - /events/google-web-leaders-summit-1/photo-5.webp
   added_on: 31/01/2024 6:00pm
 - title: Google's DevFest 2019
   slug: devfest-blr-2019
