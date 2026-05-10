@@ -104,6 +104,24 @@
   status: past
   description: "Conducted a two-day professional Android development workshop for the SNEHA team at CSTEP (Centre for Study of Science, Technology and Policy), Bengaluru. The workshop focused on implementing offline capabilities in the SNEHA mobile application, covering architectural approaches, API integration, data design patterns, and best practices for building offline-first Android apps."
   added_on: 09/05/2026 12:00pm
+- title: Introductory Android Development Workshop at BMSCE
+  slug: bms-android-workshop-2018
+  image: /images/events/bms-android-workshop-2018.webp
+  designation: speaker
+  type: Workshop
+  date: 12 Feb 2018
+  location: BMS College of Engineering, Bangalore
+  status: past
+  description: "Conducted a free two-hour introductory Android app development workshop for the Tech Team at BMS College of Engineering (BMSCE), Bangalore. The session covered Android fundamentals, the Android software stack, setting up Android Studio, and building a simple app from scratch with a live coding demonstration."
+  photos:
+    - /events/bms-android-workshop-2018/photo-1.webp
+    - /events/bms-android-workshop-2018/photo-2.webp
+    - /events/bms-android-workshop-2018/photo-3.webp
+    - /events/bms-android-workshop-2018/photo-4.webp
+    - /events/bms-android-workshop-2018/photo-5.webp
+    - /events/bms-android-workshop-2018/photo-6.webp
+    - /events/bms-android-workshop-2018/photo-7.webp
+  added_on: 10/05/2026 9:30pm
 - title: Web Development Talk at Webrockstar
   slug: webrockstar-web-talk
   image: /images/events/webrockstar-web-talk.webp
