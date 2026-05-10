@@ -10,6 +10,11 @@ node_modules
 dist
 .vscode
 
+# Override global gitignore — keep Claude skills in the repo
+!.claude/
+!.claude/**
+.claude/settings.local.json
+
 # Google Calendar sync files
 google-sync-log.json
 google-service-account.json

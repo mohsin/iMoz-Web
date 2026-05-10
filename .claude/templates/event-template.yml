@@ -1,0 +1,32 @@
+# Reference template for a single events.yml entry.
+# Copy this structure and fill in all fields.
+# See content/data/events.yml for existing entries as further reference.
+
+- title: Full Event Name
+  slug: short-url-safe-slug          # used in public/events/<slug>/ and URLs
+  image: /images/events/<slug>.webp  # hero image; omit field entirely if none
+  designation: speaker               # speaker | leader | organizer | attendee
+  type: Conference                   # Conference | Workshop | Summit | Meetup
+  date: 27 Jul 2019                  # single date, or list for multi-day:
+  # date:
+  #   - 09 May 2019
+  #   - 10 May 2019
+  location: Venue Name, City         # single string, or list for multi-venue
+  # location:
+  #   - Main Venue, City
+  #   - Dinner Venue, City
+  status: past                       # past | upcoming
+  description: "One or two sentences describing the event and your specific role/talk."
+  link:                              # omit entire field if no links
+    - site: Website
+      url: https://example.com
+    - site: Blog
+      url: https://blog.example.com/recap
+    - site: Slides
+      url: /events/<slug>/slides.pptx
+    - site: Certificate
+      url: /events/<slug>/certificate.pdf
+  photos:                            # omit entire field if no photos
+    - /events/<slug>/photo-1.webp
+    - /events/<slug>/photo-2.webp
+  added_on: 10/05/2026 12:00pm       # today's date and approximate time
