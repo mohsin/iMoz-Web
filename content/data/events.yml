@@ -48,12 +48,21 @@
   added_on: 31/01/2024 6:00pm
 - title: AWS Community Day Bengaluru 2019
   slug: aws-community-day-2019
+  image: /images/events/aws-community-day-2019.webp
   designation: speaker
   type: Conference
   date: 27 Jul 2019
   location: Conrad Bengaluru
   status: past
   description: "Gave a talk on 'Building voice-driven apps for Alexa' at AWS Community Day Bengaluru 2019, organised by the AWS User Group Bengaluru (AWSUGBLR). The session covered building voice-driven Alexa skills and the role of AWS services in powering them."
+  photos:
+    - /events/aws-community-day-2019/photo-1.webp
+    - /events/aws-community-day-2019/photo-2.webp
+    - /events/aws-community-day-2019/photo-3.webp
+    - /events/aws-community-day-2019/photo-4.webp
+    - /events/aws-community-day-2019/photo-5.webp
+    - /events/aws-community-day-2019/photo-6.webp
+    - /events/aws-community-day-2019/photo-7.webp
   added_on: 09/05/2026 12:00pm
 - title: Android Workshop for SNEHA at CSTEP
   slug: cstep-sneha-workshop
