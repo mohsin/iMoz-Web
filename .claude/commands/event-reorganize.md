@@ -26,6 +26,9 @@ Assign each file and subdirectory to a canonical destination:
 - `.txt` notes → `Documents/`
 - Slide-making assets, diagrams, `.psd`, logos, speaker cards → `Assets/`
 - Demo projects, code repos, `.zip` files → `Materials/`
+- Audio, video, screen recordings (`.mp3`, `.mp4`, `.mov`, screen capture folders) → `Recordings/` — keep as-is, never relocate
+- `Credentials/` folder → **skip entirely** — do not read, list, or touch its contents
+- API keys, tokens, `.env`, or credential files found loose outside `Credentials/` → move to `Credentials/` without reading
 - PDFs belonging to a **different year's event** → flag, don't move automatically
 
 ## Step 3 — Propose the plan

@@ -22,6 +22,8 @@ Events/
         │                            # reference images used in building the presentation
         ├── Documents/               # Certificates, brochures, invite PDFs, contracts
         │   └── Emails/              # Email threads (.eml) — primary metadata source for event-import
+        ├── Credentials/             # API keys, secrets, tokens — NEVER read contents; move stray credentials here
+        ├── Recordings/              # Audio, video, and screen recordings — always stays as Recordings/
         └── notes.md                 # (optional) personal notes
 ```
 
@@ -46,4 +48,6 @@ Events/
 | Demo projects, code repos, `.zip` files | `Materials/` |
 | `Proposal/` subfolder | Rename → `CFP/` |
 | `Pictures/` subfolder (slide assets, not event photos) | Rename → `Assets/` |
-| Video files | Leave in place, do not move to website |
+| `.mp3`, `.mp4`, `.mov`, `.avi`, screen recordings | `Recordings/` — never move or rename this folder |
+| API keys, tokens, `.env`, credential files found loose | `Credentials/` — move here, never read contents |
+| `Credentials/` folder if it exists | Leave entirely as-is — do not read, list, or move contents |
