@@ -214,7 +214,7 @@ client:
   link: https://www.viewretreats.com
   added_on: 29/12/2022 4:00pm
   show_on_resume: false
-- title: Designer Thamu’s Portfolio
+- title: Designer Thamu's Portfolio
   slug: thamu
   type: Client
   src: /images/thamu.webp
@@ -392,6 +392,7 @@ client:
   tools: Sublime Text 3,Invision App
   concepts: MVC,CMS,In-site Editing
   status: Live
+  summary: "Professional corporate website with in-site editing capabilities for Floyd Inc., built on OctoberCMS."
   description: 'Developed a powerful, stunning and easy to use website for Floyd Inc., based on the same design as an earlier client project as it''s related to that client and they wanted it that way.'
   description_on_linkedin: "Developed a professional website for Floyd Inc. featuring company information, service offerings, and client portfolio. The site includes in-site editing capabilities allowing content managers to update information without requiring developer assistance."
   link: http://floydinc.in
@@ -407,6 +408,7 @@ client:
   tools: Sublime Text 3
   concepts: Components,Data Analysis
   status: Live
+  summary: "React components for X0PA AI's employee attrition and retention prediction platform, delivering data visualizations for predictive analytics."
   description: 'X0PA AI is a Singapore-based data analytics startup which contacted me after their team couldn''t solve a problem for over a week. A colleague from my alma mater recommended me and when I got the task, I solved it for them in under 2 hours. They then asked for a demo for parallel processing of R scripts for their attrition and retention predictor and then later asked to build ReactJS components to improve the same. I was offered a full-time remote employee role but didn''t take it due to disagreements with the contract agreement.'
   description_on_linkedin: "Developed React components for X0PA AI's predictive analytics platform, which predicts employee attrition with up to 95% accuracy and job performance with 72% accuracy. Built interactive data analysis interfaces displaying employee risk scores, historical trends, and retention recommendations that help companies reduce voluntary turnover by up to 25%. Components integrate with R-based statistical models, enabling data scientists to visualize complex analyses in accessible dashboards. The platform identifies key patterns from a database of 250+ million profiles and tailors insights to local employment laws and workplace norms."
   link: https://x0pa.com (Website),
@@ -422,6 +424,7 @@ client:
   tools: Sublime Text 3,Git,Invision App
   concepts: MVC,CMS,In-site Editing
   status: Live
+  summary: "Company showcase website with gallery designed from prototype through to live build for Blue Horn Inc."
   description: "Designed a prototype, got a sign off from client, and then developed a powerful and stunning website for Blue Horn Inc. to showcase their company and gallery.\n"
   description_on_linkedin: "Created a professional website for Blue Horn Inc. featuring company information, service portfolio, and visual gallery. Designed from prototypes through implementation to deliver a stunning, user-friendly site representing the company's brand and capabilities."
   link: http://invis.io/2BD0ER1RY (Design Prototype), http://bluehorn.co.in (Website)
@@ -437,6 +440,7 @@ client:
   tools: Sublime Text 3,Material Design Lite
   concepts: MVC,Material Design
   status: Archived
+  summary: "Scholarship program platform for UpGrad with student application management and Material Design UI."
   description: 'Worked on a web app that apparently was the scholarship program to a platform called UpGrad run by Ronnie Screwvala. Got the project through a group called Indiez and left it due to delayed payments. The group also gave a reduced payment to what they agreed to make even though I made the milestone perfectly, delivered on time, and the client gave a full rating for the work. Their excuse was that "I wasn''t communicating often" even though I replied to each of their questions immediately. So I left and dropped the project. This is the same group whom I did the Yahavi project with (see timeline) and they failed to make timely payments then too. The link contains the partial version I developed with placeholders.'
   description_on_linkedin: "Developed a platform for UpGrad's scholarship program connecting students with educational opportunities. Built course catalog, student application management, scholarship eligibility tracking, and admin dashboard for program coordinators."
   link: http://web.archive.org/web/20170808072740/https://swades-staging.herokuapp.com
@@ -484,6 +488,7 @@ client:
   tools: Sublime Text 3
   concepts: Dependency Injection,Reactive FRP,RESTful API
   status: Archived
+  summary: "Native Android app built with reactive programming patterns following provided designs for a multi-language service platform."
   description: 'Built the native Android app as per the designs provided by the Indiez team. This project got stalled after a few milestones due to some financial constraints from the client''s end. All payments were delayed and their excuse was that this was a "legacy client".'
   description_on_linkedin: "Built native Android application following provided designs with support for multiple languages and localized content. Implemented using reactive programming patterns for responsive, efficient user interactions."
   link: https://www.yahavi.com
@@ -524,7 +529,7 @@ client:
   description_resume:
     - Led the development of a client project from the ground up, handling backend, Android, and web front-ends single-handedly.
     - The app gained around 1000 monthly active users within a year, reaching 50k+ users in 6 months with an average Play Store rating of 4.7 out of 5.
-    - In July 2016, due to a breach of contract, I filed a copyright request, leading Google to take down the app. I later released it when the client settled and purchased the app’s IP entirely.
+    - In July 2016, due to a breach of contract, I filed a copyright request, leading Google to take down the app. I later released it when the client settled and purchased the app's IP entirely.
   description_on_linkedin: "Developed a multi-featured highway travel platform transforming road trips across India. The platform helps users plan routes, discover highway establishments (restaurants, hotels, fuel stations), manage highway services including FASTag purchases/recharge, vehicle insurance, EV charging points, and emergency support. Features include interactive GPS navigation, real-time traffic updates, offline maps, restaurant and accommodation discovery with user reviews, vehicle document management (RC, insurance info), and emergency roadside assistance. The Android app, available on Google Play with 4.7-star rating from 50,000+ active users, has become the go-to companion for Indian highway travelers. Web platform complements mobile app with comprehensive trip planning and booking capabilities."
   link: https://highwaydelite.com (Website), https://play.google.com/store/apps/details?id=com.highwaydelite.highwaydelite (Play Store)
   added_on: 24/12/2022 3:45pm
@@ -540,11 +545,12 @@ client:
   tools: Sublime Text 3
   concepts: MVC,CMS,DevOps
   status: Archived
+  summary: "Real estate platform with user management, permission architecture, analytics dashboard, and editable sections for Sky Properties."
   description: I built the entire frontend and backend for Sky Properties Team for their business. It has some really nice user management features with a permissions architecture, a web analytics dashboard, editable sections and many more features.
   description_on_linkedin: "Built a real estate platform enabling property agents to list properties and manage client relationships. Features include advanced property search with filters, agent management tools, analytics dashboard showing inquiries and conversion metrics, and client relationship tracking."
   link: https://web.archive.org/web/20170406182011/http://skyproperties.in/ (Site), https://youtu.be/fwWcU-hUyWc (Video)
   added_on: 24/12/2022 3:41pm
-- title: Actor Jega’s Official Website
+- title: Actor Jega's Official Website
   slug: actor-jega
   type: Client
   duration: May 2015
@@ -554,6 +560,7 @@ client:
   tools: Sublime Text 3
   concepts: MVC,CMS
   status: Archived
+  summary: "Official website for Kollywood actor Jega with filmography, photo gallery, news section, and in-site editing."
   description: Build a stunning website for an upcoming kollywood actor named Jega who made the movies Gnana Kirukkan and R23 Criminals Diary.
   description_on_linkedin: "Created an official website for actor Jega (Gnana Kirukkan, R23 Criminals Diary) featuring complete filmography, photo galleries, news section, and fan engagement features. Built with in-site editing allowing content updates without technical assistance."
   link: https://web.archive.org/web/20161008140213/http://actorjega.com/
@@ -569,8 +576,9 @@ client:
   tools: Atom,Dagger
   concepts: functional programming,Reactive FRP,Dependency Injection
   status: Archived
-  description: An Android app that was to be internally used by a Bangalore-based real estate startup. The day I moved to Bangalore, I had already set up a meet with the founder of “The House Monk” (known as Cozee Homes now) who found me through Quora. Fortunately, I had the skills that they were looking for in an Android developer—a programmer working with reactive extensions for Android (RxAndroid).
-  description_on_linkedin: “Developed a native Android app for Bangalore-based real estate startup serving property agents and brokers. Features include property inventory management with photo galleries, client communication tools, appointment scheduling, and deal tracking.”
+  summary: "Internal property management Android app for a Bangalore-based real estate startup, built using reactive programming."
+  description: An Android app that was to be internally used by a Bangalore-based real estate startup. The day I moved to Bangalore, I had already set up a meet with the founder of "The House Monk" (known as Cozee Homes now) who found me through Quora. Fortunately, I had the skills that they were looking for in an Android developer—a programmer working with reactive extensions for Android (RxAndroid).
+  description_on_linkedin: "Developed a native Android app for Bangalore-based real estate startup serving property agents and brokers. Features include property inventory management with photo galleries, client communication tools, appointment scheduling, and deal tracking."
   link: https://youtu.be/kH2qIaEqQaQ
   added_on: 24/12/2022 3:07pm
 - title: World of Urology
@@ -584,6 +592,7 @@ client:
   tools: Atom
   concepts: MVC
   status: Expired
+  summary: "Multi-lingual professional network for urologists with specialist directory and medical knowledge sharing."
   description: Built a clean, multi-lingual, and simple-to-use web app for a group of doctors who specialize in urology. However, I abandoned the project as the client was too unresponsive.
   description_on_linkedin: "Built a professional network for urologists featuring multi-language support, specialist directory, case study sharing, and continuing education resources. Designed as an accessible platform for specialists globally."
   link: http://worldofurology.net
@@ -599,6 +608,7 @@ client:
   tools: Android Studio,Atom
   concepts: MVC,RESTful API,QR Code
   status: Expired
+  summary: "Secure QR-coded medical records repository for X-rays, MRI, prescriptions and more, accessible globally from any camera-equipped device."
   description: It is a highly secure online repository to keep medical records. Medical records could be X-ray, MRI, CT scans, history of medicines prescribed, patient details or even medical instruments used in surgery and diagnosis. These are generalised as a "prop" which is associated with a prop ID. Regardless of what kind it is, a simple QR code can be used to identify these props using the ID. The code can even be stuck on the actual prop in the form of QR sticker. Depending on what prop is chosen, appropriate data is fetched and displayed correctly on the app. Using such a general pattern is useful as it helps determine what kind of action must be taken and what sort of data can be displayed. And since the database is globally accessible the doctor can access the data from anywhere in the world. Since all mobile phone, these days are equipped with a camera they can read these QR codes and get the details.
   description_on_linkedin: "Developed a secure cloud-based medical records storage system enabling patients to securely maintain X-rays, MRI scans, CT reports, and medication history. Healthcare providers use QR codes to quickly access patient records from mobile devices. Supports attachment of medical documents and device identifiers."
   link: https://youtu.be/DDpPtJD8nJA
@@ -614,6 +624,7 @@ client:
   tools: Notepad++
   concepts:
   status: Expired
+  summary: "Business website for a construction materials supplier with product catalog, pricing, and location information."
   description: Build a beautiful website for my uncle for his business (called "SK Hollow Blocks") of selling construction supplies.
   description_on_linkedin: "Created a professional website for SK Hollow Blocks, a construction materials supplier. Features include product catalog, pricing information, supplier details, contact information, and location on Google Maps for customer convenience."
   link: https://web.archive.org/web/20150611175451/http://skhollowblocks.com, https://goo.gl/maps/bic7VAfpJeQpC2ub7 (Google Maps)
@@ -629,6 +640,7 @@ client:
   tools: Notepad++
   concepts:
   status: Expired
+  summary: "Contact management web application built on a custom PHP framework."
   description: I worked on the development of their web application on a freelance basis. It is a contact manager and I built this on top of the PHP-boilerplate project which I had made.
   description_on_linkedin: "Developed a contact management application enabling users to organize contacts, track interactions, and manage relationships. Built on custom PHP framework with intuitive interface and data security features."
   link: http://web.archive.org/web/20140517105707/http://hiveyo.com
@@ -660,6 +672,7 @@ opensource:
   tools: Sublime Text 3
   concepts: RESTful API
   status: Live
+  summary: "Voice-driven expense tracker for Google Home using Dialogflow, enabling conversational spending logging and category management."
   description: Track Expenses using Google Actions.
   description_on_linkedin: "Created a voice assistant skill enabling users to track expenses through Google Home using conversational voice commands. Say phrases like \"Track 50 dollars for lunch\" and the assistant logs the expense. Features include spending category management, expense history, and natural language understanding."
   link: https://www.youtube.com/watch?v=oqunD20LKCo (Demo), https://github.com/mohsin/Expense-Tracker (Source)
@@ -674,6 +687,7 @@ opensource:
   tools: Bootstrap,Git
   concepts: Plugin
   status: Live
+  summary: "OctoberCMS plugin for Twitter Bootstrap carousels with 6,000+ documented installs."
   description: OctoberCMS Plugin for Twitter Bootstrap Carousels
   description_on_linkedin: "OctoberCMS plugin providing carousel/slider functionality for websites. Built on Twitter Bootstrap with extensive customization options. 6000+ documented installs."
   link: https://github.com/SaifurRahmanMohsin/Carousel-Plugin (Source), https://octobercms.com/plugin/mohsin-carousel (Plugin)
@@ -688,6 +702,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
+  summary: "OctoberCMS plugin generating humans.txt and robots.txt files with 6,300+ documented installs."
   description: "The world has humans and robots. Humans build things (including robots) and they deserve credit for doing so when they do. Robots, on the other hand, do what they are built to do, and sometimes you want to exclude certain behaviors. This plugin helps you to do both of these with ease.\n\nAs the title says, it allows you to generate humans.txt and robots.txt for your web app. This plugin has had over 6329 documented installs."
   description_on_linkedin: "OctoberCMS plugin for generating humans.txt and robots.txt files automatically. Helps give credit to humans and manage bot access rules for websites. 6300+ documented installs."
   link: https://github.com/SaifurRahmanMohsin/txt-plugin (Source), https://octobercms.com/plugin/mohsin-txt (Plugin)
@@ -702,6 +717,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
+  summary: "OctoberCMS plugin extending RainLab.User with social provider authentication for Google, Facebook, GitHub, and more."
   description: This plugin extends the RainLab.User plugin to add social provider-based logins to your web app.
   description_on_linkedin: "OctoberCMS plugin extending user management with social provider-based authentication (Google, Facebook, GitHub, etc.). Enables users to sign up and log in using existing social accounts."
   link: https://github.com/SaifurRahmanMohsin/social-plugin (Source), https://octobercms.com/plugin/mohsin-social (Plugin)
@@ -716,6 +732,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
+  summary: "OctoberCMS gallery plugin using the Magnific Popup library for lightbox image browsing with advanced customization."
   description: Gallery plugin for October CMS based on Magnific Popup plugin.
   description_on_linkedin: "OctoberCMS plugin providing image gallery functionality using Magnific Popup library with light-box effects and advanced customization options. Enables seamless image browsing experience on websites."
   link: https://github.com/SaifurRahmanMohsin/magnificgallery-plugin (Source), https://octobercms.com/plugin/mohsin-magnificgallery (Plugin)
@@ -730,6 +747,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: Widget
   status: Live
+  summary: "OctoberCMS widget adding dropdown filtering capability to CMS admin interfaces."
   description: You can make filters using the filter option in OctoberCMS. But this does not include a dropdown filter. I needed this functionality and so made this widget to help achieve this.
   description_on_linkedin: "OctoberCMS widget enabling dropdown filtering functionality for content management systems. Extends OctoberCMS filtering capabilities with intuitive dropdown interfaces for advanced content discovery."
   link: https://github.com/SaifurRahmanMohsin/Dropdown-Widget (Source)
@@ -744,6 +762,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: Plugin
   status: Live
+  summary: "OctoberCMS plugin for managing mobile app listings across iOS, Android, and other platforms with install monitoring."
   description: This plugin enables you to manage mobile applications. You can add your iOS, Android and other store app listing into the backend. It also lets you monitor individual app installs by adding some code on the client-side (see video or documentation).
   description_on_linkedin: "OctoberCMS plugin for managing mobile app listings across iOS, Android, and other platforms. Features app store management, install tracking, and client-side monitoring capabilities for mobile app portfolios."
   link: https://github.com/SaifurRahmanMohsin/mobile-plugin (Source), https://www.youtube.com/embed/VJOH1x967ag (Demo), https://octobercms.com/plugin/mohsin-mobile (OctoberCMS)
@@ -758,6 +777,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: RESTful API,Plugin
   status: Live
+  summary: "OctoberCMS plugin adding customizable badge and label functionality to website content."
   description: Badge plugin for OctoberCMS
   description_on_linkedin: "OctoberCMS plugin providing badge and label functionality for website content. Enables visual tagging and categorization of content with customizable badge styles and colors."
   link: https://github.com/SaifurRahmanMohsin/badge-plugin (Source), https://octobercms.com/plugin/mohsin-badge (OctoberCMS)
@@ -772,6 +792,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: RESTful API,Plugin
   status: Live
+  summary: "OctoberCMS plugin that auto-generates RESTful API controllers to eliminate API development boilerplate."
   description: Plugin to generate RESTful controllers on OctoberCMS.
   description_on_linkedin: "OctoberCMS plugin for generating RESTful API controllers automatically. Reduces boilerplate code when building API endpoints for third-party integrations and enables rapid API development."
   link: https://github.com/SaifurRahmanMohsin/rest-plugin (Source), https://octobercms.com/plugin/mohsin-rest (Plugin)
@@ -786,6 +807,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: RESTful API,Plugin
   status: Live
+  summary: "OctoberCMS plugin providing user management and authentication for mobile front-end applications."
   description: Mobile Front-end user management for October CMS.
   description_on_linkedin: "OctoberCMS plugin providing user management functionality for mobile front-end applications. Enables authentication, user profiles, and role-based access control for mobile apps built with OctoberCMS."
   link: https://github.com/SaifurRahmanMohsin/mobileuser-plugin (Source), https://octobercms.com/plugin/mohsin-user (Live)
@@ -800,6 +822,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: Theming
   status: Live
+  summary: "OctoberCMS theme porting HTML5 UP's Identity template for clean, professional site design."
   description: Port of Identity theme from HTML5 UP for OctoberCMS
   description_on_linkedin: "OctoberCMS theme based on HTML5 UP's Identity template with responsive design and modern aesthetic. Provides clean, professional foundation for building OctoberCMS websites."
   link: https://github.com/SaifurRahmanMohsin/Identity-Theme (Source), https://octobercms.com/theme/mohsin-identity (Live)
@@ -814,6 +837,7 @@ opensource:
   tools: Sublime Text 3,Git
   concepts: Theming
   status: Live
+  summary: "OctoberCMS theme with clean, typography-focused layout optimized for content-driven websites."
   description: Readium Theme for OctoberCMS
   description_on_linkedin: "OctoberCMS theme providing clean, readable layout optimized for content-focused websites. Features elegant typography and responsive design for excellent reading experience."
   link: https://github.com/SaifurRahmanMohsin/Readium-Theme
@@ -828,6 +852,7 @@ opensource:
   tools: Bootstrap,Git
   concepts: Plugin
   status: Archived
+  summary: "OctoberCMS plugin providing Bootstrap-based collapsible and accordion content sections."
   description: Collapse plugin for OctoberCMS
   description_on_linkedin: "OctoberCMS plugin providing collapsible content and accordion functionality. Enables interactive content organization with expandable/collapsible sections using Bootstrap."
   link: https://github.com/SaifurRahmanMohsin/Collapse-Plugin (Source code),
@@ -842,6 +867,7 @@ opensource:
   tools: Notepad++
   concepts: OOPS
   status: Archived
+  summary: "Minimal PHP starter framework inspired by HTML5 Boilerplate, with quick install and OOP abstractions, predating Laravel adoption."
   description: 'This was a simple to use framework which I build inspired from Mathias Bynens'' html5-boilerplate. It''s minimal with a simple configuration file and tried to abstract several of the PHP methods and plugins so that it worked independent of the server the project was deployed in. Also, there was a quick install similar to Workpress'' famous 5-minute install and the frontend was initially load with the html5-boilerplate project from where developers can build their own theme. I successfully built some projects using this and realized that a project called Laravel had already solved this is an elegant way, and switched to that.'
   description_on_linkedin: "Created a PHP framework providing starter template for web applications with minimal setup. Features included configuration management, OOP abstractions, and HTML5 Boilerplate integration. Served as a learning project before transitioning to Laravel framework."
   link: https://github.com/SaifurRahmanMohsin/php-boilerplate
@@ -857,6 +883,7 @@ others:
   tools: Sublime Text 3
   concepts: MVC
   status: Archived
+  summary: "Department website for Production Technology at MIT Chennai, built collaboratively as a mentoring project."
   description: Mentored a junior friend and collaborated to build a website for the Department of Production Technology and Mechanical Engineering at MIT, Chennai.
   description_on_linkedin: "Developed website for Department of Production Technology and Mechanical Engineering at MIT, Chennai. Features include department information, faculty directory, course catalog, news section, and event management. Served as a mentoring opportunity for junior developers."
   link: http://tapemit.com
@@ -871,7 +898,8 @@ others:
   tools: Sublime Text 3
   concepts:
   status: Archived
-  description: "Considering the lack of internet and network in Chennai, I believe this app has little role to play so I’ve put basic information lists in case those in...\nI built this app in a very short time just out of self-interest. No advertisements or money involved."
+  summary: "Emergency resources Android app for Chennai residents with offline-first design for connectivity-challenged areas."
+  description: "Considering the lack of internet and network in Chennai, I believe this app has little role to play so I've put basic information lists in case those in...\nI built this app in a very short time just out of self-interest. No advertisements or money involved."
   description_on_linkedin: "Built a mobile app helping Chennai residents find emergency services, hospitals, police stations, and important resources. Designed for offline usability considering connectivity challenges. Includes maps, phone numbers, and location information for quick access during emergencies."
   link: https://play.google.com/store/apps/details?id=com.tempestronics.helpchennai
   added_on: 24/12/2022 4:02pm
@@ -885,6 +913,7 @@ others:
   tools: Atom
   concepts: CMS
   status: Archived
+  summary: "Clean personal blog built for a friend with CMS-driven content management and responsive layout."
   description: Built a beautiful blog for a good friend of mine.
   description_on_linkedin: "Built a professional blog for content publishing featuring clean design optimized for reading, easy content management, category organization, and responsive layout across all devices."
   link: http://roderick.in
@@ -899,6 +928,7 @@ others:
   tools: Visual Studio
   concepts: MVC,JIT
   status: Archived
+  summary: "Just-in-time malware prevention system using ACLs on a write-protected pen drive, published in a peer-reviewed journal."
   description: "Portable Data Protection System (PDPS) is a new concept of security systems that help to protect computers from malware attacks. Unlike conventional anti – virus systems that scan entire systems periodically against its malware signature database and cause the systems to slow down and hang up (due to over usage of processor cycles), this system uses just- in-time detection to prevent malware attacks right whenever a new process or thread begins. It uses ACLs instead of a database of malware definition files like most AVs do to ensure only the processes that the user wants to run are allowed to run. Everything else is considered as malware. The end product was put into a read-only pen drive which runs the autorun script requesting user whether they would like to enable PDPS protection. Since it's read-only, it's not possible for the system itself to get infected making this a versatile solution to fight malware.\n\nDeveloped a portable, robust yet powerful real-time anti-virus system which prevented malware before they got processor execution cycles, thereby preventing the execution of malicious code it may contain. The system was programmed to hook into the operating system's loader code and ensure that all requests (system calls) are filtered thro' it, very much like a firewall--it even prompted the user whether to allow execution of any given program leading to a more refined control over what was allowed to run in the device. Since most malware tend to get into the system in the background attached to a legitimate file or trigger due to a user action the system could alert the user to make the right decisions. A moderately intelligent user would be able to judge that said process was never initiated by the user and so all malware infections would be intercepted and suppressed. This system does not require any definition files nor updates and could even by run on thin clients making it very less resource-hungry (unlike most conventional AVs out there in the market) and at the same time enforce strong security to the user's system.\n\nMy team wrote this program as an autorun program to a pen drive which came with a read-only switch. Therefore, the system itself was protected from being infected and was allowed to do it's good work. A more commercial permanently written portable pen drive kind of anti-virus too can be developed based on this concept. The project was developed as an application level program (using C#.NET form-based application) rather than as a kernel level driver (which would be more stronger as it even prevented bootkits) and was successfully presented as a final year project.\n\nI later submitted the underlying concept as a paper which got approved and published in a journal in Special Issue-1, October 2014 with ISSN 2321-9653."
   description_on_linkedin: "Developed an innovative antivirus approach that prevents malware execution before it gets processor access, unlike traditional signature-based antivirus software. Uses access control lists (ACLs) to allow only trusted processes, blocking everything else. Includes just-in-time detection and a portable pen drive distribution model for on-demand protection. Research published in peer-reviewed journal."
   link: https://www.ijraset.com/fileserve.php?FID=1003
@@ -913,6 +943,7 @@ others:
   tools: Notepad++
   concepts:
   status: Archived
+  summary: "Acoustic fingerprinting music identification and organizer built from scratch for IIT-K's Softkriti contest."
   description: "Nyquist (or) MKB Music box (named after the initials of the team members) is a media organiser which can identify music using the audio signature like Shazam does and organises it into folders based on the user preference. The project was originally built for Softkriti, an IIT-K software contest and Shazam being a closed-source software, I had to build the technology from scratch. Internally, it used something called fast fourier transform to calculate the audio signature and store a hash of it inside a database. We had to do this on several songs and we added ID3 tags for the song as well. Later using the client app, a folder containing songs is selected the system automatically figures out which song is it by calculating and comparing this signature with the database. The software worked perfectly and was super fast since we ran the global DB locally but we did not win the contest and came in 3rd (apparently). The winners were both IIT-K students for some sample projects of some platforms which were popular back then. The project was dropped since.\n"
   description_on_linkedin: "Developed a music organizing application that identifies songs using acoustic fingerprinting—a condensed digital summary generated from audio signals to create a virtual map of peaks and anchor points based on frequency, intensity, and time. Users select a music folder and the app automatically identifies each song using audio signal processing, queries the MusicBrainz database for metadata, adds ID3 tags, and organizes files with correct information. Built custom audio fingerprinting algorithms without relying on external APIs, implementing sub-Nyquist sampling principles to process audio efficiently below the Nyquist frequency threshold."
   link:
@@ -927,6 +958,7 @@ others:
   tools: Notepad++
   concepts: RMI
   status: Archived
+  summary: "RMI-based distributed Java tool for recovering original plaintext from hash strings via a MySQL lookup database."
   description: An RMI based Java program that can find the original plain text code of a given hash string by retrieving the values from a mySQL DB.
   description_on_linkedin: "Created a utility application that recovers original plaintext from hash values by searching a distributed database. Uses Java RMI for distributed processing and MySQL database for hash-value mappings."
   link:
@@ -941,6 +973,7 @@ others:
   tools: Notepad++
   concepts: MVC,Database Design
   status: Archived
+  summary: "Early mobile-friendly carpooling web platform built with Sencha Touch before ride-sharing apps existed."
   description: A web-based mobile-friendly version of Uber made in a time long before we even came to know of Uber.
   description_on_linkedin: "Developed an early-stage web-based carpooling platform enabling users to find ride-shares. Built with Sencha Touch for mobile responsiveness, featuring route matching, driver/passenger communication, and trip management."
   link:
