@@ -1,5 +1,11 @@
 ---
 title: TellUs Android and Web Apps
+languages: PHP,mySQL,HTML,JavaScript,Java
+platforms: Mobile,Web,Android
+frameworks: OctoberCMS,Laravel,RxAndroid
+tools: Sublime Text 3,Retrofit
+concepts: Functional Programming,Reactive FRP,Dependency Injection,RESTful API
+website: tellusapp.in
 ---
 
 Built both the Android and web app from the ground up, including a RESTful API for the two to communicate.

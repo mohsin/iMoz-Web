@@ -1,5 +1,10 @@
 ---
 title: Swades Web App
+languages: HTML,CSS,PHP,mySQL,JavaScript
+platforms: Web
+frameworks: OctoberCMS,Laravel
+tools: Sublime Text 3,Material Design Lite
+concepts: MVC,Material Design
 ---
 
 Worked on a web app for a scholarship program connected to UpGrad, run by Ronnie Screwvala. The project came through a group called Indiez.

@@ -1,5 +1,9 @@
 ---
 title: Hiveyo
+languages: PHP,mySQL,HTML,JavaScript
+platforms: Web
+frameworks: Custom CMS
+tools: Notepad++
 ---
 
 Worked on the development of Hiveyo's web application on a freelance basis. It is a contact manager built on top of the PHP Boilerplate project I had developed.

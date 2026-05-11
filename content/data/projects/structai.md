@@ -1,5 +1,12 @@
 ---
 title: Struct Chat App
+languages: TypeScript,HTML,Sass
+platforms: Web
+frameworks: React,NextJs
+tools: VSCode
+concepts: MVC,RESTful API
+website: struct.ai
+location: Bengaluru, India (Remote)
 ---
 
 Contributed features to Struct, a knowledge-rich AI-powered chat platform designed for open source communities.

@@ -1,5 +1,10 @@
 ---
 title: Mobile Plugin
+languages: PHP,HTML
+platforms: Web
+frameworks: OctoberCMS
+tools: Sublime Text 3,Git
+concepts: Plugin
 ---
 
 An OctoberCMS plugin for managing mobile application listings across iOS, Android, and other platforms from your CMS backend.

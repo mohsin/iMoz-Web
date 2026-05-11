@@ -1,5 +1,10 @@
 ---
 title: Car Pooling App using Sencha Framework
+languages: PHP,MySQL
+platforms: Web
+frameworks: Sencha Touch
+tools: Notepad++
+concepts: MVC,Database Design
 ---
 
 A web-based, mobile-friendly carpooling platform — essentially an early version of Uber built at a time long before Uber was known in India.

@@ -1,5 +1,13 @@
 ---
 title: Highway Delite Web and Android Apps
+languages: PHP,mySQL,HTML,JavaScript,Java,SQLite,CSS
+platforms: Web,Mobile,Google Maps
+frameworks: OctoberCMS,Laravel,RxAndroid
+tools: Sublime Text 3,Git
+concepts: MVC,RESTful API,CMS,Dependency Injection,Functional Programming,Reactive FRP,DevOps
+website: highwaydelite.com
+location: Bengaluru, India (Remote)
+designation: Software Developer
 ---
 
 "Explore highways like never before."

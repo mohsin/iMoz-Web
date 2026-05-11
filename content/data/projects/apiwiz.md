@@ -1,5 +1,12 @@
 ---
 title: APIWiz Web App
+languages: JavaScript,Vue
+platforms: Web
+frameworks: Vue
+tools: VSCode
+concepts: Components
+website: apiwiz.io
+location: Bengaluru, India (Remote)
 ---
 
 Built the API catalog module for Itorix's APIWiz — a vendor-agnostic, low-code API lifecycle management platform trusted by regulated enterprises.

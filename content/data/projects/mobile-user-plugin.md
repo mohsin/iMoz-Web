@@ -1,5 +1,10 @@
 ---
 title: Mobile User Plugin
+languages: PHP
+platforms: Web
+frameworks: OctoberCMS
+tools: Sublime Text 3,Git
+concepts: RESTful API,Plugin
 ---
 
 An OctoberCMS plugin providing mobile front-end user management — authentication, user profiles, and role-based access control for mobile apps built on top of OctoberCMS backends.

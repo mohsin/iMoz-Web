@@ -1,5 +1,12 @@
 ---
 title: Designer Thamu's Portfolio
+languages: JavaScript,NodeJS,Vue
+platforms: Web,Mobile Web
+frameworks: Nuxt 3,Vue
+tools: VSCode
+concepts: Components,QR Codes,UPI
+website: thamu.in
+location: Bengaluru, India
 ---
 
 Developed a portfolio website using the shared designs for mobile, tablet, and desktop screen sizes on Figma. Used that to build a pixel-perfect, Nuxt.js based client-side rendered (CSR) web application that deploys to Netlify from a headless git-backed CMS.

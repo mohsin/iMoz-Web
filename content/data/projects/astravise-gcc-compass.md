@@ -1,5 +1,12 @@
 ---
 title: Astravise GCC Compass Form
+languages: PHP,JavaScript,CSS,HTML
+platforms: WordPress
+frameworks: WordPress
+tools: MySQL,VSCode,Git
+concepts: TypeForm-style Interface,Interactive Forms,Custom WordPress Plugin,Database Management,Email Automation,Progressive Form UI
+website: astraviseservices.com
+location: Remote
 ---
 
 Developed a comprehensive GCC Compass assessment platform for Astravise Services, replacing their QuillForms dependency with a custom TypeForm-style interactive form solution.

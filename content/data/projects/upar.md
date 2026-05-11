@@ -1,5 +1,10 @@
 ---
 title: uPar Golf App
+languages: Kotlin
+platforms: Mobile,Android
+frameworks: RxAndroid
+tools: Sublime Text 3
+concepts: Bluetooth
 ---
 
 Built a fun app that gamifies golf into a contest between players.

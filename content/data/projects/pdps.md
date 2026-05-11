@@ -1,5 +1,10 @@
 ---
 title: Portable Data Protection System
+languages: C#
+platforms: Desktop,Windows
+frameworks: .NET
+tools: Visual Studio
+concepts: MVC,JIT
 ---
 
 PDPS is a novel approach to malware prevention that stops threats before they ever get processor execution cycles — unlike conventional antivirus software that scans for known signatures after the fact.

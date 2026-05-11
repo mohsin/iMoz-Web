@@ -1,5 +1,10 @@
 ---
 title: All Rounders LMS
+languages: PHP,JavaScript,HTML,CSS,SQL
+platforms: Web
+frameworks: Laravel,Bootstrap
+tools: MySQL,Laravel Artisan,Composer
+location: Remote
 ---
 
 Built a comprehensive LMS platform enabling online learning with world-class instructors.

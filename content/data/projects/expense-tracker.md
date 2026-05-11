@@ -1,5 +1,10 @@
 ---
 title: Expense Tracker for Google Home
+languages: PHP,HTML
+platforms: Web,Voice
+frameworks: Dialogflow
+tools: Sublime Text 3
+concepts: RESTful API
 ---
 
 Track expenses using Google Actions — a voice-driven expense logging skill for Google Home.

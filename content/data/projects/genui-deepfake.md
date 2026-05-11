@@ -1,5 +1,11 @@
 ---
 title: GenUI - Deepfake Detection Platform
+languages: Python,JavaScript,TypeScript,Kotlin
+platforms: Web,Mobile,Cloud
+frameworks: Flask,Kubernetes,Next.js
+tools: GCS,RabbitMQ,PostgreSQL,Terraform,Docker,HubSpot API
+concepts: Microservices,Deepfake Detection,Video Analysis,Horizontal Autoscaling,Vertical Pod Autoscaling,ML Model Integration
+location: Remote
 ---
 
 Engineered a comprehensive deepfake detection platform with scalable microservices architecture deployed on Kubernetes and GCP.

@@ -1,5 +1,12 @@
 ---
 title: DJ Jonas Monteiro's Website
+languages: JavaScript,HTML,CSS,Vue
+platforms: Web
+frameworks: Nuxt 4,Vue 3,TinaCMS,LangGraph,Google Gemini
+tools: VSCode,Bun,Netlify
+concepts: LangGraph Workflows,AI Assistant,Static Site Generation,Event Management,CMS Integration,Serverless Functions
+website: jonasmonteiro.com
+location: Bengaluru, India
 ---
 
 Built a modern, production-ready DJ portfolio website showcasing Jonas Monteiro's career with cutting-edge AI capabilities.

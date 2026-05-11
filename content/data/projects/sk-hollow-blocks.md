@@ -1,5 +1,9 @@
 ---
 title: SK Hollow Blocks
+languages: HTML,CSS,JavaScript
+platforms: Web
+frameworks: Custom CMS
+tools: Notepad++
 ---
 
 Built a professional website for my uncle's construction materials business — SK Hollow Blocks.

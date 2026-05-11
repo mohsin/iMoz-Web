@@ -1,5 +1,12 @@
 ---
 title: Cakes on Wheels
+languages: PHP,mySQL,HTML,JavaScript,CSS
+platforms: Web
+frameworks: OctoberCMS,Laravel
+tools: Sublime Text 3
+concepts: MVC,Payment Gateway
+website: cakesonwheels.net
+location: Bengaluru, India
 ---
 
 Built a custom eCommerce platform for CakesOnWheels — a business trademark of eMandate Management Services in Bangalore.

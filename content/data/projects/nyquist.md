@@ -1,5 +1,9 @@
 ---
 title: Nyquist
+languages: Java,mySQL
+platforms: Desktop
+frameworks: Java Swing
+tools: Notepad++
 ---
 
 Nyquist (also known as MKB Music Box — named after the initials of the team members) is a media organizer that identifies music by its audio signature, similar to how Shazam works.

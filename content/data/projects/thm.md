@@ -1,5 +1,11 @@
 ---
 title: TheHouseMonk Android App
+languages: Java,SQLite
+platforms: Android,Mobile
+frameworks: RxAndroid
+tools: Atom,Dagger
+concepts: Functional Programming,Reactive FRP,Dependency Injection
+location: Bengaluru, India
 ---
 
 An Android app built for internal use by TheHouseMonk (now known as Cozee Homes), a Bangalore-based real estate startup.

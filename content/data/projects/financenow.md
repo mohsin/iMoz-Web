@@ -1,5 +1,10 @@
 ---
 title: FinanceNow Android App
+languages: Java
+platforms: Mobile,Android
+frameworks: RxAndroid
+tools: Sublime Text 3,Android Studio
+concepts: Reactive FRP,Dependency Injection,Functional Programming
 ---
 
 A finance management app that lets you input your financial data to get insights on your financial health.

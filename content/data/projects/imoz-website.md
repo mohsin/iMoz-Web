@@ -1,5 +1,11 @@
 ---
 title: iMoz Website
+languages: JavaScript,Vue,CSS
+platforms: Web
+frameworks: Nuxt 3,Vue 3,Tailwind CSS
+tools: Nuxt Content,VSCode,Bun,Claude Code
+concepts: Portfolio,Static Site Generation,Dark Mode,Open Source,Claude Skills,AI-Assisted Workflows
+website: imoz.in
 ---
 
 This website — built and continuously maintained as an open-source project to showcase my projects, speaking engagements, and professional history.

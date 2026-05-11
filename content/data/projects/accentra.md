@@ -1,5 +1,11 @@
 ---
 title: Accentra App
+languages: Swift,Kotlin,Java
+platforms: iOS,Android
+frameworks: SwiftUI,Firebase
+tools: Xcode,Android Studio,Firebase
+concepts: Cross-platform Development,Authentication
+location: Remote
 ---
 
 Developed an enterprise-grade container management application for both iOS and Android platforms.

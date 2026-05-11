@@ -1,5 +1,9 @@
 ---
 title: Hash Decryptor
+languages: PHP,mySQL,HTML,Java
+platforms: Desktop
+tools: Notepad++
+concepts: RMI
 ---
 
 An RMI-based Java program that recovers the original plaintext of a given hash string by querying a MySQL database of known hash-to-plaintext mappings.

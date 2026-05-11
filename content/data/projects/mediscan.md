@@ -1,5 +1,10 @@
 ---
 title: MediScan
+languages: Java,PHP,mySQL,JavaScript,HTML,CSS
+platforms: Android,Mobile,Web
+frameworks: OctoberCMS,Laravel
+tools: Android Studio,Atom
+concepts: MVC,RESTful API,QR Code
 ---
 
 A highly secure online repository for medical records — X-rays, MRI scans, CT scans, prescription history, patient details, and even surgical instruments.

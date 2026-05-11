@@ -1,5 +1,12 @@
 ---
 title: Barossa Australia Tourism Platform
+languages: PHP,JavaScript,SQL
+platforms: AWS Cloud,WordPress
+frameworks: WordPress,Terraform,Elementor
+tools: AWS CLI,Terraform,VSCode,Git,Message Queue
+concepts: ATDW Integration,Tourism Data Management,Infrastructure as Code,Plugin Development,Database Migration,Cron Job Management
+website: barossa.com
+location: Australia (Remote)
 ---
 
 Engineered a comprehensive digital platform for Barossa Valley — one of Australia's oldest and most prestigious wine regions — connecting travelers with accommodations, wine experiences, and regional attractions.

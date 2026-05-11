@@ -1,5 +1,12 @@
 ---
 title: MultiVision Agency Website
+languages: JavaScript,HTML,CSS,Vue
+platforms: Web
+frameworks: Nuxt.js,Vue 3
+tools: VSCode
+concepts: Dark Theme,Dynamic Components,Responsive Design
+website: mvagency.in
+location: Bengaluru, India
 ---
 
 Developed a professional marketing agency website for MultiVision Agency using the Nuxt framework.

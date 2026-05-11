@@ -1,5 +1,12 @@
 ---
 title: AldeaTech Android and Web Apps
+languages: PHP,mySQL,HTML,JavaScript,CSS,Kotlin
+platforms: Web,Android
+frameworks: OctoberCMS,Android Studio
+tools: VSCode,Composer,Docker
+concepts: MVC,Mobile Development,Weather Integration,User Authentication,Notifications,Location Services,Agricultural Data
+location: Bengaluru, India (Remote)
+designation: Full Stack Engineer
 ---
 
 Developed a comprehensive agriculture platform supporting smallholder farmers in Colombia with expert knowledge and real-time meteorological data. The platform (primarily in Spanish) provides personalized technical advice on Good Agricultural Practices.

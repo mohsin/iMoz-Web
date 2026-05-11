@@ -1,5 +1,11 @@
 ---
 title: FoodLans Delivery App
+languages: JavaScript,TypeScript
+platforms: iOS,Android
+frameworks: Ionic,Cordova,Angular
+tools: Firebase,Google Maps API,Geolocation Services
+concepts: Food Delivery,Real-time Tracking,Role-based Authentication,Payment Integration,Location Services
+location: Remote
 ---
 
 Developed a comprehensive food delivery platform using Ionic and Angular for cross-platform iOS and Android compatibility.

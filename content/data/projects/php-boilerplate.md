@@ -1,5 +1,10 @@
 ---
 title: Php Boilerplate
+languages: PHP
+platforms: Web
+frameworks: Custom CMS
+tools: Notepad++
+concepts: OOPS
 ---
 
 A simple-to-use PHP framework inspired by Mathias Bynens' html5-boilerplate. Minimal, with a straightforward configuration file and abstractions over several PHP methods and third-party plugins to make projects server-independent.

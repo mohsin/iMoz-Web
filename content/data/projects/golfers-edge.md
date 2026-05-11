@@ -1,5 +1,12 @@
 ---
 title: Golfer's Edge Booking Website
+languages: PHP,HTML,CSS,JavaScript,SQL
+platforms: Web,AWS Cloud
+frameworks: OctoberCMS,Laravel
+tools: VSCode,Terraform,AWS Auto Scaling,Razorpay API,Google Calendar API
+concepts: Booking Management,Payment Gateway,Google Calendar Integration,Admin Dashboard,AWS Infrastructure,Coupon System
+website: uparbooking.com
+location: Bengaluru, India
 ---
 
 Built a full-stack online booking system for Golfer's Edge indoor golf with end-to-end functionality — from slot selection through payment to calendar sync.

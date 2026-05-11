@@ -1,5 +1,10 @@
 ---
 title: World of Urology
+languages: PHP,mySQL,HTML,JavaScript
+platforms: Web
+frameworks: OctoberCMS
+tools: Atom
+concepts: MVC
 ---
 
 Built a clean, multi-lingual, and simple-to-use web app for a group of doctors specializing in urology.

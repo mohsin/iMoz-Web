@@ -1,5 +1,8 @@
 ---
 title: Help Chennai Android App
+languages: Java
+platforms: Mobile,Android
+tools: Sublime Text 3
 ---
 
 Built this app out of self-interest during the Chennai floods, considering the lack of internet and network connectivity in the affected areas.
