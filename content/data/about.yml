@@ -2,6 +2,7 @@ personal:
   firstname: Saifur Rahman
   lastname: Mohsin
   designation: Full Stack Engineer
+  summary: "Full Stack Engineer with 10+ years building production web, mobile, and AI-powered applications. Founder of Tempestronics with 50+ delivered projects spanning Vue 3/Nuxt, React/Next.js, Laravel, WordPress, and Android. Specialises in AI/LLM integration (LangGraph, Google Gemini), cloud infrastructure (AWS, Terraform, Docker, Kubernetes), and end-to-end product delivery from REST API design to CI/CD pipelines. Recognised speaker at Google DevFest, AWS Community Day, and Google's Web Community Leaders Summit."
   website: imoz.in
   github: mohsin
   linkedin: saifurrahmanmohsin
@@ -43,9 +44,11 @@ work:
   location: Bengaluru, India
   summary: "What started as a side business during my university days turned into my company when I had it registered at the end of my college. Originally, I was building final year projects for fellow classmates for a small fee. That worked out great as it was lesser than other centers charged and I explained everything well. So after college, I had my business registered, and started app development for entrepreneurs and startups under the banner 'Tempestronics' which in latin roughly translates to “the study of time”, hence the logo is a bunch of gears—which is what watches and clocks are engineered with). I've been representing myself as a business ever since and billing under this company despite being a freelancer for all practical purposes."
   summary_in_resume:
-    - As the founder of Tempestronics, I specialized in full-stack web and mobile app development.
-    - Managed end-to-end processes, handling proposals, negotiations, contracts, and invoicing.
-    - Operated independently, translating client needs into technical solutions, delivering high-quality applications.
+    - Founded and operated Tempestronics, delivering 50+ full-stack web, mobile, and AI applications for startups, agencies, and enterprise clients across India, the US, Australia, the UK, Singapore, Europe, and Latin America.
+    - Built production AI/LLM systems including LangGraph-powered conversational agents with Google Gemini, deepfake detection microservices on Kubernetes with horizontal/vertical pod autoscaling, and voice-driven apps for Alexa and Google Home.
+    - Architected AWS cloud infrastructure using Terraform, Docker, Auto Scaling, and spot instances; designed CI/CD pipelines with GitHub Actions; deployed scalable systems serving 50K+ users with 4.8 ratings.
+    - Shipped production apps with Vue 3/Nuxt, React/Next.js, Laravel, OctoberCMS, WordPress (custom plugins), Android (Java/Kotlin), and iOS (Swift), backed by REST APIs and PostgreSQL/MySQL.
+    - "Managed end-to-end delivery — requirements, architecture, Agile sprint planning, implementation, testing, deployment, and post-launch support."
 - company: Indiez
   position: Independent Fullstack Developer (Contractual)
   duration: Feb 2017 - Jul 2017
@@ -56,6 +59,7 @@ work:
   position: Chief Technology Officer (Contractual)
   duration: Feb 2016 - Apr 2016
   location: Bengaluru, India
+  show_on_resume: false
   summary: "Given the design, I had built the entire product from scratch (Backend, Android App and DevOps to deploy it to a bare metal server). After launch the app gained ~50k users within 6 months with a rating of 4.8 on the play store. The client promised equity and gave me a position of interim CTO, where I took care of all the technical operations, marketing, management, and hiring through technical interviews including raising funds from the Idea2PoC Scheme, and Karnataka Startup Policy by pitching to a panel of VCs. However, in the end, he failed to keep up with his word of the promised equity so I left."
   summary_in_resume:
     - Managed technical operations, marketing, management, and hiring through technical interviews.
@@ -72,45 +76,51 @@ volunteering:
 
 skills:
   - Programming:
-      Proficient:
-        - JavaScript/TypeScript
-        - PHP
-        - HTML
-        - CSS/Sass/SCSS
-        - Java/Kotlin
-      Familiar:
-        - SQL
-        - Python
-        - .NET
-  - Libraries/Frameworks:
-    - Vue 3
-    - Nuxt 4
-    - React
-    - NextJS
+    - TypeScript/JavaScript
+    - Node.js
+    - PHP
+    - Python
+    - Java/Kotlin
+    - SQL
+    - HTML/CSS/Sass
+  - AI/ML \& Cloud:
+    - LangGraph
+    - Google Gemini
+    - Conversational AI Agents
+    - AWS (EC2, S3, Auto Scaling)
+    - Terraform
+    - Docker
+    - Kubernetes
+    - CI/CD (GitHub Actions)
+    - Microservices Architecture
+    - Infrastructure as Code
+  - Frameworks:
+    - Vue 3 / Nuxt 3/4
+    - React / Next.js
+    - Tailwind CSS
     - Laravel
     - OctoberCMS
-    - WordPress
+    - WordPress (Plugin Dev)
+    - Flask
     - TinaCMS
-    - LangGraph
+    - PrimeVue / Pinia
     - Jetpack Compose
-    - RxAndroid
-    - PrimeVue
-    - Elementor
-    - Terraform
-  - Tools:
-    - VSCode
-    - Git
-    - Docker
-    - AWS
-    - MySQL
-    - Netlify
-    - Android Studio
-    - Bun
-  - Platforms:
+    - SwiftUI
+  - Data \& APIs:
+    - REST API Design
+    - PostgreSQL / MySQL
+    - RabbitMQ
+    - Firebase
+    - Razorpay
+    - Google APIs
+    - WooCommerce
+  - Practices:
+    - Agile/Scrum
+    - Real-time Systems
+    - Database Schema Design
     - Web (Frontend/Backend)
     - Mobile (Android/iOS)
-    - Chatbots (AI/ML)
-    - Desktop
+    - Voice Apps (Alexa, Google Home)
 
 languages:
   - language: English
@@ -121,12 +131,6 @@ languages:
     proficiency: Advanced Proficiency
   - language: Tamil
     proficiency: Spoken proficiency
-
-hobbies:
-  - Karaoke
-  - Swimming
-  - Skating
-  - Reading
 
 publications:
   - title: Evasive Security Using ACLs on Threads

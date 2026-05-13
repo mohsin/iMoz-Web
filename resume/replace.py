@@ -264,7 +264,6 @@ def main():
     volunteering = about['volunteering']
     skills = about['skills']
     languages = about['languages']
-    hobbies = about['hobbies']
 
     # Read projects YAML file
     projects = read_yaml('content/data/projects.yml')
@@ -282,7 +281,6 @@ def main():
     template = replace_placeholders(template, volunteering, 'volunteering')
     template = replace_placeholders(template, skills, 'skills')
     template = replace_placeholders(template, languages, 'languages')
-    template = replace_placeholders(template, hobbies, 'hobbies')
     template = replace_placeholders(template, projects, 'projects')
     template = replace_placeholders(template, publications, 'publications')
     template = replace_placeholders(template, honors, 'honors')
