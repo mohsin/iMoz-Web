@@ -5,7 +5,7 @@ platforms: Web
 frameworks: WordPress,Laravel
 tools: MySQL,Composer,PHP
 concepts: WooCommerce Integration,CRM Synchronization,REST API Development,WordPress Plugin Development,Multi-Store Architecture,Order Management,Database Schema Design,Basic Authentication,Real-Time Data Sync,Virtual Currency,Cryptocurrency
-location: Remote
+location: Lithuania (Remote)
 ---
 
 Built a comprehensive WooCommerce CRM integration system for EzrsGold's RuneScape gaming platform, handling both OSRS/RS3 virtual currency trading and the EZRSAccounts hand-trained account marketplace.

@@ -6,7 +6,7 @@ frameworks: React
 tools: Sublime Text 3
 concepts: Components,Data Analysis
 website: x0pa.com
-location: Remote
+location: Singapore (Remote)
 ---
 
 X0PA AI is a Singapore-based data analytics startup that contacted me after their team couldn't solve a problem for over a week. A colleague from my alma mater recommended me, and when I got the task I solved it in under 2 hours.
