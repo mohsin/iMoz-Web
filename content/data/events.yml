@@ -94,7 +94,6 @@
   added_on: 09/05/2026 12:00pm
 - title: Android Workshop for SNEHA at CSTEP
   slug: cstep-sneha-workshop
-  image: ""
   designation: speaker
   type: Workshop
   date:
@@ -161,3 +160,18 @@
     - /events/kasc-android-workshop/photo-4.webp
     - /events/kasc-android-workshop/photo-5.webp
   added_on: 21/02/2024 12:55pm
+- title: Data Structures and Databases Talk at Idhaya Engineering College
+  slug: idhaya-ds-db-talk-2014
+  image: /images/events/idhaya-ds-db-talk-2014.webp
+  designation: speaker
+  type: Workshop
+  date: 2 Jul 2014
+  location: Idhaya Engineering College for Women, Chinnasalem, Tamil Nadu
+  status: past
+  description: "Gave a paid 3-hour talk on Data Structures and Databases at Idhaya Engineering College for Women, Chinnasalem, as part of a programming crash course organised by Smart Destiny, a friend's educational academy. The session covered core CS fundamentals for a hall of women engineering students."
+  photos:
+    - /events/idhaya-ds-db-talk-2014/photo-1.webp
+    - /events/idhaya-ds-db-talk-2014/photo-2.webp
+    - /events/idhaya-ds-db-talk-2014/photo-3.webp
+    - /events/idhaya-ds-db-talk-2014/photo-4.webp
+  added_on: 22/05/2026 12:00pm
