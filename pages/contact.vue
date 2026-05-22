@@ -89,11 +89,11 @@ if (process.client) {
         <input type="hidden" name="form-name" value="contact" />
         <input class="hidden" name="extra-field" />
         <div class="py-1 sm:py-4 mb-2 text-center leading-none">
-          <h1 class="text-2xl my-1 sm:my-4">Have a requirement? Get in touch!</h1>
+          <h1 class="text-2xl my-1 sm:my-4">Have a project or event request? Get in touch!</h1>
           <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-6 p-4 bg-gray-100 dark:bg-slate-800 rounded-lg">
             <div class="text-center sm:text-left">
               <p class="text-gray-700 dark:text-white text-sm mb-2">Prefer a call?</p>
-              <p class="text-xs text-gray-600 dark:text-gray-300">Schedule a quick consultation to discuss your project</p>
+              <p class="text-xs text-gray-600 dark:text-gray-300">Schedule a quick consultation to discuss your project or event</p>
             </div>
             <button
               type="button"
@@ -163,7 +163,7 @@ if (process.client) {
           </div>
         </div>
         <p class="text-gray-600 dark:text-white text-xs italic mt-4">
-          <sup class="text-red-700 dark:text-blue-300">*</sup> Projects with proper UI designs (preferably on Figma) and detailed descriptions. Sample briefs are <a href="https://tinyurl.com/prdsamples" target="_new" class="text-black dark:text-blue-300 border-b border-black">at this link</a>. Kindly attach it to this form or include a link in the message.
+          <sup class="text-red-700 dark:text-blue-300">*</sup> For project requests, please include a proper UI design (preferably on Figma or Claude Design) and a detailed description — sample briefs are <a href="https://tinyurl.com/prdsamples" target="_new" class="text-black dark:text-blue-300 border-b border-black">at this link</a>. For event or speaking requests, describe the topic, expected audience, and preferred date.
         </p>
         <p v-if="isSubmitted && !hasErrors" class="mt-8 text-center text-base text-red-700 dark:text-blue-300">
           The form has been submitted.
