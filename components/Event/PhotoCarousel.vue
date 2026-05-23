@@ -12,6 +12,8 @@ const lightboxIndex = ref(0)
 const slideshowActive = ref(false)
 let slideshowTimer: ReturnType<typeof setInterval> | null = null
 
+const isVideo = (src: string) => src.endsWith('.mp4') || src.endsWith('.webm') || src.endsWith('.mov')
+
 const canPrev = computed(() => offset.value > 0)
 const canNext = computed(() => offset.value + VISIBLE < props.photos.length)
 const visiblePhotos = computed(() => props.photos.slice(offset.value, offset.value + VISIBLE))
@@ -22,6 +24,7 @@ const nextThumb = () => { if (canNext.value) offset.value++ }
 const openLightbox = (visibleIdx: number) => {
   lightboxIndex.value = offset.value + visibleIdx
   lightboxOpen.value = true
+  if (isVideo(props.photos[lightboxIndex.value])) stopSlideshow()
 }
 
 const closeLightbox = () => {
@@ -31,10 +34,12 @@ const closeLightbox = () => {
 
 const prevPhoto = () => {
   lightboxIndex.value = (lightboxIndex.value - 1 + props.photos.length) % props.photos.length
+  if (isVideo(props.photos[lightboxIndex.value])) stopSlideshow()
 }
 
 const nextPhoto = () => {
   lightboxIndex.value = (lightboxIndex.value + 1) % props.photos.length
+  if (isVideo(props.photos[lightboxIndex.value])) stopSlideshow()
 }
 
 const stopSlideshow = () => {
@@ -43,6 +48,7 @@ const stopSlideshow = () => {
 }
 
 const startSlideshow = () => {
+  if (isVideo(props.photos[lightboxIndex.value])) return
   slideshowActive.value = true
   slideshowTimer = setInterval(nextPhoto, 3000)
 }
@@ -77,15 +83,22 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); stopSlideshow(
         <button
           v-for="(photo, i) in visiblePhotos"
           :key="offset + i"
-          class="flex-1 aspect-square rounded overflow-hidden group"
-          :aria-label="`View photo ${offset + i + 1}`"
+          class="flex-1 aspect-square rounded overflow-hidden group relative"
+          :aria-label="isVideo(photo) ? `Play video ${offset + i + 1}` : `View photo ${offset + i + 1}`"
           @click="openLightbox(i)"
         >
-          <img
-            :src="photo"
-            :alt="`${title} — photo ${offset + i + 1}`"
-            class="w-full h-full object-cover group-hover:opacity-75 transition-opacity"
-          />
+          <template v-if="isVideo(photo)">
+            <div class="w-full h-full bg-gray-900 flex items-center justify-center group-hover:bg-gray-800 transition-colors">
+              <Icon name="heroicons-outline:play" class="w-8 h-8 text-white/80" />
+            </div>
+          </template>
+          <template v-else>
+            <img
+              :src="photo"
+              :alt="`${title} — photo ${offset + i + 1}`"
+              class="w-full h-full object-cover group-hover:opacity-75 transition-opacity"
+            />
+          </template>
         </button>
       </div>
 
@@ -110,6 +123,7 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); stopSlideshow(
           <!-- Top bar -->
           <div class="absolute top-0 left-0 right-0 flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/50 to-transparent">
             <button
+              v-if="!isVideo(photos[lightboxIndex])"
               @click="toggleSlideshow"
               class="text-white/80 hover:text-white transition-colors flex items-center gap-1.5 text-sm"
               :aria-label="slideshowActive ? 'Pause slideshow' : 'Start slideshow'"
@@ -117,6 +131,7 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); stopSlideshow(
               <Icon :name="slideshowActive ? 'heroicons-outline:pause' : 'heroicons-outline:play'" class="w-5 h-5" />
               <span>{{ slideshowActive ? 'Pause' : 'Slideshow' }}</span>
             </button>
+            <span v-else class="text-white/50 text-sm">Video</span>
             <span class="text-white/70 text-sm tabular-nums">{{ lightboxIndex + 1 }} / {{ photos.length }}</span>
             <button
               @click="closeLightbox"
@@ -136,8 +151,16 @@ onUnmounted(() => { window.removeEventListener('keydown', onKey); stopSlideshow(
             <Icon name="heroicons-outline:chevron-left" class="w-7 h-7" />
           </button>
 
-          <!-- Image -->
+          <!-- Image / Video -->
+          <video
+            v-if="isVideo(photos[lightboxIndex])"
+            :src="photos[lightboxIndex]"
+            controls
+            autoplay
+            class="max-w-[calc(100%-6rem)] max-h-[calc(100vh-5rem)] object-contain"
+          />
           <img
+            v-else
             :src="photos[lightboxIndex]"
             :alt="`${title} — photo ${lightboxIndex + 1}`"
             class="max-w-[calc(100%-6rem)] max-h-[calc(100vh-5rem)] object-contain"
