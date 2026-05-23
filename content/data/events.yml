@@ -121,6 +121,22 @@
     - /events/bms-android-workshop-2018/photo-6.webp
     - /events/bms-android-workshop-2018/photo-7.webp
   added_on: 10/05/2026 9:30pm
+- title: Google Maps Master Challenge
+  slug: google-maps-master-challenge
+  image: /images/events/google-maps-master-challenge.webp
+  designation: winner
+  type: Award
+  date: 30 Mar 2016
+  location: Bengaluru
+  status: past
+  description: "Won the Maps Master title at the Google Maps Challenge — a developer competition for building the best app leveraging Google Maps APIs in an innovative way. Awarded a Pegman trophy and a Nexus 9 tablet by Google's Maps for Work team."
+  photos:
+    - /events/google-maps-master-challenge/photo-1.webp
+    - /events/google-maps-master-challenge/photo-2.webp
+    - /events/google-maps-master-challenge/photo-3.webp
+    - /events/google-maps-master-challenge/photo-4.webp
+    - /events/google-maps-master-challenge/photo-5.webp
+  added_on: 23/05/2026 12:00pm
 - title: Web Development Talk at Webrockstar
   slug: webrockstar-web-talk
   image: /images/events/webrockstar-web-talk.webp
