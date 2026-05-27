@@ -78,7 +78,7 @@ const showHighlight = computed(() => currentTab.value?.highlight === true && !!p
             <tr
               v-for="(topic, i) in topics"
               :key="topic.name"
-              :class="i % 2 === 0 ? 'bg-white dark:bg-slate-700' : 'bg-slate-50 dark:bg-slate-750'"
+              :class="i % 2 === 0 ? 'bg-white dark:bg-slate-700' : 'bg-slate-50 dark:bg-slate-800'"
             >
               <td class="p-3 text-slate-400 dark:text-slate-500 tabular-nums">{{ i + 1 }}</td>
               <td class="p-3 text-gray-800 dark:text-slate-200">{{ topic.name }}</td>
