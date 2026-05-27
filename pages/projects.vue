@@ -6,5 +6,7 @@ const projectListing = resolveComponent('PageProjects')
   <Head>
     <Title>iMoz - Projects</Title>
   </Head>
-  <Masonry :listComponent="projectListing" />
+  <div class="mt-4 pt-0 sm:pt-4">
+    <Masonry :listComponent="projectListing" />
+  </div>
 </template>

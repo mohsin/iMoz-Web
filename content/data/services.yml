@@ -1,0 +1,740 @@
+build_areas:
+  - title: Web Applications
+    icon: heroicons-outline:globe-alt
+    description: Custom websites, SaaS platforms, and full-stack web applications built to exact requirements.
+  - title: Mobile Apps
+    icon: heroicons-outline:device-phone-mobile
+    description: Native Android and iOS applications with live coding demonstrations and offline support.
+  - title: Voice & AI
+    icon: heroicons-outline:chat-bubble-left-right
+    description: Alexa skills, Google Actions, LangGraph agents, and AI-powered conversational interfaces.
+
+offerings:
+  - slug: web-development
+    title: Web Development
+    tagline: Custom websites and web applications — responsive, fast, and built to last.
+    icon: heroicons-outline:globe-alt
+    categories:
+      - name: Website Development
+        capabilities:
+          - name: Custom website design and build
+            value: Ground-up development to exact client requirements; design based on provided branding, prototypes, or reference sites
+          - name: Template-based website
+            value: Faster, more economical build on an existing theme; layouts and colour schemes customised to the client's brand
+          - name: Responsive / mobile-friendly design
+            value: Site adapts to any screen size; no duplicate content or separate mobile site required
+
+      - name: Platform Specialisations
+        capabilities:
+          - name: E-Commerce platforms
+            value: Full shopping experiences with complex order workflows, multi-store management, CRM synchronization, and payment processing
+          - name: Travel and tourism platforms
+            value: Destination platforms with live inventory sync from third-party data sources, OTA connectivity, curated booking flows, and infrastructure that scales with seasonal demand
+          - name: Activity and venue booking systems
+            value: Slot-based booking engines with calendar sync, payment gateways with coupon and tax handling, and admin analytics dashboards covering revenue, bookings, and acquisition
+          - name: Learning management systems (LMS)
+            value: Online learning platforms with course management, student progress tracking, certificate generation, and instructor analytics
+          - name: Real estate platforms
+            value: Property listings with agent management, role-based access, and analytics dashboards tracking visitor and inquiry data
+      - name: Content Management
+        capabilities:
+          - name: Headless CMS integration
+            value: Client manages content via a friendly editorial UI; developers control the frontend independently
+          - name: Admin panel / backend
+            value: Login-protected backend for updating pages, images, and posts without developer involvement
+          - name: In-site WYSIWYG editing
+            value: Authorised users edit text and media directly on the live page; no backend login required
+          - name: Structured content modelling
+            value: Content organised into reusable types with consistent fields and references
+      - name: Integrations & APIs
+        capabilities:
+          - name: Third-party API integration
+            value: Social login, data feeds, maps, or any external service connected directly to the site
+          - name: Payment gateway integration
+            value: Razorpay, PayU, Stripe, or equivalent; client manages transactions via the gateway dashboard
+          - name: RESTful API creation
+            value: Converts a web app into a platform; other apps can consume the site's data and services
+          - name: Newsletter platform integration
+            value: Subscriber capture forms feed directly into the email marketing platform
+      - name: Performance
+        capabilities:
+          - name: Image optimisation
+            value: WebP conversion, correct sizing, and lazy loading to reduce page weight and load time
+          - name: Bundle size management
+            value: Dependency auditing and code splitting keep JavaScript payloads small
+          - name: Third-party script optimisation
+            value: Analytics, chat, and ad scripts loaded asynchronously to avoid blocking page render
+      - name: Security
+        capabilities:
+          - name: SSL / HTTPS configuration
+            value: Encrypted connection between visitor and server; required for payment pages; improves SEO
+          - name: OWASP Top 10 hardening
+            value: Protection against SQL injection, XSS, CSRF, insecure auth, and other common vulnerabilities
+          - name: Brute force and DDoS mitigation
+            value: Rate limiting, CAPTCHA, and automated script detection on login and form endpoints
+      - name: Hosting & Infrastructure
+        capabilities:
+          - name: Infrastructure as Code (Terraform)
+            value: AWS and GCP resources defined in Terraform — EC2, RDS, S3, VPCs, subnets, security groups, and IAM roles fully reproducible from a single plan
+          - name: Auto Scaling and load balancing
+            value: Auto Scaling Groups with spot and on-demand instance mix; Application Load Balancers with health checks; infrastructure scales to traffic, not a fixed server count
+          - name: Kubernetes orchestration
+            value: Containerised workloads on Kubernetes with horizontal and vertical pod autoscaling; async processing pipelines via RabbitMQ for variable-load jobs
+          - name: CI/CD pipelines
+            value: GitHub Actions workflows handling build, test, and zero-downtime deploy; environments gated on passing checks before promotion
+          - name: Domain and DNS management
+            value: Domain acquisition, DNS configuration, SSL certificates, and subdomain routing across staging and production environments
+          - name: Monitoring, backups, and renewals
+            value: CloudWatch (or equivalent) alerts on CPU, memory, and error-rate thresholds; scheduled database and file backups with retention policies; advance reminders for all recurring cloud and domain costs
+
+  - slug: mobile-development
+    title: Mobile Development
+    tagline: Native Android and iOS apps, cross-platform delivery — production-ready and app store optimised.
+    icon: heroicons-outline:device-phone-mobile
+    categories:
+      - name: Android Development
+        capabilities:
+          - name: Native Android (Java / Kotlin)
+            value: Full-stack Android apps using modern Kotlin idioms; Java codebases upgraded or maintained where required
+          - name: Reactive patterns (RxAndroid / Coroutines)
+            value: Asynchronous data flows and background work handled without blocking the UI thread
+          - name: Material Design implementation
+            value: Google's design system applied consistently — navigation, typography, motion, and component behaviour
+          - name: Offline-first architecture
+            value: Local SQLite or Room database as the source of truth; server sync applied on top, not underneath
+      - name: iOS Development
+        capabilities:
+          - name: Native iOS (Swift / SwiftUI)
+            value: Modern declarative UI with SwiftUI; UIKit used where legacy integration or fine-grained control is required
+          - name: Biometric authentication
+            value: Face ID and Touch ID integrated via LocalAuthentication; falls back gracefully to PIN
+          - name: Custom navigation patterns
+            value: Drawer menus, tab bars, and modal flows built natively without third-party navigation libraries
+      - name: Cross-Platform Frameworks
+        capabilities:
+          - name: Kotlin Multiplatform Mobile (KMM)
+            value: Business logic, networking, and data layers shared across Android and iOS; each platform keeps its native UI
+          - name: React Native
+            value: JavaScript codebase deployed to both stores; well-suited for content-driven or medium-complexity apps with fast iteration cycles
+          - name: Flutter
+            value: Single Dart codebase with pixel-perfect custom UI; strong for branded experiences and rapid prototyping
+          - name: Ionic / Cordova
+            value: Web-technology stack (Angular, TypeScript) wrapped for iOS and Android; proven for lighter or internal-facing apps
+      - name: App Features & Infrastructure
+        capabilities:
+          - name: Push notifications
+            value: FCM (Android) and APNs (iOS) configured; notification payloads drive deep links and in-app state
+          - name: Real-time data sync
+            value: Firebase Realtime Database or Firestore used for live updates across devices without polling
+          - name: Maps and geolocation
+            value: Google Maps SDK and platform location APIs integrated for tracking, routing, and proximity features
+          - name: In-app payments
+            value: Razorpay, Stripe, or platform-native billing integrated with receipt validation
+          - name: Role-based access control
+            value: Multiple user types with distinct permissions managed server-side; enforced at the API and UI layers
+          - name: Maintenance mode and forced upgrades
+            value: Server-controlled flag blocks unsupported app versions and redirects users to the store; prevents API breakage from stale clients
+          - name: Module visibility and feature flags
+            value: Sections of the app shown or hidden per user role, subscription tier, or server-side toggle without a new release
+          - name: Multilingual support
+            value: String externalisation, RTL layout support, and locale-aware formatting for dates, numbers, and currency
+          - name: API versioning and backward compatibility
+            value: Versioned endpoints (v1, v2) let older app versions keep working while newer ones adopt updated contracts; deprecation communicated in-app
+
+  - slug: search-optimisation
+    title: Search Optimisation
+    tagline: Higher rankings, richer search results, and sustainable organic growth.
+    icon: heroicons-outline:magnifying-glass
+    categories:
+      - name: Structured Data & Rich Results
+        capabilities:
+          - name: JSON-LD Schema implementation
+            value: Marks up pages so Google displays rich results — events, articles, products, breadcrumbs — directly in search
+          - name: Event schema
+            value: Eligible for Google's event rich results panel, surfacing date, venue, and ticket info to users
+          - name: Offer schema for ticketing
+            value: Surfaces ticket availability and pricing directly in search results
+          - name: ItemList schema on listing pages
+            value: Enables rich snippets for archive pages, showing multiple results at once in search
+      - name: Discoverability & Crawling
+        capabilities:
+          - name: XML sitemap generation
+            value: Every public page indexed; auto-updates as content is added; submitted to Google Search Console
+          - name: robots.txt configuration
+            value: Controls what search engines crawl; protects admin routes without blocking JS assets
+          - name: Google Search Console setup
+            value: Tracks crawl errors, index coverage, and search performance; first alert for ranking changes
+          - name: iCal / calendar feed
+            value: Event-based sites discoverable via Google Calendar; kept accurate as events are added or cancelled
+          - name: URL and slug management
+            value: Human-readable, keyword-relevant URLs maintained consistently; changes coordinated to avoid broken links
+      - name: Meta & Open Graph
+        capabilities:
+          - name: Unique page titles and meta descriptions
+            value: Keyword-relevant, non-duplicated tags on every page; directly affects click-through rate
+          - name: Open Graph tags
+            value: Controls how pages appear when shared on social media; consistent branding across every share
+          - name: Dynamic OG images
+            value: Auto-generated per event or article so every shared link has a relevant visual
+          - name: Canonical URL configuration
+            value: Prevents duplicate-content penalties from URL variations such as trailing slashes or query strings
+      - name: Performance for SEO
+        capabilities:
+          - name: Core Web Vitals optimisation
+            value: LCP, CLS, and INP improvements that feed directly into Google's ranking signals
+          - name: Render-blocking resource elimination
+            value: Ensures Googlebot can fully parse and index JavaScript-rendered content
+          - name: Organic SEO strategy
+            value: Keyword research, on-page optimisation, and backlink building for sustained search visibility
+          - name: Keyword-aware copywriting
+            value: Descriptions and copy include relevant terms naturally; written for humans first, search engines second
+
+  - slug: accessibility
+    title: Accessibility
+    tagline: Every user, every device — WCAG 2.1 AA compliance across the full experience.
+    icon: heroicons-outline:eye
+    categories:
+      - name: Navigation & Structure
+        capabilities:
+          - name: Skip links and landmark navigation
+            value: Keyboard and screen reader users jump directly to main content; required for WCAG 2.1 AA
+          - name: Semantic HTML structure
+            value: Correct headings, lists, and landmark elements so screen readers build an accurate page outline
+          - name: Active route indication
+            value: Screen reader users know which page they're on without relying on visual cues alone
+      - name: Keyboard & Focus
+        capabilities:
+          - name: Full keyboard navigation support
+            value: Every interactive element reachable via Tab, Enter, Space, and Arrow keys; no mouse required
+          - name: Focus management
+            value: Focus trapped inside open dialogs, returned to the trigger on close, and follows reading order
+          - name: Visible focus indicators
+            value: All interactive elements have clear :focus-visible outlines so keyboard users always know where they are
+      - name: ARIA & Custom Components
+        capabilities:
+          - name: ARIA for custom UI components
+            value: Dropdowns, carousels, and radio groups built with correct roles, states, and properties
+          - name: Live region announcements
+            value: Dynamic content updates announced to screen readers without requiring a page reload
+          - name: Dialog and modal accessibility
+            value: Modals carry correct roles and aria attributes; focus is trapped inside while open
+      - name: Forms & Visual
+        capabilities:
+          - name: Accessible form labelling
+            value: Every input has a visible or screen-reader-only label; errors linked directly to the relevant field
+          - name: Touch target sizing
+            value: Interactive elements meet the minimum 44×44 px touch target; usable on mobile without precision tapping
+          - name: Colour contrast compliance
+            value: 4.5:1 for body text, 3:1 for large text; verified against WCAG 2.1 AA
+      - name: Auditing & Testing
+        capabilities:
+          - name: WCAG 2.1 AA compliance audit
+            value: Full review against accessibility guidelines with a prioritised remediation report
+          - name: Automated accessibility testing
+            value: axe DevTools or Lighthouse integrated into the development workflow to catch regressions early
+          - name: Screen reader testing
+            value: Key user flows verified with VoiceOver (macOS/iOS) and NVDA (Windows)
+
+  - slug: email-marketing
+    title: Email Marketing
+    tagline: SMTP-delivered, GDPR-compliant campaigns that land in inboxes — not spam folders.
+    icon: heroicons-outline:envelope
+    categories:
+      - name: Technical Setup & Deliverability
+        capabilities:
+          - name: SMTP configuration
+            value: Authenticated email delivery via a dedicated sending service; credentials stored securely, never in code
+          - name: SPF, DKIM, and DMARC setup
+            value: DNS records that verify the sending domain and protect against spoofing; required for reliable inbox placement
+          - name: Sender domain warm-up
+            value: Gradual volume ramp on new sending domains to establish positive reputation before bulk sends
+          - name: Bounce and complaint handling
+            value: Suppression lists maintained automatically; keeps sender reputation healthy and the list clean
+          - name: Deliverability monitoring
+            value: Open rate, click rate, and spam complaint rate tracked after every campaign; complaint rate kept below 0.1%
+      - name: Email Design
+        capabilities:
+          - name: Branded email templates
+            value: Designed using the client's fonts, colours, and spacing; visually consistent with the website
+          - name: Responsive email layout
+            value: Tested across Gmail, Outlook, Apple Mail, and screen sizes from 320 px mobile to desktop
+          - name: Plain-text version
+            value: Included alongside HTML for better deliverability and accessibility; required by some email clients
+          - name: Accessible email design
+            value: Alt text on images, sufficient contrast, readable at default zoom even when images are blocked
+      - name: Subscriber Management
+        capabilities:
+          - name: GDPR-compliant opt-in flow
+            value: Explicit consent checkbox, unchecked by default; consent language clear and auditable; legally required in most jurisdictions
+          - name: Subscriber segmentation
+            value: List divided by relevant attributes for targeted sends that improve open rates
+          - name: Unsubscribe flow
+            value: One-click unsubscribe in every email; requests honoured within legal timeframes
+          - name: List hygiene
+            value: Inactive subscribers re-engaged or pruned periodically to protect deliverability and reduce sending costs
+      - name: Campaign Management
+        capabilities:
+          - name: Campaign planning and scheduling
+            value: Subject line, preview text, send time, and audience selected per campaign; optimal send times identified by behaviour
+          - name: GA4 event tracking and campaign measurement
+            value: Custom events, conversions, and funnels configured in GA4; attribution data feeds back into campaign decisions and ad spend allocation
+          - name: Meta Pixel and Conversions API integration
+            value: Facebook and Instagram ad audiences built from site behaviour; Conversions API sends server-side events for accurate attribution even with ad blockers active
+          - name: WhatsApp Business API and flows
+            value: WhatsApp-native message flows for order confirmations, appointment reminders, and support routing; integrated with existing CRM or backend
+
+workshops:
+  - slug: web-development-workshop
+    title: Web Development Workshop
+    icon: heroicons-outline:code-bracket
+    duration: "1 – 2 days"
+    audience: "Engineering students and IT professionals with basic programming knowledge"
+    description: "A hands-on course from web fundamentals to deploying a real application. The 1-day format covers the full stack end to end; the 2-day format adds deeper frontend and backend coverage, Progressive Web App development, and a live Webathon."
+    highlight: "Webathon — teams design, build, and demo a web app live"
+    highlight_icon: heroicons-outline:academic-cap
+    tabs:
+      - label: "1 Day"
+        topics:
+          - name: How the Web Works
+            duration: 30 min
+          - name: Setting Up a Dev Environment
+            duration: 20 min
+          - name: HTML, CSS & JavaScript
+            duration: 1 hour
+          - name: Building the Frontend
+            duration: 30 min
+          - name: Building the Backend
+            duration: 30 min
+          - name: Responsive Design & Mobile-First
+            duration: 30 min
+          - name: Frontend Frameworks — Vue & React
+            duration: 30 min
+          - name: Backend Frameworks — Laravel & Flask
+            duration: 30 min
+          - name: Deploying to the Cloud
+            duration: 20 min
+          - name: AI Tools in Web Development
+            duration: 20 min
+          - name: Career as a Web Developer
+            duration: 20 min
+      - label: "2 Days"
+        highlight: true
+        topics:
+          - name: How the Web Works
+            duration: 20 min
+          - name: Setting Up a Dev Environment
+            duration: 20 min
+          - name: HTML, CSS & JavaScript
+            duration: 1 hour
+          - name: The HTTP Protocol & REST APIs
+            duration: 20 min
+          - name: Building the Frontend
+            duration: 30 min
+          - name: Building the Backend
+            duration: 30 min
+          - name: Working with Databases
+            duration: 1 hour
+          - name: Webathon — Idea Forming
+            duration: 30 min
+          - name: Webathon — Design
+            duration: 30 min
+          - name: Webathon — Development
+            duration: 30 min
+          - name: Webathon — App Review & Demo
+            duration: 30 min
+          - name: Deploying to the Cloud
+            duration: 30 min
+          - name: Responsive Design & Mobile-First
+            duration: 30 min
+          - name: Progressive Web Apps (PWA)
+            duration: 30 min
+          - name: Frontend Frameworks — Vue & React
+            duration: 1 hour
+          - name: Backend Frameworks — Laravel & Flask
+            duration: 30 min
+          - name: AI Tools in Web Development
+            duration: 30 min
+          - name: Career as a Web Developer
+            duration: 30 min
+
+  - slug: android-development-workshop
+    title: Android Development Workshop
+    icon: mdi:android
+    duration: "1 – 2 days"
+    audience: "Engineering students and IT professionals with basic programming knowledge"
+    description: "A hands-on Kotlin-first Android course covering architecture, XML layouts, Jetpack Compose, and real device integrations. The 2-day format goes deeper with Compose, cross-platform frameworks, and a live Codeathon."
+    highlight: "Codeathon — teams design, build, and demo an Android app live"
+    highlight_icon: heroicons-outline:academic-cap
+    tabs:
+      - label: "1 Day"
+        topics:
+          - name: What is Android?
+            duration: 20 min
+          - name: Android Architecture
+            duration: 20 min
+          - name: Setting Up Android Studio
+            duration: 20 min
+          - name: Building Your First App with Kotlin
+            duration: 30 min
+          - name: Activities, Intents & Lifecycle
+            duration: 1 hour
+          - name: XML Layouts & UI Components
+            duration: 40 min
+          - name: Lists with RecyclerView
+            duration: 30 min
+          - name: Device Hardware — Camera, GPS & Sensors
+            duration: 40 min
+          - name: Data Persistence with Room
+            duration: 30 min
+          - name: AI Tools in Android Development
+            duration: 20 min
+          - name: Career as an Android Developer
+            duration: 10 min
+      - label: "2 Days"
+        highlight: true
+        topics:
+          - name: What is Android?
+            duration: 20 min
+          - name: Android Architecture
+            duration: 20 min
+          - name: Setting Up Android Studio
+            duration: 20 min
+          - name: Building Your First App with Kotlin
+            duration: 30 min
+          - name: Activities, Intents & Lifecycle
+            duration: 1 hour
+          - name: XML Layouts & UI Components
+            duration: 40 min
+          - name: Lists with RecyclerView
+            duration: 30 min
+          - name: Codeathon — Idea Forming
+            duration: 30 min
+          - name: Codeathon — Design
+            duration: 30 min
+          - name: Codeathon — Development
+            duration: 30 min
+          - name: Codeathon — App Review & Demo
+            duration: 30 min
+          - name: Jetpack Compose
+            duration: 1 hour
+          - name: Maps & Geolocation
+            duration: 40 min
+          - name: Networking & REST APIs
+            duration: 30 min
+          - name: Data Persistence with Room
+            duration: 30 min
+          - name: Device Hardware — Camera, GPS & Sensors
+            duration: 40 min
+          - name: Cross-Platform — KMM, React Native & Flutter
+            duration: 30 min
+          - name: AI Tools in Android Development
+            duration: 20 min
+          - name: Career as an Android Developer
+            duration: 30 min
+
+  - slug: ios-development-workshop
+    title: iOS Development Workshop
+    icon: mdi:apple
+    duration: "1 – 2 days"
+    audience: "Engineering students and IT professionals with basic programming knowledge — a Mac running macOS is required as Xcode only runs on Apple hardware"
+    description: "A hands-on Swift-first iOS course covering SwiftUI, navigation, device integrations, and data persistence with SwiftData. The 2-day format adds UIKit integration, animations, networking, App Store submission, and a live Appathon."
+    highlight: "Appathon — teams design, build, and demo an iOS app live"
+    highlight_icon: heroicons-outline:academic-cap
+    tabs:
+      - label: "1 Day"
+        topics:
+          - name: What is iOS & the Apple Ecosystem?
+            duration: 20 min
+          - name: iOS Architecture
+            duration: 20 min
+          - name: Setting Up Xcode
+            duration: 20 min
+          - name: Building Your First App with Swift
+            duration: 30 min
+          - name: SwiftUI Fundamentals
+            duration: 1 hour
+          - name: Navigation & App Structure
+            duration: 40 min
+          - name: Lists & Data Display
+            duration: 30 min
+          - name: Device Hardware — Camera, Location & Sensors
+            duration: 40 min
+          - name: Data Persistence with SwiftData
+            duration: 30 min
+          - name: AI Tools in iOS Development
+            duration: 20 min
+          - name: Career as an iOS Developer
+            duration: 10 min
+      - label: "2 Days"
+        highlight: true
+        topics:
+          - name: What is iOS & the Apple Ecosystem?
+            duration: 20 min
+          - name: iOS Architecture
+            duration: 20 min
+          - name: Setting Up Xcode
+            duration: 20 min
+          - name: Building Your First App with Swift
+            duration: 30 min
+          - name: SwiftUI Fundamentals
+            duration: 1 hour
+          - name: Navigation & App Structure
+            duration: 40 min
+          - name: Lists & Data Display
+            duration: 30 min
+          - name: Appathon — Idea Forming
+            duration: 30 min
+          - name: Appathon — Design
+            duration: 30 min
+          - name: Appathon — Development
+            duration: 30 min
+          - name: Appathon — App Review & Demo
+            duration: 30 min
+          - name: UIKit & Legacy Codebase Integration
+            duration: 30 min
+          - name: Animations & Custom Components
+            duration: 40 min
+          - name: Networking & REST APIs
+            duration: 30 min
+          - name: Data Persistence with SwiftData
+            duration: 30 min
+          - name: Device Hardware — Camera, Location & Sensors
+            duration: 40 min
+          - name: App Store Submission & TestFlight
+            duration: 30 min
+          - name: AI Tools in iOS Development
+            duration: 20 min
+          - name: Career as an iOS Developer
+            duration: 30 min
+
+  - slug: cross-platform-mobile-workshop
+    title: Cross-Platform Mobile Workshop
+    icon: heroicons-outline:device-phone-mobile
+    duration: "1 day"
+    audience: "Engineering students and IT professionals with basic programming knowledge"
+    description: "A hands-on introduction to building mobile apps that run on both Android and iOS from a single codebase. Choose your framework — Flutter, React Native, or Kotlin Multiplatform — and go from setup to a working app in one day."
+    highlight: ""
+    highlight_icon: ""
+    tabs:
+      - label: "Flutter"
+        topics:
+          - name: What is Flutter & Dart?
+            duration: 20 min
+          - name: Flutter Architecture & the Widget Tree
+            duration: 20 min
+          - name: Setting Up Flutter & VS Code
+            duration: 20 min
+          - name: Building Your First Flutter App
+            duration: 30 min
+          - name: Widgets, Layouts & Themes
+            duration: 1 hour
+          - name: Navigation & Routing
+            duration: 30 min
+          - name: State Management Basics
+            duration: 30 min
+          - name: Networking & REST APIs
+            duration: 30 min
+          - name: Data Persistence
+            duration: 20 min
+          - name: Deploying to Android & iOS
+            duration: 20 min
+          - name: AI Tools in Flutter Development
+            duration: 20 min
+          - name: Career as a Cross-Platform Developer
+            duration: 10 min
+      - label: "React Native"
+        topics:
+          - name: What is React Native?
+            duration: 20 min
+          - name: React Native Architecture
+            duration: 20 min
+          - name: Setting Up with Expo
+            duration: 20 min
+          - name: Building Your First React Native App
+            duration: 30 min
+          - name: Components, Styles & Flexbox
+            duration: 1 hour
+          - name: Navigation with React Navigation
+            duration: 30 min
+          - name: State Management with useState & Context
+            duration: 30 min
+          - name: Networking & REST APIs
+            duration: 30 min
+          - name: Data Persistence with AsyncStorage
+            duration: 20 min
+          - name: Deploying with Expo & EAS Build
+            duration: 20 min
+          - name: AI Tools in React Native Development
+            duration: 20 min
+          - name: Career as a Cross-Platform Developer
+            duration: 10 min
+      - label: "KMM"
+        topics:
+          - name: What is Kotlin Multiplatform?
+            duration: 20 min
+          - name: KMP Architecture — Shared vs Platform Code
+            duration: 20 min
+          - name: Setting Up Android Studio for KMP
+            duration: 20 min
+          - name: Creating Your First KMP Project
+            duration: 30 min
+          - name: Writing Shared Business Logic
+            duration: 1 hour
+          - name: Networking with Ktor
+            duration: 30 min
+          - name: Data Persistence with SQLDelight
+            duration: 30 min
+          - name: Compose Multiplatform — Shared UI Across Platforms
+            duration: 40 min
+          - name: Platform-Specific UI & Native Interop
+            duration: 20 min
+          - name: Deploying to Android & iOS
+            duration: 20 min
+          - name: AI Tools in KMP Development
+            duration: 20 min
+          - name: Career as a Cross-Platform Developer
+            duration: 10 min
+
+  - slug: ethical-hacking-workshop
+    title: Ethical Hacking Workshop
+    icon: heroicons-outline:shield-exclamation
+    duration: "1 – 2 days"
+    audience: "Engineering students and IT professionals interested in information security"
+    description: "A hands-on security course covering the attacker's mindset, real-world exploitation techniques, and defensive countermeasures. The 2-day format goes deeper with OSINT, reverse engineering, and a live Capture the Flag hackathon."
+    highlight: "Hackathon (CTF) — live exploitation and defence challenges"
+    highlight_icon: heroicons-outline:bolt
+    tabs:
+      - label: "1 Day"
+        topics:
+          - name: What is Hacking?
+            duration: 20 min
+          - name: Reconnaissance & Attack Techniques
+            duration: 30 min
+          - name: Social Engineering Attacks
+            duration: 30 min
+          - name: Denial of Service & Brute Force
+            duration: 30 min
+          - name: Web App Vulnerabilities — OWASP Top 10
+            duration: 1 hour
+          - name: SQL Injection & XSS in Practice
+            duration: 30 min
+          - name: Offensive Scripting & Payload Construction
+            duration: 45 min
+          - name: Google Dorking & OSINT
+            duration: 20 min
+          - name: Defensive Countermeasures
+            duration: 30 min
+          - name: Information Security as a Career
+            duration: 20 min
+      - label: "2 Days"
+        highlight: true
+        topics:
+          - name: What is Hacking?
+            duration: 20 min
+          - name: Reconnaissance & Attack Techniques
+            duration: 30 min
+          - name: Social Engineering Attacks
+            duration: 30 min
+          - name: Denial of Service & Brute Force
+            duration: 30 min
+          - name: Web App Vulnerabilities — OWASP Top 10
+            duration: 1 hour
+          - name: SQL Injection & XSS in Practice
+            duration: 30 min
+          - name: Offensive Scripting & Payload Construction
+            duration: 30 min
+          - name: Setting Up a Custom Hackspace
+            duration: 30 min
+          - name: Hackathon (CTF) — Briefing & Round 1
+            duration: 30 min
+          - name: Hackathon (CTF) — Round 2
+            duration: 30 min
+          - name: Google Dorking & OSINT
+            duration: 30 min
+          - name: Information & Resource Gathering
+            duration: 30 min
+          - name: Reverse Engineering Fundamentals
+            duration: 30 min
+          - name: Honeypots & Network Traps
+            duration: 30 min
+          - name: Defensive Countermeasures
+            duration: 30 min
+          - name: Case Studies
+            duration: 20 min
+          - name: Information Security as a Career
+            duration: 20 min
+
+  - slug: ai-development-workshop
+    title: AI Development Workshop
+    icon: heroicons-outline:cpu-chip
+    duration: "1 – 2 days"
+    audience: "Engineering students and IT professionals with basic Python and programming knowledge"
+    description: "A hands-on course covering how LLMs work, building chatbots and AI agents, and integrating AI into real applications using Gemini, OpenAI, and LangGraph. The 2-day format adds vector databases, multi-agent systems, local LLMs, and a live Promptathon."
+    highlight: "Promptathon — teams build and demo an AI-powered app live"
+    highlight_icon: heroicons-outline:bolt
+    tabs:
+      - label: "1 Day"
+        topics:
+          - name: How LLMs Actually Work
+            duration: 25 min
+          - name: Prompt Engineering & Design
+            duration: 30 min
+          - name: Working with AI APIs — Gemini, OpenAI & Anthropic
+            duration: 30 min
+          - name: Structured Outputs & Function Calling
+            duration: 30 min
+          - name: Building Your First Chatbot
+            duration: 45 min
+          - name: RAG — Connecting AI to Your Own Data
+            duration: 45 min
+          - name: Building AI Agents with LangGraph
+            duration: 1 hour
+          - name: AI in Web & Mobile Apps
+            duration: 30 min
+          - name: AI Tools for Developers
+            duration: 20 min
+          - name: Hallucinations, Safety & Responsible Use
+            duration: 20 min
+          - name: Career in AI
+            duration: 15 min
+      - label: "2 Days"
+        highlight: true
+        topics:
+          - name: How LLMs Actually Work
+            duration: 25 min
+          - name: Prompt Engineering & Design
+            duration: 30 min
+          - name: Working with AI APIs — Gemini, OpenAI & Anthropic
+            duration: 30 min
+          - name: Structured Outputs & Function Calling
+            duration: 30 min
+          - name: Building Your First Chatbot
+            duration: 45 min
+          - name: RAG — Connecting AI to Your Own Data
+            duration: 45 min
+          - name: Promptathon — Idea Forming
+            duration: 30 min
+          - name: Promptathon — Build
+            duration: 1 hour
+          - name: Promptathon — Demo & Review
+            duration: 30 min
+          - name: Vector Databases & Embeddings
+            duration: 40 min
+          - name: Multi-Agent Systems with LangGraph
+            duration: 1 hour
+          - name: Local LLMs with Ollama
+            duration: 30 min
+          - name: Fine-Tuning vs RAG — When to Use What
+            duration: 30 min
+          - name: Voice & Multimodal AI
+            duration: 30 min
+          - name: Evaluating & Testing AI Apps
+            duration: 30 min
+          - name: AI in Web & Mobile Apps
+            duration: 30 min
+          - name: AI Tools for Developers
+            duration: 20 min
+          - name: Hallucinations, Safety & Responsible Use
+            duration: 20 min
+          - name: Career in AI
+            duration: 15 min
