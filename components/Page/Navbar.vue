@@ -23,8 +23,8 @@ const { setDarkMode } = useMode()
                     <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/about">About</NuxtLink></li>
                     <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/projects">Projects</NuxtLink></li>
                     <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/events">Events</NuxtLink></li>
+                    <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/services">Services</NuxtLink></li>
                     <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black" to="/contact">Contact</NuxtLink></li>
-                    <li><NuxtLink class="hover:bg-gray-200 p-2 dark:hover:text-black border border-black dark:border-white" to="/resume.pdf" target="_new">Resume</NuxtLink></li>
                 </ul>
             </div>
         </div>
