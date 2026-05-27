@@ -289,6 +289,7 @@ workshops:
     icon: heroicons-outline:code-bracket
     duration: "1 – 2 days"
     audience: "Engineering students and IT professionals with basic programming knowledge"
+    tagline: "Full-stack web development from fundamentals to deployment — live Webathon on day 2."
     description: "A hands-on course from web fundamentals to deploying a real application. The 1-day format covers the full stack end to end; the 2-day format adds deeper frontend and backend coverage, Progressive Web App development, and a live Webathon."
     highlight: "Webathon — teams design, build, and demo a web app live"
     highlight_icon: heroicons-outline:academic-cap
@@ -362,6 +363,7 @@ workshops:
     icon: mdi:android
     duration: "1 – 2 days"
     audience: "Engineering students and IT professionals with basic programming knowledge"
+    tagline: "Kotlin-first Android development from layouts to Jetpack Compose — live Codeathon on day 2."
     description: "A hands-on Kotlin-first Android course covering architecture, XML layouts, Jetpack Compose, and real device integrations. The 2-day format goes deeper with Compose, cross-platform frameworks, and a live Codeathon."
     highlight: "Codeathon — teams design, build, and demo an Android app live"
     highlight_icon: heroicons-outline:academic-cap
@@ -437,6 +439,7 @@ workshops:
     icon: mdi:apple
     duration: "1 – 2 days"
     audience: "Engineering students and IT professionals with basic programming knowledge — a Mac running macOS is required as Xcode only runs on Apple hardware"
+    tagline: "Swift-first iOS development from SwiftUI to the App Store — live Appathon on day 2."
     description: "A hands-on Swift-first iOS course covering SwiftUI, navigation, device integrations, and data persistence with SwiftData. The 2-day format adds UIKit integration, animations, networking, App Store submission, and a live Appathon."
     highlight: "Appathon — teams design, build, and demo an iOS app live"
     highlight_icon: heroicons-outline:academic-cap
@@ -512,6 +515,7 @@ workshops:
     icon: heroicons-outline:device-phone-mobile
     duration: "1 day"
     audience: "Engineering students and IT professionals with basic programming knowledge"
+    tagline: "One codebase, two platforms — Flutter, React Native, or Kotlin Multiplatform, your pick."
     description: "A hands-on introduction to building mobile apps that run on both Android and iOS from a single codebase. Choose your framework — Flutter, React Native, or Kotlin Multiplatform — and go from setup to a working app in one day."
     highlight: ""
     highlight_icon: ""
@@ -600,6 +604,7 @@ workshops:
     icon: heroicons-outline:shield-exclamation
     duration: "1 – 2 days"
     audience: "Engineering students and IT professionals interested in information security"
+    tagline: "Attacker mindset, real exploitation techniques, and defence — live CTF on day 2."
     description: "A hands-on security course covering the attacker's mindset, real-world exploitation techniques, and defensive countermeasures. The 2-day format goes deeper with OSINT, reverse engineering, and a live Capture the Flag hackathon."
     highlight: "Hackathon (CTF) — live exploitation and defence challenges"
     highlight_icon: heroicons-outline:bolt
@@ -669,11 +674,12 @@ workshops:
     icon: heroicons-outline:cpu-chip
     duration: "1 – 2 days"
     audience: "Engineering students and IT professionals with basic Python and programming knowledge"
-    description: "A hands-on course covering how LLMs work, building chatbots and AI agents, and integrating AI into real applications using Gemini, OpenAI, and LangGraph. The 2-day format adds vector databases, multi-agent systems, local LLMs, and a live Promptathon."
-    highlight: "Promptathon — teams build and demo an AI-powered app live"
+    tagline: "From LLMs and RAG to autonomous agents — three tracks, from Foundational to Agentic."
+    description: "A hands-on course spanning the full spectrum of modern AI — from how LLMs work and prompt engineering, through building chatbots and RAG pipelines, to architecting autonomous multi-agent systems. The Foundational track runs in a single day; Applied and Agentic are 2-day deep-dives each."
+    highlight: "Agentathon — teams design, build, and demo a working AI agent live"
     highlight_icon: heroicons-outline:bolt
     tabs:
-      - label: "1 Day"
+      - label: "Foundational"
         topics:
           - name: How LLMs Actually Work
             duration: 25 min
@@ -687,8 +693,6 @@ workshops:
             duration: 45 min
           - name: RAG — Connecting AI to Your Own Data
             duration: 45 min
-          - name: Building AI Agents with LangGraph
-            duration: 1 hour
           - name: AI in Web & Mobile Apps
             duration: 30 min
           - name: AI Tools for Developers
@@ -697,8 +701,7 @@ workshops:
             duration: 20 min
           - name: Career in AI
             duration: 15 min
-      - label: "2 Days"
-        highlight: true
+      - label: "Applied"
         topics:
           - name: How LLMs Actually Work
             duration: 25 min
@@ -718,23 +721,66 @@ workshops:
             duration: 1 hour
           - name: Promptathon — Demo & Review
             duration: 30 min
+          - name: AI Tools for Developers
+            duration: 20 min
+          - name: Hallucinations, Safety & Responsible Use
+            duration: 20 min
+          - name: Prompt Engineering — Advanced Patterns
+            duration: 30 min
           - name: Vector Databases & Embeddings
             duration: 40 min
-          - name: Multi-Agent Systems with LangGraph
+          - name: Building Production RAG Pipelines
             duration: 1 hour
-          - name: Local LLMs with Ollama
-            duration: 30 min
           - name: Fine-Tuning vs RAG — When to Use What
             duration: 30 min
           - name: Voice & Multimodal AI
             duration: 30 min
+          - name: Local LLMs with Ollama
+            duration: 30 min
           - name: Evaluating & Testing AI Apps
             duration: 30 min
           - name: AI in Web & Mobile Apps
+            duration: 45 min
+      - label: "Agentic"
+        highlight: true
+        topics:
+          - name: How LLMs Actually Work
+            duration: 25 min
+          - name: Prompt Engineering & Design
+            duration: 30 min
+          - name: Working with AI APIs — Gemini, OpenAI & Anthropic
+            duration: 30 min
+          - name: Structured Outputs & Function Calling
+            duration: 30 min
+          - name: Building Your First Chatbot
+            duration: 45 min
+          - name: RAG — Connecting AI to Your Own Data
+            duration: 45 min
+          - name: Tool Use & Function Calling in Depth
+            duration: 45 min
+          - name: Introduction to LangGraph
+            duration: 45 min
+          - name: Building Your First AI Agent
+            duration: 1 hour
+          - name: Agentathon — Idea Forming
+            duration: 30 min
+          - name: Agentathon — Build
+            duration: 1 hour
+          - name: Agentathon — Demo & Review
             duration: 30 min
           - name: AI Tools for Developers
             duration: 20 min
           - name: Hallucinations, Safety & Responsible Use
             duration: 20 min
+          - name: Memory, State & Long-Running Workflows
+            duration: 45 min
+          - name: Multi-Agent Architectures
+            duration: 1 hour
+          - name: Human-in-the-Loop Patterns
+            duration: 30 min
+          - name: Evaluating & Debugging Agents
+            duration: 30 min
+          - name: Deploying Agents to Production
+            duration: 30 min
           - name: Career in AI
             duration: 15 min

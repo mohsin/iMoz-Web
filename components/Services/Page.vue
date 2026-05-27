@@ -67,7 +67,7 @@ defineEmits<{
               <h3 class="font-semibold text-gray-900 dark:text-white text-base">{{ workshop.title }}</h3>
               <span class="text-xs bg-slate-100 dark:bg-slate-600 text-slate-500 dark:text-slate-300 px-2 py-0.5 flex-shrink-0">{{ workshop.duration }}</span>
             </div>
-            <p class="text-gray-400 dark:text-slate-500 text-sm mt-0.5 line-clamp-1">{{ workshop.description }}</p>
+            <p class="text-gray-400 dark:text-slate-500 text-sm mt-0.5 line-clamp-1">{{ workshop.tagline }}</p>
           </div>
           <Icon name="heroicons-outline:chevron-right" class="flex-shrink-0 w-5 h-5 text-gray-300 dark:text-slate-500 group-hover:text-gray-500 dark:group-hover:text-slate-300 transition-colors" />
         </button>
