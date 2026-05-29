@@ -29,7 +29,7 @@ async function onInstitutionInput() {
   if (_debounce) clearTimeout(_debounce)
   _debounce = setTimeout(async () => {
     try {
-      const { suggestions: res } = await $fetch<any>('/api/places/autocomplete', {
+      const { suggestions: res } = await $fetch<any>('/.netlify/functions/places-autocomplete', {
         method: 'POST',
         body: { input: q },
       })
@@ -45,7 +45,7 @@ async function selectSuggestion(s: any) {
   institution_name.value = pred.structuredFormat?.mainText?.text ?? pred.text?.text ?? institution_name.value
 
   try {
-    const place = await $fetch<any>(`/api/places/details?placeId=${pred.placeId}`)
+    const place = await $fetch<any>(`/.netlify/functions/places-details?placeId=${pred.placeId}`)
     const components: any[] = place.addressComponents ?? []
     const get = (type: string) =>
       components.find((c: any) => c.types?.includes(type))?.longText ?? ''
