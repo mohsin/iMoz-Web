@@ -1,0 +1,31 @@
+# Workshop pricing — update annually
+# Prices are per participant in INR
+# valid_year is informational only; update when you revise prices
+
+valid_year: 2026
+
+workshops:
+  web-development-workshop:
+    student: 500
+    professional: 1000
+  android-development-workshop:
+    student: 500
+    professional: 1000
+  ios-development-workshop:
+    student: 600
+    professional: 1200
+  cross-platform-mobile-workshop:
+    student: 500
+    professional: 1000
+  ethical-hacking-workshop:
+    student: 600
+    professional: 1200
+  ai-development-workshop:
+    student: 700
+    professional: 1400
+
+defaults:
+  student: 500
+  professional: 1000
+  minimum_students: 100
+  validity_days: 30

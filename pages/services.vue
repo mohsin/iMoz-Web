@@ -4,6 +4,7 @@ const servicesData = await queryContent('/data/services').findOne()
 type View = 'page' | 'offering' | 'workshop'
 const currentView = ref<View>('page')
 const currentItem = ref<any>(null)
+const brochureWorkshop = ref<any>(null)
 
 const showOffering = (offering: any) => {
   currentItem.value = offering
@@ -18,6 +19,14 @@ const showWorkshop = (workshop: any) => {
 const returnToPage = () => {
   currentView.value = 'page'
   currentItem.value = null
+}
+
+const openBrochureModal = (workshop: any) => {
+  brochureWorkshop.value = workshop
+}
+
+const closeBrochureModal = () => {
+  brochureWorkshop.value = null
 }
 </script>
 
@@ -47,6 +56,7 @@ const returnToPage = () => {
       class="mt-12"
       :data="currentItem"
       @return="returnToPage"
+      @request-brochure="openBrochureModal"
     />
     <ServicesPage
       v-else
@@ -56,6 +66,12 @@ const returnToPage = () => {
       @show-workshop="showWorkshop"
     />
   </Transition>
+
+  <ServicesBrochureModal
+    v-if="brochureWorkshop"
+    :workshop="brochureWorkshop"
+    @close="closeBrochureModal"
+  />
 </template>
 
 <script lang="ts">

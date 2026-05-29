@@ -42,6 +42,14 @@ export default defineNuxtConfig({
       },
     },
     runtimeConfig: {
+      zohoEmail:        process.env.ZOHO_EMAIL        ?? '',
+      zohoAppPassword:  process.env.ZOHO_APP_PASSWORD ?? '',
+      zohoSmtpHost:     process.env.ZOHO_SMTP_HOST   ?? 'smtp.zoho.com',
+      googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY ?? '',
+      proposerName:     process.env.PROPOSER_NAME    ?? '',
+      proposerEmail:    process.env.PROPOSER_EMAIL   ?? '',
+      proposerPhone:    process.env.PROPOSER_PHONE   ?? '',
+      proposerWebsite:  process.env.PROPOSER_WEBSITE ?? '',
       public: {
         emailId: '',
         gtagAnalyticsId: ''

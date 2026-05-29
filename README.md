@@ -33,6 +33,34 @@ Build the application for production:
 pnpm run build
 ```
 
+## Environment Variables
+
+Copy `.env.example` to `.env` and fill in the values before running locally.
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `NUXT_PUBLIC_EMAIL_ID` | Yes | Contact email shown on the site |
+| `ZOHO_EMAIL` | Yes | Sender address for workshop brochure emails (`workshop@tempestronics.com`) |
+| `ZOHO_APP_PASSWORD` | Yes | Zoho Mail app-specific password (not your account password) |
+| `ZOHO_SMTP_HOST` | Yes | Zoho SMTP host — `smtp.zoho.com` for most accounts; check Zoho Mail settings if auth fails |
+| `GOOGLE_MAPS_API_KEY` | No | Enables Places Autocomplete on the brochure request form. Without it the field works as plain text. |
+| `PROPOSER_NAME` | Yes | Your name as it appears in the "Proposed By" section of the PDF brochure |
+| `PROPOSER_EMAIL` | Yes | Contact email shown in the brochure's "Proposed By" section |
+| `PROPOSER_PHONE` | Yes | Contact phone shown in the brochure's "Proposed By" section |
+| `PROPOSER_WEBSITE` | Yes | Website URL shown in the brochure's "Proposed By" section |
+| `GOOGLE_SERVICE_ACCOUNT_EMAIL` | No | Google service account for iCal → Google Calendar sync |
+| `GOOGLE_PRIVATE_KEY` | No | Private key for the above service account |
+| `GOOGLE_PROJECT_ID` | No | GCP project ID for Calendar sync |
+
+### Getting a Google Maps API key
+
+1. Open [Google Cloud Console](https://console.cloud.google.com/) and select your project (`imoz-web`)
+2. Go to **APIs & Services → Library** and enable **Places API**
+3. Go to **APIs & Services → Credentials → Create Credentials → API key**
+4. Under **API restrictions**, restrict the key to **Places API (New)** only
+5. Under **Application restrictions**, set to **None** (calls are made server-to-server so HTTP referrer restrictions will block them)
+6. Paste the key into `.env` as `GOOGLE_MAPS_API_KEY=`
+
 ## Claude Skills
 
 This repo ships with [Claude Code](https://claude.ai/code) skills for common content workflows. Skills live in `.claude/commands/` and are available automatically when you open the project in Claude Code.

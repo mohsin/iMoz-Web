@@ -19,3 +19,5 @@ dist
 google-sync-log.json
 google-service-account.json
 *-service-account.json
+# Generated brochures and version tracking (private)
+server/data/

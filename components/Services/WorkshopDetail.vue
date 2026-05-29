@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{ data: any }>()
-defineEmits(['return'])
+defineEmits(['return', 'request-brochure'])
 
 const activeLabel = ref(props.data.tabs[0].label)
 const currentTab = computed(() => props.data.tabs.find((t: any) => t.label === activeLabel.value))
@@ -91,13 +91,21 @@ const showHighlight = computed(() => currentTab.value?.highlight === true && !!p
       <!-- CTA -->
       <div class="mt-8 pt-5 border-t border-slate-100 dark:border-slate-600 flex flex-col sm:flex-row sm:items-center gap-3">
         <p class="text-sm text-gray-500 dark:text-slate-400 flex-1">Interested in running this workshop at your institution or company?</p>
-        <NuxtLink
-          to="/contact"
-          class="inline-flex items-center gap-2 bg-slate-700 dark:bg-slate-600 text-white text-sm font-medium px-5 py-2.5 hover:bg-slate-600 dark:hover:bg-slate-500 transition-colors flex-shrink-0"
-        >
-          Get in touch
-          <Icon name="heroicons-outline:arrow-right" class="w-4 h-4" />
-        </NuxtLink>
+        <div class="flex gap-2 flex-shrink-0">
+          <button
+            class="inline-flex items-center gap-2 bg-slate-700 dark:bg-slate-600 text-white text-sm font-medium px-5 py-2.5 hover:bg-slate-600 dark:hover:bg-slate-500 transition-colors"
+            @click="$emit('request-brochure', data)"
+          >
+            <Icon name="heroicons-outline:document-text" class="w-4 h-4" />
+            Request Brochure
+          </button>
+          <NuxtLink
+            to="/contact"
+            class="inline-flex items-center gap-2 border border-slate-300 dark:border-slate-500 text-slate-700 dark:text-slate-300 text-sm font-medium px-5 py-2.5 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors"
+          >
+            Get in touch
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
