@@ -106,33 +106,26 @@ async function selectSuggestion(s: any) {
     const get = (type: string) =>
       components.find((c: any) => c.types?.includes(type))?.longText ?? ''
 
-    // Resolve city/state/pincode first, then subtract them from address parts
-    const city  = get('administrative_area_level_3') || get('locality') || get('administrative_area_level_2')
-    const state = get('administrative_area_level_1')
-
-    institution_city.value    = city
-    institution_state.value   = state
+    institution_city.value    = get('administrative_area_level_3') || get('locality') || get('administrative_area_level_2')
+    institution_state.value   = get('administrative_area_level_1')
     institution_pincode.value = get('postal_code')
 
-    // Types that are never part of a street address line
-    const neverAddress = new Set([
-      'administrative_area_level_1', 'administrative_area_level_2', 'administrative_area_level_3',
-      'administrative_area_level_4', 'country', 'postal_code', 'plus_code',
+    // Only types that belong in a street address line
+    const streetTypes = new Set([
+      'street_number', 'route',
+      'sublocality', 'sublocality_level_1', 'sublocality_level_2', 'sublocality_level_3',
+      'neighborhood', 'premise', 'subpremise',
     ])
-    // Resolved text values to exclude (city, state, country)
-    const skipText = new Set([city, state, get('country'), get('administrative_area_level_2')].filter(Boolean))
-
     const seen = new Set<string>()
     const addressParts = components
-      .filter((c: any) =>
-        !c.types.every((t: string) => neverAddress.has(t) || t === 'political') &&
-        !skipText.has(c.longText)
-      )
+      .filter((c: any) => c.types?.some((t: string) => streetTypes.has(t)))
       .map((c: any) => c.longText)
       .filter((text: string) => text && !seen.has(text) && seen.add(text))
 
-    institution_address.value = addressParts.join(', ')
-  } catch { /* details fetch failed — user can fill manually */ }
+    institution_address.value = addressParts.join(', ') || place.shortFormattedAddress || ''
+  } catch (e) {
+    console.error('[places-details]', e)
+  }
   suggestions.value = []
 }
 

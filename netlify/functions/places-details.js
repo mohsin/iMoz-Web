@@ -7,7 +7,7 @@ exports.handler = async (event) => {
   const res = await fetch(`https://places.googleapis.com/v1/places/${placeId}`, {
     headers: {
       'X-Goog-Api-Key': apiKey,
-      'X-Goog-FieldMask': 'displayName,addressComponents',
+      'X-Goog-FieldMask': 'displayName,addressComponents,shortFormattedAddress',
     },
   })
 
