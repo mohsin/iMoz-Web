@@ -1,6 +1,10 @@
 <script setup lang="ts">
-const props = defineProps<{ workshop: any }>()
-const emit  = defineEmits(['close'])
+const props = defineProps<{
+  workshop:    any
+  allWorkshops?: { slug: string; title: string }[]
+  pricing?:    any
+}>()
+const emit = defineEmits(['close'])
 
 const step = ref(1)
 const loading = ref(false)
@@ -92,11 +96,18 @@ const hackathonName = computed(() => {
   return h.split('—')[0].trim() || 'Hackathon'
 })
 
+const workshopPricing = computed(() => {
+  const slug     = props.workshop.slug
+  const defaults = props.pricing?.defaults ?? { student: 500, professional: 1000, minimum_students: 100, validity_days: 30 }
+  const specific = props.pricing?.workshops?.[slug] ?? {}
+  return { ...defaults, ...specific }
+})
+
 async function submit() {
   loading.value = true
   error.value = ''
   try {
-    await $fetch('/api/brochure/request', {
+    await $fetch('/.netlify/functions/generate-brochure', {
       method: 'POST',
       body: {
         workshop_slug:    props.workshop.slug,
@@ -115,6 +126,8 @@ async function submit() {
         requester_phone:       requester_phone.value,
         requester_designation: requester_designation.value,
         expected_students:     expected_students.value,
+        pricing:          workshopPricing.value,
+        all_workshops:    props.allWorkshops ?? [],
       },
     })
     success.value = true

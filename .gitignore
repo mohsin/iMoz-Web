@@ -21,3 +21,9 @@ google-service-account.json
 *-service-account.json
 # Generated brochures and version tracking (private)
 server/data/
+
+# Extracted HN fonts — macOS-only, proprietary; not for commit
+server/fonts/
+
+# Brochure function local test script
+netlify/functions/generate-brochure/test.js

@@ -33,6 +33,23 @@ Build the application for production:
 pnpm run build
 ```
 
+## Netlify Functions
+
+Serverless functions live in `netlify/functions/`. Each subdirectory is a separate function deployed automatically by Netlify.
+
+| Function | Path | Description |
+|----------|------|-------------|
+| `generate-brochure` | `netlify/functions/generate-brochure/` | Generates a password-protected PDF brochure using PDFKit and emails it to the requester via Zoho SMTP. Pricing and workshop list are passed in the request body from the client. |
+
+### Testing locally
+
+```bash
+cd netlify/functions/generate-brochure
+node test.js          # generates /tmp/test-brochure-full.pdf (password: testpass2025)
+```
+
+> `test.js` is gitignored. Inter font files are bundled in `assets/fonts/` (copied from `resume/fonts/inter/`).
+
 ## Environment Variables
 
 Copy `.env.example` to `.env` and fill in the values before running locally.

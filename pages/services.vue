@@ -1,10 +1,17 @@
 <script setup lang="ts">
-const servicesData = await queryContent('/data/services').findOne()
+const [servicesData, pricingData] = await Promise.all([
+  queryContent('/data/services').findOne(),
+  queryContent('/data/pricing').findOne(),
+])
 
 type View = 'page' | 'offering' | 'workshop'
 const currentView = ref<View>('page')
 const currentItem = ref<any>(null)
 const brochureWorkshop = ref<any>(null)
+
+const allWorkshops = computed(() =>
+  (servicesData?.workshops ?? []).map((w: any) => ({ slug: w.slug, title: w.title }))
+)
 
 const showOffering = (offering: any) => {
   currentItem.value = offering
@@ -70,6 +77,8 @@ const closeBrochureModal = () => {
   <ServicesBrochureModal
     v-if="brochureWorkshop"
     :workshop="brochureWorkshop"
+    :all-workshops="allWorkshops"
+    :pricing="pricingData"
     @close="closeBrochureModal"
   />
 </template>
