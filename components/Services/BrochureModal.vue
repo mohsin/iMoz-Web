@@ -29,6 +29,56 @@ const suggestions = ref<any[]>([])
 const showDropdown = ref(false)
 let _debounce: ReturnType<typeof setTimeout> | null = null
 
+// Department autocomplete — static filtered list
+const DEPARTMENTS = [
+  'Department of Computer Science and Engineering',
+  'Department of Information Technology',
+  'Department of Electronics and Communication Engineering',
+  'Department of Electrical and Electronics Engineering',
+  'Department of Mechanical Engineering',
+  'Department of Civil Engineering',
+  'Department of Chemical Engineering',
+  'Department of Biotechnology',
+  'Department of Artificial Intelligence and Machine Learning',
+  'Department of Artificial Intelligence and Data Science',
+  'Department of Computer Science and Business Systems',
+  'Department of Aerospace Engineering',
+  'Department of Automobile Engineering',
+  'Department of Marine Engineering',
+  'Department of Mathematics',
+  'Department of Physics',
+  'Department of Chemistry',
+  'Department of Management Studies',
+  'Master of Computer Applications',
+  'Master of Business Administration',
+  'Training and Placement Cell',
+  'Department of Science and Humanities',
+  'Department of Instrumentation Engineering',
+  'Department of Biomedical Engineering',
+  'Department of Computer Applications',
+  'Department of Commerce',
+  'Department of English',
+]
+const deptSuggestions = ref<string[]>([])
+const showDeptDropdown = ref(false)
+let _deptDebounce: ReturnType<typeof setTimeout> | null = null
+
+function onDeptInput() {
+  const q = institution_department.value.trim().toLowerCase()
+  if (_deptDebounce) clearTimeout(_deptDebounce)
+  if (!q) { deptSuggestions.value = []; showDeptDropdown.value = false; return }
+  _deptDebounce = setTimeout(() => {
+    deptSuggestions.value = DEPARTMENTS.filter(d => d.toLowerCase().includes(q)).slice(0, 6)
+    showDeptDropdown.value = deptSuggestions.value.length > 0
+  }, 150)
+}
+
+function selectDept(dept: string) {
+  institution_department.value = dept
+  showDeptDropdown.value = false
+  deptSuggestions.value = []
+}
+
 async function onInstitutionInput() {
   const q = institution_name.value.trim()
   if (q.length < 2) { suggestions.value = []; showDropdown.value = false; return }
@@ -297,14 +347,30 @@ function close() {
                   </li>
                 </ul>
               </div>
-              <div>
+              <div class="relative">
                 <label class="block text-xs font-medium text-gray-700 dark:text-slate-300 mb-1">Department</label>
                 <input
                   v-model="institution_department"
                   type="text"
+                  autocomplete="off"
                   placeholder="e.g. Department of Computer Science"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  @input="onDeptInput"
+                  @blur="setTimeout(() => { showDeptDropdown = false }, 150)"
                 />
+                <ul
+                  v-if="showDeptDropdown"
+                  class="absolute z-50 left-0 right-0 mt-0.5 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 shadow-lg max-h-56 overflow-y-auto text-sm"
+                >
+                  <li
+                    v-for="dept in deptSuggestions"
+                    :key="dept"
+                    class="px-3 py-2.5 cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-600 text-gray-800 dark:text-slate-200 border-b border-slate-100 dark:border-slate-600 last:border-0"
+                    @mousedown.prevent="selectDept(dept)"
+                  >
+                    {{ dept }}
+                  </li>
+                </ul>
               </div>
               <div>
                 <label class="block text-xs font-medium text-gray-700 dark:text-slate-300 mb-1">Address *</label>
