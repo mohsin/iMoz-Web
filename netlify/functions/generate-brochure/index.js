@@ -347,7 +347,7 @@ function addPage(doc) {
 // ── Page 1 — Cover ────────────────────────────────────────────────────────────
 
 function buildCover(doc, data) {
-  doc.y = ICON_TOP + ICON_SIZE * 0.8  // start title partway down the icon height
+  doc.y = ICON_TOP + ICON_SIZE * 0.9  // start title partway down the icon height
 
   // Workshop title
   doc.font(FONT.REGULAR).fontSize(25).fillColor(C.BLACK)

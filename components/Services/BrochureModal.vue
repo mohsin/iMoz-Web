@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue'
+
 const props = defineProps<{
   workshop:    any
   allWorkshops?: { slug: string; title: string }[]
@@ -103,7 +105,48 @@ const workshopPricing = computed(() => {
   return { ...defaults, ...specific }
 })
 
+const errors = ref<Record<string, string>>({})
+
+function validateStep2(): boolean {
+  const e: Record<string, string> = {}
+  if (!institution_name.value.trim())    e.institution_name    = 'Institution name is required.'
+  if (!institution_address.value.trim()) e.institution_address = 'Address is required.'
+  if (!institution_city.value.trim())    e.institution_city    = 'City is required.'
+  if (institution_pincode.value && !/^\d{6}$/.test(institution_pincode.value.replace(/\s/g, '')))
+    e.institution_pincode = 'Enter a valid 6-digit pincode.'
+  errors.value = e
+  return Object.keys(e).length === 0
+}
+
+function validateStep3(): boolean {
+  const e: Record<string, string> = {}
+  if (!requester_name.value.trim())
+    e.requester_name = 'Your name is required.'
+  if (!requester_email.value.trim())
+    e.requester_email = 'Email address is required.'
+  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(requester_email.value.trim()))
+    e.requester_email = 'Enter a valid email address.'
+  if (requester_phone.value.trim() && !/^[+\d][\d\s\-()+]{6,}$/.test(requester_phone.value.trim()))
+    e.requester_phone = 'Enter a valid phone number.'
+  const students = Number(expected_students.value)
+  if (!Number.isInteger(students) || students <= 10)
+    e.expected_students = 'Must be more than 10 students.'
+  errors.value = e
+  return Object.keys(e).length === 0
+}
+
+function clampStudents() {
+  if (expected_students.value < 1) expected_students.value = 11
+}
+
+function advance() {
+  if (step.value === 2 && !validateStep2()) return
+  errors.value = {}
+  step.value++
+}
+
 async function submit() {
+  if (!validateStep3()) return
   loading.value = true
   error.value = ''
   try {
@@ -162,7 +205,7 @@ function close() {
         <Icon name="heroicons-outline:check-circle" class="w-14 h-14 text-green-500 mx-auto mb-4" />
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Brochure on its way!</h3>
         <p class="text-sm text-gray-500 dark:text-slate-400 mb-6">
-          Check your inbox at <strong>{{ requester_email }}</strong> — the password-protected PDF will arrive shortly.
+          Check your inbox (and spam folder) at <strong>{{ requester_email }}</strong>.
         </p>
         <button
           class="bg-slate-700 dark:bg-slate-600 text-white text-sm font-medium px-6 py-2.5 hover:bg-slate-600 transition-colors"
@@ -234,9 +277,11 @@ function close() {
                   autocomplete="off"
                   placeholder="e.g. PSG College of Technology"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  :class="{ 'border-red-400 dark:border-red-400': errors.institution_name }"
                   @input="onInstitutionInput"
                   @blur="setTimeout(() => { showDropdown = false }, 150)"
                 />
+                <p v-if="errors.institution_name" class="text-xs text-red-500 mt-1">{{ errors.institution_name }}</p>
                 <ul
                   v-if="showDropdown"
                   class="absolute z-50 left-0 right-0 mt-0.5 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 shadow-lg max-h-56 overflow-y-auto text-sm"
@@ -268,7 +313,9 @@ function close() {
                   type="text"
                   placeholder="Street address"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  :class="{ 'border-red-400 dark:border-red-400': errors.institution_address }"
                 />
+                <p v-if="errors.institution_address" class="text-xs text-red-500 mt-1">{{ errors.institution_address }}</p>
               </div>
               <div class="grid grid-cols-2 gap-3">
                 <div>
@@ -278,7 +325,9 @@ function close() {
                     type="text"
                     placeholder="City"
                     class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                    :class="{ 'border-red-400 dark:border-red-400': errors.institution_city }"
                   />
+                  <p v-if="errors.institution_city" class="text-xs text-red-500 mt-1">{{ errors.institution_city }}</p>
                 </div>
                 <div>
                   <label class="block text-xs font-medium text-gray-700 dark:text-slate-300 mb-1">State</label>
@@ -297,7 +346,9 @@ function close() {
                   type="text"
                   placeholder="e.g. 641 004"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  :class="{ 'border-red-400 dark:border-red-400': errors.institution_pincode }"
                 />
+                <p v-if="errors.institution_pincode" class="text-xs text-red-500 mt-1">{{ errors.institution_pincode }}</p>
               </div>
             </div>
           </div>
@@ -315,7 +366,9 @@ function close() {
                   type="text"
                   placeholder="Full name"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  :class="{ 'border-red-400 dark:border-red-400': errors.requester_name }"
                 />
+                <p v-if="errors.requester_name" class="text-xs text-red-500 mt-1">{{ errors.requester_name }}</p>
               </div>
               <div>
                 <label class="block text-xs font-medium text-gray-700 dark:text-slate-300 mb-1">Email address *</label>
@@ -324,7 +377,9 @@ function close() {
                   type="email"
                   placeholder="you@institution.edu.in"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  :class="{ 'border-red-400 dark:border-red-400': errors.requester_email }"
                 />
+                <p v-if="errors.requester_email" class="text-xs text-red-500 mt-1">{{ errors.requester_email }}</p>
               </div>
               <div>
                 <label class="block text-xs font-medium text-gray-700 dark:text-slate-300 mb-1">Phone number</label>
@@ -333,7 +388,9 @@ function close() {
                   type="tel"
                   placeholder="+91 XXXXX YYYYY"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  :class="{ 'border-red-400 dark:border-red-400': errors.requester_phone }"
                 />
+                <p v-if="errors.requester_phone" class="text-xs text-red-500 mt-1">{{ errors.requester_phone }}</p>
               </div>
               <div>
                 <label class="block text-xs font-medium text-gray-700 dark:text-slate-300 mb-1">Designation</label>
@@ -349,10 +406,14 @@ function close() {
                 <input
                   v-model.number="expected_students"
                   type="number"
-                  min="1"
+                  min="11"
                   placeholder="e.g. 150"
+                  @keydown="(e) => ['-', '+', 'e', 'E'].includes(e.key) && e.preventDefault()"
+                  @input="clampStudents"
                   class="w-full border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-gray-900 dark:text-white text-sm px-3 py-2 focus:outline-none focus:border-slate-500"
+                  :class="{ 'border-red-400 dark:border-red-400': errors.expected_students }"
                 />
+                <p v-if="errors.expected_students" class="text-xs text-red-500 mt-1">{{ errors.expected_students }}</p>
               </div>
 
               <p v-if="error" class="text-xs text-red-500">{{ error }}</p>
@@ -365,7 +426,7 @@ function close() {
           <button
             v-if="step > 1"
             class="text-sm text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-white transition-colors"
-            @click="step--"
+            @click="errors = {}; step--"
           >
             ← Back
           </button>
@@ -374,8 +435,8 @@ function close() {
           <button
             v-if="step < 3"
             class="bg-slate-700 dark:bg-slate-600 text-white text-sm font-medium px-6 py-2.5 hover:bg-slate-600 transition-colors disabled:opacity-50"
-            :disabled="(step === 1 && !selectedTab) || (step === 2 && (!institution_name || !institution_address || !institution_city))"
-            @click="step++"
+            :disabled="step === 1 && !selectedTab"
+            @click="advance"
           >
             Continue →
           </button>
@@ -383,7 +444,7 @@ function close() {
           <button
             v-else
             class="bg-slate-700 dark:bg-slate-600 text-white text-sm font-medium px-6 py-2.5 hover:bg-slate-600 transition-colors disabled:opacity-50 flex items-center gap-2"
-            :disabled="loading || !requester_name || !requester_email"
+            :disabled="loading"
             @click="submit"
           >
             <svg v-if="loading" class="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
