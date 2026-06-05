@@ -1,0 +1,194 @@
+- slug: jonasmonteiro
+  name: Jonas Monteiro
+  duration: Aug 2025 - Present
+  location: Bengaluru, India
+  website: jonasmonteiro.com
+  industry: Entertainment
+
+- slug: astravise
+  name: Astravise
+  duration: Oct 2025 - Nov 2025
+  location: Bengaluru, India
+  registered_address: Plot No.37 21&24, Doddanekundi II Phase Industrial Area, Mahadevapura Post, Whitefield Road, Bengaluru, Karnataka 560048
+
+- slug: barossa
+  name: Barossa Australia
+  duration: Oct 2024 - Present
+  location: Barossa Valley, Australia
+  website: barossa.com
+  industry: Tourism & Hospitality
+  registered_address: "991 Stockwell Road, Vine Vale SA 5352 (postal: PO Box 420, Tanunda SA 5352)"
+
+- slug: multivision
+  name: MultiVision Agency
+  duration: Sep 2025
+  location: Delhi, India
+
+- slug: datambit
+  name: DATAMBIT LIMITED
+  duration: Jul 2024 - Dec 2024
+  location: London, UK
+  website: datambit.com
+  industry: AI & ML
+  registered_address: 58 Riverhope Mansions, Harlinger Street, London, SE18 5SS, United Kingdom
+
+- slug: zapitup
+  name: ZAP IT UP LIMITED (EzrsGold)
+  duration: Jan 2024 - Apr 2025
+  location: London, UK / Vilnius, Lithuania
+  website: ezrsgold.com
+  industry: Gaming
+  registered_address: 71-75 Shelton Street, London, Greater London, WC2H 9JQ, United Kingdom
+
+- slug: legalcook
+  name: LegalCook
+  duration: Aug 2023 - Sep 2023
+  location: Bengaluru, India
+
+- slug: structchat
+  name: Struct
+  duration: Jun 2023 - Jul 2023
+
+- slug: teksecur
+  name: TekSecur
+  duration: Jan 2023 - Apr 2023
+
+- slug: viewretreats
+  name: View Retreats
+  duration: Nov 2020 - Aug 2023
+  location: Melbourne, Australia
+  website: viewretreats.com
+  industry: Travel & Hospitality
+  registered_address: 915-585 Little Collins St, Melbourne, Victoria 3000, Australia
+
+- slug: thamu
+  name: Thamu
+  duration: Aug 2022 - Dec 2022
+  location: Bengaluru, India
+
+- slug: foodiverse
+  name: Foodiverse
+  duration: Aug 2022 - Oct 2022
+
+- slug: apiwiz
+  name: APIWiz (Itorix Systems Pvt Ltd)
+  duration: Mar 2022 - Jul 2022
+  location: Bengaluru, India
+  website: apiwiz.io
+  industry: SaaS
+  registered_address: 2nd Floor, Goodworks Cowork, Akshay Tech Park, Plot No. 72 & 73, EPIP Zone, Whitefield, Bengaluru, Karnataka 560066
+
+- slug: allrounders
+  name: All Rounders
+  duration: Jan 2021 - Mar 2022
+
+- slug: accentra
+  name: Accentra
+  duration: Feb 2021 - Jun 2021
+  registered_address: No. 38, Selva Nagar Main Road, Ponnagar Extension, Tiruchirappalli, Tamil Nadu 620001
+
+- slug: justai
+  name: Just AI
+  duration: Aug 2019 - April 2021
+  location: Amsterdam, Netherlands
+
+- slug: teetimeventures
+  name: TeeTime Ventures
+  duration: Oct 2019 - Present
+  location: Bengaluru, India
+  website: teetimeventures.com
+  industry: Sports Tech
+  registered_address: "#207, Milwaukee 40, Promenade Road, Bangalore 560 005"
+
+- slug: jpdell
+  name: JP Dell
+  duration: Sep 2020 - Nov 2020
+
+- slug: triptantra
+  name: TripTantra
+  duration: Jul 2018 - Aug 2018
+
+- slug: asankarrao
+  name: Sankar Rao Amburkar
+  duration: Jun 2017 - Mar 2018
+  location: Bengaluru, India
+  industry: Software
+
+- slug: floyd
+  name: 'Floyd Inc. (brand: Floyyd)'
+  duration: Nov 2017
+  location: Bengaluru, India
+  website: floyyd.com
+  industry: Sales & Marketing
+
+- slug: x0pa
+  name: X0PA AI PTE. LTD.
+  duration: Sep 2017
+  location: Singapore
+  website: x0pa.com
+  industry: HR Tech
+  registered_address: "81 Ayer Rajah Crescent, #01-66/67, Singapore 139967"
+
+- slug: bluehorn
+  name: Blue Horn Inc.
+  duration: Aug 2017 - Nov 2017
+  location: Bengaluru, India
+  website: bluehorn.co.in
+  industry: Marketing
+  registered_address: "#5/1 Skywalk Building, Assaye Road, Ulsoor, Bangalore, Karnataka 560 042"
+
+- slug: indiez
+  name: Indiez
+  duration: Jul 2017
+  location: Washington DC, USA
+  industry: HR Tech
+  summary: Curated platform connecting independent developers with startups. Acquired by GoScale Group.
+
+- slug: yahavi
+  name: Yahavi
+  duration: Mar 2017 - Apr 2017
+
+- slug: cakesonwheels
+  name: Cakes on Wheels
+  duration: Feb 2017
+
+- slug: highwaydelite
+  name: Highway Delite (Param People Infotech Solutions Pvt Ltd)
+  duration: Oct 2015 - Jul 2016
+  location: Mysore, India
+  industry: Travel Tech
+  registered_address: Flat No. 12, Srirampura 2nd Stage, Devaiahnahundi Main Road, Sri Rampura 2nd Stage, Mysore, Karnataka 570023
+
+- slug: skyproperties
+  name: Sky Properties
+  duration: Aug 2015
+
+- slug: jega
+  name: Jega
+  duration: May 2015
+  location: Chennai, India
+  industry: Entertainment
+
+- slug: thehousemonk
+  name: The House Monk
+  duration: Apr 2015
+  registered_address: Survey No. 53, Katha No. 672, Borwell Road, Whitefield, Bangalore South, Karnataka 560066
+
+- slug: worldofurology
+  name: World of Urology
+  duration: Dec 2014
+  location: Bengaluru, India
+  industry: Medtech
+
+- slug: mediscan
+  name: MediScan
+  duration: Dec 2014
+
+- slug: skhollowblocks
+  name: SK Hollow Blocks
+  duration: Sep 2014
+
+- slug: hiveyo
+  name: Hiveyo Technologies LLP
+  duration: May 2013 - Aug 2013
+  location: Coimbatore, India

@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/highwaydelite.yml --password <pw>
+name: 'Param People Infotech Solutions Private Limited (brand: Highway Delite)'
+website: null
+location: Mysore / Karnataka, India
+milestones: []
+encrypted:
+  salt: xerOSeu9p2u5EH54IC6E5g==
+  iv: hrxPSj7jqlv0CyUm
+  data: 5OzxkvboSZ/FPPYtKj3XMULoTmNuDDVP57iMtZhgIUZxafClgKgHcRhA8qnSKCaA6MfJOPfhPrgVtFsdGtjqtKnH2AZmY80wFtLXENqrqWPYP28s+kmRXrKzDlyMWuInavvdUVOUOO1Ljd8VqsQh4mlbjEDY5jWXkmk+Q2gZQwH4kRWOygVscJ7cGJZOcdQt1t8aHH2nAl35ZDXkYdZfsxApYWzWHsDL1nY+2z162JAck8+LTDav67CmqKPj0xNzl2KE8PuEzfMUU8qwNMJUSU9Y/GKc8PtJR7dycmSdc+zB0ZFYoWRkKleWl1+7+rox70LoL728lO04LXAf/0n77uf//vdMmFQgh1SoOTfIA50ToKlfHmM6lHCerDF4fZyU+UOtwz1byPqvXU/v7HUbR4j4Ut2jCPruD9h0WABsHAkjutANOwdAsfKhleWnOCxBYE7cTAxAJMOM

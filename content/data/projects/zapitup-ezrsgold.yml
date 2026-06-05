@@ -1,0 +1,28 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/zapitup-ezrsgold.yml --password <pw>
+title: EzrsGold & EzrsAccounts Web Apps
+client: zapitup
+languages: PHP,JavaScript,SQL
+platforms: Web
+frameworks: WordPress,Laravel
+tools: MySQL,Composer,PHP
+concepts: WooCommerce Integration,CRM Synchronization,REST API Development,WordPress Plugin Development,Multi-Store Architecture,Order Management,Database Schema Design,Basic Authentication,Real-Time Data Sync,Virtual Currency,Cryptocurrency
+location: Lithuania (Remote)
+description: |
+  Built a comprehensive WooCommerce CRM integration system for EzrsGold's RuneScape gaming platform, handling both OSRS/RS3 virtual currency trading and the EZRSAccounts hand-trained account marketplace.
+
+  ## WooCommerce Plugins
+
+  Developed two custom WordPress plugins enabling real-time synchronization between WooCommerce storefronts and the Bitcat CRM backend. Engineered order synchronization supporting three product types (Sellable (gold/accounts), Buyable (player-to-platform), and Swapable (account trades)) with automatic processing on order creation and updates.
+
+  ## REST API & Admin Tools
+
+  Implemented a REST API endpoint for remote order status control with basic authentication, including status mapping, order note management with author tracking, and CRM-driven inventory updates. Created an admin interface with CRM credentials configuration, order sync toggles, and manual synchronization triggers.
+
+  ## Multi-Store Architecture
+
+  Architected a multi-store management system supporting distinct storefronts for EzrsGold (gold trading) and EZRSAccounts (account sales) with store renaming, creation functionality, and ID-based order linkage preservation across store migrations. Built a complex database schema for multi-store coordination, account tracking, and order references across both platforms.
+encrypted:
+  salt: tRU3FLkv/Hvz/4YVjSKX1g==
+  iv: RqzhtNi0FlMNFPNU
+  data: dqwPvv+U6/y9MJJ6hlKMpcMsnV3geTOD+a0zLkH/yONwfakgHpQ+sCcidOuOkMQP8Dh1rbRM1iRKCrgGJ3JtVagPk+FCpW3RnPEHcN+1vJtSmHFlNnn7CembIzT4umSuO0erediLdELftgaSW4vu9rKTMZFbTaR0JXEwDsqbeXNJMRugDIHC6a3C4LtUjysc+rH6Y780ye2QaQGRrhP2Ur9ONUfbxNsFj011sh2H3eTOwcB86UKnrTfXNEttopD+JltiydVSkYQX0n/S/MBRIw3YnV80ZAhMIDPcc3G+fnbpyKbdgThQUqW00Sj0BSlK82x8jFAglqi6/NxvY/KJJuoeR9zJ08Affoo5r9Uvx+E8TvAApv7ktamcwA/GRvKvKpp94HWCe9DU2cu5UZ7wngkm80FX7IxJl/KX3VPyLVaz0H14gQ87o2HiZY/ORpii8Ev4FzKSWv0Tnzz/mlFBZR1tupzXzJbSnS3XFEzjfPqNY/yaWb73zwQYAFdsaPAGMt3Xt27tfVUoEeWsCUvzrqlhAvIHvBB4pGugGbaj43YxRAWEbpGFeNARMtkhGYXeu4vm5onCAo0CLf2BXmijmTHCPKhYIP6CJE6MbBbhMX2TfEUyShZo/Q7cgIGsjcDxgjfOuh1LAVRKJf4FFqYhwtqmrbyyDrB5963WbE+2NLQlUQAVCjb/GXvG6PQRQbSJq6vKhgEI/4EaWOe3D97zoVTm9zXyBFlxqYzMIWBp4AIPP6IaIQj5cFGyCKTuza/9D/A68NI4BBdiCbIqLIT7hiV3C54Y1kiCgAEmRTWRTavkK1dnRBFdnyMd05R1D+nkq2zaXIAiB92TZhG/RYmiVUR6XP0H7ciFwhxBw/ZPlg7DZWTGSHyOR18b/ycmWiizduvsFfpfgd6RXBOHfuPomIPk5TTQ8edxiPiaYao6uu3zcFPK/XXkBUl0pgWyIWyvVsuuoLu9ykwy/gCHoHIQh/5W0LfSZJRqs7utzY23ZOEjkGB8aYwO20U17upTDB7e5napko7xkpDPyXdinGrCzlbAn5BFteJczFunZmjsQupOzhAA3CoAmYOfE1dPVeC0PzKe0ZoqNNfg4ew0GXWPRkm+oM8ztbbof5BDMqsXvX+am8fEs5lYUu/gq31kx8fMY7LTMud8vxIfdWDLB5xABHZL7kOmFRW844PINmvTd79T95bI3jHfiNY//18sGBWPmP0aLoPpc8SVX4Rd7OgBlb/n6CCROb7avQ2K1lvD9DMLXTvespdQW+QfoYcUtzAdthpjsRj+xnQ8GcKMHosD+hhppT4NfpdJPWBaWHtYyNBvgKHjpORj1aMccrout4eiLbEbzNjsypxzGFPapmeMmHEW/fWV8pq2GNUew25EHWotXuBWBsI8idMILT9yFkvnwYRCzCfBD9wl9lUnPcE4XjbCP327y8H1sybgK28pEjcxXY9X+Va7Ohsidvr6Zto+VANXT3C4E1XmcRXTowCbhZEf2L0Mo/Iu/nLk2Xw5Gq2mcJztLLS8sl0YFV/shg==

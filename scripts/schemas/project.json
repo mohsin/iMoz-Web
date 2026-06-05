@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Project Detail",
+  "description": "Schema for content/data/projects/<slug>.yml — private fields are encrypted at rest.",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Display title of the project (for file readability)"
+    },
+    "client": {
+      "type": "string",
+      "description": "Client slug reference (matches content/data/clients/<slug>.yml)"
+    },
+    "technical_summary": {
+      "type": "string",
+      "description": "Full private technical description of the project",
+      "x-private": true
+    },
+    "modules": {
+      "type": "array",
+      "description": "Detailed work breakdown — each item is a deliverable or feature area",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name":        { "type": "string" },
+          "description": { "type": "string" },
+          "hours":       { "type": "number" }
+        }
+      },
+      "x-private": true
+    },
+    "milestones": {
+      "type": "array",
+      "description": "Per-invoice payment records for this project",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name":            { "type": "string" },
+          "billed":          { "type": "string" },
+          "received_inr":    { "type": "number" },
+          "date":            { "type": "string" },
+          "date_received":   { "type": "string" },
+          "gap_days":        { "type": "number" },
+          "payment_mode":    { "type": "string" },
+          "conversion_rate": { "type": "number" },
+          "conversion_fee":  { "type": "string" },
+          "tds_deducted":    { "type": "number" },
+          "txn_id":          { "type": "string" },
+          "remarks":         { "type": "string" },
+          "status":          { "type": "string", "enum": ["paid", "pending", "cancelled"] }
+        }
+      },
+      "x-private": true
+    },
+    "total_billed": {
+      "type": "string",
+      "description": "Total amount billed for this project, with currency (e.g. '$5,000 USD')",
+      "x-private": true
+    },
+    "total_received_inr": {
+      "type": "number",
+      "description": "Net INR received for this project after fees and conversion",
+      "x-private": true
+    }
+  }
+}

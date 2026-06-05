@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/datambit.yml --password <pw>
+name: DATAMBIT LIMITED
+website: datambit.com
+location: London, UK
+encrypted:
+  salt: oHBxARZHM8xjzadMc71zmQ==
+  iv: yBlcNzxgGSplqIgv
+  data: SIgDwkvsxzwyoY9MfQ7mTDwZtMK6QniSZ2JA5T0xl4lt+tsZJUPOSnUuKpB/HzoxPdA9m+aosTjkmZ/ha1iZ01MwYLXfpwi1loJY0Tyd6ehVnsmcEGJN5yadiplAO90wlwZx692ggXowGsRGWW1ildu/0KOSVxwFJTyaUTAE3K9RxaNVhC8JKVhlIC/jFvX2j+z8aeDKs+FZ+bfzfxdyXWpeIWECvt9ud7EVNTMbTqJ+BtT27t0TD9gEtLhd8YHhZIXr+LofHETj6IruXq0a3ipulrjq0XHWjEwnlKJiEcv49PHPudUk2FtO0D4rtWs/aKvzeFtOtNlOKsntWwG9xtCZgjmgk1Atvqg3G15i1qrhayraO0Yjx5mK+5WhtdJWevt9wsJDrbwwco7FjjtFZ2QuJdPaB7lT68ygmOmpSZQ795aF8sA5/lsxJdziIY8dD+ttskZ/2hkDk1aUtlyLKv9AfbT4zH9r

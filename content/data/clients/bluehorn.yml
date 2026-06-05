@@ -1,0 +1,7 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/bluehorn.yml --password <pw>
+name: Blue Horn Inc.
+encrypted:
+  salt: M6azaw2o6hlfu7GGGgM23Q==
+  iv: p5s5I8uFgdvTUiq/
+  data: YGFbwiNpk27ctsmrqkeTXM3kSVVSRhsYnyisPncUhrCbOT5gc0v+h/vr/4Yk/ib+sS+Qnq/6w6le/3IESYveOcU5lV/egRLy53fQ3ZpaGoq0o0ddvGX0ztjuVnVNwsARuRj2/4xc+lxo+62x2z8mUXCNc90Hlke+KMByJpBR4QeSbupQJiqJHvp9ntw7+futdyZSJoybvqTcsVCT/6hLm6FNFOzWXMN2Ejei3LbGEV/LbXM4PqRePL6DLdxdSP0HaZPJwF4HANU94JHbDFdEEAgqD4/zRBWVi2/8X801o44HliB1cSIsKWZ3FTSVO6YvTPoJsb0wJKfIphiTxi8CvC3JGMQQ9kKfLHGAmitNOwGkVPg1ZgIBcvPLvaX/9nHjW0d1eFHZX90=

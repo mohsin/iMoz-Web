@@ -11,4 +11,7 @@ export type MasonryItem = {
   frameworks?: string,
   tools?: string,
   platforms?: string,
+  status?: string,
+  hideOnListing?: boolean,
+  private?: boolean,
 }

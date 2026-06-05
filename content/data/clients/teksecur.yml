@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/teksecur.yml --password <pw>
+name: TekSecur
+website: null
+location: null
+encrypted:
+  salt: uX6maqUgR279XiFwg2JnIg==
+  iv: Q/D4sKXppL3dsaIM
+  data: RmFMZ74VFrBH4I4RYfkdC8XGhsmfDCFT1HhfnrFzeMudndj6lDQ+4HBrY8nKCrkSfhDUzFEmB2zNI8V9QQknyKcLe4KyjyYNLoIEX+S2F8wBCF7OoCGEDuIF0aGgdSn7dLL2CcmUzI/l9xZhMndaPdcbNDz5Y3qau4Xe82RfwWM8fz5zhpR9eikNtQP46coia9sjlr4RuSsxwMTcchFM6wgxZ4l1DcJnxzugs/HEkOxAjDm7tAQAg+eKNAUz/lf2bsRyCuPZ4xeGvsPKz++EifJQDVr78T0Pq2VoPXX9Q/JPFnsjKgQUs8nBuIDwAykPkOeG3Qr9R+Oo+cJhU52WoplC2qs=

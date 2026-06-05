@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/structchat.yml --password <pw>
+name: Struct
+website: null
+location: null
+encrypted:
+  salt: KYAqQ+tSx8rIk8zzwLCZfw==
+  iv: 84he73O3biNsUW4X
+  data: ILyrbFqYFGVH+bv0g9kVWGGDVLiQ0wU3Ndv3HOfopW1qSKBxVbGtAF2D7BhBaojG8mtQyk2XrIDSorQYWjDqx/M12Qxp7985AU1uG432tUrl/HgB7RO3csyDuuLItxIIrrtnDB2DVltOBhG7wGvwhbtt/du1mIkDyOS0Ohnm+0dguYXd8nx37AKncWot/+i3q3blz2C3tTZprQDA2vUCWYKECo6lIj74LztTlxbSKg6F9gzXQgKyfjhFVC/yc+qjiDHcJLypI7mfuENA3Pp+VBOjY5Rec/3V0WtoSabQafVddQgzMG7PiUYbJVJ7iN62OhuwotFoti7QD9wB5/g2WM2O

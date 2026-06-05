@@ -1,0 +1,11 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/mediscan.yml --password <pw>
+name: MediScan
+registered: false
+website: null
+location: India
+milestones: []
+encrypted:
+  salt: lCXnoUDY9N3FqtosU8YL4g==
+  iv: 6ozKD4ajWY6V/cWG
+  data: gr5mUDDtS8xAdbM1KxzrF7gCS+6IZJZWzPbHGGkwJ8mBtldUeLYGFQjE4mJsjljFybFlXJCUGXdHgzuvm0/sKdq4I4YSL2V8M4cTDZwKriQowFrayG6bEx9np30KYB17FxJ4ibdtLlIjWm86KM7Sg3GwJ6UGyTYp1bFvixXrk+/E4SU5s00brsFKIR2S08iwK1Cmdh8NFLgVqYnZeghrWmTvUQbK89FDgip+PFN//qw/2BDhJG7Yiuk7CUPNVtBZoBGDu09KI33ppbnlpe8bvYVBs+RIbbAenVLgZ7zx+A/Gj0NjfR9VJUmx8atIMlj8xsl9nPaiejNb4/eWvgORXjif0++VVz1ls3Q=

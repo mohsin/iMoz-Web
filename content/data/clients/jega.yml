@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/jega.yml --password <pw>
+name: Jega (Tamil film actor)
+website: null
+location: Trichy / Chennai, Tamil Nadu, India
+milestones: []
+encrypted:
+  salt: UGARPr9u6SRyFrcWMA5bvQ==
+  iv: VclD41Qf9+h6IKEL
+  data: FyzQtN17rezfz++3JWvOFQp7F18yirZLnLxtXMnerd20c/MqiTWc5TjC6JBVR1HJgu9MduGEKe9mJ2AOI7Wa/O3oZaTSEfyPxPveUi56y8Km6maW83DZUFsQqc7Aqv4qGNhMLajr12V68onuwWyHbeVxI8GXwu82WKZ2rr6sgJLWjJ0Pz8x5TlyuTl6Zc+RvpdjMMrcL6VZ5zpWEGfsbWOI98qEnf2D1qbghmmSaQNQtHRMfJO/durPdNHwmMgHWyPmriUdUUaTGjEiJBtB5iXEDHIxvvch9LZReB0sAxbvlfLJbMpNRH+1uAib+rEbNVMnwzM6l/Fyx

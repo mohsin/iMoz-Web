@@ -1,0 +1,28 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/asankarrao-tellus.yml --password <pw>
+title: TellUs Android and Web Apps
+client: asankarrao
+languages: PHP,mySQL,HTML,JavaScript,Java
+platforms: Mobile,Web,Android
+frameworks: OctoberCMS,Laravel,RxAndroid
+tools: Sublime Text 3,Retrofit
+concepts: Functional Programming,Reactive FRP,Dependency Injection,RESTful API
+website: tellusapp.in
+description: |
+  Built both the Android and web app from the ground up, including a RESTful API for the two to communicate.
+
+  ## What It Does
+
+  TellUs allows restaurants to collect feedback from customers and provides analytics and insights into the restaurant's performance. The app is localized so that local restaurants can easily use it.
+
+  ## Web Backend
+
+  Built a robust multi-user hierarchy so restaurant owners, sales executives, outlet managers, and others can log in and manage their restaurant feedbacks. They can view statistics and insights on how they're performing and what customers think of them.
+
+  ## Android App
+
+  Wrote a pragmatic RESTful API in the web application so that the Android app (also built by me) integrates seamlessly. Built using reactive programming patterns with RxAndroid and Retrofit for efficient networking.
+encrypted:
+  salt: iS6rNd8k1hKR4bLOx/ccTQ==
+  iv: xdd9KPMTcFdc+iIi
+  data: C2xFE/af8k0whVEWKyvvoHoAAqgA1a9sflkbhj75UdgpYJEwO6w93cIKJ9YQLEPzJBV0ARrsDIqwjn6Ngo9Ha6mn7Z9QDpa87tc//cn18CeGTlspOytLMkSNLla7RulPtuapDMpshLMVCpvTu6b2gnscnwPpYhrrwks69zBK2sPrh7hN/ae520envb9b31tP0zC84+UdQ4W+if1c5W3Gclo1/Zl/iMKKgyvR8JUahenvYQxL/Xly1q0Kg3F1Xhg86RIDWxdzPWRrpqQvPU5BgpsUfoK5F7U8v0uSUMNkh0cXsDPeiQ1OHdR4xQRRxdyDmmesukaIa/t3Qj37euGRd8hOZRzwcSHdAHXliQ5YMkTZIedPe2tAsaxKkn2CCFYmPtBMHTb+nnulZ3jS8CR0APRwK/uDVViG/h8eC3CRDsWa71lvAkanAyQoij0FRIW87m4Afp6oGXEIOwWDFTTE+Q5bZN9w+IJITWQNxPXzC4Ap2/T596kj9R5jxmV3d6JaHXy1eFrW08LR/ZBLo8ftf4VsqZkzg+KM2MdLJwsq8Eig6RtazQVU+DVlQkhxqwO/wt7QJUh4Tcyd44louhJRG8NA2663Nr5A3GNdfAo0y1vcWx9TUnCE200IjoSFOmdb/7fTIZZ90DzILBteJ2F9UEg2Ks1Ck7Hs4RxjKN47Tn7lwZhRZaW6xvuW+BxjiCBdx/Z3NzuVD81HRpLyprnUmJX/XA==

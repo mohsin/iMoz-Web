@@ -1,0 +1,25 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/teetimeventures-upar.yml --password <pw>
+title: uPar Golf App
+client: teetimeventures
+languages: Kotlin
+platforms: Mobile,Android
+frameworks: RxAndroid
+tools: Sublime Text 3
+concepts: Bluetooth
+description: |
+  Built a fun app that gamifies golf into a contest between players.
+
+  ## Play Modes
+
+  The app has 3 modes:
+
+  - **Band mode**: players choose a target band to aim for
+  - **Call the Shot**: players set their own target for a more personal challenge
+  - **Virtuoso mode**: the app suggests a target based on player skill, designed for professional golfers
+
+  Built for Android using Kotlin and RxAndroid.
+encrypted:
+  salt: Q894dv+rsH5Lrbk2Z2saHA==
+  iv: AqVOgVabRfP0MNOt
+  data: /wuPtNUGNb+Zf7D6x3eu4CSQ7vACDEsdMACzTon6KeLa8bcMEuSS0HaYJjssHGA7D0LDR9yeoji15pbUBWf66zFFm8Yg9biSsWIC/W33rZJtGZtuLzVHgqw7W2HWqeelhSh+ZFH/CXVb5+zLHdZWlIKAXYsVWD3kx6ZHvAspwsKpnoSM6qC3TSkRGnsAjGXrY6WZgo6UqEspYTWnIMBeyNidvqX1AHwe9oJLATJvOwD8V3y6WblS2/NBu35ob2IVUPXd5dKPj7YwUAR5gTct/iNkhK+qe+khpw8iOs6+aO8wFPr9YYRJFf44IMG9I8sdhM7gSTEOR5fnbrQBFZt+1IEkjMonUgvZWiHj9RvCEl6fyQiEEYrn8CcSeiN4WQWXhwzFbOUID1nvvVDLZzhUwCLDzuEx6YCy3CT1gWhXbJ8Jx7EVmTrLPxycslZo11ejp0NWSOmgOpWVVeePnymyT7HR6tD56W1ZKl1Qs9Ola2ua8OXGGwCT8HGLRPFZZewvTokVpdcUR4Mra5+y7wd+tRGazJpOWFWsM5jkTG//URQcaGoxQ94qkVlAvpR4yRybtxTC45LfuAzj9a3x26F8VWgHwboc++8nKyctGZQZKvc+r5A931zZV5Nulsfzapxe8aKF//WX6A6BcSi+mwpPCXKD1YZNhwGcfSw9puFNoC9wA0nfBG4IhWwy7A729JMm1uPQKtUfV55glu+5htTZINjW6XF/TLlVQd/NdjCdU5fFtBIbR0XrFJYDcGGZzCnglysTGQiYOc0L5iqZakvg

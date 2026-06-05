@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/asankarrao.yml --password <pw>
+name: Sankar Rao Amburkar
+registered: false
+website: null
+location: India
+encrypted:
+  salt: JV5nUgvtOK7eH++q+aZ82g==
+  iv: j+etHsOapSdbmjtq
+  data: vg/lqTXi8h8/70F0z4oWgXn2/v9RpG/3B9cJL2Z6WcrI06+gxUMSPeCdXYEU/ldreH7j0AS9GQXWXeWQFf7li7xHNwaAJRqzFuSiWhmz6P6oUf22XqF0zjQLut9M3e4Ha4qG28nr/JFRmZDudEkjfmLgIBvpCplYpzaulu1RYJHGC9j/0cJrN6hKPcBjeMKAjaImgebQDP18jXHpJmjfIALWD1NolurIKpp++MdZJM0TDwRsT5rJIi8XdgEh/VCitoHo2aG5jQP6UN6MEiJhLm2QIbJYXR5UdRYpFOlKnTZqsOF14qi4CygqSD+ckBsBFQhFubx/je08i9Ao2sLECaVJE/IjDvkXc22L9uvBCi2q1uPCVQ==

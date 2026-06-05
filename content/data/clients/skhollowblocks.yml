@@ -1,0 +1,11 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/skhollowblocks.yml --password <pw>
+name: SK Hollow Blocks
+registered: false
+website: null
+location: India
+milestones: []
+encrypted:
+  salt: g3/TQRyfa0k2ws0tMlNqwg==
+  iv: q/wpvGOMT4axSdMl
+  data: SmlCNehxdo9fQBcUGZrGcYw4IBRFCPT+14dOBmVZQwuHpCE+tInmN6gEcwfx5Cuj27QclKHGrHMoP5gRjpw7pwotYdfPLWEA/oYsOzdWf914FHmv8LnVAaSkCzm0tOCdRBEUVmVC23ehySrXKZzWcWqUCR1Fc4/GEYqPcp2ERbN1/by7DXUJy/P0onZ+1sTNhuNM/hOiH2MvFMUa3Wm4ubHINue2frYqc7iJFVFMdMgt7smXcxqFn3vZrdi4nson77zpeW+2W35mEv5zNCish+VklEqwAElpbhnYcA4iqYcYdbEfv59J2X6+NFNJWAc=

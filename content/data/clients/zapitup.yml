@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/zapitup.yml --password <pw>
+name: ZAP IT UP LIMITED (trading as EzrsGold / Zapitup)
+website: ezrsgold.com
+location: UK (registered); director based in Vilnius, Lithuania
+encrypted:
+  salt: kCEEAqHEbAbaY0O0DzlXRA==
+  iv: BcaF0ntXG2fQVVpX
+  data: HTGRJYXgtYGYoVnThpqllZkZDgWsc1suqeAXzfEiaM1ZNuGxEeBjt0dRuQrdx3iedkguyQLUS1Y+njY//qd6wdAEw6Yy8HFCONHYJyJpDaskt63qwuaX6ROTWqrVXWQnClpESqjBdoCcg1oH6Ep6O1A8NGBX5vZ4M9wxFOShiw7X09OIrem13c5UMNOIaCa7Oz6/hRnhz0azRsWa9dMiDLiSOZrzWVBvk7pDRpACrZkNLCsnLkxrP4OBissnt4/GC204YzmDG8g6djhh/4pLeLRMF2TS0U1V90urFzC9MP85op6/YlCaVRisWn02M5sG/HKnm15yN8ZTKrSyVZRt2FW9Q06H20O59CX7qLGj0iSsN88AVA+OGfoIo9fivJHjA+I6aMly/5n2LOlzWYLvsucgBw==

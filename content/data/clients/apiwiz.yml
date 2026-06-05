@@ -1,0 +1,12 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/apiwiz.yml --password <pw>
+name: 'Itorix Systems Private Limited (product: APIWiz)'
+founders:
+  - Rakshith Rao (CEO)
+  - Darshan Shivashankar (CTO)
+website: apiwiz.io
+location: Bengaluru, Karnataka, India
+encrypted:
+  salt: qD0/BIZLqSuh7m81RoQR2Q==
+  iv: CbpP1G/VB/9nUmBW
+  data: DwpuIEmBly/rFpzXldnvGLn7aKJlMsVq0/9Kf+irdVWNDL5Ei9ulQoEGcpznWfLzbwNmV850ZBgaFndK5kHALVXNq1vhiAFGQ1Q6+0lTm+461+iOGE3xJJ1xjMwQniqGPwP/o0vPGzkGYeLGpiv73mhn7vgHmmd1DEI9wDlPlB293OzoeqQfWJR8fG+cQ6+G1JrtWOEHKF3Ykrr6/fYukMqy1a5uAcgwFkr+oioxSFI56GX5qlcUomxbIcuDOq9WiHT/X5wisRy3qRVdzGAnFGcsUkfZBrbmAzMNl517dScgXNMrBuP9DrmFstY9KiAy92iO1Fi0UTkqoA0KTJBr24Ui6MD9nsE871I5RQt0NsLqQOFs7MiFlsI2yFYb63GkwkWAjoIUTcxLAdvoDgORjWx3yspFhbfWPCtGMCi5z2f8N9GhQ6G9j1xeVgbof8sG8q45SndRmU2gJDneb8GBQZ2IahfJNgK80FN4G9Yl6xgmIFSQIbWyVRdGeR6aomItdoJr1vMrv3pG4ELNQo/AhbDwNA==

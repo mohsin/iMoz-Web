@@ -1,0 +1,12 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/viewretreats.yml --password <pw>
+name: View Retreats
+founders:
+  - Mat Lewis (Business & Digital Strategy Consultant)
+  - Stowie (Stoewie) van den Bulk
+website: viewretreats.com
+location: Melbourne, Victoria, Australia
+encrypted:
+  salt: IXeZ5NT3skFpuDyQhPVdHQ==
+  iv: tNBNTvBDBW53jeHK
+  data: fBsO2HtjKAND77fA8b22RY9unlFOl+N7whwyG2vuMCFCEQHREHBSZ5Yc9oa4e5RiQSTfT3GqZUDZxoQty+blhxNLjgn1GQ/x9uHfldaQk6Ww8e1re+KD4zVK3x1Gk1JDefgPJcakpay9PnfeEwd4yEdYzHXnk81qezt9APAI+2sYUCQO1AD2HuvmMeYKW5mJuTGEdhvkHLjOt8OQx0q4DShMx5BpgSTOOk46WSEdrL+rvHoeytSSCon0u2My3ia+ORrxiIzo8uWhcwo+ngIf25kTT2VOK/jjDufZbbBF9cW6NotcXL130KydAPnVROLtzOc=

@@ -1,6 +1,7 @@
 client:
 - title: DJ Jonas Monteiro's Website
-  slug: jonas-monteiro-website
+  slug: jonasmonteiro-website
+  client: jonasmonteiro
   type: Client
   src: /images/jonas-monteiro.webp
   duration: Aug 2025 - Mar 2026
@@ -18,7 +19,8 @@ client:
     - Created secure AI-powered chatbot with prompt injection protection, markdown support, and conversation context persistence for seamless user interactions.
   added_on: 26/12/2025 9:00pm
 - title: Astravise GCC Compass Form
-  slug: astravise-gcc-compass
+  slug: astravise-gcccompass
+  client: astravise
   type: Client
   src: /images/astravise.webp
   duration: Oct 2025 - Nov 2025
@@ -26,7 +28,8 @@ client:
   summary: "Interactive TypeForm-style assessment tool for Global Capability Centers (GCC) advisory services with intelligent result calculation and automated email workflows."
   added_on: 26/12/2025 11:30pm
 - title: Barossa Australia Tourism Platform
-  slug: barossa-australia
+  slug: barossa-tourism
+  client: barossa
   type: Client
   src: /images/barossa.webp
   duration: Oct 2024 - Apr 2026
@@ -44,7 +47,8 @@ client:
     - Implemented automated backup and cron scheduling systems with complete CI/CD pipelines.
   added_on: 26/12/2025 9:30pm
 - title: MultiVision Agency Website
-  slug: multivision-agency
+  slug: multivision-website
+  client: multivision
   type: Client
   src: /images/multivision.webp
   duration: Sep 2025
@@ -52,7 +56,8 @@ client:
   summary: "Marketing agency website featuring modern single-page design, dark mode interface, and client testimonials showcase."
   added_on: 07/09/2025 1:30pm
 - title: Golfer's Edge Booking Website
-  slug: golfers-edge
+  slug: golfersedge-booking
+  client: teetimeventures
   type: Client
   src: /images/golfersedge.webp
   duration: Sep 2024 - Apr 2026
@@ -70,7 +75,8 @@ client:
     - Architected AWS infrastructure with Terraform for automated scaling, deployed GST-aware invoicing, and built booking source tracking system.
   added_on: 07/09/2025 2:00pm
 - title: GenUI - Deepfake Detection Platform
-  slug: genui-deepfake
+  slug: datambit-genui
+  client: datambit
   type: Client
   src: /images/datambit.webp
   duration: Jul 2024 - Dec 2024
@@ -78,7 +84,8 @@ client:
   summary: "Enterprise-grade deepfake detection platform with microservices architecture, processing video, audio, and image files to detect authenticity using AI models."
   added_on: 09/04/2026 12:00pm
 - title: EzrsGold & EzrsAccounts Web Apps
-  slug: zapitup-ezrs
+  slug: zapitup-ezrsgold
+  client: zapitup
   type: Client
   src: /images/ezrsgold.webp
   duration: Jan 30, 2024 - Apr 9, 2025
@@ -87,6 +94,7 @@ client:
   added_on: 09/04/2026 12:00pm
 - title: LegalCook Web App
   slug: legalcook-web
+  client: legalcook
   type: Client
   src: /images/legalcook.webp
   duration: Aug 2023 - Sep 2023
@@ -94,7 +102,8 @@ client:
   summary: "Progressive law startup website with content management dashboard and analytics for legal service providers in Bangalore."
   added_on: 26/01/2024 4:45pm
 - title: Struct Chat App
-  slug: structai
+  slug: structchat-web
+  client: structchat
   type: Client
   src: /images/struct.webp
   duration: Jun 2023 - Jul 2023
@@ -102,7 +111,8 @@ client:
   summary: "AI-powered workplace communication platform with advanced search capabilities, global command palette, and enhanced collaboration features."
   added_on: 26/01/2024 4:00pm
 - title: DFact Web App
-  slug: teksekur-dfact
+  slug: teksecur-dfact
+  client: teksecur
   type: Client
   src: /images/dfact.webp
   duration: Jan 2023 - Apr 2023
@@ -110,7 +120,8 @@ client:
   summary: "DevSecOps platform enabling one-click application deployment, performance optimization, and cost management for enterprise development teams."
   added_on: 26/01/2024 4:30pm
 - title: ViewRetreats Web App
-  slug: viewretreats
+  slug: viewretreats-web
+  client: viewretreats
   type: Client
   src: /images/vr.webp
   duration: Nov 2020 - Aug 2023
@@ -118,7 +129,8 @@ client:
   summary: "Travel booking platform for wellness retreats with integrated CRM, booking management, and gifting system for retreat experiences."
   added_on: 29/12/2022 4:00pm
 - title: Designer Thamu's Portfolio
-  slug: thamu
+  slug: thamu-portfolio
+  client: thamu
   type: Client
   src: /images/thamu.webp
   duration: Aug 2022 - Dec 2022
@@ -126,7 +138,8 @@ client:
   summary: "Designer portfolio website with content management, QR code-enabled planner purchasing, and responsive design across all devices."
   added_on: 29/12/2022 11:40pm
 - title: Foodieverse Android App
-  slug: foodieverse
+  slug: foodiverse-android
+  client: foodiverse
   type: Client
   src: /images/foodieverse.webp
   duration: Aug 2022 - Oct 2022
@@ -134,7 +147,8 @@ client:
   summary: "Food discovery Android app with QR code scanning for quick item tagging and kitchen inventory management."
   added_on: 29/12/2022 11:30pm
 - title: APIWiz Web App
-  slug: apiwiz
+  slug: apiwiz-web
+  client: apiwiz
   type: Client
   src: /images/apiwiz.webp
   duration: Mar 2022 - Jul 2022
@@ -143,6 +157,7 @@ client:
   added_on: 29/12/2022 11:53pm
 - title: All Rounders LMS
   slug: allrounders-lms
+  client: allrounders
   type: Client
   src: /images/allrounders.webp
   duration: Jan 2021 - Mar 2022
@@ -150,7 +165,8 @@ client:
   summary: "Learning Management System for skill development with courses, certificates, and degree programs."
   added_on: 09/04/2026 12:00pm
 - title: Accentra App
-  slug: accentra
+  slug: accentra-app
+  client: accentra
   type: Client
   src: /images/accentra.webp
   duration: Feb 2021 - Jun 2021
@@ -159,6 +175,7 @@ client:
   added_on: 09/04/2026 12:00pm
 - title: AldeaTech Android and Web Apps
   slug: justai-aldeatech
+  client: justai
   type: Client
   src: /images/aldea.webp
   duration: Aug 2019 - April 2021
@@ -166,7 +183,8 @@ client:
   summary: "Agriculture productivity platform providing farmers with weather data, farming manuals, expert advice, meteorological data, crop planning tools and Q&A system for farmers across web and mobile."
   added_on: 19/01/2024 04:50pm
 - title: uPar Golf App
-  slug: upar
+  slug: teetimeventures-upar
+  client: teetimeventures
   type: Client
   src: /images/upar.webp
   duration: Oct 2019 - Aug 2020
@@ -174,7 +192,8 @@ client:
   summary: "Gamified golf competition app with multiple play modes, target selection, and shot-calling features for competitive players."
   added_on: 30/12/2022 4:01pm
 - title: FoodLans Delivery App
-  slug: jpdell-foodlans-delivery
+  slug: jpdell-foodlans
+  client: jpdell
   type: Client
   src: /images/jpdell.webp
   duration: Sep 2020 - Nov 2020
@@ -182,7 +201,8 @@ client:
   summary: "Food delivery mobile application for iOS and Android enabling customers and delivery personnel to place and fulfill food orders with real-time tracking."
   added_on: 09/04/2026 12:00pm
 - title: TripTantra Web and Mobile Apps
-  slug: triptantra
+  slug: triptantra-web
+  client: triptantra
   type: Client
   src: /images/triptantra.webp
   duration: Jul 2018 - Aug 2018
@@ -190,7 +210,8 @@ client:
   summary: "Travel booking platform with Android app and API integration for comprehensive trip planning and reservation management."
   added_on: 24/12/2022 5:17pm
 - title: TellUs Android and Web Apps
-  slug: tellus
+  slug: asankarrao-tellus
+  client: asankarrao
   type: Client
   src: /images/tellus.webp
   duration: Sep 2017 - Mar 2018
@@ -198,7 +219,8 @@ client:
   summary: "Restaurant feedback management platform with customer review collection, analytics dashboard, and performance insights for hospitality businesses."
   added_on: 24/12/2022 5:01pm
 - title: Floyd Inc. Web App
-  slug: floyd
+  slug: floyd-web
+  client: floyd
   type: Client
   src: /images/floyd.webp
   duration: Nov 2017
@@ -206,23 +228,26 @@ client:
   summary: "Professional corporate website with in-site editing capabilities for Floyd Inc., built on OctoberCMS."
   added_on: 24/12/2022 5:10pm
 - title: Attrition & Retention Predictor for X0PA AI
-  slug: xopa
+  slug: x0pa-web
+  client: x0pa
   type: Client
   src: /images/x0pa.webp
   duration: Sep 2017
   status: Live
   summary: "React components for X0PA AI's employee attrition and retention prediction platform, delivering data visualizations for predictive analytics."
   added_on: 24/12/2022 5:09pm
-- title: BlueHorn Web App
-  slug: bluehorn
+- title: BlueHorn Website
+  slug: bluehorn-web
+  client: bluehorn
   type: Client
   src: /images/bluehorn.webp
-  duration: Aug 2017
-  status: Live
+  duration: Aug 2017 - Nov 2017
+  status: Archived
   summary: "Company showcase website with gallery designed from prototype through to live build for Blue Horn Inc."
   added_on: 24/12/2022 4:43pm
 - title: Swades Web App
-  slug: swades
+  slug: indiez-swades
+  client: indiez
   type: Client
   src: /images/uos.webp
   duration: Jul 2017
@@ -230,14 +255,16 @@ client:
   summary: "Scholarship program platform for UpGrad with student application management and Material Design UI."
   added_on: 24/12/2022 4:41pm
 - title: ApplyNow Android App
-  slug: applynow
+  slug: asankarrao-applynow
+  client: asankarrao
   type: Client
   duration: Jun 2017
   status: Archived
   summary: "Dynamic form management app enabling quick application submissions to various services with automated processing."
   added_on: 24/12/2022 4:31pm
 - title: FinanceNow Android App
-  slug: financenow
+  slug: asankarrao-financenow
+  client: asankarrao
   type: Client
   src: /images/financenow.webp
   duration: Jun 2017
@@ -245,7 +272,8 @@ client:
   summary: "Personal finance management app providing financial health insights, survival calculations, and insurance recommendations."
   added_on: 24/12/2022 4:26pm
 - title: Yahavi Android App
-  slug: yahavi
+  slug: yahavi-android
+  client: yahavi
   type: Client
   src: /images/yahavi.webp
   duration: March 9 2017 - April 2017
@@ -253,7 +281,8 @@ client:
   summary: "Native Android app built with reactive programming patterns following provided designs for a multi-language service platform."
   added_on: 24/12/2022 4:22pm
 - title: Cakes on Wheels
-  slug: cow-web
+  slug: cakesonwheels-web
+  client: cakesonwheels
   type: Client
   src: /images/cow.webp
   duration: Feb 2017
@@ -261,7 +290,8 @@ client:
   summary: "Custom eCommerce platform for cake ordering with addon management, SMS notifications, and integrated payment processing."
   added_on: 24/12/2022 4:14pm
 - title: Highway Delite Web and Android Apps
-  slug: highway-delite
+  slug: highwaydelite-web
+  client: highwaydelite
   type: Client
   src: /images/hd.webp
   duration: Oct 2015 - Jul 2016
@@ -269,7 +299,8 @@ client:
   summary: "Highway travel discovery platform for road trip planning and highway establishment exploration, serving 50K+ users with 4.7 rating."
   added_on: 24/12/2022 3:45pm
 - title: Sky Properties
-  slug: sky-properties
+  slug: skyproperties-web
+  client: skyproperties
   type: Client
   src: /images/sky-properties.webp
   duration: Aug 2015
@@ -277,14 +308,16 @@ client:
   summary: "Real estate platform with user management, permission architecture, analytics dashboard, and editable sections for Sky Properties."
   added_on: 24/12/2022 3:41pm
 - title: Actor Jega's Official Website
-  slug: actor-jega
+  slug: jega-website
+  client: jega
   type: Client
   duration: May 2015
   status: Archived
   summary: "Official website for Kollywood actor Jega with filmography, photo gallery, news section, and in-site editing."
   added_on: 24/12/2022 3:27pm
 - title: TheHouseMonk Android App
-  slug: thm
+  slug: thehousemonk-android
+  client: thehousemonk
   type: Client
   src: /images/thm.webp
   duration: Apr 2015
@@ -292,7 +325,8 @@ client:
   summary: "Internal property management Android app for a Bangalore-based real estate startup, built using reactive programming."
   added_on: 24/12/2022 3:07pm
 - title: World of Urology
-  slug: wou
+  slug: worldofurology-web
+  client: worldofurology
   type: Client
   src: /images/wou.webp
   duration: Dec 2014
@@ -300,7 +334,8 @@ client:
   summary: "Multi-lingual professional network for urologists with specialist directory and medical knowledge sharing."
   added_on: 24/12/2022 2:55pm
 - title: MediScan
-  slug: mediscan
+  slug: mediscan-web
+  client: mediscan
   type: Client
   src: /images/mediscan.webp
   duration: Dec 2014
@@ -308,7 +343,8 @@ client:
   summary: "Secure QR-coded medical records repository for X-rays, MRI, prescriptions and more, accessible globally from any camera-equipped device."
   added_on: 24/12/2022 2:48pm
 - title: SK Hollow Blocks
-  slug: sk-hollow-blocks
+  slug: skhollowblocks-web
+  client: skhollowblocks
   type: Client
   src: /images/sk-hollow-blocks.webp
   duration: Sep 2014
@@ -316,7 +352,8 @@ client:
   summary: "Business website for a construction materials supplier with product catalog, pricing, and location information."
   added_on: 24/12/2022 2:45pm
 - title: Hiveyo
-  slug: hiveyo
+  slug: hiveyo-web
+  client: hiveyo
   type: Others
   src: /images/hiveyo.webp
   duration: May 2013 - Aug 2013
@@ -340,7 +377,7 @@ opensource:
   summary: "Voice-driven expense tracker for Google Home using Dialogflow, enabling conversational spending logging and category management."
   added_on: 25/12/2022 12:20am
 - title: Carousel Plugin
-  slug: carousel plugin
+  slug: carousel-plugin
   type: Open Source
   duration: Apr 2015 - Mar 2018
   status: Live

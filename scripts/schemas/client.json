@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Client Detail",
+  "description": "Schema for content/data/clients/<slug>.yml — private fields are encrypted at rest.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Display name of the client company or individual"
+    },
+    "summary": {
+      "type": "string",
+      "description": "Optional one-line context (acquisition, pivot, shutdown, etc.)"
+    },
+    "business_ids": {
+      "type": "object",
+      "description": "Registered business identifiers (ABN, GST, PAN, CIN, EIN, UEN)",
+      "x-private": true
+    },
+    "directors": {
+      "type": "array",
+      "description": "Director or owner names from company registry",
+      "items": { "type": "string" },
+      "x-private": true
+    },
+    "point_of_contact": {
+      "type": "object",
+      "description": "Your direct contact at this client",
+      "properties": {
+        "name":  { "type": "string" },
+        "role":  { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "other": { "type": "string" }
+      },
+      "x-private": true
+    },
+    "total_billed": {
+      "type": "string",
+      "description": "Total amount billed, with currency (e.g. '$5,000 USD' or '₹1,50,000 INR')",
+      "x-private": true
+    },
+    "total_received_inr": {
+      "type": "number",
+      "description": "Net INR received across all projects for this client, after fees and conversion",
+      "x-private": true
+    }
+  }
+}

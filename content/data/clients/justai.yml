@@ -1,0 +1,8 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/justai.yml --password <pw>
+name: Just AI
+location: Amsterdam, Netherlands
+encrypted:
+  salt: hnf07HN8Zs5k+B7M23I5Xg==
+  iv: w49v8rIcl5eXwfk0
+  data: MYtqQSYmVQ2ADTZ/ig6mS/SctUJNKN+37oWDLl55Jqi8FGqCOzBDZezbQ0DHQmMdB48Czn6yloyLR6EADcu2gPbGGhq9g6+mU4jFp6S7KCe2q/JoOkb3F/qZ8yBIYlspoGIzID2vzRqt/201Giv0hjCIgCCdY/jcr3O8p4R6HKklhKYJXqJuEnxRME3BrTjPBN/2WX3hwzpNZZTidLfudY5qTqOJFTDyLVdMl257RXUpvSWdGUA8XbbO5tm/c1o+wbKBgXUp+7b5S5dFdUCvQ0e1rPbFnUZy6Dig0cvzIbyuBqZFwNrYh28jCCQiipeE0A4Mw+9lCSf+LeUKNcuAW6Gq7HsF4Jn8ZikZ7s3GnX9w

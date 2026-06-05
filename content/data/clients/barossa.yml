@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/barossa.yml --password <pw>
+name: Barossa Australia
+website: barossa.com
+location: Barossa Valley, South Australia, Australia
+encrypted:
+  salt: e9K4kbAVvl7kjXjbPxvXsg==
+  iv: /Ec4drXgIPyXtouh
+  data: 4AawHTBH/HaifRP5M5BdfJYLOD8apmYQjUIz/Ze0YS3Bi0ImiuqLlnbhT12m/OguX9B4mDzlSX3/Mc8A7HjL1sxcr7ibtF16KwHicx+FNkgb8neMRo9O458EhNzVnJlnR0tECWNWPJcJxkGo+NCQaSKzWkr+Efi9BMOETuhj54Ry9qoR4DmtMGeDUcqshZalfJ+nHqoTVQD8BGXif+yqrk/D7fdpTgLXn6Rfw+WZyuMJcSlQl2MW71u0Z5PHlLw0YAJvK3HVzrFn0NmgT3/qKEOpSYusTJTUqMt4yM4HKVlYzPO85bKnKCMIn/05ANuHFP0eL0ogLJNuG14Wf0JKUbqa4lj/vqYfKpEcnA==

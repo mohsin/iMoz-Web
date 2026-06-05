@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/multivision.yml --password <pw>
+name: MultiVision
+website: null
+location: India
+encrypted:
+  salt: r5veH5adFK8k2jmyh7efiQ==
+  iv: IFHl0Z9xYv6WLzJr
+  data: ZeVStTsar8rVPa4d3YylMFc3uu4XK4ehKBrBYxEOePHgDHicUreZ6GZ4i21O/TQSTcOHThKJCh8yEVJ0eox2uZGlITQ0l0Ja/AdNawgOBUpJf3kCMbNvx+Ivr8or5awVR1zeeOcYAZ+IGsY2v3Zp/EB8bgSFxOmdldAct7/ZTLBMmdd1WXuP94JnInIRLFANAlpGHiLaDLNfBFxRrwzIjejlp/IRzpT02FSb8iiLkrGiqQwELpcONFfhT9bOqEYGTBhPxBU1286NSHrKZqfou7jl4GptWeH19lJOkPlo04neggKZ1tkepG5LSBpkHP6UDqA+ZIw8Trx9Ki9nHVl/

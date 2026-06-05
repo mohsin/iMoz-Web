@@ -1,0 +1,28 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/bluehorn-web.yml --password <pw>
+title: BlueHorn Website
+client: bluehorn
+languages: PHP,MySQL,HTML,JavaScript
+platforms: Web
+frameworks: OctoberCMS,Laravel
+tools: Sublime Text 3,Git,InVision,Photoshop
+concepts: MVC,CMS,In-site Editing
+website: bluehorn.co.in
+location: Bengaluru, India
+description: |
+  Designed a prototype, got sign-off from the client, and then developed a powerful and stunning website for Blue Horn Inc. to showcase their company and gallery.
+
+  Built on OctoberCMS with in-site editing capabilities. The design prototype (made in InVision) guided a pixel-accurate implementation of the final site.
+
+  ## Modules
+
+  - **Core Website**: OctoberCMS theme setup, page scaffolding, navigation, and favicon
+  - **About Us Page**: profile section with photo, responsive layout, and mobile media queries
+  - **Contact Form**: form component with email delivery integration
+  - **Gallery**: custom MagnificGallery OctoberCMS plugin (`plugins/mohsin/magnificgallery`)
+  - **Responsive Fixes**: mobile-first media queries across all pages including banner and contact sections
+  - **Design Revisions**: multiple rounds of client-requested changes via WhatsApp briefs (Nov 2017)
+encrypted:
+  salt: j+rNjhxP5UHxCxNz0qkDtg==
+  iv: QSobYdkglixtfijC
+  data: 86UnZPzSSqRmoIbstTx2CHFQkALNDX4l/dvLFLekEc2cCKHqpbuXDHIrV4FbS1qzLLHYV9vZ0JeBldKgFf+wHRxnPFaSJkypMA9hO9CG0AjBAUiLpGYj9pWmS7jNXGGarD3AkhL+ze8CsDFOgA4wAzUXW5DY3HGOny0lkmv01/QrSqfE94vTCeRjY+qt8KEmZ0/mlujkqFHedHMzY8Y7LMlXSdFx6oH1iX2my9v5Fqi2xrSz9ZpdSZD46LFZ5jbzF9h80xwp0jFetSQhpd/twgOquxV9GwDd16oMvfilrslmdrR06sqhPmeb3c/3KY9Oes7rrRTBcTCGKKKZGq08F3ZFQyAnQAWJqrZT8UTm3XHLkm/tggwlNKeuyvt+w/6c6s1VCz9bf/bprSxytIQSRaQkHNo185iEx4Nap249m+ICLoXy2osIbWhYNgeuWI1jNLgYtTSNLk1DHYHi2HgqomCW547Fc5rVYHECp25FC/kUf0NZ8jHWP4s8ECoNGN7KMzRjXLCzD+OU89tSCVrM5fGiEYnVT4VtjHhdu1uGsRxrTXSaXoN+9n1L7G4BfphawMhsPiZGHzQ8umh2nQ4gUfOi8JhMY3PZ/aBPtkQaLHjmQPKIUHueKuwQHy1lIfYjXVYJt8xI3eK+C50sgrCzsyUZYG+QiDxf89SKhl2nGuW8VBmjM7IACuYRIKkWQ+1zaRqQAaMhpTtnrgB8g2eKMQGckWq50EteoTlpVm+7xzunVNnccRSYigffSlV3194aM+811XazEQc7Tvar89WgImOC6ytctNPGdcmsgH8wB3K4FpcKZw7nxg8uFenjYmS2aIbGWxa63WJ8qa1wozHRnAHbvdO6Nx7xaiEuuJmZUKiBT895iwdbnLAkjUoaVXIID47NA6cY5S6WSZYm+8Eoa9iLVamoF8szxiZOoAJ5wbniS4Bz8rtN9bZPIpZq4rUXuKQnas4hMXW9bMqQwwYGFlIKZFH4pyymu6Q17s6kLe+p8leWEGf4rsSBXxVGVRjJejc3tPyMPd9hFe+XOQ6hb+X4laAqp8WgPwIHXUFKayizV5mQDVhQk1J7t1JaVJyXbD3GQqzNWu3AB8seH26N9aVVtC5Huzm51gwLNaKuAFryuT0bv2Q+CWp/mPwAj1TI/exOLkwtRuoWxJ6evDkEtt26qD6DmUIJIcePrfOeV/2HYOonbjNkn9bIF/jndOeqAf4o3bIUqQ5GLyIwOdd+vhV2jzyuJS5clZtw0e8WM6C6LRm08HHyRHchkQZ1N/mZFZQWRsiTzGGYtC+4wSuTsu0FqwGU4e3W6HZ6jrGEcndzn3fgdzJKABiX4xfzN79SDl7ULNY+gs5ba9ZrDrHiVibsITWeTPtkFRlKUphdAy96Az7+vUbU2/x8Nr2xZAdGZ8G/Hq06XXFiWl/o6+a0rB5k0JMhLbszGebNzP5Hm0pRWBEIyv5ZIaSnL9/EfeoZHfTQy+JMencms5sbGu3Peet/FU3EpcPKEjCyO6Ec6UlLlXZsH7vIjFZvZthKUOZB+LgYgLFECi6JHtnf7Zd6R9JkMpYsH9Pmqh8dNbAzqRpzzdpE4pQsPREj4XqFLLzuu4Sekc+n8mzCT9mFz5fYAiamtIxIoWBY3iy1yxFJB/pYQbJw1bWoDpKR2Q0VafGVaPcFbYzEaEWHaHrabpI0Q3pxatd27doMEsrvODGl6oFXCkZxsYlbE2QtV3B23iry1xDUxlOAlsUcwzMvtbllDzPaQHAjCdMQx5Qa3w3QwFJad4lVF5SanbSbHA8xQyYo2jKpBSYSGShjRhhVhDgtRaHPz207DUK+NsQ+cutawnTCfC3VKSXdw74U2aiqygKungNco3GQ2+LNqM4zTScundSzcz++jJiZzP3MViz6NMOoV9tYxSXRgFlCxPOCYdi4/rv+7383NpQ8HRkb3YkjgBm+0oTiMe9Mr7lTGDNpkvAf5whhbRRU+hmDMHJTyO8xqhJLG3nRo+utmCA48AMfyTjzHJs83ZqoSwv/PvcXYCw+W1cBTGYK/HAUpzY+AiAy8E7/3RQBTF+IQyLCd7eGPFg80fny1bXmCmbWTt/3mlRqlypTGqSv2NIUWsZ2SIx+Q699fkb7xENsWxb9jcWLpgvQ00BTVuO8s2gG7Meu/F0JOxA7AVQYwAB5a33evHNE9b5XQhOjFfvBGHXw+yloEaWuByoasUWiChpuk9YF5ov7Ss5eKZ1ls0FjtndkIh9qi6MCPd/GtGDAs7Dre4EBld5l+hSiZmBojfSpVUxzhufaeYA3Tjuxw2RbC0ISeYtwDpcI4SMoDSez3sWS3fjnznhjQ0jeAPI0qGeKj2imSKhp+T4oaNRsJQ52vdcWbIQnp/Eoz+yyTQJD+Bj1YbXAm+jY2XtWwuM/WfWN8KC4rXEwWRdBU2Gepy6EHZJhPFgP+YLPilwQ5YPRAr0af56qeJDVaiR90Xjdl/b8ttGsqH8p35fsu/nL9/8z2oOMzqo5Su9pwTfwlW8ytUHhZFYShF/YpF0L1vXNV553CCdrOF5SHU8Pxsgr6Molr+dodOa2qFUJ6mo8c4MHoWXop/6Mcu/l8p/Ipcwep79dTQ==

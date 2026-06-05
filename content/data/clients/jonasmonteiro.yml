@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/jonasmonteiro.yml --password <pw>
+name: Jonas Monteiro
+website: jonasmonteiro.com
+location: Bengaluru, India
+milestones: []
+encrypted:
+  salt: OqGvKrRb/6kbgm8Et3+lNA==
+  iv: RA4FGJG7OGPTSn4e
+  data: 9WdDi+TKO8iCXQogJYG1MDnJt3vgJ+iKHXpo+0yM3LhC1sGbbknc8caCDp7ayVqhAyn6Csck2FB2FTE+w/e2ExKWmjxjC2tZDu1o1OoeX1F0dccgwDF0+gqPVYVkeaiq0QNOOIIMnCNkcLeXT75+KKm2t71zBu5ImOqRNOMNnBWA2WFRhy0s+uUqxm68bLXE/OHqW/c9hEGbmFzZmSovsK2sgh01Cy+KmLGQv7f2LoVsISXcYigNfPAH8pBOQlNEkH7iERh6PUxDZfgsmc10ACqGJretuhd9q/h1rwGamHodEBEhggiiDkIQl8fN1lMNdsz36+EjQlebxwKCC6XNXcYPSw==

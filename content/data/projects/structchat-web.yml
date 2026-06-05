@@ -1,0 +1,25 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/structchat-web.yml --password <pw>
+title: Struct Chat App
+client: structchat
+languages: TypeScript,HTML,Sass
+platforms: Web
+frameworks: React,NextJs
+tools: VSCode
+concepts: MVC,RESTful API
+website: struct.ai
+location: Bengaluru, India (Remote)
+description: |
+  Contributed features to Struct, a knowledge-rich AI-powered chat platform designed for open source communities.
+
+  ## Features Built
+
+  - **Global command palette**: quick access to platform functions and AI assistants from anywhere in the app
+  - **Search**: advanced search across messages and files with filtering and sorting
+  - **Containerization**: web app optimizations for consistent, reproducible deployments
+
+  Struct's AI bot can ingest codebases, documentation, and blogs to provide contextually accurate responses, with customizable feeds enabling users to follow projects, teams, or tasks uniquely suited to their workflow.
+encrypted:
+  salt: qiDTcRcCkEQdExAirCeCrg==
+  iv: nRmpX7VHpjZqxwDf
+  data: zBesR+ul/mC90sVWnep15zilaazM6oYHgBX5WPHvZkyOTgVF8t3JDgg3LcU8MAaMnFuMZT+LPwxoCnBHPVgzwlaoFk3Q3i7wdYDbntisIKTtEK69OhvVKJSIN6LZrrFaKog7/5psQqdoQQWk3xaWl5GkPkDNJLDJZ1HoxFy5zBU0ZWRNQMY+mMbuzsTdGK72snzxoBFhs/k3JY9/13lACWQlZVXP9CaoxSFxBmPj/R3xWSUjXkIadZ02vvUsa9ujp+OBgosxM9w2H6j43shxSL91741DrOcXfhaJttZK5Ad9UUsON3DlRaQh1LRPmvvl9funV8IBDF5+vZIhPifTlidWrR1QBZcQpupVVFoFslPW/S2FC47btBHB4rozpxrZTVtthI2ZhLgGeiyFJKQgzWpa9YE6db1dc573zVtI3uQGDnEFliTLo2MrDTMHxJXrp3NDHu6hC8nancXcQe5HMaTxoz5E57uNyBM5sHUVQ5eGqz+v40vaa0JipNNBiwWGo9GFi6MTMYumj9Ami5ROcDsCAXZn+nZ8tsuUmGV/em4cVSCz8CddsblARbzv1K2KVoM0TOA3+kU56KLAEbqeCp53hc4Fy90q63tbLdDzP99ZxHijzQiBx59GezDxz8KauEfTzy+H9A3LQO4VC9w1UZR/p1iXto66D3RC/I5+rG1UZfq3O3l7iWr/b8VRKbwiqE9f8MRfEMi8DwfJO23q2/Io9iw4hhZ5u/uGc5u5CWf6+WD3h7E/mIT1pcN531MS3x5VCUbxQ7Bz5ikVWBbayvsIE0mGohJ40iAXLQVw6RlalLKpj+PzWldGqoSPkfaCL59ECWn22m/Xt/KmvYlydJVg6s+O8q3MGJZkkIts+7HczsykP2Fge6ejm3jbG3rr2GI5MJmBRq3YDyk=

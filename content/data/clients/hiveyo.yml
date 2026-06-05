@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/hiveyo.yml --password <pw>
+name: Hiveyo Technologies LLP
+website: null
+location: India
+milestones: []
+encrypted:
+  salt: radeWgMD85tNk3MYPQL3vw==
+  iv: LYfL6vXP3TuEF85s
+  data: C76bmx2SCI1KSRT53BF7IZJCLXKD00mwASdSZ2CU64Jgt81O8YsHgX2847z8QGvPFOtIADqowOJ7THsjWkUTTMD7NNhPbPTx90oeGNMzSBu9cOrIM2Id3f1eu5HTpxKo+dIr+aOIj0xyoQvdOrVgW1U9hAXp2b9LglbmEqVty3gsAkDqnC5ZPqQ3QsCT43+WlyfJOD73rnIYO5ozVHwGaUBlkeYzXPCqCEhfuShjLKKGU4FDBrbDJMSBmJCRa3rlJ1+2rwD2d4pWdw34iYxoeqD3sAXj5/3h53OxcQJnofzqeddCjBwevNwHpI4rIYxmky5SWNZdJobCyrine8jhZ7TbrQd3qC4F7ntvCtNye/fQ4jm8nRh7OLc8C+Ake5ubk4uun+JGdxVZ2ZUVbCo54sPp0f8OKdcZRt1vAlKuVp3b3Rw5

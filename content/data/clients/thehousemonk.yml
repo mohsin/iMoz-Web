@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/thehousemonk.yml --password <pw>
+name: 'Monk Realty Solutions Private Limited (brand: The House Monk)'
+website: null
+location: Bengaluru, India
+milestones: []
+encrypted:
+  salt: hqnBVKJ/hjRm/z28gKWWqA==
+  iv: xeK6DiecKolQSyxr
+  data: lRrMgDto9g5/1/pDA/UF9PGoccJSx17+ZclfQKoEVUXRGa3LToK+uD7X4JDPk8ZFiu+hE16s24X2HlnnkHzG4f1PYlp8Lzlc99H/rjWHB7vjocu+No7n3JFWWqFkpOBXd7lBNRL0NIKD7Hkp5Hw6S6pg13al6WxjPLoi5JfgAz+H+vyRaDksOdUH6zxMLHMWZukgqyJ/fYLyyBpoiO2mof03Lr2KjVPQPQz4KqkV+2JGXAevWYkeP0dSQpTIgO8f/2t8y7h6EvBgcq5m3N7GdKjdqMyKFqt/ZQyblybG8x8JmDck7DXg2q/GCx1LbYBWU1g6YJsrTnde4b+CZPZiAUBa6VCU0OK6m3rzS91bARhulxMPS4TzU4wnYDTUHifT1YjXz0MbYVESezrrPGGRrqMZEeLKmHwOTw==

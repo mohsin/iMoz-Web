@@ -1,0 +1,21 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/foodiverse-android.yml --password <pw>
+title: Foodieverse Android App
+client: foodiverse
+languages: Kotlin
+platforms: Android,Mobile
+frameworks: Jetpack Compose,MLKit,Camera 2,Colocation
+tools: Android Studio
+concepts: Dependency Injection,RESTful API,QR Codes
+website: foodieverseindia.com
+location: Bengaluru, India (Remote)
+description: |
+  Built incremental features to the Foodieverse Android app: specifically a QR scanner that enables quick tagging of food items for their AirKitchens app.
+
+  ## QR Scanner Feature
+
+  Implemented using Jetpack Compose, MLKit, and the Camera 2 API. Kitchen staff can scan QR codes on ingredients to instantly tag and track them within the AirKitchens inventory system, streamlining meal planning workflows.
+encrypted:
+  salt: +zq+lUBRCXP5xdeWrd11nA==
+  iv: 9TxDH0aMEP0oq5vF
+  data: /kTLk+HfcFqHivK66rAiEgT6zcK2WnTk3yn3/Ge5vdjNHc0ohCA0cg0Ihk16kdaTH8Cz/0M7sR3EP+psbZhi3eVyaXkSP0T+l0/RXpPE38eM8rP3kxoM6xBxM3JNDYsbriWcaGtI7n1aaSJh1ftLugVB8l07fS1tpUIiAba01bfLydZjNsYTeJx4upCljCXFFjfSA6biwF8dpFKkE4De0Tnao9S5Fl0o3iN+bZLlR8/32FS1MYqcAVkCZy3T0UEYv+yb0sNUb9KV2wcAi7F82dxOaUlS+hhPDkGUcbmYbquhL0hAgLK2Yi+ligYPwCFRqobg9S6zGqujeOmgFeQSDvAuYZD/d61AqNUEGNJb9ik6CKpgu34XiL/ZRPtmg+1Ote0dWiBcP9c1m8hd3rFOQ9gyyfGTcuUpD9UeW++FpeBbvqS+a4RsUkIF2rUwM5cT7DXYhh6NNN0GlE6RQIBTBOD4Gyh1AAG3ODRRSwHYsAM3zHmE603/Q6LHHRN08rKas4mz1oHoP6sQKwqXbf0BaIWTJMapgd3+IfqV+lDJeGJ3p8cSB6xlO4siv/GCafZczwL/IKHcrjkrvuhHhPObDvT0uIZMQudYDRPGY/oUPeMG8bNouw7zRjTL5GRex2qv3kqU8VM6YHUOFb1jlPcaaBMfIXWBhSGr4L2U5gQRI1yhdm7OWrIF3H+oQD6qqLCFHJO3mvKmilxT32h4

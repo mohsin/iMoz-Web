@@ -25,9 +25,10 @@ const sortByDate = (projects: MasonryItem[]) => {
 
 // Load projects progressively
 const allProjects = (await queryContent('/data/projects').findOne())
-const sortedClientProjects = sortByDate(allProjects.client || [])
-const sortedOpensourceProjects = sortByDate(allProjects.opensource || [])
-const sortedOthersProjects = sortByDate(allProjects.others || [])
+const visible = (list: any[]) => (list || []).filter((p: any) => !p.hideOnListing)
+const sortedClientProjects = sortByDate(visible(allProjects.client))
+const sortedOpensourceProjects = sortByDate(visible(allProjects.opensource))
+const sortedOthersProjects = sortByDate(visible(allProjects.others))
 
 // Progressive loading state
 const displayedClientProjects = ref<MasonryItem[]>(sortedClientProjects.slice(0, 6))

@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/foodiverse.yml --password <pw>
+name: Foodieverse India Private Limited
+website: null
+location: Bengaluru, Karnataka, India
+encrypted:
+  salt: V/sswu4m9mYWhbqZi1xnig==
+  iv: ABLCGWC/4rykb14r
+  data: 6t5yBcxn4HSk9SmGIjyNCNar/Oj2cs/5ZtQcv8MvbX0l9jBbzAVy8R2r6fcwMvozVAGQotIvUQUSvpAsoWgpxtNW5M8v9Ntiwqb1RU2/3LszoatjYrxNRdW1JUA2Eahj1SS29+KhlYSQGygtZWpM03DYgdMnT4ey/pYfdVrdh+HDyHAxVzkRmXs4w3sPeqCLgk0aqFrQsE2jH0uMpAOE/MpdHc/4ZwMVnkYx7AUzpGPXYhHKYXnowfaPS30T9qpwQLhBwODYgnTUexNltDdHpdwMfDSKm1Kb5h6v3ZRHhjXIoegooUWHpIPEpYnZkh2ta1JTZeRT2y1+4TD8eAuAA0angA9SFXomCSWMaJKa1i7KsCNKqWE=

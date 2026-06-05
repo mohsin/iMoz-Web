@@ -1,0 +1,33 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/justai-aldeatech.yml --password <pw>
+title: AldeaTech Android and Web Apps
+client: justai
+languages: PHP,mySQL,HTML,JavaScript,CSS,Kotlin
+platforms: Web,Android
+frameworks: OctoberCMS,Android Studio
+tools: VSCode,Composer,Docker
+concepts: MVC,Mobile Development,Weather Integration,User Authentication,Notifications,Location Services,Agricultural Data
+location: Nicaragua (Remote)
+designation: Full Stack Engineer
+description: |
+  Developed a comprehensive agriculture platform supporting smallholder farmers in Nicaragua with expert knowledge and real-time meteorological data. The platform (primarily in Spanish) provides personalized technical advice on Good Agricultural Practices.
+
+  ## Backend & Plugins
+
+  Built an OctoberCMS/Laravel backend with multiple specialized plugins including weather integration via the aWhere API, farming manuals, a Q&A system, favorites management, user management, and language support. Integrated the aWhere weather API for real-time meteorological data including precipitation, temperature, and crop-specific recommendations.
+
+  ## Mobile App
+
+  Engineered a mobile app (Rowan) using Ionic and Angular for iOS and Android with offline capabilities and Firebase Cloud Messaging for push notifications. Implemented user authentication, location-based services, and OAuth2 integration.
+
+  ## Features
+
+  - Personalized agricultural advice based on soil analysis and weather forecasts
+  - Farming manuals for different crops and crop planning tools
+  - Offline capability for areas with limited connectivity
+  - WhatsApp integration for day-to-day communication
+  - Push notifications for time-sensitive agricultural updates
+encrypted:
+  salt: w9RbTmN2FD9yEALvEBkUYg==
+  iv: 6nzo4uSQoFf5LEfs
+  data: t8ETe5qXLstYBxrtHdXKy8h4CeF725eorQVRX1egMJeZ3zZtR12D9oy1hQks1ra3bqv4brBouxesm5NHetD8dwyxlgaM2fgKeSVLHa/k5JjxfUUqPH5FuO4kKc++jZG6zYwr1vj/ZeiBQIeVSKjG5HBHwH/UDEuwugxcuUxoFyiW7rhE+AiZ76cGQI5Tm+tg5ftBzEnxJ+1SmyMzhr8gBA4iMrzYVqYFh6qlhZSwnwTCyfmuve90oKH0eCzN7TvAe+//TowUk2JTBtS3ews4LG/RUYhZGoqk7T7hWP6gomWQR15LKh4JanBxmBxe4kBC5E28Da79jzq+VvIKODcVNRlYwPbD2g+Qbia+JgibBvihjCs+A0tk/Kn3teuUJgiVSsRn4Meg7nzIrK6n0gOd3rgceJUYBVU+WHObmx0Rn7S5/RxZHYUWtE8cCZSP190Y813bcIL4RDGFxtZ8lgRN6rPIQhNMRAARGCT7R5ZLBsgEDzN8vn72XWoVmOO1P9QAKbLHMI0I1rwtJvZ0o2xZ+eZXcOZYvW0tH2Q7PAXVBJQqLqCfIZd51dQWmr5ZC6I6+FGXSQeiTS23Pzkn304DRcu6P9OKgxGqUWN97jtz6N6HJMHaqemWUDad+z+mq6mTZzKfG7bJxFYqr0QG712/AbiIAuVBVu0lfEc1HCna3BW/id0SK7zvcsx9o9fa82txU0PWvyw1ZsEoRjozjsjoBaHqBqKAhFwpWSMQB3o42Eu0GZEzc9Lx6qrr2v3Qs8gxNQZsw726HP1DNS+mZIaDgTq5t/cELAfRc7YQdsVjH6GeDRhTP7H/R8rbwOPUL2OjloLXLdjygJtm2mviaYNErpyqYJeCiULpJyd0d4fIl7lJqEatBFIVKEg6KoBp/ANFMHow1Dni+7jGSuqNjR2Y5O98MQgjIvXy9YqQgUGEWYQvAxCAS88FRqtGEiOJfBMu/tUbQ4CKeuetK4jn2vOIllnbzKbBOYMCATmlkBGO7iHUQwLxtXjBqggATPmRGT3U2k/oTUdJzCerl+QkB/0nhm6p+v7AcJj1Ix5PxGR/7HbAOHH046WF1fTTIoAlDaK54I1lSEwHcWcCSX6VSIXOf+YKlhoAwRm1PkJuHF2n9fanFd/ONf7WvvnfZQ06pmbGgjtR481BTfcYMqumLLIpUDhbRIXI80RloX5cYR3lqeenlPCNACrd+cYkvOYVATSpXTXZc4ag5k9OdYmurRmxRL75XTG15mvHjhcqvOCJ0CxudBDhh8HXXvZNrE0GaAQUVZ8TMRUMtA==

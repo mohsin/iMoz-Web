@@ -1,0 +1,21 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/apiwiz-web.yml --password <pw>
+title: APIWiz Web App
+client: apiwiz
+languages: JavaScript,Vue
+platforms: Web
+frameworks: Vue
+tools: VSCode
+concepts: Components
+website: apiwiz.io
+location: Bengaluru, India (Remote)
+description: |
+  Built the API catalog module for Itorix's APIWiz: a vendor-agnostic, low-code API lifecycle management platform trusted by regulated enterprises.
+
+  ## API Catalog Module
+
+  The catalog module enables customers to create, browse, and document APIs through an intuitive interface. Integrated an API runner directly in the browser so teams can test endpoints without leaving the platform. APIWiz manages the full API lifecycle from design through build, test, deploy, and monitor: supporting thousands of APIs across multiple gateways and service meshes.
+encrypted:
+  salt: FbnAXIKdKF6BqgliaUMw0A==
+  iv: 5WmDljYvs5yJwY2B
+  data: S80OPVTWThT5vggvaGdnrFoLKbaZn9SUPNjjT2Wcm1JkWiwIQgrzsTriR/mntngdAMH/XNhQb6o8MVm83EpCMTUTdBGxwlR4LZIeIM+gLoI+E/nKrspypy1AQ5y7fCrJW0NyDX9ZNmHABGGFhb/lG4xGAIfs3CT6O9MsBnDjFHgClb3sB40uhs4RUOWF22Jt7/1fseZ+dgn5z4lMquut24UiAhfF9HhoHho0s0Xc7mg/inSqZ9dAz0YQzdsKEMuCE+69OsUYZEMN0k2JYGgLT6cUkKs6YtYh9LXzBIGjO8QxMIvSdcaoSK2w/5LWhdURMyq8UeF89/fzoMf5ozwVTPK1QUkRKQ4KdfCLLFuYPcQMOwYwtOEi9cLqkmCDr5+wYTldy2AHiaFs+iIAAwzDn4WkTnHXc51XDr6qB100NTLROJmCTFak4jxBtKYoGO8HvwNgn6A2gP/LSS+TGbLNl8smvoWgTG45ItwcteCaEnmEuWeFWEqcUgkIUZWtnBqs+ibvGXZcXDMA3VdzwANSgbbwM9tWVSpjJzB4nG3rygY7UAf49BcQyxvVFGWgE7QgxmVG4uC1hBeHyNbwOd93Aw8g0W4wXLqNcSxDP9iiawQlg8vkpjFKtkcYPiNu++/RB3WeaIBS5lTyxOMhwi0JR5l+5bT8IEk79wGhYE3g9CIlaHQbPTHqc62drWl6ssTCpIwgKgGYBcYoRJdK/N2KmSXA1kQqMywHvTM1xrpkxvfzwffrXfFYU2s4fmgaNZGtoyWOTiIug91Vf9oAez5lSX/8edzaL44TEJ5NddB3m38VYDDkWjh3Yy0UT4zq/gLaZk13OgvGdND9ZETNjGn9XuUovcT0uOwwo51pDuWkST9lTdcJHsQ5uwrIwM6HcEL/4dQXoMQWEvarTKG/unObgFouE9/j/rv4EQE4T4Df53p9DoouNd/yK0MwpIYGeIg4g05215wy3AtmK4NV5R8vnAVCLTabAqqwI9IIz80S8pNA3JXpnlgx9O5CoCTL711QNz3wugd3eDX1R+i3/N4iRJsm2Xbf0WsMlJpRzbV5CTDkTuYOM9EpPa8HyWR0EsDY4zsR9TfKkU51ntQIMp5gkWAMUDi1NRz9I+lXmk7r0u5NvOlZxIPZ8fkVbZtV9AFxLLrCu5vVoZTmavwuqKtlh0E7OHUVPaSfXQf5XIz5DcoA

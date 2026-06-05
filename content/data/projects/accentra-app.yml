@@ -1,0 +1,24 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/accentra-app.yml --password <pw>
+title: Accentra App
+client: accentra
+languages: Swift,Kotlin,Java
+platforms: iOS,Android
+frameworks: SwiftUI,Firebase
+tools: Xcode,Android Studio,Firebase
+concepts: Cross-platform Development,Authentication
+location: Remote
+description: |
+  Developed an enterprise-grade container management application for both iOS and Android platforms.
+
+  ## iOS App
+
+  Built using SwiftUI with custom drawer navigation, splash screens, and biometric authentication for secure access.
+
+  ## Android App
+
+  Implemented with Kotlin and Java, providing equivalent functionality with native Material Design optimizations. Both platforms feature real-time data synchronization and role-based access control for enterprise teams.
+encrypted:
+  salt: voCI1ylGkYRZ3WS8oJXfhw==
+  iv: 95xvKvN3M/dnzZlY
+  data: iUJCigBkqzamRdHSi0+B7gStQwMuA4SG2d/efKxrWHy8OP3IkCKTexkJLn1xBGQ1m/qOLDP+hgVB3IgCU8ZOG1iy4norP9qX4HUtg2xNdh95OnLEIU4p7MLAp5UqBVb2vwNVFv2nO8RucLSPrwTJe2mHHK+VwUuDVAmVc0x5eXRemPI4KH0D9H5g8tRRebGx9u6CaAnDXugg3z/YmdiSGa0QwDqrK6xZFGJrHcFMYNf2K07BSyepORqDMlgmttSv9Qormg4ZFkV672foR3FZBCXDOtE+DY4Yq50MueZmQ4cg+qW1AkhN3JXak39ldomzuPUpYXJhZuNiow1JoAcL97mqqlEh231sIKXu4tnJSmoxUE3QqQS3ZhQMNwwQHPiLLKF49jX6W51iaq1RAvuf7aJZDQ301gtMcatikv38lwLMNbGU+gJDOGll6SUJq2ahWKJSHoBpQx6GS8YjNNo9Db4ks/RvPdkPmJlaf/30PeZg3Co/EKK+G6N07n0fXstxIqXVvU/8kZMcx6pQCex0ZVCIGo81EMRep5N+17vv2JrIYH/3sU6d/7GBR6Z+Qf+5wiCRh37M/AXz79eqaRydOS9JCVJbDaqiUx+kSN2V7VH9f3xvZ2cnC4MvMMPCwUwgIZ71GkedamK06noR1I8ZuoUABGeITWXgPzBqEo4YWiZfdpufWYGaU213NGQ6KIvxNPocguUZJlV0KbxTVDv+lSaYvomZHBIvR/YEbiRD

@@ -1,0 +1,21 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/multivision-website.yml --password <pw>
+title: MultiVision Agency Website
+client: multivision
+languages: JavaScript,HTML,CSS,Vue
+platforms: Web
+frameworks: Nuxt.js,Vue 3
+tools: VSCode
+concepts: Dark Theme,Dynamic Components,Responsive Design
+website: mvagency.in
+location: Bengaluru, India
+description: |
+  Developed a professional marketing agency website for MultiVision Agency using the Nuxt framework.
+
+  ## Features
+
+  The site is primarily a single-page application with various sections including a services overview, team introduction, and a separate client testimonials showcase page. A dark mode toggle allows visitors to browse in their preferred theme. The design is fully responsive across all device sizes.
+encrypted:
+  salt: uYqmqfAr5u0jeZt3KXeHLw==
+  iv: /UtHTcZWeuGsEiEf
+  data: GyyYesmNGgMP09tKXfIjjdd6KW7ibGRRf855dyNhvKPbyCQFnN3VROq/0Mg8PTn21KM6+WnCmPc9qKVlMwTcoM8/vbLH4PygDITsLOxxeAm3m6HGdiuchHRLhF7akTNahT+VV9bqHVfjT8b5IsNCijo+aB2mHiZrvRRk/rjhjLK9YVdW/JELp1dsSz6KEcVBP//iFO+ebLWamAMLiE2LDUcuoYNd/AYNgEmGUw+QH0WkRTIhHsUZVs6x8NGq7xlk89JBfN1ymtpNb39cgZEPbyT9TGEbRmGPVjRYeNNCCzf5OETM9F+HoJIBFX9QUQw5LfLDtYWIYeiQ0+sgntDHxo6kewjE+4qBV/2iRn8AyDhONnEKYYreGDt4da2gqEyCJM9u1tnCqmzyf6SL2tQtGHwwjNlQNduW0yP6NbTsE4ty6w5g5c+A8xIBRWRMSj3/Fz5ohOOFZjFcE/hdS+qPcT8rTE3ROC8/L96SXqemOjCjeVipDS7+iKZVjx+KinU56dLIDCXsETyFyBvwBJq7w2BMqG4N0C9i0b45vvsFFH+gUTN7mnRiA2HPLANVCrWbSi4lyzR9f01/LBENLF2tS3S8ACCXn3d6UnSR9t4ncS9tcOrBF/rQ6sQp765Ji5dZMEN2YvjxqfRvQhNP67rTXVlWrmGPrJiI2k4T6HO9jBOi8dzrUDKEJ3D567tx2NDmrmsUWQYytu4iz+Y232m2iHLHWj9dhM6U83hXIOroucm+vVaX0ni8ps+XKnxypXz2FIq8ceDimxsLtYhrp2LVzDRRpln/EaFl2g==

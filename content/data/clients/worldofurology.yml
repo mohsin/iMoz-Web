@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/worldofurology.yml --password <pw>
+name: World of Urology
+website: null
+location: null
+milestones: []
+encrypted:
+  salt: Ly8Hw90GocxE1Tt7zVK+BA==
+  iv: vvVvHi0Vl30XqoK2
+  data: 0/paDFOMySdqpDLW4vuorEKx8TUcdzcn1oDM5027dvQ2JHV7lDIkmqpx97xFneascuSEoeTq7CXySA8nN8gRs3cREirL+Rs0+8z/EmrSmp/CD5eEF86zmEXHKi3iS91o+RGp1Vpb9VrI1vcFfjk5ldg4B2LG8rNRYMBA5LrBnn2Z+/9NjJZgYW0MIeA/5t0JJ06mIg0eC0M9uKUayv257A9pP+BpvMyK2ZWSd6pgD3OQlxDMsdPEJxbucvzIkLiNuuLl0RrK5q/2Sq9Vq5osPW3Hps3MNo4GUqYxC3K8AL3yW7HhUBKhmFMGpN4ZPxl4YtHLHHb7t1hWbkgY677s/w==

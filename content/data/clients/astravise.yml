@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/astravise.yml --password <pw>
+name: Astravise Services Private Limited
+website: astraviseservices.com
+location: Bengaluru, Karnataka, India
+milestones: []
+encrypted:
+  salt: A/9xw0KRMuSG3D69MryzPQ==
+  iv: 2SzHVhqsJ6hNQ92V
+  data: eOYo97l46njalGxrpypIQDSBkhXQT3RImXzsPjiEe5TM0/QFtIAAN+MaYgs65TinYcFKtBQsN2zBYciS4xC0DBjZyrpNu98WP3eqHNi5NVrPGdJyiHd7oVaHXVwlt2xh9nPPyL4Twj5X33l32paY2yM35YmBUslfvdODL12k4IQivBddFcsoteM2/j8WBgX3OGAIGJbis7s6d6evqX85AZQD3JM6Bp/FnL21keTISyM75nS7Hlcm7nYX5j0q6X5KCPrQ8FGEWYr63w4fAbatEdCn0HXKngaxlV+dqq3LJKLTGXiaXwRaEQttOF+spUM4AQhnY2cIjWanC7ELx2aWh0+yVq/biFpYhiUgo05NB0o3lAKut20ZlCHCYXgbrCPI1NzeBiTYXvii7K6INmahn6D+VTS6X7y8xK+HNZI3LDyt8OxFIWFbfKp3eNDn956ZmQCbXzZji4A/byrGlVg56uCdpzOt3Unw88zUDmpC2pl13NY=

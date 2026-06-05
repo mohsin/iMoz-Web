@@ -1,0 +1,21 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/teksecur-dfact.yml --password <pw>
+title: DFact Web App
+client: teksecur
+languages: JavaScript,HTML,SCSS
+platforms: Web
+frameworks: Vue,PrimeVue,Pinia
+tools: VSCode
+concepts: MVC,Composition
+website: teksecur.com
+location: Bengaluru, India (Remote)
+description: |
+  Coded web app components for TekSecur's DFact platform, a DevSecOps solution that helps development teams accelerate deployments and reduce costs.
+
+  ## Platform Capabilities
+
+  The product enables users to do one-click deployment of containerized apps, improve CI/CD pipeline performance, and cost-optimize infrastructure usage. Built using Vue with PrimeVue components and Pinia for state management.
+encrypted:
+  salt: jVyfsdhJOB0jw6a4U0oC+Q==
+  iv: U9DcOVvcWUhtAb+p
+  data: xcQkMOB0+0TUG+UvjAXNTiFrHKBfFhoZ585om4AJqFArXONEq/McQZX4cq8cz3bmeBxP+U0A0nbnkZBOjrq9c3VlJ6qJoBFrAxZhrXo7ZiiEJHGa42nwLb4eze0kM5yzqTWa2rMfxZamOKDp4KEqWx5QlRkpOMVmbcqW/w9RwHL4z5fpQ8NjbXE2rB5ALc68nU3mFx34yooCbd/YaJn4/t1w9pXo+K/2TOLA1BNynq74KdWCj2s2vQNMf9lTD5PmWJtYjfYMoDyNFZFw72/f46e+epNpy/okHIyW4ZLXLkdAIXK6JUl4YjVwPo32Ftd6lJtZaa/G08Gky7Xif/QZfrpZSJG02VwEXjd3WzGk0yUomzrZdrnPQaK8qj225FX9HlWHrSpQzfPh1B4IePbfUs6e/5UjHWVZxiCjiqx9XNtjIzVdLaThliwkOEab/u2B2UsvKMEMORVOO15dTv7wwtsoLtkTT/CsKJh1LbFrX4wijD+kTDm0C6PgGviSwfmGGBzaNtIjF5mCzXA+87U1AJ+cO+o/MukXobKxxb11vS9d0NkdO+AKcN+OnPtXtlAd51hv+WIFrOf5zRLbwhH5ihDB2fySzIoq69G0puBHk8KMvEsK66ByJO/W1AX7DAnKySkRXUEz01KbjI0FHazAC51gPzQoYO+7epKDsMbGlOrotWV/hept4YSLMIXqQwqbl+LG02vhBWnW5k2pKYyS1lSa7CQFGxHDJIDbITSCBqyFl9kXld1MxZ4GbVd6VSwK9BLrYidgasEJ+gXWOPXDXedPRIsHe/2TXhyA1IepUbYrA3QP2GjYLCeEwc34vAz6VavLQAjnoKyMAspiPXsdf3IvldLjjeWwkUXG6N0w3h2xj20P3mm/wZ8+Odb82S5DzB6vDzHZ1iHpLr8y1TfIHuMwy0RvZ6eD6TksXL0si3NeV8oBVQTklfujmKBpBvrWcr2NLP2+0QpUxZaF4fTfVOVehLAY5Xb6QI8PYe5eN+0WPzWu284ZhePQqISGaVu2W3Jx9EalAruNZCtKTG8ZXMC5kH+9h3Aeo/+iXYY6zjAfx3WDwpgu3TUFrO1XXyi7Yf+3Rcb4or3L5XmJE6fy4vHgzcCo0G70+IpiBaL+Bs/xeSXiQr3kQrX/Pi2kQmbnBjtbpgGVKJ62IDIGmFrEF9N4SIwZsy59QLO2sFN7u5bZanpdmMUswA8SUQoR5wyW29shf+e3yClYQLfs

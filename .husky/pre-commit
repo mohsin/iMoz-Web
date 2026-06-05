@@ -1,1 +1,2 @@
 pnpm build
+node scripts/pre-commit-encrypt.js

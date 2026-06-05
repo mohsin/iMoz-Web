@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/floyd.yml --password <pw>
+name: 'Floyd Inc. (brand: Floyyd)'
+website: floyyd.com
+location: Bengaluru, Karnataka, India
+milestones: []
+encrypted:
+  salt: SiS/qHa4O48EpD6H5nGLUQ==
+  iv: 3LEO9ne/tpxNVy6W
+  data: F+9CazPLJc1dJFTQa+hTDJyA/KxNyvLaiBpc/fVvyOaBqrJ7k3ATeN9uVMGDKjqCJlV9CFHG21Y3KPkglGI1wscE+Q6Wcp7xg62IDux3dMcbipmhgq3BURDuqR2RQsWXjxOF02UoU8yx4ApvONW62X6ZDpl6YKDq1qFaW/dVavbRiCgeziDWOcUPR4HWwthHYa+URFyngJc2kJxGz65xoqE3t6g9iXfiAkh4XB3yzBebwlih4jjGqVDcyGlR5nV0RjfTYU+M7krCfQqCYefSZ0ZyAfYKEMUJdA4Yf5lOUjUMfTtBZ0zELqY41yKd8j5LxlvXdOt7fhbLEGd0z7JiRTMTe3nxtf77OyxpRMTcLsvPCq33EBky9xLN4buNhc7CNhGkAZPUJo2yVOMV7A/qf2Wn+QWFC2etDS//1CeuH7PVwk93f2E=

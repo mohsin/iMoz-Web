@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/accentra.yml --password <pw>
+name: Accentra Technologies (India) Private Limited
+website: accentra.co.in
+location: Tiruchirappalli, Tamil Nadu, India
+encrypted:
+  salt: DNJ94dKfmm9vzkTWWRYL3Q==
+  iv: Q3i8amlOs+Nu8LGQ
+  data: bNmE6kR8E79o1YhPjs9hg0vS9aynvVWTHPbpMUG7zMMXNf0/T6PczjJRCdGm3bI6Om0F2oLUTp2cJbvxEswoJ1IOHcUEwMFHkpUFmMoNnUzUqU13IyMwbgOMF8kQBxZJRzhlD849Ztmunni3dFar5yJUxpEyBZf6cTUFx5CRZO+lhyg6qr91hMwn55QTcL/bw+RzTXtolAa0q0FtXUzmJw2vQcQu2txKUUiwzfffSUyZPT2Dkm8jQ4i8c0ud8ib55I/fPIqfaZeSMT3B76nBV05019b6hQ0vps+x68LRXb9mJ5/bL9nqq1ThRtO+D4SUMzNZSpSxaMFEC5yZrvXDmaHISRn3RL56qCwlgqkZJUi5fff/G0VMML1HB1E82wmOYME42SOVGV+jxsJW7InR317Tyde4F28A85C1Ay7bSGbkESwXsg==

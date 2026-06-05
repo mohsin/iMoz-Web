@@ -1,0 +1,9 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/teetimeventures.yml --password <pw>
+name: TeeTime Ventures
+website: teetimeventures.com
+location: Bengaluru, Karnataka, India
+encrypted:
+  salt: MrOoe2CEFu32Q7EXQCXbEQ==
+  iv: kGGZkjVej1AhFzb5
+  data: 7K72n/B24JBg+B5ljcIO/N2LrkGelYCyL6NJIh3ypaY51NN0DenbtV5Kc2/hTCOlbN+oEwjZpOUnb2kli559Lbv4+iL8NSpsxAySw6lQ0r0ZjpbQJE8fgHmOTbWaduMijROxLu2GE+Nb/ojOi90SHpNGifU2tG7yD+lKj1LZrdMYdjS7PA8SSkuEeaDx2f4EirGEhSlU2HhKDYlqrlEmEcU7w849/Oen5j9vnzfNGYQ27omVTqyHhfLFnu5ZExFzJWbfnBYxM62pf60kHgL0lDNRGsavhVJy1FF7oTYQESvYe5OjI7YlSX494TKiptCdHRnKr+MNLbB9PErXR9WAs49MK2JOqFf8XPhELYBRBJ22dVq4+oQYRQhZ3h9Gik/o3j9nkgBc87oqLuwOMd4Wyu+zZa2mmNkNultk5cPGIcCox9Mb+SdiuYCrsOxbMy6W7WWoPFPLVL5+3FtUdcYQPCe0dLKJSozcq/bhp+NaewBWbzAQOVzPV9RiVLkXkbbV

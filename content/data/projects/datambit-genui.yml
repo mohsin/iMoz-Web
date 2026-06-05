@@ -1,0 +1,32 @@
+# $schema: scripts/schemas/project.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/projects/datambit-genui.yml --password <pw>
+title: GenUI - Deepfake Detection Platform
+client: datambit
+languages: Python,JavaScript,TypeScript,Kotlin
+platforms: Web,Mobile,Cloud
+frameworks: Flask,Kubernetes,Next.js
+tools: GCS,RabbitMQ,PostgreSQL,Terraform,Docker,HubSpot API
+concepts: Microservices,Deepfake Detection,Video Analysis,Horizontal Autoscaling,Vertical Pod Autoscaling,ML Model Integration
+location: London, UK (Remote)
+description: |
+  Engineered a comprehensive deepfake detection platform with scalable microservices architecture deployed on Kubernetes and GCP.
+
+  ## ML Model Integration
+
+  Implemented advanced ML model integration for video, audio, and image analysis detecting deepfakes with confidence scoring. The system examines visual inconsistencies, structural artifacts, synthetic motion patterns, face inconsistencies, audio signals, metadata, and file structure.
+
+  ## Backend Services
+
+  Built Flask-based microservices for authentication, file upload, report generation, and HubSpot CRM-integrated ticketing system. Architected an asynchronous processing pipeline using RabbitMQ with job queuing and progress estimation. Implemented Google Cloud Storage for file management and PostgreSQL for persistent data storage.
+
+  ## Frontend & Reporting
+
+  Built a Next.js frontend with file dropzone interface for multimedia uploads and report visualization supporting JSON, CSV, XLS, and XLSX export formats.
+
+  ## Infrastructure
+
+  Configured Kubernetes deployments with horizontal and vertical autoscaling for handling variable workloads. Deployed using Terraform Infrastructure as Code with complete CI/CD pipelines.
+encrypted:
+  salt: 30Vt7mGaHtVinYvNnEOPcQ==
+  iv: 8JKvR3bo21Vxak+9
+  data: 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

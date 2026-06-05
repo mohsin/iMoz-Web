@@ -78,6 +78,120 @@ Copy `.env.example` to `.env` and fill in the values before running locally.
 5. Under **Application restrictions**, set to **None** (calls are made server-to-server so HTTP referrer restrictions will block them)
 6. Paste the key into `.env` as `GOOGLE_MAPS_API_KEY=`
 
+## Encrypted Private Data
+
+Sensitive data — client contact details, business IDs, project financials, invoice records, and detailed module breakdowns — is stored in YAML files alongside public content. Private fields are encrypted at rest using AES-256-GCM. Public fields remain plaintext and readable in the repository.
+
+Encryption is schema-driven: a JSON Schema file declares which fields are private using `"x-private": true`. Keys are managed in `scripts/keys.json` (gitignored) and backed up to Netlify Blob.
+
+### File layout
+
+| File | Purpose | Committed |
+|---|---|---|
+| `content/data/projects/<slug>.md` | Public narrative | Always |
+| `content/data/projects.yml` | Listing metadata | Always |
+| `content/data/clients.yml` | Client index | Always |
+| `content/data/projects/<slug>.yml` | Private project data | Encrypted only |
+| `content/data/clients/<slug>.yml` | Private client data | Encrypted only |
+| `scripts/keys.json` | Encryption key store | Never (gitignored) |
+
+### Data model
+
+**`content/data/clients/<slug>.yml`** — client identity and aggregate totals.
+
+Public fields: `name`, `summary`
+Private fields: `business_ids`, `directors`, `point_of_contact`, `total_billed`, `total_received_inr`
+
+**`content/data/projects/<slug>.yml`** — per-project work breakdown and invoice records.
+
+Public fields: `title`, `client`
+Private fields: `technical_summary`, `modules`, `milestones`, `total_billed`, `total_received_inr`
+
+Field privacy is declared in `scripts/schemas/client.json` and `scripts/schemas/project.json`.
+
+### Encrypted file format
+
+When encrypted, private fields are replaced by a single `encrypted:` block. Public fields remain readable:
+
+```yaml
+# $schema: scripts/schemas/client.json
+name: Jonas Monteiro          # plaintext — always visible
+encrypted:
+  salt: <base64>
+  iv: <base64>
+  data: <base64>              # all private fields bundled as encrypted JSON
+```
+
+### Key management
+
+Keys live in `scripts/keys.json` — one key per slug, generated automatically on first commit.
+
+```bash
+# Generate a key for a new slug (done automatically on commit, but can be done manually)
+node scripts/manage-keys.js generate --slug jonasmonteiro-website
+
+# Print the unlock URL to share
+node scripts/manage-keys.js url --slug jonasmonteiro-website
+
+# Rotate a key (re-encrypts the yml automatically)
+node scripts/manage-keys.js rotate --slug jonasmonteiro-website
+
+# List all slugs with keys
+node scripts/manage-keys.js list
+```
+
+**Back up / restore keys via Netlify Blob:**
+
+```bash
+pnpm keys:push   # upload scripts/keys.json to Netlify Blob
+pnpm keys:pull   # restore scripts/keys.json from Netlify Blob
+```
+
+Run `keys:push` after any new key is generated, before deploying.
+
+### Workflow
+
+```bash
+# Decrypt to edit — reads key automatically from scripts/keys.json
+node scripts/encrypt-yaml.js decrypt --file content/data/clients/jonasmonteiro.yml
+
+# Make changes...
+
+# Commit — hook detects plaintext yml, encrypts and re-stages it automatically
+git add content/data/clients/jonasmonteiro.yml
+git commit
+```
+
+No manual encrypt step, no password prompts. The pre-commit hook is fully non-interactive — safe in GUI clients and CI.
+
+### Viewing private data in the browser
+
+Visit a project with the key in the URL hash:
+
+```
+/projects#unlock=jonasmonteiro-website:<key>
+```
+
+Multiple projects at once:
+
+```
+/projects#unlock=slug1:key1,slug2:key2
+```
+
+Keys persist in `sessionStorage` for the browser session. Get any project's URL with:
+
+```bash
+node scripts/manage-keys.js url --slug <slug>
+```
+
+### Hiding projects from the public listing
+
+Set `hideOnListing: true` on any entry in `projects.yml` to exclude it from the listing entirely. The project's detail view remains accessible directly.
+
+### Placeholder (private) projects
+
+Add an entry to `projects.yml` with a vague public title (e.g. `Untitled Real Estate Platform`) and set `private: true`. Create a minimal `.md` file for the slug. The real details live in the corresponding encrypted `projects/<slug>.yml`.
+
 ## Claude Skills
 
 This repo ships with [Claude Code](https://claude.ai/code) skills for common content workflows. Skills live in `.claude/commands/` and are available automatically when you open the project in Claude Code.

@@ -1,0 +1,10 @@
+# $schema: scripts/schemas/client.json
+# Private fields encrypted. To edit: node scripts/encrypt-yaml.js decrypt --file content/data/clients/x0pa.yml --password <pw>
+name: X0PA AI PTE. LTD.
+website: x0pa.com
+location: Singapore (offices also in India, UK, UAE)
+milestones: []
+encrypted:
+  salt: XODGwgZX9HjV7j6EZxV4RQ==
+  iv: D9uZsh5776nCcfdO
+  data: 6uXvewtLfjM3j2x9TbGsfeu44rhpAfRLZ7XaO6fx3Rsex3xe85ty6AyyskmFUKr4BlsioHjrMZAwXF20UDdevObK26F4SeZ0xbgSrNg61fHRYZgJolDI831SCrXP+exn/YX6EbkknVPJ2JXXWmjHi46CuUNuvhvxRqXx6FPvvMtRzEL/xTqP0EYn78I3MDeQG9HdILz8KXSmnYwSjbsImdD74K2cs3GWPAFVy1mIGGt6EyCO9LVy+bPXMM+i90cwo3UGNOrjSVSPvS0qRk41/GPktHoWvZeyuvN3XZLL0WT93d/BJVWT+leD7ZFsMIR950+PElj+gaMGLtnEf5LstNs9lwPbkK5VhxiHAE1r0UIOWFkGypr83ENsn3J+8Uda9OHTssm2NBlICPdN7DiLUhjiEFUJdfOyvoViiuMZkvOvtOae
