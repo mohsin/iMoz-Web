@@ -7,6 +7,7 @@ platforms: iOS,Android
 frameworks: SwiftUI,Firebase
 tools: Xcode,Android Studio,Firebase
 concepts: Cross-platform Development,Authentication
+website: accentra.co.in
 location: Remote
 description: |
   Developed an enterprise-grade container management application for both iOS and Android platforms.

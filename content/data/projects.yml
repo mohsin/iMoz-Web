@@ -5,7 +5,8 @@ client:
   type: Client
   src: /images/jonas-monteiro.webp
   duration: Aug 2025 - Mar 2026
-  status: Live
+  status: active
+  live: true
   summary: "Modern DJ portfolio website featuring AI-powered event discovery assistant with sophisticated LangGraph workflows, TinaCMS-managed event database of 80+ events, interactive photo and video galleries, and real-time guestlist management system."
   show_on_resume: true
   order_on_resume: 3
@@ -24,7 +25,8 @@ client:
   type: Client
   src: /images/astravise.webp
   duration: Oct 2025 - Nov 2025
-  status: Live
+  status: completed
+  live: true
   summary: "Interactive TypeForm-style assessment tool for Global Capability Centers (GCC) advisory services with intelligent result calculation and automated email workflows."
   added_on: 26/12/2025 11:30pm
 - title: Barossa Australia Tourism Platform
@@ -33,7 +35,8 @@ client:
   type: Client
   src: /images/barossa.webp
   duration: Oct 2024 - Apr 2026
-  status: Live
+  status: completed
+  live: true
   summary: "Comprehensive tourism platform for Barossa Valley with automated ATDW synchronization, integrated LearnDash LMS, and advanced property discovery features."
   show_on_resume: true
   order_on_resume: 1
@@ -52,7 +55,8 @@ client:
   type: Client
   src: /images/multivision.webp
   duration: Sep 2025
-  status: Live
+  status: completed
+  live: true
   summary: "Marketing agency website featuring modern single-page design, dark mode interface, and client testimonials showcase."
   added_on: 07/09/2025 1:30pm
 - title: Golfer's Edge Booking Website
@@ -61,7 +65,8 @@ client:
   type: Client
   src: /images/golfersedge.webp
   duration: Sep 2024 - Apr 2026
-  status: Live
+  status: active
+  live: true
   summary: "Comprehensive online booking platform for Golfer's Edge indoor golf facility featuring real-time Google Calendar synchronization, Razorpay payment integration with coupon system, multi-dimensional admin analytics dashboard, and optimized mobile-first booking experience."
   show_on_resume: true
   order_on_resume: 2
@@ -80,7 +85,8 @@ client:
   type: Client
   src: /images/datambit.webp
   duration: Jul 2024 - Dec 2024
-  status: Active
+  status: completed
+  live: true
   summary: "Enterprise-grade deepfake detection platform with microservices architecture, processing video, audio, and image files to detect authenticity using AI models."
   added_on: 09/04/2026 12:00pm
 - title: EzrsGold & EzrsAccounts Web Apps
@@ -89,7 +95,8 @@ client:
   type: Client
   src: /images/ezrsgold.webp
   duration: Jan 30, 2024 - Apr 9, 2025
-  status: Completed
+  status: completed
+  live: true
   summary: "RuneScape gold and account trading platform with WooCommerce-based e-commerce, real-time CRM synchronization, and multi-store architecture supporting OSRS/RS3 product sales (Sellable/Buyable/Swapable order types) with API-driven inventory and order management."
   added_on: 09/04/2026 12:00pm
 - title: LegalCook Web App
@@ -98,7 +105,8 @@ client:
   type: Client
   src: /images/legalcook.webp
   duration: Aug 2023 - Sep 2023
-  status: Live
+  status: active
+  live: true
   summary: "Progressive law startup website with content management dashboard and analytics for legal service providers in Bangalore."
   added_on: 26/01/2024 4:45pm
 - title: Struct Chat App
@@ -107,7 +115,8 @@ client:
   type: Client
   src: /images/struct.webp
   duration: Jun 2023 - Jul 2023
-  status: Live
+  status: completed
+  live: true
   summary: "AI-powered workplace communication platform with advanced search capabilities, global command palette, and enhanced collaboration features."
   added_on: 26/01/2024 4:00pm
 - title: DFact Web App
@@ -116,7 +125,8 @@ client:
   type: Client
   src: /images/dfact.webp
   duration: Jan 2023 - Apr 2023
-  status: Live
+  status: completed
+  live: true
   summary: "DevSecOps platform enabling one-click application deployment, performance optimization, and cost management for enterprise development teams."
   added_on: 26/01/2024 4:30pm
 - title: ViewRetreats Web App
@@ -125,7 +135,8 @@ client:
   type: Client
   src: /images/vr.webp
   duration: Nov 2020 - Aug 2023
-  status: Live
+  status: completed
+  live: false
   summary: "Travel booking platform for wellness retreats with integrated CRM, booking management, and gifting system for retreat experiences."
   added_on: 29/12/2022 4:00pm
 - title: Designer Thamu's Portfolio
@@ -134,7 +145,8 @@ client:
   type: Client
   src: /images/thamu.webp
   duration: Aug 2022 - Dec 2022
-  status: Live
+  status: completed
+  live: false
   summary: "Designer portfolio website with content management, QR code-enabled planner purchasing, and responsive design across all devices."
   added_on: 29/12/2022 11:40pm
 - title: Foodieverse Android App
@@ -143,7 +155,8 @@ client:
   type: Client
   src: /images/foodieverse.webp
   duration: Aug 2022 - Oct 2022
-  status: Live
+  status: completed
+  live: false
   summary: "Food discovery Android app with QR code scanning for quick item tagging and kitchen inventory management."
   added_on: 29/12/2022 11:30pm
 - title: APIWiz Web App
@@ -152,7 +165,8 @@ client:
   type: Client
   src: /images/apiwiz.webp
   duration: Mar 2022 - Jul 2022
-  status: Live
+  status: completed
+  live: true
   summary: "API management platform with catalog system for creating, organizing, and testing APIs through integrated runner interface."
   added_on: 29/12/2022 11:53pm
 - title: All Rounders LMS
@@ -161,7 +175,7 @@ client:
   type: Client
   src: /images/allrounders.webp
   duration: Jan 2021 - Mar 2022
-  status: Inactive
+  status: abandoned
   summary: "Learning Management System for skill development with courses, certificates, and degree programs."
   added_on: 09/04/2026 12:00pm
 - title: Accentra App
@@ -170,7 +184,8 @@ client:
   type: Client
   src: /images/accentra.webp
   duration: Feb 2021 - Jun 2021
-  status: Active
+  status: completed
+  live: false
   summary: "Enterprise container management mobile application for iOS and Android providing real-time synchronization and secure access control."
   added_on: 09/04/2026 12:00pm
 - title: AldeaTech Android and Web Apps
@@ -179,7 +194,8 @@ client:
   type: Client
   src: /images/aldea.webp
   duration: Aug 2019 - April 2021
-  status: Completed
+  status: completed
+  live: true
   summary: "Agriculture productivity platform providing farmers with weather data, farming manuals, expert advice, meteorological data, crop planning tools and Q&A system for farmers across web and mobile."
   added_on: 19/01/2024 04:50pm
 - title: uPar Golf App
@@ -188,7 +204,8 @@ client:
   type: Client
   src: /images/upar.webp
   duration: Oct 2019 - Aug 2020
-  status: Live
+  status: completed
+  live: false
   summary: "Gamified golf competition app with multiple play modes, target selection, and shot-calling features for competitive players."
   added_on: 30/12/2022 4:01pm
 - title: FoodLans Delivery App
@@ -197,7 +214,8 @@ client:
   type: Client
   src: /images/jpdell.webp
   duration: Sep 2020 - Nov 2020
-  status: Archived
+  status: completed
+  live: false
   summary: "Food delivery mobile application for iOS and Android enabling customers and delivery personnel to place and fulfill food orders with real-time tracking."
   added_on: 09/04/2026 12:00pm
 - title: TripTantra Web and Mobile Apps
@@ -206,7 +224,8 @@ client:
   type: Client
   src: /images/triptantra.webp
   duration: Jul 2018 - Aug 2018
-  status: Expired
+  status: completed
+  live: false
   summary: "Travel booking platform with Android app and API integration for comprehensive trip planning and reservation management."
   added_on: 24/12/2022 5:17pm
 - title: TellUs Android and Web Apps
@@ -215,7 +234,8 @@ client:
   type: Client
   src: /images/tellus.webp
   duration: Sep 2017 - Mar 2018
-  status: Live
+  status: completed
+  live: false
   summary: "Restaurant feedback management platform with customer review collection, analytics dashboard, and performance insights for hospitality businesses."
   added_on: 24/12/2022 5:01pm
 - title: Floyd Inc. Web App
@@ -224,7 +244,8 @@ client:
   type: Client
   src: /images/floyd.webp
   duration: Nov 2017
-  status: Live
+  status: completed
+  live: true
   summary: "Professional corporate website with in-site editing capabilities for Floyd Inc., built on OctoberCMS."
   added_on: 24/12/2022 5:10pm
 - title: Attrition & Retention Predictor for X0PA AI
@@ -233,7 +254,8 @@ client:
   type: Client
   src: /images/x0pa.webp
   duration: Sep 2017
-  status: Live
+  status: completed
+  live: true
   summary: "React components for X0PA AI's employee attrition and retention prediction platform, delivering data visualizations for predictive analytics."
   added_on: 24/12/2022 5:09pm
 - title: BlueHorn Website
@@ -242,7 +264,8 @@ client:
   type: Client
   src: /images/bluehorn.webp
   duration: Aug 2017 - Nov 2017
-  status: Archived
+  status: completed
+  live: true
   summary: "Company showcase website with gallery designed from prototype through to live build for Blue Horn Inc."
   added_on: 24/12/2022 4:43pm
 - title: Swades Web App
@@ -251,7 +274,8 @@ client:
   type: Client
   src: /images/uos.webp
   duration: Jul 2017
-  status: Archived
+  status: completed
+  live: false
   summary: "Scholarship program platform for UpGrad with student application management and Material Design UI."
   added_on: 24/12/2022 4:41pm
 - title: ApplyNow Android App
@@ -259,7 +283,8 @@ client:
   client: asankarrao
   type: Client
   duration: Jun 2017
-  status: Archived
+  status: completed
+  live: false
   summary: "Dynamic form management app enabling quick application submissions to various services with automated processing."
   added_on: 24/12/2022 4:31pm
 - title: FinanceNow Android App
@@ -268,7 +293,8 @@ client:
   type: Client
   src: /images/financenow.webp
   duration: Jun 2017
-  status: Live
+  status: completed
+  live: false
   summary: "Personal finance management app providing financial health insights, survival calculations, and insurance recommendations."
   added_on: 24/12/2022 4:26pm
 - title: Yahavi Android App
@@ -277,7 +303,8 @@ client:
   type: Client
   src: /images/yahavi.webp
   duration: March 9 2017 - April 2017
-  status: Archived
+  status: completed
+  live: false
   summary: "Native Android app built with reactive programming patterns following provided designs for a multi-language service platform."
   added_on: 24/12/2022 4:22pm
 - title: Cakes on Wheels
@@ -286,7 +313,8 @@ client:
   type: Client
   src: /images/cow.webp
   duration: Feb 2017
-  status: Archived
+  status: completed
+  live: false
   summary: "Custom eCommerce platform for cake ordering with addon management, SMS notifications, and integrated payment processing."
   added_on: 24/12/2022 4:14pm
 - title: Highway Delite Web and Android Apps
@@ -295,7 +323,8 @@ client:
   type: Client
   src: /images/hd.webp
   duration: Oct 2015 - Jul 2016
-  status: Live
+  status: completed
+  live: true
   summary: "Highway travel discovery platform for road trip planning and highway establishment exploration, serving 50K+ users with 4.7 rating."
   added_on: 24/12/2022 3:45pm
 - title: Sky Properties
@@ -304,7 +333,7 @@ client:
   type: Client
   src: /images/sky-properties.webp
   duration: Aug 2015
-  status: Archived
+  status: abandoned
   summary: "Real estate platform with user management, permission architecture, analytics dashboard, and editable sections for Sky Properties."
   added_on: 24/12/2022 3:41pm
 - title: Actor Jega's Official Website
@@ -312,7 +341,8 @@ client:
   client: jega
   type: Client
   duration: May 2015
-  status: Archived
+  status: completed
+  live: true
   summary: "Official website for Kollywood actor Jega with filmography, photo gallery, news section, and in-site editing."
   added_on: 24/12/2022 3:27pm
 - title: TheHouseMonk Android App
@@ -321,7 +351,8 @@ client:
   type: Client
   src: /images/thm.webp
   duration: Apr 2015
-  status: Archived
+  status: completed
+  live: false
   summary: "Internal property management Android app for a Bangalore-based real estate startup, built using reactive programming."
   added_on: 24/12/2022 3:07pm
 - title: World of Urology
@@ -330,7 +361,7 @@ client:
   type: Client
   src: /images/wou.webp
   duration: Dec 2014
-  status: Expired
+  status: abandoned
   summary: "Multi-lingual professional network for urologists with specialist directory and medical knowledge sharing."
   added_on: 24/12/2022 2:55pm
 - title: MediScan
@@ -339,7 +370,8 @@ client:
   type: Client
   src: /images/mediscan.webp
   duration: Dec 2014
-  status: Expired
+  status: completed
+  live: false
   summary: "Secure QR-coded medical records repository for X-rays, MRI, prescriptions and more, accessible globally from any camera-equipped device."
   added_on: 24/12/2022 2:48pm
 - title: SK Hollow Blocks
@@ -348,7 +380,8 @@ client:
   type: Client
   src: /images/sk-hollow-blocks.webp
   duration: Sep 2014
-  status: Expired
+  status: completed
+  live: true
   summary: "Business website for a construction materials supplier with product catalog, pricing, and location information."
   added_on: 24/12/2022 2:45pm
 - title: Hiveyo
@@ -357,7 +390,7 @@ client:
   type: Others
   src: /images/hiveyo.webp
   duration: May 2013 - Aug 2013
-  status: Expired
+  status: abandoned
   summary: "Contact management web application built on a custom PHP framework."
   added_on: 24/12/2022 2:21pm
 opensource:
@@ -366,105 +399,119 @@ opensource:
   type: Open Source
   src: /images/imoz.webp
   duration: Oct 2022 - Present
-  status: Live
+  status: active
+  live: true
   summary: "Open-source personal portfolio and project showcase built with Nuxt 3 and Vue 3, featuring dark mode, project filtering, event timeline, resume generation, and Claude Code skills for AI-assisted content workflows."
   added_on: 28/04/2026 12:00pm
 - title: Expense Tracker for Google Home
   slug: expense-tracker
   type: Open Source
   duration: Jun 2018
-  status: Live
+  status: completed
+  live: false
   summary: "Voice-driven expense tracker for Google Home using Dialogflow, enabling conversational spending logging and category management."
   added_on: 25/12/2022 12:20am
 - title: Carousel Plugin
   slug: carousel-plugin
   type: Open Source
   duration: Apr 2015 - Mar 2018
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS plugin for Twitter Bootstrap carousels with 6,000+ documented installs."
   added_on: 24/12/2022 9:56pm
 - title: Txt Plugin
   slug: txt-plugin
   type: Open Source
   duration: Apr 2015 - Mar 2018
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS plugin generating humans.txt and robots.txt files with 6,300+ documented installs."
   added_on: 24/12/2022 9:59pm
 - title: Social Plugin
   slug: social-plugin
   type: Open Source
   duration: Apr 2015 - Mar 2017
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS plugin extending RainLab.User with social provider authentication for Google, Facebook, GitHub, and more."
   added_on: 24/12/2022 7:44pm
 - title: Magnific Gallery
   slug: magnific-gallery
   type: Open Source
   duration: Jan 2015 - Feb 2017
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS gallery plugin using the Magnific Popup library for lightbox image browsing with advanced customization."
   added_on: 24/12/2022 7:41pm
 - title: Dropdown Widget
   slug: dropdown-widget
   type: Open Source
   duration: Jan 2017
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS widget adding dropdown filtering capability to CMS admin interfaces."
   added_on: 24/12/2022 7:32pm
 - title: Mobile Plugin
   slug: mobile-plugin
   type: Open Source
   duration: Nov 2016 - Jan 2017
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS plugin for managing mobile app listings across iOS, Android, and other platforms with install monitoring."
   added_on: 24/12/2022 7:34pm
 - title: Badge Plugin
   slug: badge-plugin
   type: Open Source
   duration: Dec 2016
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS plugin adding customizable badge and label functionality to website content."
   added_on: 24/12/2022 7:26pm
 - title: REST Plugin
   slug: rest-plugin
   type: Open Source
   duration: Aug 2016 - Dec 2016
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS plugin that auto-generates RESTful API controllers to eliminate API development boilerplate."
   added_on: 24/12/2022 7:29pm
 - title: Mobile User Plugin
   slug: mobile-user-plugin
   type: Open Source
   duration: Nov 2016
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS plugin providing user management and authentication for mobile front-end applications."
   added_on: 24/12/2022 7:24pm
 - title: Identity Theme
   slug: identity-theme
   type: Open Source
   duration: Feb 2016 - May 2016
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS theme porting HTML5 UP's Identity template for clean, professional site design."
   added_on: 24/12/2022 7:16pm
 - title: Readium Theme
   slug: readium-theme
   type: Open Source
   duration: Feb 2015 - Mar 2015
-  status: Live
+  status: completed
+  live: true
   summary: "OctoberCMS theme with clean, typography-focused layout optimized for content-driven websites."
   added_on: 24/12/2022 5:37pm
 - title: Collapse Plugin
   slug: collapse-plugin
   type: Open Source
   duration: Mar 2015
-  status: Archived
+  status: completed
+  live: true
   summary: "OctoberCMS plugin providing Bootstrap-based collapsible and accordion content sections."
   added_on: 24/12/2022 7:13pm
 - title: Php Boilerplate
   slug: php-boilerplate
   type: Open Source
   duration: Sep 2013 - Jun 2014
-  status: Archived
+  status: abandoned
   summary: "Minimal PHP starter framework inspired by HTML5 Boilerplate, with quick install and OOP abstractions, predating Laravel adoption."
   added_on: 24/12/2022 5:35pm
 others:
@@ -472,48 +519,55 @@ others:
   slug: tapemit-web
   type: Others
   duration: Aug 2016
-  status: Archived
+  status: completed
+  live: false
   summary: "Department website for Production Technology at MIT Chennai, built collaboratively as a mentoring project."
   added_on: 24/12/2022 4:12pm
 - title: Help Chennai Android App
   slug: help-chennai
   type: Others
   duration: Nov 2015
-  status: Archived
+  status: completed
+  live: false
   summary: "Emergency resources Android app for Chennai residents with offline-first design for connectivity-challenged areas."
   added_on: 24/12/2022 4:02pm
 - title: 'Roderick''s Blog'
   slug: roderick-blog
   type: Others
   duration: Feb 2015
-  status: Archived
+  status: completed
+  live: false
   summary: "Clean personal blog built for a friend with CMS-driven content management and responsive layout."
   added_on: 24/12/2022 2:58pm
 - title: Portable Data Protection System
   slug: pdps
   type: Others
   duration: Apr 2014
-  status: Archived
+  status: completed
+  live: false
   summary: "Just-in-time malware prevention system using ACLs on a write-protected pen drive, published in a peer-reviewed journal."
   added_on: 24/12/2022 2:30pm
 - title: Nyquist
   slug: nyquist
   type: Others
   duration: Jan 2014
-  status: Archived
+  status: completed
+  live: false
   summary: "Acoustic fingerprinting music identification and organizer built from scratch for IIT-K's Softkriti contest."
   added_on: 24/12/2022 2:25pm
 - title: Hash Decryptor
   slug: hash-decryptor
   type: Others
   duration: Apr 2013
-  status: Archived
+  status: completed
+  live: false
   summary: "RMI-based distributed Java tool for recovering original plaintext from hash strings via a MySQL lookup database."
   added_on: 24/12/2022 1:20pm
 - title: Car Pooling App using Sencha Framework
   slug: car-pooling-app
   type: Others
   duration: Jan 2012
-  status: Archived
+  status: completed
+  live: false
   summary: "Early mobile-friendly carpooling web platform built with Sencha Touch before ride-sharing apps existed."
   added_on: 24/12/2022 1:40pm

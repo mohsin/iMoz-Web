@@ -7,6 +7,7 @@ platforms: Web,Android
 frameworks: OctoberCMS,Android Studio
 tools: VSCode,Composer,Docker
 concepts: MVC,Mobile Development,Weather Integration,User Authentication,Notifications,Location Services,Agricultural Data
+website: play.google.com/store/apps/details?id=ni.org.aglobal.tech
 location: Nicaragua (Remote)
 designation: Full Stack Engineer
 description: |
