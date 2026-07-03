@@ -3,7 +3,7 @@ client:
   slug: jonasmonteiro-website
   client: jonasmonteiro
   type: Client
-  src: /images/jonas-monteiro.webp
+  logo: /images/jonas-monteiro.webp
   duration: Aug 2025 - Mar 2026
   status: active
   live: true
@@ -23,7 +23,7 @@ client:
   slug: astravise-gcccompass
   client: astravise
   type: Client
-  src: /images/astravise.webp
+  logo: /images/astravise.webp
   duration: Oct 2025 - Nov 2025
   status: completed
   live: true
@@ -33,7 +33,7 @@ client:
   slug: barossa-tourism
   client: barossa
   type: Client
-  src: /images/barossa.webp
+  logo: /images/barossa.webp
   duration: Oct 2024 - Apr 2026
   status: completed
   live: true
@@ -53,7 +53,7 @@ client:
   slug: multivision-website
   client: multivision
   type: Client
-  src: /images/multivision.webp
+  logo: /images/multivision.webp
   duration: Sep 2025
   status: completed
   live: true
@@ -63,7 +63,7 @@ client:
   slug: golfersedge-booking
   client: teetimeventures
   type: Client
-  src: /images/golfersedge.webp
+  logo: /images/golfersedge.webp
   duration: Sep 2024 - Apr 2026
   status: active
   live: true
@@ -83,7 +83,7 @@ client:
   slug: datambit-genui
   client: datambit
   type: Client
-  src: /images/datambit.webp
+  logo: /images/datambit.webp
   duration: Jul 2024 - Dec 2024
   status: completed
   live: true
@@ -93,7 +93,7 @@ client:
   slug: zapitup-ezrsgold
   client: zapitup
   type: Client
-  src: /images/ezrsgold.webp
+  logo: /images/ezrsgold.webp
   duration: Jan 30, 2024 - Apr 9, 2025
   status: completed
   live: true
@@ -103,7 +103,7 @@ client:
   slug: legalcook-web
   client: legalcook
   type: Client
-  src: /images/legalcook.webp
+  logo: /images/legalcook.webp
   duration: Aug 2023 - Sep 2023
   status: active
   live: true
@@ -113,7 +113,7 @@ client:
   slug: structchat-web
   client: structchat
   type: Client
-  src: /images/struct.webp
+  logo: /images/struct.webp
   duration: Jun 2023 - Jul 2023
   status: completed
   live: true
@@ -123,7 +123,7 @@ client:
   slug: teksecur-dfact
   client: teksecur
   type: Client
-  src: /images/dfact.webp
+  logo: /images/dfact.webp
   duration: Jan 2023 - Apr 2023
   status: completed
   live: true
@@ -133,7 +133,7 @@ client:
   slug: viewretreats-web
   client: viewretreats
   type: Client
-  src: /images/vr.webp
+  logo: /images/vr.webp
   duration: Nov 2020 - Aug 2023
   status: completed
   live: false
@@ -143,7 +143,7 @@ client:
   slug: thamu-portfolio
   client: thamu
   type: Client
-  src: /images/thamu.webp
+  logo: /images/thamu.webp
   duration: Aug 2022 - Dec 2022
   status: completed
   live: false
@@ -153,7 +153,7 @@ client:
   slug: foodiverse-android
   client: foodiverse
   type: Client
-  src: /images/foodieverse.webp
+  logo: /images/foodieverse.webp
   duration: Aug 2022 - Oct 2022
   status: completed
   live: false
@@ -163,7 +163,7 @@ client:
   slug: apiwiz-web
   client: apiwiz
   type: Client
-  src: /images/apiwiz.webp
+  logo: /images/apiwiz.webp
   duration: Mar 2022 - Jul 2022
   status: completed
   live: true
@@ -173,7 +173,7 @@ client:
   slug: allrounders-lms
   client: allrounders
   type: Client
-  src: /images/allrounders.webp
+  logo: /images/allrounders.webp
   duration: Jan 2021 - Mar 2022
   status: abandoned
   summary: "Learning Management System for skill development with courses, certificates, and degree programs."
@@ -182,7 +182,7 @@ client:
   slug: accentra-app
   client: accentra
   type: Client
-  src: /images/accentra.webp
+  logo: /images/accentra.webp
   duration: Feb 2021 - Jun 2021
   status: completed
   live: false
@@ -192,7 +192,7 @@ client:
   slug: justai-aldeatech
   client: justai
   type: Client
-  src: /images/aldea.webp
+  logo: /images/aldea.webp
   duration: Aug 2019 - April 2021
   status: completed
   live: true
@@ -202,7 +202,7 @@ client:
   slug: teetimeventures-upar
   client: teetimeventures
   type: Client
-  src: /images/upar.webp
+  logo: /images/upar.webp
   duration: Oct 2019 - Aug 2020
   status: completed
   live: false
@@ -212,7 +212,7 @@ client:
   slug: jpdell-foodlans
   client: jpdell
   type: Client
-  src: /images/jpdell.webp
+  logo: /images/jpdell.webp
   duration: Sep 2020 - Nov 2020
   status: completed
   live: false
@@ -222,7 +222,7 @@ client:
   slug: triptantra-web
   client: triptantra
   type: Client
-  src: /images/triptantra.webp
+  logo: /images/triptantra.webp
   duration: Jul 2018 - Aug 2018
   status: completed
   live: false
@@ -232,7 +232,7 @@ client:
   slug: asankarrao-tellus
   client: asankarrao
   type: Client
-  src: /images/tellus.webp
+  logo: /images/tellus.webp
   duration: Sep 2017 - Mar 2018
   status: completed
   live: false
@@ -242,7 +242,7 @@ client:
   slug: floyd-web
   client: floyd
   type: Client
-  src: /images/floyd.webp
+  logo: /images/floyd.webp
   duration: Nov 2017
   status: completed
   live: true
@@ -252,7 +252,7 @@ client:
   slug: x0pa-web
   client: x0pa
   type: Client
-  src: /images/x0pa.webp
+  logo: /images/x0pa.webp
   duration: Sep 2017
   status: completed
   live: true
@@ -262,7 +262,7 @@ client:
   slug: bluehorn-web
   client: bluehorn
   type: Client
-  src: /images/bluehorn.webp
+  logo: /images/bluehorn.webp
   duration: Aug 2017 - Nov 2017
   status: completed
   live: true
@@ -272,7 +272,7 @@ client:
   slug: indiez-swades
   client: indiez
   type: Client
-  src: /images/uos.webp
+  logo: /images/uos.webp
   duration: Jul 2017
   status: completed
   live: false
@@ -291,7 +291,7 @@ client:
   slug: asankarrao-financenow
   client: asankarrao
   type: Client
-  src: /images/financenow.webp
+  logo: /images/financenow.webp
   duration: Jun 2017
   status: completed
   live: false
@@ -301,7 +301,7 @@ client:
   slug: yahavi-android
   client: yahavi
   type: Client
-  src: /images/yahavi.webp
+  logo: /images/yahavi.webp
   duration: March 9 2017 - April 2017
   status: completed
   live: false
@@ -311,7 +311,7 @@ client:
   slug: cakesonwheels-web
   client: cakesonwheels
   type: Client
-  src: /images/cow.webp
+  logo: /images/cow.webp
   duration: Feb 2017
   status: completed
   live: false
@@ -321,7 +321,7 @@ client:
   slug: highwaydelite-web
   client: highwaydelite
   type: Client
-  src: /images/hd.webp
+  logo: /images/hd.webp
   duration: Oct 2015 - Jul 2016
   status: completed
   live: true
@@ -331,7 +331,7 @@ client:
   slug: skyproperties-web
   client: skyproperties
   type: Client
-  src: /images/sky-properties.webp
+  logo: /images/sky-properties.webp
   duration: Aug 2015
   status: abandoned
   summary: "Real estate platform with user management, permission architecture, analytics dashboard, and editable sections for Sky Properties."
@@ -349,7 +349,7 @@ client:
   slug: thehousemonk-android
   client: thehousemonk
   type: Client
-  src: /images/thm.webp
+  logo: /images/thm.webp
   duration: Apr 2015
   status: completed
   live: false
@@ -359,7 +359,7 @@ client:
   slug: worldofurology-web
   client: worldofurology
   type: Client
-  src: /images/wou.webp
+  logo: /images/wou.webp
   duration: Dec 2014
   status: abandoned
   summary: "Multi-lingual professional network for urologists with specialist directory and medical knowledge sharing."
@@ -368,7 +368,7 @@ client:
   slug: mediscan-web
   client: mediscan
   type: Client
-  src: /images/mediscan.webp
+  logo: /images/mediscan.webp
   duration: Dec 2014
   status: completed
   live: false
@@ -378,7 +378,7 @@ client:
   slug: skhollowblocks-web
   client: skhollowblocks
   type: Client
-  src: /images/sk-hollow-blocks.webp
+  logo: /images/sk-hollow-blocks.webp
   duration: Sep 2014
   status: completed
   live: true
@@ -388,7 +388,7 @@ client:
   slug: hiveyo-web
   client: hiveyo
   type: Others
-  src: /images/hiveyo.webp
+  logo: /images/hiveyo.webp
   duration: May 2013 - Aug 2013
   status: abandoned
   summary: "Contact management web application built on a custom PHP framework."
@@ -397,7 +397,7 @@ opensource:
 - title: iMoz Website
   slug: imoz-website
   type: Open Source
-  src: /images/imoz.webp
+  logo: /images/imoz.webp
   duration: Oct 2022 - Present
   status: active
   live: true

@@ -121,12 +121,12 @@ function renderMarkdown(text: string): string {
     </div>
 
     <template v-if="projectDoc">
-      <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.src" />
+      <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.logo" />
       <div class="flex flex-col md:flex-row">
 
         <!-- Sidebar: logo + metadata -->
         <div class="flex-shrink-0 p-4 md:w-1/3 md:border-r border-slate-100 dark:border-slate-600 space-y-4">
-          <img v-if="item.src && !item.isThumb" loading="lazy" class="w-full" :src="item.src" />
+          <img v-if="item.logo && !item.isThumb" loading="lazy" class="w-full" :src="item.logo" />
 
           <!-- Meta fields -->
           <div class="space-y-3 text-sm">
@@ -178,9 +178,9 @@ function renderMarkdown(text: string): string {
 
     <!-- Fallback: no yml found -->
     <template v-else>
-      <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.src" />
+      <img v-if="item.isThumb" loading="lazy" class="w-full" :src="item.logo" />
       <div class="p-2.5 pb-1">
-        <img class="w-1/2 sm:w-1/3 sm:px-12 mt-0 mr-2.5 mb-2.5 ml-0 float-left" v-if="item.src && !item.isThumb" :src="item.src">
+        <img class="w-1/2 sm:w-1/3 sm:px-12 mt-0 mr-2.5 mb-2.5 ml-0 float-left" v-if="item.logo && !item.isThumb" :src="item.logo">
         <p class="pb-2.5 text-gray-900 dark:text-slate-300">{{ item.description }}</p>
       </div>
     </template>

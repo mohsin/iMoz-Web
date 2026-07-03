@@ -237,7 +237,7 @@ watch(() => props.data, (newData) => {
           width="512"
           height="512"
           class="w-full"
-          :src="project.src"
+          :src="project.logo"
         />
         <div class="p-2.5 pb-1">
           <nuxt-img
@@ -245,9 +245,9 @@ watch(() => props.data, (newData) => {
             class="w-full sm:w-[100px] py-1 px-8 sm:p-0 mt-2 mr-2.5 ml-0 float-none sm:float-left"
             width="512"
             height="512"
-            v-if="project.src && !project.isThumb"
+            v-if="project.logo && !project.isThumb"
             sizes="xs:512 sm:100"
-            :src="project.src"
+            :src="project.logo"
           />
           <p class="pb-2.5 text-gray-900 dark:text-slate-300">{{ project.summary || project.description }}</p>
         </div>
