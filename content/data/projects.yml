@@ -555,14 +555,6 @@ others:
   live: false
   summary: "Acoustic fingerprinting music identification and organizer built from scratch for IIT-K's Softkriti contest."
   added_on: 24/12/2022 2:25pm
-- title: Hash Decryptor
-  slug: hash-decryptor
-  type: Others
-  duration: Apr 2013
-  status: completed
-  live: false
-  summary: "RMI-based distributed Java tool for recovering original plaintext from hash strings via a MySQL lookup database."
-  added_on: 24/12/2022 1:20pm
 - title: Car Pooling App using Sencha Framework
   slug: car-pooling-app
   type: Others
