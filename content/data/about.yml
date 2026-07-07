@@ -12,7 +12,7 @@ personal:
 education:
   - institution: Anna University
     degree:
-      - Saranathan College of Engineering (Affliated)
+      - Saranathan College of Engineering (Affiliated)
       - Bachelor of Engineering (Computer Science)
     duration: 2010 - 2014
     location: Trichy, India
@@ -22,7 +22,7 @@ education:
       - computer club
       - web designing
     summary:
-      - Headed CyberKatz, the Computer Science club from June 2011 to July 2013 and co-headed, Paatshaala, the Hindi club from June 2012 to July 2013.
+      - Headed CyberKatz, the Computer Science club, from June 2011 to July 2013 and co-headed Paatshaala, the Hindi club, from June 2012 to July 2013.
 
   - institution: Campion Anglo-Indian Higher Secondary School
     degree: High School
@@ -34,7 +34,7 @@ education:
       - Skating
       - Reading
     summary:
-      - Got a high quality English-medium education with an interesting set of teachers who helped shaped my ideas and worldview in my formative years. My school was famous for being the only one to promote non-academic i.e. extra-curricular activities at the time. I also indulged in gaming, dance, swimming (my school was one of the 2 institutes in the entire state at the time that had a pool inside an academic institute), football, skating, carrom, reading, listening to music, etc.
+      - Received a high-quality English-medium education with teachers who helped shape my ideas and worldview in my formative years. The school was known for promoting extra-curricular activities alongside academics, and I made the most of it with swimming (it was one of only two academic institutes in the state with a pool at the time), football, skating, dance, carrom, and reading.
     summary_on_resume:
 
 work:
@@ -42,7 +42,7 @@ work:
   position: Full Stack Engineer
   duration: Jul 2014 - Present
   location: Bengaluru, India
-  summary: "What started as a side business during my university days turned into my company when I had it registered at the end of my college. Originally, I was building final year projects for fellow classmates for a small fee. That worked out great as it was lesser than other centers charged and I explained everything well. So after college, I had my business registered, and started app development for entrepreneurs and startups under the banner 'Tempestronics' which in latin roughly translates to “the study of time”, hence the logo is a bunch of gears—which is what watches and clocks are engineered with). I've been representing myself as a business ever since and billing under this company despite being a freelancer for all practical purposes."
+  summary: "What started as a side business during university (building final-year projects for classmates) became a registered company right after college. Under the Tempestronics banner I design, build, and ship web, mobile, and AI applications for entrepreneurs, startups, and enterprises across India, the US, Australia, the UK, Singapore, Europe, and Latin America, with 50+ projects delivered end to end. The name roughly translates from Latin as 'the study of time', hence the gear logo (gears being what watches and clocks are engineered with)."
   summary_in_resume:
     - Founded and operated Tempestronics, delivering 50+ full-stack web, mobile, and AI applications for startups, agencies, and enterprise clients across India, the US, Australia, the UK, Singapore, Europe, and Latin America.
     - Built production AI/LLM systems including LangGraph-powered conversational agents with Google Gemini, deepfake detection microservices on Kubernetes with horizontal/vertical pod autoscaling, and voice-driven apps for Alexa and Google Home.
@@ -60,7 +60,7 @@ work:
   duration: Feb 2016 - Apr 2016
   location: Bengaluru, India
   show_on_resume: false
-  summary: "Given the design, I had built the entire product from scratch (Backend, Android App and DevOps to deploy it to a bare metal server). After launch the app gained ~50k users within 6 months with a rating of 4.8 on the play store. The client promised equity and gave me a position of interim CTO, where I took care of all the technical operations, marketing, management, and hiring through technical interviews including raising funds from the Idea2PoC Scheme, and Karnataka Startup Policy by pitching to a panel of VCs. However, in the end, he failed to keep up with his word of the promised equity so I left."
+  summary: "Built the entire product from scratch given the design: backend, Android app, and the DevOps to deploy it to a bare-metal server. Within 6 months of launch the app gained ~50K users with a 4.8 rating on the Play Store. As interim CTO I ran technical operations, marketing, management, and hiring through technical interviews, and raised funding through the Idea2PoC Scheme and the Karnataka Startup Policy by pitching to a panel of VCs."
   summary_in_resume:
     - Managed technical operations, marketing, management, and hiring through technical interviews.
     - Raised funds from the Idea2PoC Scheme and Karnataka Startup Policy by pitching to a panel of VCs.

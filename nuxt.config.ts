@@ -3,7 +3,7 @@ export default defineNuxtConfig({
       head: {
         charset: 'utf-8',
         viewport: 'width=device-width, initial-scale=1',
-        title: 'iMoz',
+        title: 'iMoz - Saifur Rahman Mohsin | Full Stack Engineer',
         link: [
           { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
           { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
@@ -12,7 +12,7 @@ export default defineNuxtConfig({
           { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#000000' }
         ],
         meta: [
-          { name: 'description', content: 'Saifur Rahman Mohsin\'s Portfolio' },
+          { name: 'description', content: 'Saifur Rahman Mohsin: full-stack engineer in Bangalore building web, mobile, and AI applications for startups and businesses worldwide. Founder of Tempestronics, 50+ projects delivered.' },
           { name: 'msapplication-TileColor', content: '#ffffff' },
           { name: 'theme-color', content: '#ffffff' },
           { name: 'google-adsense-account', content: 'ca-pub-5137799284836201' }
