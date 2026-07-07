@@ -81,27 +81,32 @@ skills:
     - PHP
     - Python
     - Java/Kotlin
+    - Swift
     - SQL
     - HTML/CSS/Sass
-  - AI/ML \& Cloud:
+  - AI \& LLMs:
     - LangGraph
-    - Google Gemini
     - Conversational AI Agents
+    - LLM Integration (Google Gemini, OpenAI, Anthropic)
+    - RAG Pipelines
+    - AI-Assisted Development (Claude Code)
+    - Voice Apps (Alexa, Google Home)
+  - Cloud \& DevOps:
     - AWS (EC2, S3, Auto Scaling)
-    - Terraform
+    - Terraform (Infrastructure as Code)
     - Docker
     - Kubernetes
-    - CI/CD (GitHub Actions)
     - Microservices Architecture
-    - Infrastructure as Code
+    - CI/CD (GitHub Actions)
+    - Serverless (Netlify Functions)
   - Frameworks:
-    - Vue 3 / Nuxt 3/4
+    - Vue 3 / Nuxt 4
     - React / Next.js
     - Tailwind CSS
     - Laravel
-    - OctoberCMS
-    - WordPress (Plugin Dev)
     - Flask
+    - WordPress (Plugin Dev)
+    - OctoberCMS
     - TinaCMS
     - PrimeVue / Pinia
     - Jetpack Compose
@@ -111,16 +116,15 @@ skills:
     - PostgreSQL / MySQL
     - RabbitMQ
     - Firebase
-    - Razorpay
+    - Payment Gateways (Razorpay, Stripe)
     - Google APIs
     - WooCommerce
   - Practices:
     - Agile/Scrum
     - Real-time Systems
     - Database Schema Design
-    - Web (Frontend/Backend)
-    - Mobile (Android/iOS)
-    - Voice Apps (Alexa, Google Home)
+    - Accessibility (WCAG 2.1 AA)
+    - SEO \& Structured Data
 
 languages:
   - language: English
