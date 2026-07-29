@@ -28,6 +28,39 @@ const returnToPage = () => {
   currentItem.value = null
 }
 
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        name: 'Tempestronics by Saifur Rahman Mohsin',
+        url: 'https://imoz.in/services',
+        description: 'Full Stack Engineering services covering web applications, mobile apps, AI/LLM integration, and cloud infrastructure.',
+        provider: {
+          '@type': 'Person',
+          name: 'Saifur Rahman Mohsin',
+          url: 'https://imoz.in'
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Engineering Services',
+          itemListElement: (servicesData?.offerings ?? []).map((offering: any, idx: number) => ({
+            '@type': 'Offer',
+            position: idx + 1,
+            itemOffered: {
+              '@type': 'Service',
+              name: offering.title,
+              description: offering.tagline
+            }
+          }))
+        }
+      })
+    }
+  ]
+})
+
 const openBrochureModal = (workshop: any) => {
   brochureWorkshop.value = workshop
 }

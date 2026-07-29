@@ -18,6 +18,35 @@ var shouldAnimate = useState('animate', () => false)
 const runtimeConfig = useRuntimeConfig()
 const email = runtimeConfig.emailId;
 
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Saifur Rahman Mohsin',
+        jobTitle: 'Full Stack Engineer',
+        url: 'https://imoz.in',
+        email: 'mohsin92@me.com',
+        sameAs: [
+          'https://github.com/mohsin',
+          'https://www.linkedin.com/in/saifurrahmanmohsin'
+        ],
+        description: 'Full Stack Engineer with 10+ years building production web, mobile, and AI-powered applications. Founder of Tempestronics with 50+ delivered projects spanning Vue 3/Nuxt, React/Next.js, Laravel, WordPress, and Android.',
+        knowsAbout: [
+          'Vue 3 / Nuxt', 'React / Next.js', 'Laravel', 'Android', 'iOS',
+          'AI / LLM Integration', 'LangGraph', 'AWS', 'Terraform', 'Docker', 'Kubernetes'
+        ],
+        worksFor: {
+          '@type': 'Organization',
+          name: 'Tempestronics'
+        }
+      })
+    }
+  ]
+})
+
 // Animate element based on color mode toggle
 const animate = () => {
     if(shouldAnimate.value) {

@@ -20,12 +20,27 @@ const [name, referer, email, message] = useFieldModel(['name', 'referer', 'email
 
 const hasErrors = computed(() => Object.keys(errors.value).length !== 0)
 
-// Add Calendly script
 useHead({
   script: [
     {
       src: 'https://assets.calendly.com/assets/external/widget.js',
       async: true
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ContactPage',
+        name: 'Contact Saifur Rahman Mohsin',
+        url: 'https://imoz.in/contact',
+        description: 'Get in touch with Saifur Rahman Mohsin for web, mobile, and AI development projects.',
+        mainEntity: {
+          '@type': 'Person',
+          name: 'Saifur Rahman Mohsin',
+          url: 'https://imoz.in',
+          email: 'mohsin92@me.com'
+        }
+      })
     }
   ]
 })

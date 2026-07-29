@@ -2,6 +2,42 @@
 var events = (await queryContent('/data/events').findOne())
 var upcomingEvents = events.body.filter(it => it.status == 'future')
 var pastEvents = events.body.filter(it => it.status == 'past')
+
+const toIsoDate = (dateStr: string) => {
+  const d = new Date(dateStr)
+  return isNaN(d.getTime()) ? dateStr : d.toISOString().split('T')[0]
+}
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(
+        events.body.map((event: any) => ({
+          '@context': 'https://schema.org',
+          '@type': 'Event',
+          name: event.title,
+          startDate: toIsoDate(event.date[0]),
+          endDate: toIsoDate(event.date[event.date.length - 1]),
+          eventStatus: event.status === 'future'
+            ? 'https://schema.org/EventScheduled'
+            : 'https://schema.org/EventScheduled',
+          location: {
+            '@type': 'Place',
+            name: event.location[0]
+          },
+          description: event.description,
+          image: event.image ? `https://imoz.in${event.image}` : undefined,
+          organizer: {
+            '@type': 'Person',
+            name: 'Saifur Rahman Mohsin',
+            url: 'https://imoz.in'
+          }
+        }))
+      )
+    }
+  ]
+})
 </script>
 
 <template>
