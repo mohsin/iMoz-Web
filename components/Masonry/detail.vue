@@ -169,8 +169,10 @@ function renderMarkdown(text: string): string {
 
         <!-- Main content -->
         <div class="flex flex-col min-w-0">
+          <!-- .md files render through Nuxt Content (MDC components, ::private blocks) -->
+          <ContentRenderer v-if="projectDoc._extension === 'md'" class="p-4 project-content" :value="projectDoc" />
           <!-- eslint-disable-next-line vue/no-v-html -->
-          <div class="p-4 project-content" v-html="renderMarkdown(projectDoc.description)" />
+          <div v-else class="p-4 project-content" v-html="renderMarkdown(projectDoc.description)" />
           <MasonryPrivateDetails v-if="projectEncrypted" :slug="item.slug" :encrypted="projectEncrypted" />
         </div>
       </div>

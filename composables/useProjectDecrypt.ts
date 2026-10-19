@@ -28,6 +28,12 @@ export interface DecryptedProject {
   total_received_inr?: number
 }
 
+/** Payload of a `::private` Markdown block: its source and the parsed MDC tree. */
+export interface DecryptedMarkdown {
+  source: string
+  body: unknown[]
+}
+
 const SESSION_KEY = 'pdk'
 const _keys = ref<Record<string, string>>({})
 let _ready = false
@@ -65,10 +71,10 @@ async function deriveKey(password: string, saltB64: string): Promise<CryptoKey> 
   )
 }
 
-export async function decryptProjectBlock(
+export async function decryptJSONBlock<T>(
   block: EncryptedBlock,
   password: string
-): Promise<DecryptedProject | null> {
+): Promise<T | null> {
   try {
     const key = await deriveKey(password, block.salt)
     const plain = await crypto.subtle.decrypt(
@@ -76,10 +82,14 @@ export async function decryptProjectBlock(
       key,
       b64ToBytes(block.data)
     )
-    return JSON.parse(new TextDecoder().decode(plain)) as DecryptedProject
+    return JSON.parse(new TextDecoder().decode(plain)) as T
   } catch {
     return null
   }
+}
+
+export function decryptProjectBlock(block: EncryptedBlock, password: string) {
+  return decryptJSONBlock<DecryptedProject>(block, password)
 }
 
 export function useProjectDecrypt() {

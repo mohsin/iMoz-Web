@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * manage-keys.js — Manage encryption keys for client/project yml files.
+ * manage-keys.js — Manage encryption keys for client/project yml and md files.
  *
  * Keys are stored in scripts/keys.json (gitignored).
  * Push to Netlify Blob for backup: pnpm keys:push
@@ -75,25 +75,24 @@ const handlers = {
     keys[slug] = generateKey()
     saveKeys(keys)
 
-    // Determine file path (try projects first, then clients)
-    const projectFile = `content/data/projects/${slug}.yml`
-    const clientFile  = `content/data/clients/${slug}.yml`
-    const file = fs.existsSync(projectFile) ? projectFile
-               : fs.existsSync(clientFile)  ? clientFile
-               : null
+    // Determine file path (try projects first, then clients; .yml before .md)
+    const file = ['projects', 'clients']
+      .flatMap(dir => ['yml', 'md'].map(ext => `content/data/${dir}/${slug}.${ext}`))
+      .find(f => fs.existsSync(f)) ?? null
+    const script = file?.endsWith('.md') ? 'encrypt-md.js' : 'encrypt-yaml.js'
 
     console.log(`✓  Rotated key for '${slug}'`)
     if (file) {
       const { execSync } = require('child_process')
       try {
-        execSync(`node scripts/encrypt-yaml.js rotate --file "${file}" --old "${oldKey}" --new "${keys[slug]}"`, { stdio: 'inherit' })
+        execSync(`node scripts/${script} rotate --file "${file}" --old "${oldKey}" --new "${keys[slug]}"`, { stdio: 'inherit' })
         console.log(`✓  Re-encrypted ${file}`)
       } catch {
         console.error(`✗  Re-encryption failed — run manually:`)
-        console.error(`   node scripts/encrypt-yaml.js rotate --file ${file} --old ${oldKey} --new ${keys[slug]}`)
+        console.error(`   node scripts/${script} rotate --file ${file} --old ${oldKey} --new ${keys[slug]}`)
       }
     } else {
-      console.log(`   No yml file found — re-encrypt manually when the file is available`)
+      console.log(`   No yml or md file found — re-encrypt manually when the file is available`)
     }
     console.log(`   New unlock URL : /projects#unlock=${slug}:${keys[slug]}`)
     console.log(`   Reminder       : push keys to Netlify Blob — pnpm keys:push`)
@@ -117,7 +116,7 @@ Usage:
   node scripts/manage-keys.js generate --slug <slug>   Generate a new key
   node scripts/manage-keys.js get      --slug <slug>   Print key to stdout
   node scripts/manage-keys.js url      --slug <slug>   Print unlock URL
-  node scripts/manage-keys.js rotate   --slug <slug>   Rotate key and re-encrypt yml
+  node scripts/manage-keys.js rotate   --slug <slug>   Rotate key and re-encrypt yml/md
   node scripts/manage-keys.js list                     List all slugs with keys
 
 Keys are stored in scripts/keys.json (gitignored).

@@ -88,10 +88,10 @@ Encryption is schema-driven: a JSON Schema file declares which fields are privat
 
 | File | Purpose | Committed |
 |---|---|---|
-| `content/data/projects/<slug>.md` | Public narrative | Always |
 | `content/data/projects.yml` | Listing metadata | Always |
 | `content/data/clients.yml` | Client index | Always |
-| `content/data/projects/<slug>.yml` | Private project data | Encrypted only |
+| `content/data/projects/<slug>.yml` | Project detail, structured fields | Encrypted only |
+| `content/data/projects/<slug>.md` | Project detail, free-form Markdown (MDC) | Encrypted only |
 | `content/data/clients/<slug>.yml` | Private client data | Encrypted only |
 | `scripts/keys.json` | Encryption key store | Never (gitignored) |
 
@@ -122,6 +122,45 @@ encrypted:
   data: <base64>              # all private fields bundled as encrypted JSON
 ```
 
+### Markdown (MDC) files
+
+A project can use `<slug>.md` instead of `<slug>.yml` (one or the other, not both) when the detail page needs free-form Markdown and MDC components rather than a fixed structure. Two kinds of content are encrypted:
+
+* Frontmatter fields marked `x-private` in the schema named on the first frontmatter line, exactly like the yml files. They render in the Private Details panel.
+* Body blocks wrapped in `::private`. Anything inside is encrypted, including headings, tables and components (nest components with `:::`).
+
+```md
+---
+# $schema: scripts/schemas/project.json
+title: Acme Web
+languages: PHP,JavaScript
+milestones:
+  - name: Invoice-1
+    billed: $2,500 USD
+    status: paid
+---
+
+Public description, visible to everyone.
+
+::private
+## Commercials
+
+Billed hourly. Contact at the client: Jane, jane@acme.com.
+::
+```
+
+On encrypt each `::private` block is parsed with the site's own Nuxt Content Markdown parser, and the source and the parsed tree are encrypted together, so the unlocked block renders through the same components as the public content. The block is replaced by a marker that renders nothing until the slug is unlocked:
+
+```md
+::private-block{slug="acme-web" salt="<base64>" iv="<base64>" data="<base64>"}
+::
+```
+
+```bash
+node scripts/encrypt-md.js decrypt --file content/data/projects/acme-web.md   # restore ::private blocks to edit
+node scripts/encrypt-md.js encrypt --file content/data/projects/acme-web.md   # done by the pre-commit hook
+```
+
 ### Key management
 
 Keys live in `scripts/keys.json` — one key per slug, generated automatically on first commit.
@@ -133,7 +172,7 @@ node scripts/manage-keys.js generate --slug jonasmonteiro-website
 # Print the unlock URL to share
 node scripts/manage-keys.js url --slug jonasmonteiro-website
 
-# Rotate a key (re-encrypts the yml automatically)
+# Rotate a key (re-encrypts the yml or md automatically)
 node scripts/manage-keys.js rotate --slug jonasmonteiro-website
 
 # List all slugs with keys
@@ -154,10 +193,11 @@ Run `keys:push` after any new key is generated, before deploying.
 ```bash
 # Decrypt to edit — reads key automatically from scripts/keys.json
 node scripts/encrypt-yaml.js decrypt --file content/data/clients/jonasmonteiro.yml
+node scripts/encrypt-md.js decrypt --file content/data/projects/<slug>.md   # for .md files
 
 # Make changes...
 
-# Commit — hook detects plaintext yml, encrypts and re-stages it automatically
+# Commit: the hook detects plaintext yml/md, encrypts and re-stages it automatically
 git add content/data/clients/jonasmonteiro.yml
 git commit
 ```
@@ -190,7 +230,7 @@ Set `hideOnListing: true` on any entry in `projects.yml` to exclude it from the 
 
 ### Placeholder (private) projects
 
-Add an entry to `projects.yml` with a vague public title (e.g. `Untitled Real Estate Platform`) and set `private: true`. Create a minimal `.md` file for the slug. The real details live in the corresponding encrypted `projects/<slug>.yml`.
+Add an entry to `projects.yml` with a vague public title (e.g. `Untitled Real Estate Platform`) and set `private: true`. The real details live in the encrypted `projects/<slug>.yml` or `projects/<slug>.md`.
 
 ## Claude Skills
 

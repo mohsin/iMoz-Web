@@ -4,7 +4,8 @@
  * Called from .husky/pre-commit.
  *
  * For each staged content/data/clients/*.yml or content/data/projects/*.yml
- * that lacks an `encrypted:` block:
+ * that lacks an `encrypted:` block, and each staged .md in those folders that
+ * holds plaintext private content (::private blocks or x-private frontmatter):
  *   1. Look up (or generate) the key in scripts/keys.json
  *   2. Encrypt the file in place
  *   3. Re-stage the encrypted version
@@ -15,8 +16,11 @@ const crypto       = require('crypto')
 const fs           = require('fs')
 const path         = require('path')
 
+const { needsEncryption } = require('./encrypt-md')
+
 const KEYS_FILE     = path.resolve(__dirname, 'keys.json')
 const PRIVATE_YML   = /^content\/data\/(clients|projects)\/([^/]+)\.yml$/
+const PRIVATE_MD    = /^content\/data\/(clients|projects)\/([^/]+)\.md$/
 
 function getStagedFiles() {
   return execSync('git diff --cached --name-only', { encoding: 'utf8' })
@@ -55,7 +59,10 @@ function saveKeys(keys) {
 }
 
 const staged    = getStagedFiles()
-const toEncrypt = staged.filter(f => PRIVATE_YML.test(f) && !hasEncryptedBlock(f) && hasPrivateData(f))
+const toEncrypt = staged.filter(f =>
+  (PRIVATE_YML.test(f) && !hasEncryptedBlock(f) && hasPrivateData(f)) ||
+  (PRIVATE_MD.test(f) && needsEncryption(f))
+)
 
 if (toEncrypt.length === 0) process.exit(0)
 
@@ -64,7 +71,8 @@ let keysUpdated  = false
 let failed       = false
 
 for (const file of toEncrypt) {
-  const slug = path.basename(file, '.yml')
+  const slug   = path.basename(file, path.extname(file))
+  const script = file.endsWith('.md') ? 'encrypt-md.js' : 'encrypt-yaml.js'
 
   if (!keys[slug]) {
     keys[slug] = crypto.randomBytes(32).toString('base64url')
@@ -74,7 +82,7 @@ for (const file of toEncrypt) {
 
   try {
     execSync(
-      `node scripts/encrypt-yaml.js encrypt --file "${file}" --password "${keys[slug]}"`,
+      `node scripts/${script} encrypt --file "${file}" --password "${keys[slug]}"`,
       { stdio: 'inherit' }
     )
     execSync(`git add "${file}"`)
