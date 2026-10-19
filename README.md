@@ -241,17 +241,26 @@ This repo ships with [Claude Code](https://claude.ai/code) skills for common con
 - [Claude Code](https://claude.ai/code) CLI installed
 - `cwebp` for image conversion: `brew install webp`
 - Keynote (macOS) for `.key` → `.pptx` slide export
+- `pdftotext` for invoice parsing: `brew install poppler`
 
 ### Available skills
 
 | Skill | Command | Description |
 |-------|---------|-------------|
+| Project Add | `/project-add` | Adds a new project to the portfolio from a local client folder — scans git history, detects tech stack, reads invoices, finds and converts the logo to WebP, and writes entries to `projects.yml`, `projects/<slug>.md`, `clients.yml`, and `clients/<slug>.yml` (encrypted). |
+| Project Reorganize | `/project-reorganize` | Reorganizes a single client project folder on disk to the canonical structure (`Projects/`, `Invoices/`, `Contracts/`, `Requirements/`, `Design/`, `Assets/`, `Originals/`, `Screenshots/`, `Recordings/`, `Documents/`, `Backups/`). Proposes a plan before making any changes. |
 | Event Import | `/event-import` | Imports a new event from a local archive folder — curates and converts photos to WebP, exports Keynote slides to PPTX, searches for website/blog links, and adds the entry to `content/data/events.yml` at the correct chronological position. |
 | Event Reorganize | `/event-reorganize` | Reorganizes a single event folder on disk to the canonical structure (`CFP/`, `Photos/`, `Slides/`, `Materials/`, `Assets/`, `Documents/`). Proposes a plan before making any changes. |
 
 ### Usage
 
 ```bash
+# Add a new project from a local client folder
+/project-add /path/to/client/folder
+
+# Reorganize a client project folder to canonical structure
+/project-reorganize /path/to/client/folder
+
 # Import a new event from an archive folder
 /event-import /path/to/event/folder
 

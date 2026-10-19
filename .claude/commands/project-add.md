@@ -137,7 +137,7 @@ Read any `.txt` notes files present.
 For each code repo found under `Projects/` (or project root if no `Projects/` subfolder), collect:
 
 ```bash
-cd "<repo>" && git log --oneline --format="%ad %s" --date=short 2>/dev/null
+cd "<repo>" && git log --all --format="%ad %s%n%b%n---" --date=short 2>/dev/null
 ```
 
 From this output:
@@ -158,7 +158,43 @@ Also read config/manifest files to confirm tech:
 
 ---
 
-## Step 3 — Find and convert the logo
+## Step 3 — Generate portfolio-ready feature list
+
+Using the git history from Step 2 and key source files, produce a structured feature list suitable for a portfolio case study or product landing page.
+
+Run:
+```bash
+cd "<repo>" && git log --all --format="%s%n%b%n---"
+```
+
+Then read key source files to understand what the product does: pages, components, backend functions, scripts, and CMS/content configuration. Focus on files that reveal user-facing functionality, not internal plumbing.
+
+Group features under logical product headings (e.g. Core, Content Management, Admin, Analytics, SEO, Payments). Write one short sentence per feature describing what it does from a user or product perspective.
+
+**Rules:**
+- No framework or library names (no "Vue", "Laravel", "Stripe", etc.)
+- No file paths, variable names, API keys, or internal slugs
+- Plain English only — a non-technical stakeholder should understand every line
+- Each bullet should be something that could appear on a product landing page or a portfolio case study
+
+The output YAML structure:
+```yaml
+features:
+  - group: Core
+    items:
+      - Real-time availability calendar with instant booking confirmation
+      - Coupon and discount system with configurable redemption rules
+  - group: Admin
+    items:
+      - Multi-dimensional analytics dashboard with revenue and booking trends
+```
+
+Present the feature list in the review block (Step 6) for the user to approve before writing.
+
+---
+
+## Step 4 — Find and convert the logo
+
 
 Search for the project/client logo in priority order:
 1. `Assets/` root — final processed logos (pick largest non-favicon PNG/SVG/JPG)
@@ -180,7 +216,7 @@ If no suitable logo is found, set `src: /images/<slug>.webp` as a placeholder an
 
 ---
 
-## Step 4 — Extract invoice data
+## Step 5 — Extract invoice data
 
 For each PDF in `Invoices/`:
 ```bash
@@ -203,7 +239,7 @@ Collect both values before continuing — do not write until the user confirms.
 
 ---
 
-## Step 5 — Web research for client
+## Step 6 — Web research for client
 
 Using the client folder name and any company name found in contracts/invoices, search for:
 
@@ -239,7 +275,7 @@ This data populates both `content/data/clients.yml` (public fields) and `content
 
 ---
 
-## Step 6 — Present the full proposal for review
+## Step 7 — Present the full proposal for review
 
 Output the following review block and wait for corrections before writing anything:
 
@@ -262,7 +298,14 @@ Frameworks:   <comma-separated>
 Tools:        <editors, CI, deployment tools found>
 Concepts:     <MVC, REST API, CMS, E-commerce, etc.>
 
-MODULES (from git history — please verify each)
+FEATURES (public — portfolio-ready, please verify)
+<Group 1>:
+  * <One sentence describing what it does from a user perspective>
+  * ...
+<Group 2>:
+  * ...
+
+MODULES (private — from git history, encrypted)
 * <scope>   (<N> commits) — <description>
 * ...
 
@@ -282,6 +325,9 @@ Director:        <owner/director name if found>
 POC (private):   <name, role, phone (if known), email (if known)>
 
 FINANCIALS (will be encrypted — not written to any public file)
+Billing type:    milestone | monthly | fixed | hourly
+Hourly rate:     <e.g. ₹2,000/hr or $50 USD/hr — omit for fixed-price projects>
+Source:          <how acquired: direct | referral | upwork | fiverr | october_marketplace | inbound>
 Milestones:
   * <Milestone 1>: <billed amount + currency> → ₹<received INR> (paid/pending/cancelled)
   * <Milestone 2>: <billed amount + currency> → ₹<received INR> (paid/pending/cancelled)
@@ -295,7 +341,7 @@ Do not proceed until the user types 'yes' (or equivalent confirmation).
 
 ---
 
-## Step 7 — Write files
+## Step 8 — Write files
 
 Only after user confirmation, write each file:
 
@@ -354,10 +400,13 @@ website: <domain only, no https://>
 location: <City, Country>
 description: |
   <1–2 paragraph description of the project and what was built>
-
-  ## Modules
-
-  <public module list — one line per module, no financial detail>
+features:
+  - group: <Heading e.g. Core>
+    items:
+      - <One short sentence per feature — plain English, no framework names>
+  - group: <Heading e.g. Admin>
+    items:
+      - <feature>
 technical_summary: >
   <detailed private description — full scope of work, approach, tools used internally>
 modules:
@@ -378,6 +427,9 @@ milestones:
     txn_id: <bank transaction reference>
     remarks: <e.g. "Foreign Remittance", "Local Transfer">
     status: paid  # paid | pending | cancelled
+billing_type: <milestone | monthly | fixed | hourly>
+hourly_rate: <e.g. "₹2,000/hr" or "$50 USD/hr" — omit for fixed-price projects>
+source: <direct | referral | upwork | fiverr | october_marketplace | inbound>
 total_billed: <e.g. "$1,800 USD" or "₹5,50,400 INR">
 total_received_inr: <net INR received across all milestones>
 ```
@@ -439,7 +491,7 @@ total_received_inr:  # aggregate net INR received across all projects for this c
 
 ---
 
-## Step 8 — Report
+## Step 9 — Report
 
 Output:
 1. Summary of what was written (files created/updated, logo source, total revenue extracted)
