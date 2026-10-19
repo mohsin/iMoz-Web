@@ -42,7 +42,10 @@ defineEmits(['return'])
 
       <!-- CTA -->
       <div class="mt-8 pt-5 border-t border-slate-100 dark:border-slate-600 flex flex-col sm:flex-row sm:items-center gap-3">
-        <p class="text-sm text-gray-500 dark:text-slate-400 flex-1">Interested in this service? Get in touch and I'll put together a proposal.</p>
+        <p class="text-sm text-gray-500 dark:text-slate-400 flex-1">
+          Interested in this service? Get in touch and I'll put together a proposal.
+          <NuxtLink to="/resources" class="underline underline-offset-2 hover:no-underline">Need help writing a brief?</NuxtLink>
+        </p>
         <NuxtLink
           to="/contact"
           class="inline-flex items-center gap-2 bg-slate-700 dark:bg-slate-600 text-white text-sm font-medium px-5 py-2.5 hover:bg-slate-600 dark:hover:bg-slate-500 transition-colors flex-shrink-0"

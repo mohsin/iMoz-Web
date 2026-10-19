@@ -178,7 +178,7 @@ if (process.client) {
           </div>
         </div>
         <p class="text-gray-600 dark:text-white text-xs italic mt-4">
-          <sup class="text-red-700 dark:text-blue-300">*</sup> For project requests, please include a proper UI design (preferably on Figma or Claude Design) and a detailed description — sample briefs are <a href="https://tinyurl.com/prdsamples" target="_new" class="text-black dark:text-blue-300 border-b border-black">at this link</a>. For event or speaking requests, describe the topic, expected audience, and preferred date.
+          <sup class="text-red-700 dark:text-blue-300">*</sup> For project requests, please include a proper UI design (preferably on Figma or Claude Design) and a detailed description. If you need a starting point, <NuxtLink to="/resources" class="text-black dark:text-blue-300 border-b border-black">PRD samples and guidance are here</NuxtLink>. For event or speaking requests, describe the topic, expected audience, and preferred date.
         </p>
         <p v-if="isSubmitted && !hasErrors" class="mt-8 text-center text-base text-red-700 dark:text-blue-300">
           The form has been submitted.

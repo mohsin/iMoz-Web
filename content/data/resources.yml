@@ -1,0 +1,105 @@
+prd_samples:
+  intro: "A Product Requirement Document (PRD) is the single most important thing you can prepare before engaging a developer. It defines what gets built, prevents scope creep, and keeps the project on time and budget. These samples come from real projects and show the level of detail that works: enough for a developer to estimate, plan, and build without needing to guess."
+  what_to_include:
+    - label: User Personas
+      description: "Who uses the product and what their goals are. Even two or three personas sharpens every feature decision."
+    - label: Data Models
+      description: "The main objects in your system (User, Order, Booking…) and their fields. The developer will need this to design the database."
+    - label: User Stories or Screen Descriptions
+      description: "Either format works. User stories: 'As a [role] I can [action] so that [benefit].' Screen descriptions: one page per screen with annotated mockup + behavioral rules."
+    - label: Acceptance Criteria
+      description: "The specific conditions that must be true for a feature to be considered complete. These become the basis for testing."
+    - label: Scope Boundaries
+      description: "What is explicitly NOT included in this version. Prevents 'I assumed that was included' conversations."
+  sections:
+    - title: Web Applications
+      icon: heroicons-outline:globe-alt
+      description: "For web projects there are two common PRD formats depending on whether you're building a full product from scratch or adding a feature to an existing system."
+      samples:
+        - title: Full Product PRD
+          subtitle: Artist website with headless CMS and AI chatbot
+          description: "A complete greenfield web product PRD based on a real artist website. Covers public-facing sections (Home, Bio, Events/Gigs with guestlist, Map, Music, Videos, News, Booking), a headless CMS admin panel, an AI event assistant, SEO requirements including structured data and Open Graph, and responsive design with annotated breakpoints."
+          format: "User personas + data model + screen requirements + SEO + responsive design"
+          pages: 20
+          file: /prd-samples/web-full-product.pdf
+          tags:
+            - Full Product
+            - Headless CMS
+            - AI Integration
+            - SEO
+        - title: Module Requirements (CRM)
+          subtitle: Leads and pipeline module on an existing admin panel
+          description: "The format for scoping a single module being added to an existing web backend. Defines the Lead and Contact data models, field-level validation rules, role-based access controls (owner vs. non-owner), and each list, create, edit, and sales-view screen, annotated with screenshots."
+          format: "Data model + CRUD screen specs + field validation + RBAC"
+          pages: 6
+          file: /prd-samples/web-admin-crm-module.pdf
+          tags:
+            - Module
+            - Admin Panel
+            - Backend
+        - title: AI Platform PRD
+          subtitle: Wardrobe styling and virtual try-on web application
+          description: "A full-product PRD for an AI-powered platform with three integrated AI subsystems: image classification (wardrobe tagging), LLM outfit reasoning from natural language input, and generative AI virtual try-on rendering. Covers the credit-based billing model, Google Drive integration, data models, AI guardrails, and scope boundaries. Use this as a template for any product that integrates generative AI into a user workflow."
+          format: "AI pipeline spec + data models + feature requirements + guardrails + billing"
+          pages: 9
+          file: /prd-samples/web-admin-content-module.pdf
+          tags:
+            - AI / LLM
+            - Full Product
+            - Image Generation
+        - title: Booking & Scheduling System
+          subtitle: Slot-based reservation platform
+          description: "Full-product PRD for a venue booking web application with online payments. Covers slot availability rules, the complete customer booking flow, coupon codes, and an admin dashboard with manual booking creation, cancellations, refunds, and revenue analytics. Use this as a starting point for any booking, appointment, or reservation platform."
+          format: "Data model + user stories + acceptance criteria"
+          pages: 6
+          file: /prd-samples/web-booking-system.pdf
+          tags:
+            - Full Product
+            - Booking
+            - Payments
+            - Admin Dashboard
+        - title: E-Commerce Store
+          subtitle: Product catalogue, cart, and order management
+          description: "Full-product PRD for an online store with guest checkout and a seller back office. Covers the product catalogue, shopping cart, coupon codes, online payment, order fulfilment workflow, and sales reporting. Suitable as a starting point for any product-selling platform: physical goods, digital downloads, or services."
+          format: "Data model + user stories + acceptance criteria"
+          pages: 6
+          file: /prd-samples/web-ecommerce.pdf
+          tags:
+            - Full Product
+            - E-Commerce
+            - Payments
+            - Admin Dashboard
+        - title: AI Conversational Agent
+          subtitle: Scoped chatbot integrated into a web application
+          description: "PRD for an AI assistant with a defined topic scope, conversation flows, tool/function specifications, prompt injection protection, and testable acceptance criteria. This format is unique to AI projects: unlike traditional features, an AI assistant's behaviour is defined by its instructions and data, not code alone. Use this as a template before engaging a developer to build any AI chatbot, support agent, or discovery assistant."
+          format: "Conversation flows + tool specs + safety requirements + test cases"
+          pages: 5
+          file: /prd-samples/ai-conversational-agent.pdf
+          tags:
+            - AI / LLM
+            - Chatbot
+            - Full Product
+    - title: Mobile Applications
+      icon: heroicons-outline:device-phone-mobile
+      description: "Mobile PRDs come in two formats. Pick based on whether your UI mockups are ready. Both must describe how the app behaves, not just how it looks."
+      samples:
+        - title: User Story Format
+          subtitle: Works without mockups
+          description: "Mobile app requirements written as numbered user stories with acceptance criteria. The right format when UI mockups aren't finalised yet: it communicates intent and behaviour without locking in visual layout. A developer can estimate and begin architecture from this."
+          format: "Numbered user stories + acceptance criteria"
+          pages: 6
+          file: /prd-samples/mobile-user-stories.pdf
+          tags:
+            - User Stories
+            - Android
+            - iOS
+        - title: Screen Description Format
+          subtitle: Works alongside mockups
+          description: "Mobile app requirements organised screen by screen, with UI descriptions, component states, and behavioural rules annotated against the mockup. The most precise format: best when Figma designs are ready and you need the developer to implement exactly what is described."
+          format: "Screen-by-screen + component states + behavioural rules"
+          pages: 5
+          file: /prd-samples/mobile-screen-format.pdf
+          tags:
+            - Screen Descriptions
+            - Android
+            - iOS
