@@ -4,3 +4,16 @@
 
 [functions]
   directory = "netlify/functions"
+
+# Mozpedia (private wiki): every /wiki/* path is served by the client-side app,
+# which asks for the password before loading anything.
+[[redirects]]
+  from = "/wiki/*"
+  to = "/200.html"
+  status = 200
+
+[[headers]]
+  for = "/wiki/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "no-store"
