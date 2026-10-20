@@ -216,7 +216,7 @@
 .wp-content .thumbinner figcaption { padding: 3px 2px 2px; text-align: left; font-size: 0.94em; line-height: 1.4; }
 .wp-content .thumb-missing { display: flex; align-items: center; justify-content: center; height: 120px; max-width: 100%; color: var(--wp-text-subtle); }
 .wp-content .thumb-caption-input, .wp-content .infobox input { width: 100%; border: 1px dashed var(--wp-border); background: var(--wp-bg); padding: 2px 4px; font-size: 0.9em; }
-.wp-content .selected > .thumbinner, .wp-content aside.selected { outline: 2px solid var(--wp-progressive); }
+.wp-editor-surface .selected > .thumbinner, .wp-editor-surface aside.selected { outline: 2px solid var(--wp-progressive); }
 
 /* Infobox */
 .wp-content aside.infobox { float: right; clear: right; width: 22em; max-width: 100%; margin: 0.5em 0 1em 1em; font-size: 88%; line-height: 1.5; }
