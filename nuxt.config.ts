@@ -15,7 +15,21 @@ export default defineNuxtConfig({
           { name: 'description', content: 'Saifur Rahman Mohsin: full-stack engineer in Bangalore building web, mobile, and AI applications for startups and businesses worldwide. Founder of Tempestronics, 50+ projects delivered.' },
           { name: 'msapplication-TileColor', content: '#ffffff' },
           { name: 'theme-color', content: '#ffffff' },
-          { name: 'google-adsense-account', content: 'ca-pub-5137799284836201' }
+          { name: 'google-adsense-account', content: 'ca-pub-5137799284836201' },
+          // Link previews (WhatsApp, iMessage, Instagram, Slack, LinkedIn, X)
+          { property: 'og:type', content: 'website' },
+          { property: 'og:site_name', content: 'iMoz' },
+          { property: 'og:url', content: 'https://imoz.in/' },
+          { property: 'og:title', content: 'Saifur Rahman Mohsin | Full Stack Engineer' },
+          { property: 'og:description', content: 'Full-stack engineer in Bengaluru and founder of Tempestronics, building web, mobile and AI products for startups and businesses worldwide.' },
+          { property: 'og:image', content: 'https://imoz.in/og-image.jpg' },
+          { property: 'og:image:width', content: '1200' },
+          { property: 'og:image:height', content: '630' },
+          { property: 'og:image:alt', content: 'Saifur Rahman Mohsin speaking at AWS Community Day Bengaluru' },
+          { name: 'twitter:card', content: 'summary_large_image' },
+          { name: 'twitter:title', content: 'Saifur Rahman Mohsin | Full Stack Engineer' },
+          { name: 'twitter:description', content: 'Full-stack engineer in Bengaluru and founder of Tempestronics, building web, mobile and AI products for startups and businesses worldwide.' },
+          { name: 'twitter:image', content: 'https://imoz.in/og-image.jpg' }
         ]
       },
     },
